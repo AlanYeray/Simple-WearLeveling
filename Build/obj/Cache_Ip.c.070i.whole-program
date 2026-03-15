@@ -1,0 +1,447 @@
+
+Marking local functions:
+
+
+Marking externally visible functions: Cache_Ip_CleanByAddr/5 Cache_Ip_InvalidateByAddr/4 Cache_Ip_Clean/3 Cache_Ip_Invalidate/2 Cache_Ip_Disable/1 Cache_Ip_Enable/0
+
+
+Marking externally visible variables:
+
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Symbol table:
+
+SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_18/23 (SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_18) @06c6de00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Cache_Ip_CleanByAddr/5 
+  Calls: 
+hwAcc_Lmem_CleanByAddr/22 (hwAcc_Lmem_CleanByAddr) @06c6dd20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Cache_Ip_CleanByAddr/5 
+  Calls: 
+SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_18/21 (SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_18) @06c6dc40
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Cache_Ip_CleanByAddr/5 
+  Calls: 
+SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_17/20 (SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_17) @06c6da80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Cache_Ip_InvalidateByAddr/4 
+  Calls: 
+hwAcc_Lmem_InvalidateByAddr/19 (hwAcc_Lmem_InvalidateByAddr) @06c6d9a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Cache_Ip_InvalidateByAddr/4 
+  Calls: 
+SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_17/18 (SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_17) @06c6d8c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Cache_Ip_InvalidateByAddr/4 
+  Calls: 
+SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_16/17 (SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_16) @06c6d700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Cache_Ip_Clean/3 
+  Calls: 
+hwAcc_Lmem_Clean/16 (hwAcc_Lmem_Clean) @06c6d620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Cache_Ip_Clean/3 
+  Calls: 
+SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_16/15 (SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_16) @06c6d540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Cache_Ip_Clean/3 
+  Calls: 
+SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_15/14 (SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_15) @06c6d380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Cache_Ip_Invalidate/2 
+  Calls: 
+hwAcc_Lmem_Invalidate/13 (hwAcc_Lmem_Invalidate) @06c6d2a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Cache_Ip_Invalidate/2 
+  Calls: 
+SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_15/12 (SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_15) @06c6d1c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Cache_Ip_Invalidate/2 
+  Calls: 
+SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_14/11 (SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_14) @06c6d000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Cache_Ip_Disable/1 
+  Calls: 
+hwAcc_Lmem_Disable/10 (hwAcc_Lmem_Disable) @06ba7620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Cache_Ip_Disable/1 
+  Calls: 
+SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_14/9 (SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_14) @06ba72a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Cache_Ip_Disable/1 
+  Calls: 
+SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_13/8 (SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_13) @06ba7ee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Cache_Ip_Enable/0 
+  Calls: 
+hwAcc_Lmem_Enable/7 (hwAcc_Lmem_Enable) @06ba7e00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Cache_Ip_Enable/0 
+  Calls: 
+SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_13/6 (SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_13) @06ba7d20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Cache_Ip_Enable/0 
+  Calls: 
+Cache_Ip_CleanByAddr/5 (Cache_Ip_CleanByAddr) @06ba78c0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_18/23 hwAcc_Lmem_CleanByAddr/22 SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_18/21 
+Cache_Ip_InvalidateByAddr/4 (Cache_Ip_InvalidateByAddr) @06ba7540
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_17/20 hwAcc_Lmem_InvalidateByAddr/19 SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_17/18 
+Cache_Ip_Clean/3 (Cache_Ip_Clean) @06ba71c0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_16/17 hwAcc_Lmem_Clean/16 SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_16/15 
+Cache_Ip_Invalidate/2 (Cache_Ip_Invalidate) @06ba1d20
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_15/14 hwAcc_Lmem_Invalidate/13 SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_15/12 
+Cache_Ip_Disable/1 (Cache_Ip_Disable) @06ba1ee0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_14/11 hwAcc_Lmem_Disable/10 SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_14/9 
+Cache_Ip_Enable/0 (Cache_Ip_Enable) @06ba1c40
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_13/8 hwAcc_Lmem_Enable/7 SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_13/6 
+Cache_Ip_CleanByAddr (const Cache_Ip_Type CacheType, const Cache_Ip_BusType BusType, const boolean EnInvalidate, const uint32 Addr, const uint32 Length)
+{
+  Std_ReturnType Status;
+  Std_ReturnType D.5696;
+  unsigned char _1;
+  Std_ReturnType _15;
+
+  <bb 2> :
+  Status_4 = 0;
+  SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_18 ();
+  if (CacheType_7(D) == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  _1 = (unsigned char) BusType_8(D);
+  Status_13 = hwAcc_Lmem_CleanByAddr (_1, EnInvalidate_9(D), Addr_10(D), Length_11(D));
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+
+  <bb 5> :
+  # Status_2 = PHI <Status_13(3), Status_4(4)>
+  SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_18 ();
+  _15 = Status_2;
+
+  <bb 6> :
+<L3>:
+  return _15;
+
+}
+
+
+Cache_Ip_InvalidateByAddr (const Cache_Ip_Type CacheType, const Cache_Ip_BusType BusType, const uint32 Addr, const uint32 Length)
+{
+  Std_ReturnType Status;
+  Std_ReturnType D.5694;
+  unsigned char _1;
+  Std_ReturnType _14;
+
+  <bb 2> :
+  Status_4 = 0;
+  SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_17 ();
+  if (CacheType_7(D) == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  _1 = (unsigned char) BusType_8(D);
+  Status_12 = hwAcc_Lmem_InvalidateByAddr (_1, Addr_9(D), Length_10(D));
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+
+  <bb 5> :
+  # Status_2 = PHI <Status_12(3), Status_4(4)>
+  SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_17 ();
+  _14 = Status_2;
+
+  <bb 6> :
+<L3>:
+  return _14;
+
+}
+
+
+Cache_Ip_Clean (const Cache_Ip_Type CacheType, const Cache_Ip_BusType BusType, const boolean EnInvalidate)
+{
+  Std_ReturnType Status;
+  Std_ReturnType D.5692;
+  unsigned char _1;
+  Std_ReturnType _13;
+
+  <bb 2> :
+  Status_4 = 0;
+  SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_16 ();
+  if (CacheType_7(D) == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  _1 = (unsigned char) BusType_8(D);
+  Status_11 = hwAcc_Lmem_Clean (_1, EnInvalidate_9(D));
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+
+  <bb 5> :
+  # Status_2 = PHI <Status_11(3), Status_4(4)>
+  SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_16 ();
+  _13 = Status_2;
+
+  <bb 6> :
+<L3>:
+  return _13;
+
+}
+
+
+Cache_Ip_Invalidate (const Cache_Ip_Type CacheType, const Cache_Ip_BusType BusType)
+{
+  Std_ReturnType Status;
+  Std_ReturnType D.5690;
+  unsigned char _1;
+  Std_ReturnType _12;
+
+  <bb 2> :
+  Status_4 = 0;
+  SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_15 ();
+  if (CacheType_7(D) == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  _1 = (unsigned char) BusType_8(D);
+  Status_10 = hwAcc_Lmem_Invalidate (_1);
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+
+  <bb 5> :
+  # Status_2 = PHI <Status_10(3), Status_4(4)>
+  SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_15 ();
+  _12 = Status_2;
+
+  <bb 6> :
+<L3>:
+  return _12;
+
+}
+
+
+Cache_Ip_Disable (const Cache_Ip_Type CacheType, const Cache_Ip_BusType BusType)
+{
+  Std_ReturnType Status;
+  Std_ReturnType D.5688;
+  unsigned char _1;
+  Std_ReturnType _12;
+
+  <bb 2> :
+  Status_4 = 0;
+  SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_14 ();
+  if (CacheType_7(D) == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  _1 = (unsigned char) BusType_8(D);
+  Status_10 = hwAcc_Lmem_Disable (_1);
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+
+  <bb 5> :
+  # Status_2 = PHI <Status_10(3), Status_4(4)>
+  SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_14 ();
+  _12 = Status_2;
+
+  <bb 6> :
+<L3>:
+  return _12;
+
+}
+
+
+Cache_Ip_Enable (const Cache_Ip_Type CacheType, const Cache_Ip_BusType BusType)
+{
+  Std_ReturnType Status;
+  Std_ReturnType D.5686;
+  unsigned char _1;
+  Std_ReturnType _12;
+
+  <bb 2> :
+  Status_4 = 0;
+  SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_13 ();
+  if (CacheType_7(D) == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  _1 = (unsigned char) BusType_8(D);
+  Status_10 = hwAcc_Lmem_Enable (_1);
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+
+  <bb 5> :
+  # Status_2 = PHI <Status_10(3), Status_4(4)>
+  SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_13 ();
+  _12 = Status_2;
+
+  <bb 6> :
+<L3>:
+  return _12;
+
+}
+
+

@@ -1,0 +1,12 @@
+Autosar/Mcal/Mcl/src/Cache_Ip_HwAcc_Lmem.c:320:16:hwAcc_Lmem_ProcessorCodeEnable	32	static
+Autosar/Mcal/Mcl/src/Cache_Ip_HwAcc_Lmem.c:346:16:hwAcc_Lmem_ProcessorCodeDisable	32	static
+Autosar/Mcal/Mcl/src/Cache_Ip_HwAcc_Lmem.c:372:16:hwAcc_Lmem_ProcessorCodeInvalidate	48	static
+Autosar/Mcal/Mcl/src/Cache_Ip_HwAcc_Lmem.c:384:16:hwAcc_Lmem_ProcessorCodeClean	88	static
+Autosar/Mcal/Mcl/src/Cache_Ip_HwAcc_Lmem.c:405:16:hwAcc_Lmem_ProcessorCodeInvalidateByAddr	96	static
+Autosar/Mcal/Mcl/src/Cache_Ip_HwAcc_Lmem.c:428:16:hwAcc_Lmem_ProcessorCodeCleanByAddr	136	static
+Autosar/Mcal/Mcl/src/Cache_Ip_HwAcc_Lmem.c:603:16:hwAcc_Lmem_Enable	24	static
+Autosar/Mcal/Mcl/src/Cache_Ip_HwAcc_Lmem.c:656:16:hwAcc_Lmem_Disable	24	static
+Autosar/Mcal/Mcl/src/Cache_Ip_HwAcc_Lmem.c:709:16:hwAcc_Lmem_Invalidate	24	static
+Autosar/Mcal/Mcl/src/Cache_Ip_HwAcc_Lmem.c:762:16:hwAcc_Lmem_Clean	24	static
+Autosar/Mcal/Mcl/src/Cache_Ip_HwAcc_Lmem.c:815:16:hwAcc_Lmem_InvalidateByAddr	32	static
+Autosar/Mcal/Mcl/src/Cache_Ip_HwAcc_Lmem.c:868:16:hwAcc_Lmem_CleanByAddr	32	static

@@ -1,0 +1,198 @@
+Cache_Ip_CleanByAddr (const Cache_Ip_Type CacheType, const Cache_Ip_BusType BusType, const boolean EnInvalidate, const uint32 Addr, const uint32 Length)
+{
+  Std_ReturnType Status;
+  Std_ReturnType D.5696;
+
+  <bb 2> :
+  Status = 0;
+  SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_18 ();
+  if (CacheType == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  _1 = (unsigned char) BusType;
+  Status = hwAcc_Lmem_CleanByAddr (_1, EnInvalidate, Addr, Length);
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+
+  <bb 5> :
+  SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_18 ();
+  D.5696 = Status;
+
+  <bb 6> :
+<L3>:
+  return D.5696;
+
+}
+
+
+Cache_Ip_InvalidateByAddr (const Cache_Ip_Type CacheType, const Cache_Ip_BusType BusType, const uint32 Addr, const uint32 Length)
+{
+  Std_ReturnType Status;
+  Std_ReturnType D.5694;
+
+  <bb 2> :
+  Status = 0;
+  SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_17 ();
+  if (CacheType == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  _1 = (unsigned char) BusType;
+  Status = hwAcc_Lmem_InvalidateByAddr (_1, Addr, Length);
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+
+  <bb 5> :
+  SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_17 ();
+  D.5694 = Status;
+
+  <bb 6> :
+<L3>:
+  return D.5694;
+
+}
+
+
+Cache_Ip_Clean (const Cache_Ip_Type CacheType, const Cache_Ip_BusType BusType, const boolean EnInvalidate)
+{
+  Std_ReturnType Status;
+  Std_ReturnType D.5692;
+
+  <bb 2> :
+  Status = 0;
+  SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_16 ();
+  if (CacheType == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  _1 = (unsigned char) BusType;
+  Status = hwAcc_Lmem_Clean (_1, EnInvalidate);
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+
+  <bb 5> :
+  SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_16 ();
+  D.5692 = Status;
+
+  <bb 6> :
+<L3>:
+  return D.5692;
+
+}
+
+
+Cache_Ip_Invalidate (const Cache_Ip_Type CacheType, const Cache_Ip_BusType BusType)
+{
+  Std_ReturnType Status;
+  Std_ReturnType D.5690;
+
+  <bb 2> :
+  Status = 0;
+  SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_15 ();
+  if (CacheType == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  _1 = (unsigned char) BusType;
+  Status = hwAcc_Lmem_Invalidate (_1);
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+
+  <bb 5> :
+  SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_15 ();
+  D.5690 = Status;
+
+  <bb 6> :
+<L3>:
+  return D.5690;
+
+}
+
+
+Cache_Ip_Disable (const Cache_Ip_Type CacheType, const Cache_Ip_BusType BusType)
+{
+  Std_ReturnType Status;
+  Std_ReturnType D.5688;
+
+  <bb 2> :
+  Status = 0;
+  SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_14 ();
+  if (CacheType == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  _1 = (unsigned char) BusType;
+  Status = hwAcc_Lmem_Disable (_1);
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+
+  <bb 5> :
+  SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_14 ();
+  D.5688 = Status;
+
+  <bb 6> :
+<L3>:
+  return D.5688;
+
+}
+
+
+Cache_Ip_Enable (const Cache_Ip_Type CacheType, const Cache_Ip_BusType BusType)
+{
+  Std_ReturnType Status;
+  Std_ReturnType D.5686;
+
+  <bb 2> :
+  Status = 0;
+  SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_13 ();
+  if (CacheType == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  _1 = (unsigned char) BusType;
+  Status = hwAcc_Lmem_Enable (_1);
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+
+  <bb 5> :
+  SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_13 ();
+  D.5686 = Status;
+
+  <bb 6> :
+<L3>:
+  return D.5686;
+
+}
+
+

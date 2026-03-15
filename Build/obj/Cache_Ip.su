@@ -1,0 +1,6 @@
+Autosar/Mcal/Mcl/src/Cache_Ip.c:347:16:Cache_Ip_Enable	24	static
+Autosar/Mcal/Mcl/src/Cache_Ip.c:400:16:Cache_Ip_Disable	24	static
+Autosar/Mcal/Mcl/src/Cache_Ip.c:455:16:Cache_Ip_Invalidate	24	static
+Autosar/Mcal/Mcl/src/Cache_Ip.c:511:16:Cache_Ip_Clean	32	static
+Autosar/Mcal/Mcl/src/Cache_Ip.c:567:16:Cache_Ip_InvalidateByAddr	32	static
+Autosar/Mcal/Mcl/src/Cache_Ip.c:624:16:Cache_Ip_CleanByAddr	32	static

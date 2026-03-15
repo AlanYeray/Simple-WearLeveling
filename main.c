@@ -1,0 +1,384 @@
+#include "Mem_43_INFLS.h"
+#include "Bfx.h"
+#include "Mcu.h"
+#include <stddef.h>
+
+// instance 0 by Tresos
+const Mem_43_INFLS_InstanceIdType MemInstanceId_0;
+
+// Mem Physical Sector -> DATA_01
+#define SECTOR_SIZE_DATA            0x800U /* 2K */
+#define SECTOR_START_ADDR_DATA_S1   0x10000800U
+
+// Mem Physical Sector -> DATA_02
+#define SECTOR_START_ADDR_DATA_S2 0x10001000U
+
+// Mem Physical Sector -> DATA_03
+#define SECTOR_START_ADDR_DATA_S3 0x10001800U
+
+// Mem Physical Sector -> DATA_04
+#define SECTOR_START_ADDR_DATA_S4 0x10002000U
+
+// Mem Physical Sector -> DATA_05
+#define SECTOR_START_ADDR_DATA_S5 0x10002800U
+
+// Mem Physical Sector -> DATA_06
+#define SECTOR_START_ADDR_DATA_S6 0x10003000U
+
+// Mem Physical Sector -> DATA_07
+#define SECTOR_START_ADDR_DATA_S7 0x10003800U
+
+// Mem Physical Sector -> DATA_08
+#define SECTOR_START_ADDR_DATA_S8 0x10004000U
+
+
+
+// Number of sectors for rotation
+#define MAX_SECTORS (8U) 
+
+const uint32 SectorTresos[MAX_SECTORS] = {
+    SECTOR_START_ADDR_DATA_S1, // Sector 0
+    SECTOR_START_ADDR_DATA_S2,
+    SECTOR_START_ADDR_DATA_S3,
+    SECTOR_START_ADDR_DATA_S4,
+    SECTOR_START_ADDR_DATA_S5,
+    SECTOR_START_ADDR_DATA_S6,
+    SECTOR_START_ADDR_DATA_S7,
+    SECTOR_START_ADDR_DATA_S8
+};
+
+//structure to be written in flash
+#pragma pack(push, 1) //removes padding
+typedef struct
+{
+    uint32_t dataId;     // Data identifier
+    uint32_t writeCount; // Deed counter
+    uint8_t data[8];     // Maximum User Data
+} FlashSector;
+#pragma pack(pop)
+
+
+#define METADATA_SIZE (sizeof(FlashSector)) 
+
+
+//sector map
+typedef struct
+{
+    uint32_t address;    // Dirección del sector
+    uint32_t writeCount; // Número de escrituras
+    bool isActive;       // Estado del sector
+} SectorInfo;
+
+
+SectorInfo  sectorMap[MAX_SECTORS];
+
+//last mem address used
+uint32      globalLastAddrs = 0;
+
+
+void EcuM_Init(void);
+static void Mem_43_INFLS_ProcessJobs(void);
+static void Example_CheckAssert(boolean Condition);
+bool WL_WriteData(uint32_t dataId, const uint8_t *data, uint32_t size);
+bool WL_ReadData(uint32_t dataId, uint8_t *data, uint32_t size);
+void WL_Maintenece(void);
+void WL_Init(void);
+static void Erase_Sector(Mem_43_INFLS_InstanceIdType MemInstanceId, uint32 *array);
+
+
+int main(void)
+{   
+    //Ready Mem Infls
+    EcuM_Init();
+
+    //Delete sectors if is necessary
+    //Erase_Sector(MemInstanceId_0, &SectorTresos);
+    
+    //Sectors ready to write or read using wearleveling
+    WL_Init();
+
+    //Check if I have reached the flash memory cycle limit.
+    WL_Maintenece();
+
+    //2. Example data
+    uint8 sensorData[8] = {0xA1, 0xB2, 0xC3, 0xD4, 0xE5, 0xF6, 0x07, 0x18};
+    uint8 readData[8];
+
+    for (uint8 i = 0; i < 8; i++)
+    {
+        // 3. Write data
+        if (WL_WriteData(MemInstanceId_0, sensorData, 8) == E_OK)
+        {
+            //4. Read last data
+            if (WL_ReadData(MemInstanceId_0, readData, 8) == E_OK)
+            {
+                 // Data retrieved successfully 
+
+                sensorData[7] = 0x17; //for debugging purposes
+            }
+        }
+    }
+
+    
+    //for debugging purposes
+    sensorData[0] =0x11;
+    sensorData[1]= 0x22;
+    sensorData[7]= 0x99;
+
+
+    if (WL_WriteData(MemInstanceId_0, sensorData, 8) == E_OK)
+    {
+        // Read last data
+        if (WL_ReadData(MemInstanceId_0, readData, 8) == E_OK)
+        {
+        }
+    }
+
+    //Check if I have reached the flash memory cycle limit.
+    WL_Maintenece();
+
+    while (1)
+    {
+    }
+    return 0;
+}
+
+//init strucMap reading data flash memory. 
+void WL_Init(void)
+{
+
+    uint8 Buffer[SECTOR_SIZE_DATA];
+    const uint8 offset = 4;
+
+    for (uint8 i = 0; i < MAX_SECTORS; i++)
+    {
+        // Initialize sector map
+        sectorMap[i].address = SectorTresos[i];
+        sectorMap[i].isActive = FALSE;
+        sectorMap[i].writeCount = 0;
+
+        // Read write counter if the sector contains data
+        Std_ReturnType RetVal;
+        uint32 writeCount;
+
+        //Reads into flash memory the count of readings recorded in the past
+        // Memory address to be read (sector base address + 4 bytes offset)
+        RetVal = Mem_43_INFLS_Read(MemInstanceId_0, sectorMap[i].address , Buffer, METADATA_SIZE);
+        Mem_43_INFLS_ProcessJobs();
+
+        // copy address bytes to array positions in writecount
+        MemCopy_optimized(&writeCount, Buffer + offset, offset);
+
+        //When the sector was recently erased
+        if (RetVal == E_OK)
+        {
+            if (writeCount != 0xFFFFFFFF)
+            {
+                sectorMap[i].writeCount = writeCount;
+                sectorMap[i].isActive = true;
+            }
+            else  //If the sector was recently completely erased “0xFF” for zero
+            {
+                sectorMap[i].writeCount = 0;
+                sectorMap[i].isActive = false;
+            }
+        }
+    }
+}
+
+//Search for the best sector, the one with the least number of deeds
+uint32 WL_FindBestSector(void)
+{
+    uint32 minWrite = 0xFFFFFFFF;
+    uint32 bestSector = 0;
+
+    for (uint8 i = 0; i < MAX_SECTORS; i++)
+    {
+        if (sectorMap[i].isActive == false)
+        {
+            return i; // Usar sector no activo primero
+        }
+
+        if (sectorMap[i].writeCount < minWrite)
+        {
+            minWrite = sectorMap[i].writeCount;
+            bestSector = i;
+        }
+    }
+    // Si todos están activos, usar el menos escrito
+    return bestSector;
+}
+
+void EcuM_Init(void)
+{
+    Mcu_Init(&Mcu_Config);
+    Mcu_InitClock(McuClockSettingConfig_0);
+    Mcu_SetMode(McuModeSettingConf_0);
+    /* Initialize Mem Internal driver */
+    Mem_43_INFLS_Init(NULL_PTR);
+}
+
+//Write in the most convenient sector
+bool WL_WriteData(uint32_t dataId, const uint8_t *data, uint32_t size)
+{
+    if (size > SECTOR_SIZE_DATA - METADATA_SIZE)
+    {
+        return E_NOT_OK; // Very large data
+    }
+
+    //1. Select the best sector
+    uint32 sectorId = WL_FindBestSector();
+    uint32 sectorAddr = sectorMap[sectorId].address;
+
+     // 2. Prepare Data Sector
+    FlashSector sec;
+    sec.dataId = dataId;
+    sec.writeCount = sectorMap[sectorId].writeCount + 1;
+    MemCopy_optimized(&sec.data, data, size);
+    
+
+    uint8 AllsizeStruct = sizeof(sec);
+
+
+    //3. Check if it has been deleted or not
+    Std_ReturnType RetVal;
+    RetVal = Mem_43_INFLS_BlankCheck(dataId, sectorAddr, SECTOR_SIZE_DATA);
+    Mem_43_INFLS_ProcessJobs();
+
+
+    // 4 . Delete sector otherwise
+    if (RetVal == E_OK)
+    {
+        Mem_43_INFLS_Erase(dataId, sectorAddr, SECTOR_SIZE_DATA);
+        Mem_43_INFLS_ProcessJobs();
+    }
+
+
+    //5. Write in designated sector
+    RetVal = Mem_43_INFLS_Write(dataId, sectorAddr, (uint8 *)&sec, AllsizeStruct);
+    Mem_43_INFLS_ProcessJobs();
+
+
+    //6. Update structure to keep changing sector and write
+    if (RetVal == E_OK)
+    {
+        sectorMap[sectorId].writeCount = sec.writeCount;
+        sectorMap[sectorId].isActive = true;
+        globalLastAddrs = sectorAddr;
+    
+    }
+
+
+    return E_OK;
+}
+
+// Read the last data written in the last designated sector
+bool WL_ReadData(uint32_t dataId, uint8_t *data, uint32_t size)
+{
+    // Search for the most recent data by ID
+    uint32 latestVersion = 0;
+    uint32 sectorAddr = 0;
+    FlashSector block;
+    const uint8 offset = 8 ;
+
+
+    //Search in all sectors
+    for (uint8 i = 0; i < MAX_SECTORS; i++)
+    {
+        if (sectorMap[i].isActive == true)
+        {
+            Mem_43_INFLS_Read(dataId, sectorMap[i].address +  offset , block.data, size);
+            Mem_43_INFLS_ProcessJobs();
+            
+            if (block.dataId == dataId && block.writeCount > latestVersion)
+            {   
+                if (globalLastAddrs == sectorMap[i].address)
+                {
+                    latestVersion = block.writeCount;
+                    sectorAddr = sectorMap[i].address;
+                }
+            }
+        }
+    }
+
+    if (sectorAddr == 0)
+    {
+        return false;
+    }
+
+
+    // read the most recent block
+    Mem_43_INFLS_Read(MemInstanceId_0, sectorAddr +  offset, block.data, size);
+    Mem_43_INFLS_ProcessJobs();
+
+
+    //Copies the data read into the designated variable
+    MemCopy_optimized(data,block.data, size );
+
+    return E_OK;
+}
+
+// Check that the control structure of the sectors does not reach its limit and in case of taking its respective action.
+void WL_Maintenece(void)
+{
+    // Verify sectors with high deed count
+    uint32_t totalWrites = 0;
+    uint32_t maxWrites = 0;
+
+
+    for (uint8 i = 0; i < MAX_SECTORS; i++)
+    {
+        if (sectorMap[i].isActive == true)
+        {
+            totalWrites += sectorMap[i].writeCount;
+            if (sectorMap[i].writeCount > maxWrites)
+            {
+                maxWrites = sectorMap[i].writeCount;
+            }
+        }
+    }
+
+
+    // Alert if any sector is close to the limit
+    if (maxWrites > 100000)
+    { 
+        // Assuming a limit of 100,000 cycles
+        // Implement notification or migration logic
+    }
+}
+
+
+static void Example_CheckAssert(boolean Condition)
+{
+    while (!Condition)
+    {
+        /* Stop here Loop forever */
+    }
+}
+
+//Here the job is processed
+static void Mem_43_INFLS_ProcessJobs(void)
+{
+    Example_CheckAssert(MEM_43_INFLS_JOB_PENDING == Mem_43_INFLS_GetJobResult(MemInstanceId_0));
+
+    /* Polling until the driver is not busy */
+    do
+    {
+        Mem_43_INFLS_MainFunction();
+    } while (MEM_43_INFLS_JOB_PENDING == Mem_43_INFLS_GetJobResult(MemInstanceId_0));
+
+    // Example_CheckAssert(MEM_43_INFLS_JOB_OK == Mem_43_INFLS_GetJobResult(MemInstanceId_0));
+}
+
+//Delete all sectors completely
+static void Erase_Sector(Mem_43_INFLS_InstanceIdType MemInstanceId, uint32 *array)
+{
+    for (uint8 i = 0; i < MAX_SECTORS; i++)
+    {
+        Mem_43_INFLS_Erase(MemInstanceId, array[i], SECTOR_SIZE_DATA);
+        Mem_43_INFLS_ProcessJobs();
+
+        Mem_43_INFLS_BlankCheck(MemInstanceId, array[i], SECTOR_SIZE_DATA);
+        Mem_43_INFLS_ProcessJobs();
+    }
+}

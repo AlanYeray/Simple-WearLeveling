@@ -1,0 +1,844 @@
+hwAcc_Lmem_CleanByAddr (const uint8 BusType, const boolean enInvalidate, const uint32 addr, const uint32 length)
+{
+  Std_ReturnType retStatus;
+  Std_ReturnType locStatus;
+  Std_ReturnType D.5645;
+  int _1;
+  Std_ReturnType _14;
+
+  <bb 2> :
+  retStatus_5 = 0;
+  _1 = (int) BusType_6(D);
+  switch (_1) <default: <L5> [INV], case 0: <L0> [INV], case 1: <L3> [INV], case 2: <L4> [INV]>
+
+  <bb 3> :
+<L0>:
+  locStatus_12 = hwAcc_Lmem_ProcessorCodeCleanByAddr (enInvalidate_8(D), addr_9(D), length_10(D));
+  if (locStatus_12 == 1)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  retStatus_13 = 1;
+
+  <bb 5> :
+  # retStatus_2 = PHI <retStatus_5(3), retStatus_13(4)>
+  goto <bb 9>; [INV]
+
+  <bb 6> :
+<L3>:
+  goto <bb 9>; [INV]
+
+  <bb 7> :
+<L4>:
+  goto <bb 9>; [INV]
+
+  <bb 8> :
+<L5>:
+
+  <bb 9> :
+  # retStatus_3 = PHI <retStatus_2(5), retStatus_5(6), retStatus_5(7), retStatus_5(8)>
+  _14 = retStatus_3;
+
+  <bb 10> :
+<L7>:
+  return _14;
+
+}
+
+
+hwAcc_Lmem_InvalidateByAddr (const uint8 BusType, const uint32 addr, const uint32 length)
+{
+  Std_ReturnType retStatus;
+  Std_ReturnType locStatus;
+  Std_ReturnType D.5641;
+  int _1;
+  Std_ReturnType _13;
+
+  <bb 2> :
+  retStatus_5 = 0;
+  _1 = (int) BusType_6(D);
+  switch (_1) <default: <L5> [INV], case 0: <L0> [INV], case 1: <L3> [INV], case 2: <L4> [INV]>
+
+  <bb 3> :
+<L0>:
+  locStatus_11 = hwAcc_Lmem_ProcessorCodeInvalidateByAddr (addr_8(D), length_9(D));
+  if (locStatus_11 == 1)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  retStatus_12 = 1;
+
+  <bb 5> :
+  # retStatus_2 = PHI <retStatus_5(3), retStatus_12(4)>
+  goto <bb 9>; [INV]
+
+  <bb 6> :
+<L3>:
+  goto <bb 9>; [INV]
+
+  <bb 7> :
+<L4>:
+  goto <bb 9>; [INV]
+
+  <bb 8> :
+<L5>:
+
+  <bb 9> :
+  # retStatus_3 = PHI <retStatus_2(5), retStatus_5(6), retStatus_5(7), retStatus_5(8)>
+  _13 = retStatus_3;
+
+  <bb 10> :
+<L7>:
+  return _13;
+
+}
+
+
+hwAcc_Lmem_Clean (const uint8 BusType, const boolean enInvalidate)
+{
+  Std_ReturnType retStatus;
+  Std_ReturnType locStatus;
+  Std_ReturnType D.5637;
+  int _1;
+  Std_ReturnType _12;
+
+  <bb 2> :
+  retStatus_5 = 0;
+  _1 = (int) BusType_6(D);
+  switch (_1) <default: <L5> [INV], case 0: <L0> [INV], case 1: <L3> [INV], case 2: <L4> [INV]>
+
+  <bb 3> :
+<L0>:
+  locStatus_10 = hwAcc_Lmem_ProcessorCodeClean (enInvalidate_8(D));
+  if (locStatus_10 == 1)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  retStatus_11 = 1;
+
+  <bb 5> :
+  # retStatus_2 = PHI <retStatus_5(3), retStatus_11(4)>
+  goto <bb 9>; [INV]
+
+  <bb 6> :
+<L3>:
+  goto <bb 9>; [INV]
+
+  <bb 7> :
+<L4>:
+  goto <bb 9>; [INV]
+
+  <bb 8> :
+<L5>:
+
+  <bb 9> :
+  # retStatus_3 = PHI <retStatus_2(5), retStatus_5(6), retStatus_5(7), retStatus_5(8)>
+  _12 = retStatus_3;
+
+  <bb 10> :
+<L7>:
+  return _12;
+
+}
+
+
+hwAcc_Lmem_Invalidate (const uint8 BusType)
+{
+  Std_ReturnType retStatus;
+  Std_ReturnType locStatus;
+  Std_ReturnType D.5633;
+  int _1;
+  Std_ReturnType _11;
+
+  <bb 2> :
+  retStatus_5 = 0;
+  _1 = (int) BusType_6(D);
+  switch (_1) <default: <L5> [INV], case 0: <L0> [INV], case 1: <L3> [INV], case 2: <L4> [INV]>
+
+  <bb 3> :
+<L0>:
+  locStatus_9 = hwAcc_Lmem_ProcessorCodeInvalidate ();
+  if (locStatus_9 == 1)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  retStatus_10 = 1;
+
+  <bb 5> :
+  # retStatus_2 = PHI <retStatus_5(3), retStatus_10(4)>
+  goto <bb 9>; [INV]
+
+  <bb 6> :
+<L3>:
+  goto <bb 9>; [INV]
+
+  <bb 7> :
+<L4>:
+  goto <bb 9>; [INV]
+
+  <bb 8> :
+<L5>:
+
+  <bb 9> :
+  # retStatus_3 = PHI <retStatus_2(5), retStatus_5(6), retStatus_5(7), retStatus_5(8)>
+  _11 = retStatus_3;
+
+  <bb 10> :
+<L7>:
+  return _11;
+
+}
+
+
+hwAcc_Lmem_Disable (const uint8 BusType)
+{
+  Std_ReturnType retStatus;
+  Std_ReturnType locStatus;
+  Std_ReturnType D.5629;
+  int _1;
+  Std_ReturnType _11;
+
+  <bb 2> :
+  retStatus_5 = 0;
+  _1 = (int) BusType_6(D);
+  switch (_1) <default: <L5> [INV], case 0: <L0> [INV], case 1: <L3> [INV], case 2: <L4> [INV]>
+
+  <bb 3> :
+<L0>:
+  locStatus_9 = hwAcc_Lmem_ProcessorCodeDisable ();
+  if (locStatus_9 == 1)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  retStatus_10 = 1;
+
+  <bb 5> :
+  # retStatus_2 = PHI <retStatus_5(3), retStatus_10(4)>
+  goto <bb 9>; [INV]
+
+  <bb 6> :
+<L3>:
+  goto <bb 9>; [INV]
+
+  <bb 7> :
+<L4>:
+  goto <bb 9>; [INV]
+
+  <bb 8> :
+<L5>:
+
+  <bb 9> :
+  # retStatus_3 = PHI <retStatus_2(5), retStatus_5(6), retStatus_5(7), retStatus_5(8)>
+  _11 = retStatus_3;
+
+  <bb 10> :
+<L7>:
+  return _11;
+
+}
+
+
+hwAcc_Lmem_Enable (const uint8 BusType)
+{
+  Std_ReturnType retStatus;
+  Std_ReturnType locStatus;
+  Std_ReturnType D.5625;
+  int _1;
+  Std_ReturnType _11;
+
+  <bb 2> :
+  retStatus_5 = 0;
+  _1 = (int) BusType_6(D);
+  switch (_1) <default: <L5> [INV], case 0: <L0> [INV], case 1: <L3> [INV], case 2: <L4> [INV]>
+
+  <bb 3> :
+<L0>:
+  locStatus_9 = hwAcc_Lmem_ProcessorCodeEnable ();
+  if (locStatus_9 == 1)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  retStatus_10 = 1;
+
+  <bb 5> :
+  # retStatus_2 = PHI <retStatus_5(3), retStatus_10(4)>
+  goto <bb 9>; [INV]
+
+  <bb 6> :
+<L3>:
+  goto <bb 9>; [INV]
+
+  <bb 7> :
+<L4>:
+  goto <bb 9>; [INV]
+
+  <bb 8> :
+<L5>:
+
+  <bb 9> :
+  # retStatus_3 = PHI <retStatus_2(5), retStatus_5(6), retStatus_5(7), retStatus_5(8)>
+  _11 = retStatus_3;
+
+  <bb 10> :
+<L7>:
+  return _11;
+
+}
+
+
+hwAcc_Lmem_ProcessorCodeCleanByAddr (const boolean enInvalidate, const uint32 addr, const uint32 length)
+{
+  uint32 locEndAddr;
+  uint32 locStartAddr;
+  Std_ReturnType locStatus;
+  Std_ReturnType D.5621;
+  struct LMEM_Type * _1;
+  struct LMEM_Type * _2;
+  struct LMEM_Type * _3;
+  Std_ReturnType _23;
+
+  <bb 2> :
+  locStatus_9 = 0;
+  locStartAddr_11 = addr_10(D) & 4294967280;
+  locEndAddr_13 = addr_10(D) + length_12(D);
+  if (enInvalidate_14(D) != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  _1 = 3758628864B;
+  locStatus_19 = hwAcc_Lmem_ProcessorCodeLineControlReg (_1, 117506048, 0);
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  _2 = 3758628864B;
+  locStatus_17 = hwAcc_Lmem_ProcessorCodeLineControlReg (_2, 100728832, 0);
+
+  <bb 5> :
+  # locStatus_4 = PHI <locStatus_19(3), locStatus_17(4)>
+  goto <bb 7>; [INV]
+
+  <bb 6> :
+  _3 = 3758628864B;
+  locStatus_21 = hwAcc_Lmem_ProcessorCodeAddressReg (_3, locStartAddr_6, 1);
+  locStartAddr_22 = locStartAddr_6 + 16;
+
+  <bb 7> :
+  # locStatus_5 = PHI <locStatus_4(5), locStatus_21(6)>
+  # locStartAddr_6 = PHI <locStartAddr_11(5), locStartAddr_22(6)>
+  if (locStartAddr_6 < locEndAddr_13)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 8> :
+  if (locStatus_5 == 0)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 9> :
+  _23 = locStatus_5;
+
+  <bb 10> :
+<L7>:
+  return _23;
+
+}
+
+
+hwAcc_Lmem_ProcessorCodeInvalidateByAddr (const uint32 addr, const uint32 length)
+{
+  uint32 locEndAddr;
+  uint32 locStartAddr;
+  Std_ReturnType locStatus;
+  Std_ReturnType D.5597;
+  struct LMEM_Type * _1;
+  struct LMEM_Type * _2;
+  Std_ReturnType _17;
+
+  <bb 2> :
+  locStatus_6 = 0;
+  locStartAddr_8 = addr_7(D) & 4294967280;
+  locEndAddr_10 = addr_7(D) + length_9(D);
+  _1 = 3758628864B;
+  locStatus_13 = hwAcc_Lmem_ProcessorCodeLineControlReg (_1, 83951616, 0);
+  goto <bb 4>; [INV]
+
+  <bb 3> :
+  _2 = 3758628864B;
+  locStatus_15 = hwAcc_Lmem_ProcessorCodeAddressReg (_2, locStartAddr_4, 1);
+  locStartAddr_16 = locStartAddr_4 + 16;
+
+  <bb 4> :
+  # locStatus_3 = PHI <locStatus_13(2), locStatus_15(3)>
+  # locStartAddr_4 = PHI <locStartAddr_8(2), locStartAddr_16(3)>
+  if (locStartAddr_4 < locEndAddr_10)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  if (locStatus_3 == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 6> :
+  _17 = locStatus_3;
+
+  <bb 7> :
+<L4>:
+  return _17;
+
+}
+
+
+hwAcc_Lmem_ProcessorCodeClean (const boolean enInvalidate)
+{
+  Std_ReturnType locStatus;
+  Std_ReturnType D.5594;
+  _Bool _1;
+  struct LMEM_Type * _2;
+  struct LMEM_Type * _3;
+  Std_ReturnType _13;
+
+  <bb 2> :
+  locStatus_6 = 0;
+  _1 = ~enInvalidate_7(D);
+  if (_1 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  _2 = 3758628864B;
+  locStatus_12 = hwAcc_Lmem_ProcessorCodeControlReg (_2, 167772160, 2147483648);
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  _3 = 3758628864B;
+  locStatus_10 = hwAcc_Lmem_ProcessorCodeControlReg (_3, 251658240, 2147483648);
+
+  <bb 5> :
+  # locStatus_4 = PHI <locStatus_12(3), locStatus_10(4)>
+  _13 = locStatus_4;
+
+  <bb 6> :
+<L3>:
+  return _13;
+
+}
+
+
+hwAcc_Lmem_ProcessorCodeInvalidate ()
+{
+  Std_ReturnType locStatus;
+  Std_ReturnType D.5580;
+  struct LMEM_Type * _1;
+  Std_ReturnType _6;
+
+  <bb 2> :
+  locStatus_2 = 0;
+  _1 = 3758628864B;
+  locStatus_5 = hwAcc_Lmem_ProcessorCodeControlReg (_1, 83886080, 2147483648);
+  _6 = locStatus_5;
+
+  <bb 3> :
+<L0>:
+  return _6;
+
+}
+
+
+hwAcc_Lmem_ProcessorCodeDisable ()
+{
+  uint32 locReg;
+  uint32 locElapsedTicks;
+  uint32 locCurrentTicks;
+  uint32 locTimeoutTicks;
+  Std_ReturnType locStatus;
+  Std_ReturnType D.5577;
+  long unsigned int D.5573;
+  long unsigned int _1;
+  struct LMEM_Type * _2;
+  struct LMEM_Type * _3;
+  struct LMEM_Type * _4;
+  long unsigned int _5;
+  long unsigned int _6;
+  long unsigned int _21;
+  Std_ReturnType _24;
+
+  <bb 2> :
+  locStatus_10 = 0;
+  locTimeoutTicks_13 = OsIf_MicrosToTicks (0, 0);
+  _1 = OsIf_GetCounter (0);
+  locCurrentTicks = _1;
+  locElapsedTicks_16 = 0;
+  _2 = 3758628864B;
+  locReg_17 ={v} _2->PCCCR;
+  locReg_18 = locReg_17 & 4294967294;
+  _3 = 3758628864B;
+  _3->PCCCR ={v} locReg_18;
+  goto <bb 4>; [INV]
+
+  <bb 3> :
+  _21 = OsIf_GetElapsed (&locCurrentTicks, 0);
+  locElapsedTicks_22 = _21 + locElapsedTicks_8;
+
+  <bb 4> :
+  # locElapsedTicks_8 = PHI <locElapsedTicks_16(2), locElapsedTicks_22(3)>
+  _4 = 3758628864B;
+  _5 ={v} _4->PCCCR;
+  _6 = _5 & 1;
+  if (_6 == 1)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  if (locElapsedTicks_8 < locTimeoutTicks_13)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 6> :
+  if (locElapsedTicks_8 >= locTimeoutTicks_13)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 7> :
+  locStatus_23 = 1;
+
+  <bb 8> :
+  # locStatus_7 = PHI <locStatus_10(6), locStatus_23(7)>
+  _24 = locStatus_7;
+  locCurrentTicks ={v} {CLOBBER};
+
+  <bb 9> :
+<L7>:
+  return _24;
+
+}
+
+
+hwAcc_Lmem_ProcessorCodeEnable ()
+{
+  uint32 locReg;
+  uint32 locElapsedTicks;
+  uint32 locCurrentTicks;
+  uint32 locTimeoutTicks;
+  Std_ReturnType locStatus;
+  Std_ReturnType D.5570;
+  long unsigned int D.5566;
+  long unsigned int _1;
+  struct LMEM_Type * _2;
+  struct LMEM_Type * _3;
+  struct LMEM_Type * _4;
+  long unsigned int _5;
+  long unsigned int _6;
+  long unsigned int _21;
+  Std_ReturnType _24;
+
+  <bb 2> :
+  locStatus_10 = 0;
+  locTimeoutTicks_13 = OsIf_MicrosToTicks (0, 0);
+  _1 = OsIf_GetCounter (0);
+  locCurrentTicks = _1;
+  locElapsedTicks_16 = 0;
+  _2 = 3758628864B;
+  locReg_17 ={v} _2->PCCCR;
+  locReg_18 = locReg_17 | 1;
+  _3 = 3758628864B;
+  _3->PCCCR ={v} locReg_18;
+  goto <bb 4>; [INV]
+
+  <bb 3> :
+  _21 = OsIf_GetElapsed (&locCurrentTicks, 0);
+  locElapsedTicks_22 = _21 + locElapsedTicks_8;
+
+  <bb 4> :
+  # locElapsedTicks_8 = PHI <locElapsedTicks_16(2), locElapsedTicks_22(3)>
+  _4 = 3758628864B;
+  _5 ={v} _4->PCCCR;
+  _6 = _5 & 1;
+  if (_6 != 1)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  if (locElapsedTicks_8 < locTimeoutTicks_13)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 6> :
+  if (locElapsedTicks_8 >= locTimeoutTicks_13)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 7> :
+  locStatus_23 = 1;
+
+  <bb 8> :
+  # locStatus_7 = PHI <locStatus_10(6), locStatus_23(7)>
+  _24 = locStatus_7;
+  locCurrentTicks ={v} {CLOBBER};
+
+  <bb 9> :
+<L7>:
+  return _24;
+
+}
+
+
+__attribute__((always_inline))
+hwAcc_Lmem_ProcessorCodeAddressReg (struct LMEM_Type * pInst, uint32 Address, uint32 GoMask)
+{
+  uint32 locReg;
+  uint32 locElapsedTicks;
+  uint32 locCurrentTicks;
+  uint32 locTimeoutTicks;
+  Std_ReturnType locStatus;
+  Std_ReturnType D.5614;
+  long unsigned int D.5610;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _5;
+  long unsigned int _25;
+  Std_ReturnType _28;
+
+  <bb 2> :
+  locStatus_10 = 0;
+  locTimeoutTicks_13 = OsIf_MicrosToTicks (0, 0);
+  _1 = OsIf_GetCounter (0);
+  locCurrentTicks = _1;
+  locElapsedTicks_16 = 0;
+  locReg_18 ={v} pInst_17(D)->PCCSAR;
+  locReg_19 = locReg_18 & 3;
+  _2 = Address_20(D) & 4294967292;
+  _3 = GoMask_21(D) | _2;
+  locReg_22 = locReg_19 | _3;
+  pInst_17(D)->PCCSAR ={v} locReg_22;
+  if (GoMask_21(D) != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 3> :
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  _25 = OsIf_GetElapsed (&locCurrentTicks, 0);
+  locElapsedTicks_26 = _25 + locElapsedTicks_7;
+
+  <bb 5> :
+  # locElapsedTicks_7 = PHI <locElapsedTicks_16(3), locElapsedTicks_26(4)>
+  _4 ={v} pInst_17(D)->PCCSAR;
+  _5 = GoMask_21(D) & _4;
+  if (GoMask_21(D) == _5)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 6> :
+  if (locElapsedTicks_7 < locTimeoutTicks_13)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 7> :
+  if (locElapsedTicks_7 >= locTimeoutTicks_13)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 8> :
+  locStatus_27 = 1;
+
+  <bb 9> :
+  # locStatus_6 = PHI <locStatus_10(2), locStatus_10(7), locStatus_27(8)>
+  _28 = locStatus_6;
+  locCurrentTicks ={v} {CLOBBER};
+
+  <bb 10> :
+<L9>:
+  return _28;
+
+}
+
+
+__attribute__((always_inline))
+hwAcc_Lmem_ProcessorCodeLineControlReg (struct LMEM_Type * pInst, uint32 LineControlMask, uint32 GoMask)
+{
+  uint32 locReg;
+  uint32 locElapsedTicks;
+  uint32 locCurrentTicks;
+  uint32 locTimeoutTicks;
+  Std_ReturnType locStatus;
+  Std_ReturnType D.5605;
+  long unsigned int D.5601;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _5;
+  long unsigned int _6;
+  long unsigned int _26;
+  Std_ReturnType _29;
+
+  <bb 2> :
+  locStatus_11 = 0;
+  locTimeoutTicks_14 = OsIf_MicrosToTicks (0, 0);
+  _1 = OsIf_GetCounter (0);
+  locCurrentTicks = _1;
+  locElapsedTicks_17 = 0;
+  locReg_19 ={v} pInst_18(D)->PCCLCR;
+  _2 = LineControlMask_20(D) | 50331648;
+  _3 = ~_2;
+  locReg_21 = locReg_19 & _3;
+  _4 = LineControlMask_20(D) | GoMask_22(D);
+  locReg_23 = locReg_21 | _4;
+  pInst_18(D)->PCCLCR ={v} locReg_23;
+  if (GoMask_22(D) != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 3> :
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  _26 = OsIf_GetElapsed (&locCurrentTicks, 0);
+  locElapsedTicks_27 = _26 + locElapsedTicks_8;
+
+  <bb 5> :
+  # locElapsedTicks_8 = PHI <locElapsedTicks_17(3), locElapsedTicks_27(4)>
+  _5 ={v} pInst_18(D)->PCCLCR;
+  _6 = GoMask_22(D) & _5;
+  if (GoMask_22(D) == _6)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 6> :
+  if (locElapsedTicks_8 < locTimeoutTicks_14)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 7> :
+  if (locElapsedTicks_8 >= locTimeoutTicks_14)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 8> :
+  locStatus_28 = 1;
+
+  <bb 9> :
+  # locStatus_7 = PHI <locStatus_11(2), locStatus_11(7), locStatus_28(8)>
+  _29 = locStatus_7;
+  locCurrentTicks ={v} {CLOBBER};
+
+  <bb 10> :
+<L9>:
+  return _29;
+
+}
+
+
+__attribute__((always_inline))
+hwAcc_Lmem_ProcessorCodeControlReg (struct LMEM_Type * pInst, uint32 ControlMask, uint32 GoMask)
+{
+  uint32 locReg;
+  uint32 locElapsedTicks;
+  uint32 locCurrentTicks;
+  uint32 locTimeoutTicks;
+  Std_ReturnType locStatus;
+  Std_ReturnType D.5588;
+  long unsigned int D.5584;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _24;
+  Std_ReturnType _27;
+
+  <bb 2> :
+  locStatus_9 = 0;
+  locTimeoutTicks_12 = OsIf_MicrosToTicks (0, 0);
+  _1 = OsIf_GetCounter (0);
+  locCurrentTicks = _1;
+  locElapsedTicks_15 = 0;
+  locReg_17 ={v} pInst_16(D)->PCCCR;
+  locReg_18 = locReg_17 & 4043309055;
+  _2 = ControlMask_19(D) | GoMask_20(D);
+  locReg_21 = locReg_18 | _2;
+  pInst_16(D)->PCCCR ={v} locReg_21;
+  if (GoMask_20(D) != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 3> :
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  _24 = OsIf_GetElapsed (&locCurrentTicks, 0);
+  locElapsedTicks_25 = _24 + locElapsedTicks_6;
+
+  <bb 5> :
+  # locElapsedTicks_6 = PHI <locElapsedTicks_15(3), locElapsedTicks_25(4)>
+  _3 ={v} pInst_16(D)->PCCCR;
+  _4 = GoMask_20(D) & _3;
+  if (GoMask_20(D) == _4)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 6> :
+  if (locElapsedTicks_6 < locTimeoutTicks_12)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 7> :
+  if (locElapsedTicks_6 >= locTimeoutTicks_12)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 8> :
+  locStatus_26 = 1;
+
+  <bb 9> :
+  # locStatus_5 = PHI <locStatus_9(2), locStatus_9(7), locStatus_26(8)>
+  _27 = locStatus_5;
+  locCurrentTicks ={v} {CLOBBER};
+
+  <bb 10> :
+<L9>:
+  return _27;
+
+}
+
+

@@ -1,0 +1,10 @@
+main.c:89:5:main	32	static
+main.c:147:6:WL_Init	2064	static
+main.c:190:8:WL_FindBestSector	16	static
+main.c:212:6:EcuM_Init	8	static
+main.c:222:6:WL_WriteData	56	static
+main.c:276:6:WL_ReadData	56	static
+main.c:322:6:WL_Maintenece	16	static
+main.c:351:13:Example_CheckAssert	8	static
+main.c:360:13:Mem_43_INFLS_ProcessJobs	8	static
+main.c:374:13:Erase_Sector	24	static

@@ -1,0 +1,2417 @@
+Trivially needed symbols: SchM_Exit_Uart_UART_EXCLUSIVE_AREA_11/48 SchM_Enter_Uart_UART_EXCLUSIVE_AREA_11/47 SchM_Exit_Uart_UART_EXCLUSIVE_AREA_10/46 SchM_Enter_Uart_UART_EXCLUSIVE_AREA_10/45 SchM_Exit_Uart_UART_EXCLUSIVE_AREA_09/44 SchM_Enter_Uart_UART_EXCLUSIVE_AREA_09/43 SchM_Exit_Uart_UART_EXCLUSIVE_AREA_08/42 SchM_Enter_Uart_UART_EXCLUSIVE_AREA_08/41 SchM_Exit_Uart_UART_EXCLUSIVE_AREA_07/40 SchM_Enter_Uart_UART_EXCLUSIVE_AREA_07/39 SchM_Exit_Uart_UART_EXCLUSIVE_AREA_06/38 SchM_Enter_Uart_UART_EXCLUSIVE_AREA_06/37 SchM_Exit_Uart_UART_EXCLUSIVE_AREA_05/36 SchM_Enter_Uart_UART_EXCLUSIVE_AREA_05/35 SchM_Exit_Uart_UART_EXCLUSIVE_AREA_04/34 SchM_Enter_Uart_UART_EXCLUSIVE_AREA_04/33 SchM_Exit_Uart_UART_EXCLUSIVE_AREA_03/32 SchM_Enter_Uart_UART_EXCLUSIVE_AREA_03/31 SchM_Exit_Uart_UART_EXCLUSIVE_AREA_02/30 SchM_Enter_Uart_UART_EXCLUSIVE_AREA_02/29 SchM_Exit_Uart_UART_EXCLUSIVE_AREA_01/28 SchM_Enter_Uart_UART_EXCLUSIVE_AREA_01/27 SchM_Exit_Uart_UART_EXCLUSIVE_AREA_00/26 SchM_Enter_Uart_UART_EXCLUSIVE_AREA_00/25 Uart_schm_read_msr/24 reentry_guard_UART_EXCLUSIVE_AREA_11/23 msr_UART_EXCLUSIVE_AREA_11/22 reentry_guard_UART_EXCLUSIVE_AREA_10/21 msr_UART_EXCLUSIVE_AREA_10/20 reentry_guard_UART_EXCLUSIVE_AREA_09/19 msr_UART_EXCLUSIVE_AREA_09/18 reentry_guard_UART_EXCLUSIVE_AREA_08/17 msr_UART_EXCLUSIVE_AREA_08/16 reentry_guard_UART_EXCLUSIVE_AREA_07/15 msr_UART_EXCLUSIVE_AREA_07/14 reentry_guard_UART_EXCLUSIVE_AREA_06/13 msr_UART_EXCLUSIVE_AREA_06/12 reentry_guard_UART_EXCLUSIVE_AREA_05/11 msr_UART_EXCLUSIVE_AREA_05/10 reentry_guard_UART_EXCLUSIVE_AREA_04/9 msr_UART_EXCLUSIVE_AREA_04/8 reentry_guard_UART_EXCLUSIVE_AREA_03/7 msr_UART_EXCLUSIVE_AREA_03/6 reentry_guard_UART_EXCLUSIVE_AREA_02/5 msr_UART_EXCLUSIVE_AREA_02/4 reentry_guard_UART_EXCLUSIVE_AREA_01/3 msr_UART_EXCLUSIVE_AREA_01/2 reentry_guard_UART_EXCLUSIVE_AREA_00/1 msr_UART_EXCLUSIVE_AREA_00/0
+
+
+Initial Symbol table:
+
+Sys_GetCoreID/49 (Sys_GetCoreID) @06b3db60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: SchM_Exit_Uart_UART_EXCLUSIVE_AREA_11/48 SchM_Enter_Uart_UART_EXCLUSIVE_AREA_11/47 SchM_Exit_Uart_UART_EXCLUSIVE_AREA_10/46 SchM_Enter_Uart_UART_EXCLUSIVE_AREA_10/45 SchM_Exit_Uart_UART_EXCLUSIVE_AREA_09/44 SchM_Enter_Uart_UART_EXCLUSIVE_AREA_09/43 SchM_Exit_Uart_UART_EXCLUSIVE_AREA_08/42 SchM_Enter_Uart_UART_EXCLUSIVE_AREA_08/41 SchM_Exit_Uart_UART_EXCLUSIVE_AREA_07/40 SchM_Enter_Uart_UART_EXCLUSIVE_AREA_07/39 SchM_Exit_Uart_UART_EXCLUSIVE_AREA_06/38 SchM_Enter_Uart_UART_EXCLUSIVE_AREA_06/37 SchM_Exit_Uart_UART_EXCLUSIVE_AREA_05/36 SchM_Enter_Uart_UART_EXCLUSIVE_AREA_05/35 SchM_Exit_Uart_UART_EXCLUSIVE_AREA_04/34 SchM_Enter_Uart_UART_EXCLUSIVE_AREA_04/33 SchM_Exit_Uart_UART_EXCLUSIVE_AREA_03/32 SchM_Enter_Uart_UART_EXCLUSIVE_AREA_03/31 SchM_Exit_Uart_UART_EXCLUSIVE_AREA_02/30 SchM_Enter_Uart_UART_EXCLUSIVE_AREA_02/29 SchM_Exit_Uart_UART_EXCLUSIVE_AREA_01/28 SchM_Enter_Uart_UART_EXCLUSIVE_AREA_01/27 SchM_Exit_Uart_UART_EXCLUSIVE_AREA_00/26 SchM_Enter_Uart_UART_EXCLUSIVE_AREA_00/25 
+  Calls: 
+SchM_Exit_Uart_UART_EXCLUSIVE_AREA_11/48 (SchM_Exit_Uart_UART_EXCLUSIVE_AREA_11) @06b3d620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @01981040
+  References: reentry_guard_UART_EXCLUSIVE_AREA_11/23 (read) reentry_guard_UART_EXCLUSIVE_AREA_11/23 (write) msr_UART_EXCLUSIVE_AREA_11/22 (read) reentry_guard_UART_EXCLUSIVE_AREA_11/23 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Sys_GetCoreID/49 
+SchM_Enter_Uart_UART_EXCLUSIVE_AREA_11/47 (SchM_Enter_Uart_UART_EXCLUSIVE_AREA_11) @06b3d380
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06b3d620
+  References: reentry_guard_UART_EXCLUSIVE_AREA_11/23 (read) msr_UART_EXCLUSIVE_AREA_11/22 (write) reentry_guard_UART_EXCLUSIVE_AREA_11/23 (read) reentry_guard_UART_EXCLUSIVE_AREA_11/23 (write) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Uart_schm_read_msr/24 Sys_GetCoreID/49 
+SchM_Exit_Uart_UART_EXCLUSIVE_AREA_10/46 (SchM_Exit_Uart_UART_EXCLUSIVE_AREA_10) @06b3d000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06b3d380
+  References: reentry_guard_UART_EXCLUSIVE_AREA_10/21 (read) reentry_guard_UART_EXCLUSIVE_AREA_10/21 (write) msr_UART_EXCLUSIVE_AREA_10/20 (read) reentry_guard_UART_EXCLUSIVE_AREA_10/21 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Sys_GetCoreID/49 
+SchM_Enter_Uart_UART_EXCLUSIVE_AREA_10/45 (SchM_Enter_Uart_UART_EXCLUSIVE_AREA_10) @06b38a80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06b3d000
+  References: reentry_guard_UART_EXCLUSIVE_AREA_10/21 (read) msr_UART_EXCLUSIVE_AREA_10/20 (write) reentry_guard_UART_EXCLUSIVE_AREA_10/21 (read) reentry_guard_UART_EXCLUSIVE_AREA_10/21 (write) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Uart_schm_read_msr/24 Sys_GetCoreID/49 
+SchM_Exit_Uart_UART_EXCLUSIVE_AREA_09/44 (SchM_Exit_Uart_UART_EXCLUSIVE_AREA_09) @06b381c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06b38a80
+  References: reentry_guard_UART_EXCLUSIVE_AREA_09/19 (read) reentry_guard_UART_EXCLUSIVE_AREA_09/19 (write) msr_UART_EXCLUSIVE_AREA_09/18 (read) reentry_guard_UART_EXCLUSIVE_AREA_09/19 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Sys_GetCoreID/49 
+SchM_Enter_Uart_UART_EXCLUSIVE_AREA_09/43 (SchM_Enter_Uart_UART_EXCLUSIVE_AREA_09) @06b38d20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06b381c0
+  References: reentry_guard_UART_EXCLUSIVE_AREA_09/19 (read) msr_UART_EXCLUSIVE_AREA_09/18 (write) reentry_guard_UART_EXCLUSIVE_AREA_09/19 (read) reentry_guard_UART_EXCLUSIVE_AREA_09/19 (write) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Uart_schm_read_msr/24 Sys_GetCoreID/49 
+SchM_Exit_Uart_UART_EXCLUSIVE_AREA_08/42 (SchM_Exit_Uart_UART_EXCLUSIVE_AREA_08) @06b389a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06b38d20
+  References: reentry_guard_UART_EXCLUSIVE_AREA_08/17 (read) reentry_guard_UART_EXCLUSIVE_AREA_08/17 (write) msr_UART_EXCLUSIVE_AREA_08/16 (read) reentry_guard_UART_EXCLUSIVE_AREA_08/17 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Sys_GetCoreID/49 
+SchM_Enter_Uart_UART_EXCLUSIVE_AREA_08/41 (SchM_Enter_Uart_UART_EXCLUSIVE_AREA_08) @06b38700
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06b389a0
+  References: reentry_guard_UART_EXCLUSIVE_AREA_08/17 (read) msr_UART_EXCLUSIVE_AREA_08/16 (write) reentry_guard_UART_EXCLUSIVE_AREA_08/17 (read) reentry_guard_UART_EXCLUSIVE_AREA_08/17 (write) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Uart_schm_read_msr/24 Sys_GetCoreID/49 
+SchM_Exit_Uart_UART_EXCLUSIVE_AREA_07/40 (SchM_Exit_Uart_UART_EXCLUSIVE_AREA_07) @06b38380
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06b38700
+  References: reentry_guard_UART_EXCLUSIVE_AREA_07/15 (read) reentry_guard_UART_EXCLUSIVE_AREA_07/15 (write) msr_UART_EXCLUSIVE_AREA_07/14 (read) reentry_guard_UART_EXCLUSIVE_AREA_07/15 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Sys_GetCoreID/49 
+SchM_Enter_Uart_UART_EXCLUSIVE_AREA_07/39 (SchM_Enter_Uart_UART_EXCLUSIVE_AREA_07) @06b380e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06b38380
+  References: reentry_guard_UART_EXCLUSIVE_AREA_07/15 (read) msr_UART_EXCLUSIVE_AREA_07/14 (write) reentry_guard_UART_EXCLUSIVE_AREA_07/15 (read) reentry_guard_UART_EXCLUSIVE_AREA_07/15 (write) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Uart_schm_read_msr/24 Sys_GetCoreID/49 
+SchM_Exit_Uart_UART_EXCLUSIVE_AREA_06/38 (SchM_Exit_Uart_UART_EXCLUSIVE_AREA_06) @06b31c40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06b380e0
+  References: reentry_guard_UART_EXCLUSIVE_AREA_06/13 (read) reentry_guard_UART_EXCLUSIVE_AREA_06/13 (write) msr_UART_EXCLUSIVE_AREA_06/12 (read) reentry_guard_UART_EXCLUSIVE_AREA_06/13 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Sys_GetCoreID/49 
+SchM_Enter_Uart_UART_EXCLUSIVE_AREA_06/37 (SchM_Enter_Uart_UART_EXCLUSIVE_AREA_06) @06b31620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06b31c40
+  References: reentry_guard_UART_EXCLUSIVE_AREA_06/13 (read) msr_UART_EXCLUSIVE_AREA_06/12 (write) reentry_guard_UART_EXCLUSIVE_AREA_06/13 (read) reentry_guard_UART_EXCLUSIVE_AREA_06/13 (write) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Uart_schm_read_msr/24 Sys_GetCoreID/49 
+SchM_Exit_Uart_UART_EXCLUSIVE_AREA_05/36 (SchM_Exit_Uart_UART_EXCLUSIVE_AREA_05) @06b31e00
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06b31620
+  References: reentry_guard_UART_EXCLUSIVE_AREA_05/11 (read) reentry_guard_UART_EXCLUSIVE_AREA_05/11 (write) msr_UART_EXCLUSIVE_AREA_05/10 (read) reentry_guard_UART_EXCLUSIVE_AREA_05/11 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Sys_GetCoreID/49 
+SchM_Enter_Uart_UART_EXCLUSIVE_AREA_05/35 (SchM_Enter_Uart_UART_EXCLUSIVE_AREA_05) @06b31b60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06b31e00
+  References: reentry_guard_UART_EXCLUSIVE_AREA_05/11 (read) msr_UART_EXCLUSIVE_AREA_05/10 (write) reentry_guard_UART_EXCLUSIVE_AREA_05/11 (read) reentry_guard_UART_EXCLUSIVE_AREA_05/11 (write) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Uart_schm_read_msr/24 Sys_GetCoreID/49 
+SchM_Exit_Uart_UART_EXCLUSIVE_AREA_04/34 (SchM_Exit_Uart_UART_EXCLUSIVE_AREA_04) @06b317e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06b31b60
+  References: reentry_guard_UART_EXCLUSIVE_AREA_04/9 (read) reentry_guard_UART_EXCLUSIVE_AREA_04/9 (write) msr_UART_EXCLUSIVE_AREA_04/8 (read) reentry_guard_UART_EXCLUSIVE_AREA_04/9 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Sys_GetCoreID/49 
+SchM_Enter_Uart_UART_EXCLUSIVE_AREA_04/33 (SchM_Enter_Uart_UART_EXCLUSIVE_AREA_04) @06b31540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06b317e0
+  References: reentry_guard_UART_EXCLUSIVE_AREA_04/9 (read) msr_UART_EXCLUSIVE_AREA_04/8 (write) reentry_guard_UART_EXCLUSIVE_AREA_04/9 (read) reentry_guard_UART_EXCLUSIVE_AREA_04/9 (write) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Uart_schm_read_msr/24 Sys_GetCoreID/49 
+SchM_Exit_Uart_UART_EXCLUSIVE_AREA_03/32 (SchM_Exit_Uart_UART_EXCLUSIVE_AREA_03) @06b311c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06b31540
+  References: reentry_guard_UART_EXCLUSIVE_AREA_03/7 (read) reentry_guard_UART_EXCLUSIVE_AREA_03/7 (write) msr_UART_EXCLUSIVE_AREA_03/6 (read) reentry_guard_UART_EXCLUSIVE_AREA_03/7 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Sys_GetCoreID/49 
+SchM_Enter_Uart_UART_EXCLUSIVE_AREA_03/31 (SchM_Enter_Uart_UART_EXCLUSIVE_AREA_03) @06bc9c40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06b311c0
+  References: reentry_guard_UART_EXCLUSIVE_AREA_03/7 (read) msr_UART_EXCLUSIVE_AREA_03/6 (write) reentry_guard_UART_EXCLUSIVE_AREA_03/7 (read) reentry_guard_UART_EXCLUSIVE_AREA_03/7 (write) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Uart_schm_read_msr/24 Sys_GetCoreID/49 
+SchM_Exit_Uart_UART_EXCLUSIVE_AREA_02/30 (SchM_Exit_Uart_UART_EXCLUSIVE_AREA_02) @06bc9380
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06bc9c40
+  References: reentry_guard_UART_EXCLUSIVE_AREA_02/5 (read) reentry_guard_UART_EXCLUSIVE_AREA_02/5 (write) msr_UART_EXCLUSIVE_AREA_02/4 (read) reentry_guard_UART_EXCLUSIVE_AREA_02/5 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Sys_GetCoreID/49 
+SchM_Enter_Uart_UART_EXCLUSIVE_AREA_02/29 (SchM_Enter_Uart_UART_EXCLUSIVE_AREA_02) @06bc9ee0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06bc9380
+  References: reentry_guard_UART_EXCLUSIVE_AREA_02/5 (read) msr_UART_EXCLUSIVE_AREA_02/4 (write) reentry_guard_UART_EXCLUSIVE_AREA_02/5 (read) reentry_guard_UART_EXCLUSIVE_AREA_02/5 (write) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Uart_schm_read_msr/24 Sys_GetCoreID/49 
+SchM_Exit_Uart_UART_EXCLUSIVE_AREA_01/28 (SchM_Exit_Uart_UART_EXCLUSIVE_AREA_01) @06bc9b60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06bc9ee0
+  References: reentry_guard_UART_EXCLUSIVE_AREA_01/3 (read) reentry_guard_UART_EXCLUSIVE_AREA_01/3 (write) msr_UART_EXCLUSIVE_AREA_01/2 (read) reentry_guard_UART_EXCLUSIVE_AREA_01/3 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Sys_GetCoreID/49 
+SchM_Enter_Uart_UART_EXCLUSIVE_AREA_01/27 (SchM_Enter_Uart_UART_EXCLUSIVE_AREA_01) @06bc98c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06bc9b60
+  References: reentry_guard_UART_EXCLUSIVE_AREA_01/3 (read) msr_UART_EXCLUSIVE_AREA_01/2 (write) reentry_guard_UART_EXCLUSIVE_AREA_01/3 (read) reentry_guard_UART_EXCLUSIVE_AREA_01/3 (write) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Uart_schm_read_msr/24 Sys_GetCoreID/49 
+SchM_Exit_Uart_UART_EXCLUSIVE_AREA_00/26 (SchM_Exit_Uart_UART_EXCLUSIVE_AREA_00) @06bc9540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06bc98c0
+  References: reentry_guard_UART_EXCLUSIVE_AREA_00/1 (read) reentry_guard_UART_EXCLUSIVE_AREA_00/1 (write) msr_UART_EXCLUSIVE_AREA_00/0 (read) reentry_guard_UART_EXCLUSIVE_AREA_00/1 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Sys_GetCoreID/49 
+SchM_Enter_Uart_UART_EXCLUSIVE_AREA_00/25 (SchM_Enter_Uart_UART_EXCLUSIVE_AREA_00) @06bc92a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06bc9540
+  References: reentry_guard_UART_EXCLUSIVE_AREA_00/1 (read) msr_UART_EXCLUSIVE_AREA_00/0 (write) reentry_guard_UART_EXCLUSIVE_AREA_00/1 (read) reentry_guard_UART_EXCLUSIVE_AREA_00/1 (write) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Uart_schm_read_msr/24 Sys_GetCoreID/49 
+Uart_schm_read_msr/24 (Uart_schm_read_msr) @06bc5e00
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06bc92a0
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: SchM_Enter_Uart_UART_EXCLUSIVE_AREA_11/47 SchM_Enter_Uart_UART_EXCLUSIVE_AREA_10/45 SchM_Enter_Uart_UART_EXCLUSIVE_AREA_09/43 SchM_Enter_Uart_UART_EXCLUSIVE_AREA_08/41 SchM_Enter_Uart_UART_EXCLUSIVE_AREA_07/39 SchM_Enter_Uart_UART_EXCLUSIVE_AREA_06/37 SchM_Enter_Uart_UART_EXCLUSIVE_AREA_05/35 SchM_Enter_Uart_UART_EXCLUSIVE_AREA_04/33 SchM_Enter_Uart_UART_EXCLUSIVE_AREA_03/31 SchM_Enter_Uart_UART_EXCLUSIVE_AREA_02/29 SchM_Enter_Uart_UART_EXCLUSIVE_AREA_01/27 SchM_Enter_Uart_UART_EXCLUSIVE_AREA_00/25 
+  Calls: 
+reentry_guard_UART_EXCLUSIVE_AREA_11/23 (reentry_guard_UART_EXCLUSIVE_AREA_11) @06bc6438
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @06bc5e00
+  References: 
+  Referring: SchM_Enter_Uart_UART_EXCLUSIVE_AREA_11/47 (read) SchM_Enter_Uart_UART_EXCLUSIVE_AREA_11/47 (read) SchM_Enter_Uart_UART_EXCLUSIVE_AREA_11/47 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_11/48 (read) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_11/48 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_11/48 (read) 
+  Availability: not-ready
+  Varpool flags:
+msr_UART_EXCLUSIVE_AREA_11/22 (msr_UART_EXCLUSIVE_AREA_11) @06bc63a8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @06bc6438
+  References: 
+  Referring: SchM_Enter_Uart_UART_EXCLUSIVE_AREA_11/47 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_11/48 (read) 
+  Availability: not-ready
+  Varpool flags:
+reentry_guard_UART_EXCLUSIVE_AREA_10/21 (reentry_guard_UART_EXCLUSIVE_AREA_10) @06bc6318
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @06bc63a8
+  References: 
+  Referring: SchM_Enter_Uart_UART_EXCLUSIVE_AREA_10/45 (read) SchM_Enter_Uart_UART_EXCLUSIVE_AREA_10/45 (read) SchM_Enter_Uart_UART_EXCLUSIVE_AREA_10/45 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_10/46 (read) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_10/46 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_10/46 (read) 
+  Availability: not-ready
+  Varpool flags:
+msr_UART_EXCLUSIVE_AREA_10/20 (msr_UART_EXCLUSIVE_AREA_10) @06bc6288
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @06bc6318
+  References: 
+  Referring: SchM_Enter_Uart_UART_EXCLUSIVE_AREA_10/45 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_10/46 (read) 
+  Availability: not-ready
+  Varpool flags:
+reentry_guard_UART_EXCLUSIVE_AREA_09/19 (reentry_guard_UART_EXCLUSIVE_AREA_09) @06bc61f8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @06bc6288
+  References: 
+  Referring: SchM_Enter_Uart_UART_EXCLUSIVE_AREA_09/43 (read) SchM_Enter_Uart_UART_EXCLUSIVE_AREA_09/43 (read) SchM_Enter_Uart_UART_EXCLUSIVE_AREA_09/43 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_09/44 (read) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_09/44 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_09/44 (read) 
+  Availability: not-ready
+  Varpool flags:
+msr_UART_EXCLUSIVE_AREA_09/18 (msr_UART_EXCLUSIVE_AREA_09) @06bc6168
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @06bc61f8
+  References: 
+  Referring: SchM_Enter_Uart_UART_EXCLUSIVE_AREA_09/43 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_09/44 (read) 
+  Availability: not-ready
+  Varpool flags:
+reentry_guard_UART_EXCLUSIVE_AREA_08/17 (reentry_guard_UART_EXCLUSIVE_AREA_08) @06bc60d8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @06bc6168
+  References: 
+  Referring: SchM_Enter_Uart_UART_EXCLUSIVE_AREA_08/41 (read) SchM_Enter_Uart_UART_EXCLUSIVE_AREA_08/41 (read) SchM_Enter_Uart_UART_EXCLUSIVE_AREA_08/41 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_08/42 (read) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_08/42 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_08/42 (read) 
+  Availability: not-ready
+  Varpool flags:
+msr_UART_EXCLUSIVE_AREA_08/16 (msr_UART_EXCLUSIVE_AREA_08) @06bc6048
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @06bc60d8
+  References: 
+  Referring: SchM_Enter_Uart_UART_EXCLUSIVE_AREA_08/41 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_08/42 (read) 
+  Availability: not-ready
+  Varpool flags:
+reentry_guard_UART_EXCLUSIVE_AREA_07/15 (reentry_guard_UART_EXCLUSIVE_AREA_07) @06bc0f78
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @06bc6048
+  References: 
+  Referring: SchM_Enter_Uart_UART_EXCLUSIVE_AREA_07/39 (read) SchM_Enter_Uart_UART_EXCLUSIVE_AREA_07/39 (read) SchM_Enter_Uart_UART_EXCLUSIVE_AREA_07/39 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_07/40 (read) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_07/40 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_07/40 (read) 
+  Availability: not-ready
+  Varpool flags:
+msr_UART_EXCLUSIVE_AREA_07/14 (msr_UART_EXCLUSIVE_AREA_07) @06bc0ee8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @06bc0f78
+  References: 
+  Referring: SchM_Enter_Uart_UART_EXCLUSIVE_AREA_07/39 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_07/40 (read) 
+  Availability: not-ready
+  Varpool flags:
+reentry_guard_UART_EXCLUSIVE_AREA_06/13 (reentry_guard_UART_EXCLUSIVE_AREA_06) @06bc0e58
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @06bc0ee8
+  References: 
+  Referring: SchM_Enter_Uart_UART_EXCLUSIVE_AREA_06/37 (read) SchM_Enter_Uart_UART_EXCLUSIVE_AREA_06/37 (read) SchM_Enter_Uart_UART_EXCLUSIVE_AREA_06/37 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_06/38 (read) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_06/38 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_06/38 (read) 
+  Availability: not-ready
+  Varpool flags:
+msr_UART_EXCLUSIVE_AREA_06/12 (msr_UART_EXCLUSIVE_AREA_06) @06bc0dc8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @06bc0e58
+  References: 
+  Referring: SchM_Enter_Uart_UART_EXCLUSIVE_AREA_06/37 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_06/38 (read) 
+  Availability: not-ready
+  Varpool flags:
+reentry_guard_UART_EXCLUSIVE_AREA_05/11 (reentry_guard_UART_EXCLUSIVE_AREA_05) @06bc0d38
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @06bc0dc8
+  References: 
+  Referring: SchM_Enter_Uart_UART_EXCLUSIVE_AREA_05/35 (read) SchM_Enter_Uart_UART_EXCLUSIVE_AREA_05/35 (read) SchM_Enter_Uart_UART_EXCLUSIVE_AREA_05/35 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_05/36 (read) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_05/36 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_05/36 (read) 
+  Availability: not-ready
+  Varpool flags:
+msr_UART_EXCLUSIVE_AREA_05/10 (msr_UART_EXCLUSIVE_AREA_05) @06bc0ca8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @06bc0d38
+  References: 
+  Referring: SchM_Enter_Uart_UART_EXCLUSIVE_AREA_05/35 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_05/36 (read) 
+  Availability: not-ready
+  Varpool flags:
+reentry_guard_UART_EXCLUSIVE_AREA_04/9 (reentry_guard_UART_EXCLUSIVE_AREA_04) @06bc0c18
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @06bc0ca8
+  References: 
+  Referring: SchM_Enter_Uart_UART_EXCLUSIVE_AREA_04/33 (read) SchM_Enter_Uart_UART_EXCLUSIVE_AREA_04/33 (read) SchM_Enter_Uart_UART_EXCLUSIVE_AREA_04/33 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_04/34 (read) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_04/34 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_04/34 (read) 
+  Availability: not-ready
+  Varpool flags:
+msr_UART_EXCLUSIVE_AREA_04/8 (msr_UART_EXCLUSIVE_AREA_04) @06bc0b88
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @06bc0c18
+  References: 
+  Referring: SchM_Enter_Uart_UART_EXCLUSIVE_AREA_04/33 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_04/34 (read) 
+  Availability: not-ready
+  Varpool flags:
+reentry_guard_UART_EXCLUSIVE_AREA_03/7 (reentry_guard_UART_EXCLUSIVE_AREA_03) @06bc0af8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @06bc0b88
+  References: 
+  Referring: SchM_Enter_Uart_UART_EXCLUSIVE_AREA_03/31 (read) SchM_Enter_Uart_UART_EXCLUSIVE_AREA_03/31 (read) SchM_Enter_Uart_UART_EXCLUSIVE_AREA_03/31 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_03/32 (read) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_03/32 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_03/32 (read) 
+  Availability: not-ready
+  Varpool flags:
+msr_UART_EXCLUSIVE_AREA_03/6 (msr_UART_EXCLUSIVE_AREA_03) @06bc0a68
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @06bc0af8
+  References: 
+  Referring: SchM_Enter_Uart_UART_EXCLUSIVE_AREA_03/31 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_03/32 (read) 
+  Availability: not-ready
+  Varpool flags:
+reentry_guard_UART_EXCLUSIVE_AREA_02/5 (reentry_guard_UART_EXCLUSIVE_AREA_02) @06bc09d8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @06bc0a68
+  References: 
+  Referring: SchM_Enter_Uart_UART_EXCLUSIVE_AREA_02/29 (read) SchM_Enter_Uart_UART_EXCLUSIVE_AREA_02/29 (read) SchM_Enter_Uart_UART_EXCLUSIVE_AREA_02/29 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_02/30 (read) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_02/30 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_02/30 (read) 
+  Availability: not-ready
+  Varpool flags:
+msr_UART_EXCLUSIVE_AREA_02/4 (msr_UART_EXCLUSIVE_AREA_02) @06bc0948
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @06bc09d8
+  References: 
+  Referring: SchM_Enter_Uart_UART_EXCLUSIVE_AREA_02/29 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_02/30 (read) 
+  Availability: not-ready
+  Varpool flags:
+reentry_guard_UART_EXCLUSIVE_AREA_01/3 (reentry_guard_UART_EXCLUSIVE_AREA_01) @06bc08b8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @06bc0948
+  References: 
+  Referring: SchM_Enter_Uart_UART_EXCLUSIVE_AREA_01/27 (read) SchM_Enter_Uart_UART_EXCLUSIVE_AREA_01/27 (read) SchM_Enter_Uart_UART_EXCLUSIVE_AREA_01/27 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_01/28 (read) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_01/28 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_01/28 (read) 
+  Availability: not-ready
+  Varpool flags:
+msr_UART_EXCLUSIVE_AREA_01/2 (msr_UART_EXCLUSIVE_AREA_01) @06bc0828
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @06bc08b8
+  References: 
+  Referring: SchM_Enter_Uart_UART_EXCLUSIVE_AREA_01/27 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_01/28 (read) 
+  Availability: not-ready
+  Varpool flags:
+reentry_guard_UART_EXCLUSIVE_AREA_00/1 (reentry_guard_UART_EXCLUSIVE_AREA_00) @06bc0798
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @06bc0828
+  References: 
+  Referring: SchM_Enter_Uart_UART_EXCLUSIVE_AREA_00/25 (read) SchM_Enter_Uart_UART_EXCLUSIVE_AREA_00/25 (read) SchM_Enter_Uart_UART_EXCLUSIVE_AREA_00/25 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_00/26 (read) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_00/26 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_00/26 (read) 
+  Availability: not-ready
+  Varpool flags:
+msr_UART_EXCLUSIVE_AREA_00/0 (msr_UART_EXCLUSIVE_AREA_00) @06bc0708
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @06bc0798
+  References: 
+  Referring: SchM_Enter_Uart_UART_EXCLUSIVE_AREA_00/25 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_00/26 (read) 
+  Availability: not-ready
+  Varpool flags:
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+Sys_GetCoreID/49 (Sys_GetCoreID) @06b3db60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: SchM_Exit_Uart_UART_EXCLUSIVE_AREA_11/48 SchM_Enter_Uart_UART_EXCLUSIVE_AREA_11/47 SchM_Exit_Uart_UART_EXCLUSIVE_AREA_10/46 SchM_Enter_Uart_UART_EXCLUSIVE_AREA_10/45 SchM_Exit_Uart_UART_EXCLUSIVE_AREA_09/44 SchM_Enter_Uart_UART_EXCLUSIVE_AREA_09/43 SchM_Exit_Uart_UART_EXCLUSIVE_AREA_08/42 SchM_Enter_Uart_UART_EXCLUSIVE_AREA_08/41 SchM_Exit_Uart_UART_EXCLUSIVE_AREA_07/40 SchM_Enter_Uart_UART_EXCLUSIVE_AREA_07/39 SchM_Exit_Uart_UART_EXCLUSIVE_AREA_06/38 SchM_Enter_Uart_UART_EXCLUSIVE_AREA_06/37 SchM_Exit_Uart_UART_EXCLUSIVE_AREA_05/36 SchM_Enter_Uart_UART_EXCLUSIVE_AREA_05/35 SchM_Exit_Uart_UART_EXCLUSIVE_AREA_04/34 SchM_Enter_Uart_UART_EXCLUSIVE_AREA_04/33 SchM_Exit_Uart_UART_EXCLUSIVE_AREA_03/32 SchM_Enter_Uart_UART_EXCLUSIVE_AREA_03/31 SchM_Exit_Uart_UART_EXCLUSIVE_AREA_02/30 SchM_Enter_Uart_UART_EXCLUSIVE_AREA_02/29 SchM_Exit_Uart_UART_EXCLUSIVE_AREA_01/28 SchM_Enter_Uart_UART_EXCLUSIVE_AREA_01/27 SchM_Exit_Uart_UART_EXCLUSIVE_AREA_00/26 SchM_Enter_Uart_UART_EXCLUSIVE_AREA_00/25 
+  Calls: 
+SchM_Exit_Uart_UART_EXCLUSIVE_AREA_11/48 (SchM_Exit_Uart_UART_EXCLUSIVE_AREA_11) @06b3d620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: reentry_guard_UART_EXCLUSIVE_AREA_11/23 (read) reentry_guard_UART_EXCLUSIVE_AREA_11/23 (write) msr_UART_EXCLUSIVE_AREA_11/22 (read) reentry_guard_UART_EXCLUSIVE_AREA_11/23 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Sys_GetCoreID/49 
+SchM_Enter_Uart_UART_EXCLUSIVE_AREA_11/47 (SchM_Enter_Uart_UART_EXCLUSIVE_AREA_11) @06b3d380
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: reentry_guard_UART_EXCLUSIVE_AREA_11/23 (read) msr_UART_EXCLUSIVE_AREA_11/22 (write) reentry_guard_UART_EXCLUSIVE_AREA_11/23 (read) reentry_guard_UART_EXCLUSIVE_AREA_11/23 (write) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Uart_schm_read_msr/24 Sys_GetCoreID/49 
+SchM_Exit_Uart_UART_EXCLUSIVE_AREA_10/46 (SchM_Exit_Uart_UART_EXCLUSIVE_AREA_10) @06b3d000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: reentry_guard_UART_EXCLUSIVE_AREA_10/21 (read) reentry_guard_UART_EXCLUSIVE_AREA_10/21 (write) msr_UART_EXCLUSIVE_AREA_10/20 (read) reentry_guard_UART_EXCLUSIVE_AREA_10/21 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Sys_GetCoreID/49 
+SchM_Enter_Uart_UART_EXCLUSIVE_AREA_10/45 (SchM_Enter_Uart_UART_EXCLUSIVE_AREA_10) @06b38a80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: reentry_guard_UART_EXCLUSIVE_AREA_10/21 (read) msr_UART_EXCLUSIVE_AREA_10/20 (write) reentry_guard_UART_EXCLUSIVE_AREA_10/21 (read) reentry_guard_UART_EXCLUSIVE_AREA_10/21 (write) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Uart_schm_read_msr/24 Sys_GetCoreID/49 
+SchM_Exit_Uart_UART_EXCLUSIVE_AREA_09/44 (SchM_Exit_Uart_UART_EXCLUSIVE_AREA_09) @06b381c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: reentry_guard_UART_EXCLUSIVE_AREA_09/19 (read) reentry_guard_UART_EXCLUSIVE_AREA_09/19 (write) msr_UART_EXCLUSIVE_AREA_09/18 (read) reentry_guard_UART_EXCLUSIVE_AREA_09/19 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Sys_GetCoreID/49 
+SchM_Enter_Uart_UART_EXCLUSIVE_AREA_09/43 (SchM_Enter_Uart_UART_EXCLUSIVE_AREA_09) @06b38d20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: reentry_guard_UART_EXCLUSIVE_AREA_09/19 (read) msr_UART_EXCLUSIVE_AREA_09/18 (write) reentry_guard_UART_EXCLUSIVE_AREA_09/19 (read) reentry_guard_UART_EXCLUSIVE_AREA_09/19 (write) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Uart_schm_read_msr/24 Sys_GetCoreID/49 
+SchM_Exit_Uart_UART_EXCLUSIVE_AREA_08/42 (SchM_Exit_Uart_UART_EXCLUSIVE_AREA_08) @06b389a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: reentry_guard_UART_EXCLUSIVE_AREA_08/17 (read) reentry_guard_UART_EXCLUSIVE_AREA_08/17 (write) msr_UART_EXCLUSIVE_AREA_08/16 (read) reentry_guard_UART_EXCLUSIVE_AREA_08/17 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Sys_GetCoreID/49 
+SchM_Enter_Uart_UART_EXCLUSIVE_AREA_08/41 (SchM_Enter_Uart_UART_EXCLUSIVE_AREA_08) @06b38700
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: reentry_guard_UART_EXCLUSIVE_AREA_08/17 (read) msr_UART_EXCLUSIVE_AREA_08/16 (write) reentry_guard_UART_EXCLUSIVE_AREA_08/17 (read) reentry_guard_UART_EXCLUSIVE_AREA_08/17 (write) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Uart_schm_read_msr/24 Sys_GetCoreID/49 
+SchM_Exit_Uart_UART_EXCLUSIVE_AREA_07/40 (SchM_Exit_Uart_UART_EXCLUSIVE_AREA_07) @06b38380
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: reentry_guard_UART_EXCLUSIVE_AREA_07/15 (read) reentry_guard_UART_EXCLUSIVE_AREA_07/15 (write) msr_UART_EXCLUSIVE_AREA_07/14 (read) reentry_guard_UART_EXCLUSIVE_AREA_07/15 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Sys_GetCoreID/49 
+SchM_Enter_Uart_UART_EXCLUSIVE_AREA_07/39 (SchM_Enter_Uart_UART_EXCLUSIVE_AREA_07) @06b380e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: reentry_guard_UART_EXCLUSIVE_AREA_07/15 (read) msr_UART_EXCLUSIVE_AREA_07/14 (write) reentry_guard_UART_EXCLUSIVE_AREA_07/15 (read) reentry_guard_UART_EXCLUSIVE_AREA_07/15 (write) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Uart_schm_read_msr/24 Sys_GetCoreID/49 
+SchM_Exit_Uart_UART_EXCLUSIVE_AREA_06/38 (SchM_Exit_Uart_UART_EXCLUSIVE_AREA_06) @06b31c40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: reentry_guard_UART_EXCLUSIVE_AREA_06/13 (read) reentry_guard_UART_EXCLUSIVE_AREA_06/13 (write) msr_UART_EXCLUSIVE_AREA_06/12 (read) reentry_guard_UART_EXCLUSIVE_AREA_06/13 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Sys_GetCoreID/49 
+SchM_Enter_Uart_UART_EXCLUSIVE_AREA_06/37 (SchM_Enter_Uart_UART_EXCLUSIVE_AREA_06) @06b31620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: reentry_guard_UART_EXCLUSIVE_AREA_06/13 (read) msr_UART_EXCLUSIVE_AREA_06/12 (write) reentry_guard_UART_EXCLUSIVE_AREA_06/13 (read) reentry_guard_UART_EXCLUSIVE_AREA_06/13 (write) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Uart_schm_read_msr/24 Sys_GetCoreID/49 
+SchM_Exit_Uart_UART_EXCLUSIVE_AREA_05/36 (SchM_Exit_Uart_UART_EXCLUSIVE_AREA_05) @06b31e00
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: reentry_guard_UART_EXCLUSIVE_AREA_05/11 (read) reentry_guard_UART_EXCLUSIVE_AREA_05/11 (write) msr_UART_EXCLUSIVE_AREA_05/10 (read) reentry_guard_UART_EXCLUSIVE_AREA_05/11 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Sys_GetCoreID/49 
+SchM_Enter_Uart_UART_EXCLUSIVE_AREA_05/35 (SchM_Enter_Uart_UART_EXCLUSIVE_AREA_05) @06b31b60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: reentry_guard_UART_EXCLUSIVE_AREA_05/11 (read) msr_UART_EXCLUSIVE_AREA_05/10 (write) reentry_guard_UART_EXCLUSIVE_AREA_05/11 (read) reentry_guard_UART_EXCLUSIVE_AREA_05/11 (write) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Uart_schm_read_msr/24 Sys_GetCoreID/49 
+SchM_Exit_Uart_UART_EXCLUSIVE_AREA_04/34 (SchM_Exit_Uart_UART_EXCLUSIVE_AREA_04) @06b317e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: reentry_guard_UART_EXCLUSIVE_AREA_04/9 (read) reentry_guard_UART_EXCLUSIVE_AREA_04/9 (write) msr_UART_EXCLUSIVE_AREA_04/8 (read) reentry_guard_UART_EXCLUSIVE_AREA_04/9 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Sys_GetCoreID/49 
+SchM_Enter_Uart_UART_EXCLUSIVE_AREA_04/33 (SchM_Enter_Uart_UART_EXCLUSIVE_AREA_04) @06b31540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: reentry_guard_UART_EXCLUSIVE_AREA_04/9 (read) msr_UART_EXCLUSIVE_AREA_04/8 (write) reentry_guard_UART_EXCLUSIVE_AREA_04/9 (read) reentry_guard_UART_EXCLUSIVE_AREA_04/9 (write) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Uart_schm_read_msr/24 Sys_GetCoreID/49 
+SchM_Exit_Uart_UART_EXCLUSIVE_AREA_03/32 (SchM_Exit_Uart_UART_EXCLUSIVE_AREA_03) @06b311c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: reentry_guard_UART_EXCLUSIVE_AREA_03/7 (read) reentry_guard_UART_EXCLUSIVE_AREA_03/7 (write) msr_UART_EXCLUSIVE_AREA_03/6 (read) reentry_guard_UART_EXCLUSIVE_AREA_03/7 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Sys_GetCoreID/49 
+SchM_Enter_Uart_UART_EXCLUSIVE_AREA_03/31 (SchM_Enter_Uart_UART_EXCLUSIVE_AREA_03) @06bc9c40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: reentry_guard_UART_EXCLUSIVE_AREA_03/7 (read) msr_UART_EXCLUSIVE_AREA_03/6 (write) reentry_guard_UART_EXCLUSIVE_AREA_03/7 (read) reentry_guard_UART_EXCLUSIVE_AREA_03/7 (write) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Uart_schm_read_msr/24 Sys_GetCoreID/49 
+SchM_Exit_Uart_UART_EXCLUSIVE_AREA_02/30 (SchM_Exit_Uart_UART_EXCLUSIVE_AREA_02) @06bc9380
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: reentry_guard_UART_EXCLUSIVE_AREA_02/5 (read) reentry_guard_UART_EXCLUSIVE_AREA_02/5 (write) msr_UART_EXCLUSIVE_AREA_02/4 (read) reentry_guard_UART_EXCLUSIVE_AREA_02/5 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Sys_GetCoreID/49 
+SchM_Enter_Uart_UART_EXCLUSIVE_AREA_02/29 (SchM_Enter_Uart_UART_EXCLUSIVE_AREA_02) @06bc9ee0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: reentry_guard_UART_EXCLUSIVE_AREA_02/5 (read) msr_UART_EXCLUSIVE_AREA_02/4 (write) reentry_guard_UART_EXCLUSIVE_AREA_02/5 (read) reentry_guard_UART_EXCLUSIVE_AREA_02/5 (write) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Uart_schm_read_msr/24 Sys_GetCoreID/49 
+SchM_Exit_Uart_UART_EXCLUSIVE_AREA_01/28 (SchM_Exit_Uart_UART_EXCLUSIVE_AREA_01) @06bc9b60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: reentry_guard_UART_EXCLUSIVE_AREA_01/3 (read) reentry_guard_UART_EXCLUSIVE_AREA_01/3 (write) msr_UART_EXCLUSIVE_AREA_01/2 (read) reentry_guard_UART_EXCLUSIVE_AREA_01/3 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Sys_GetCoreID/49 
+SchM_Enter_Uart_UART_EXCLUSIVE_AREA_01/27 (SchM_Enter_Uart_UART_EXCLUSIVE_AREA_01) @06bc98c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: reentry_guard_UART_EXCLUSIVE_AREA_01/3 (read) msr_UART_EXCLUSIVE_AREA_01/2 (write) reentry_guard_UART_EXCLUSIVE_AREA_01/3 (read) reentry_guard_UART_EXCLUSIVE_AREA_01/3 (write) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Uart_schm_read_msr/24 Sys_GetCoreID/49 
+SchM_Exit_Uart_UART_EXCLUSIVE_AREA_00/26 (SchM_Exit_Uart_UART_EXCLUSIVE_AREA_00) @06bc9540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: reentry_guard_UART_EXCLUSIVE_AREA_00/1 (read) reentry_guard_UART_EXCLUSIVE_AREA_00/1 (write) msr_UART_EXCLUSIVE_AREA_00/0 (read) reentry_guard_UART_EXCLUSIVE_AREA_00/1 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Sys_GetCoreID/49 
+SchM_Enter_Uart_UART_EXCLUSIVE_AREA_00/25 (SchM_Enter_Uart_UART_EXCLUSIVE_AREA_00) @06bc92a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: reentry_guard_UART_EXCLUSIVE_AREA_00/1 (read) msr_UART_EXCLUSIVE_AREA_00/0 (write) reentry_guard_UART_EXCLUSIVE_AREA_00/1 (read) reentry_guard_UART_EXCLUSIVE_AREA_00/1 (write) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Uart_schm_read_msr/24 Sys_GetCoreID/49 
+Uart_schm_read_msr/24 (Uart_schm_read_msr) @06bc5e00
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: SchM_Enter_Uart_UART_EXCLUSIVE_AREA_11/47 SchM_Enter_Uart_UART_EXCLUSIVE_AREA_10/45 SchM_Enter_Uart_UART_EXCLUSIVE_AREA_09/43 SchM_Enter_Uart_UART_EXCLUSIVE_AREA_08/41 SchM_Enter_Uart_UART_EXCLUSIVE_AREA_07/39 SchM_Enter_Uart_UART_EXCLUSIVE_AREA_06/37 SchM_Enter_Uart_UART_EXCLUSIVE_AREA_05/35 SchM_Enter_Uart_UART_EXCLUSIVE_AREA_04/33 SchM_Enter_Uart_UART_EXCLUSIVE_AREA_03/31 SchM_Enter_Uart_UART_EXCLUSIVE_AREA_02/29 SchM_Enter_Uart_UART_EXCLUSIVE_AREA_01/27 SchM_Enter_Uart_UART_EXCLUSIVE_AREA_00/25 
+  Calls: 
+reentry_guard_UART_EXCLUSIVE_AREA_11/23 (reentry_guard_UART_EXCLUSIVE_AREA_11) @06bc6438
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: SchM_Enter_Uart_UART_EXCLUSIVE_AREA_11/47 (read) SchM_Enter_Uart_UART_EXCLUSIVE_AREA_11/47 (read) SchM_Enter_Uart_UART_EXCLUSIVE_AREA_11/47 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_11/48 (read) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_11/48 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_11/48 (read) 
+  Availability: not-ready
+  Varpool flags:
+msr_UART_EXCLUSIVE_AREA_11/22 (msr_UART_EXCLUSIVE_AREA_11) @06bc63a8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: SchM_Enter_Uart_UART_EXCLUSIVE_AREA_11/47 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_11/48 (read) 
+  Availability: not-ready
+  Varpool flags:
+reentry_guard_UART_EXCLUSIVE_AREA_10/21 (reentry_guard_UART_EXCLUSIVE_AREA_10) @06bc6318
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: SchM_Enter_Uart_UART_EXCLUSIVE_AREA_10/45 (read) SchM_Enter_Uart_UART_EXCLUSIVE_AREA_10/45 (read) SchM_Enter_Uart_UART_EXCLUSIVE_AREA_10/45 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_10/46 (read) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_10/46 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_10/46 (read) 
+  Availability: not-ready
+  Varpool flags:
+msr_UART_EXCLUSIVE_AREA_10/20 (msr_UART_EXCLUSIVE_AREA_10) @06bc6288
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: SchM_Enter_Uart_UART_EXCLUSIVE_AREA_10/45 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_10/46 (read) 
+  Availability: not-ready
+  Varpool flags:
+reentry_guard_UART_EXCLUSIVE_AREA_09/19 (reentry_guard_UART_EXCLUSIVE_AREA_09) @06bc61f8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: SchM_Enter_Uart_UART_EXCLUSIVE_AREA_09/43 (read) SchM_Enter_Uart_UART_EXCLUSIVE_AREA_09/43 (read) SchM_Enter_Uart_UART_EXCLUSIVE_AREA_09/43 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_09/44 (read) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_09/44 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_09/44 (read) 
+  Availability: not-ready
+  Varpool flags:
+msr_UART_EXCLUSIVE_AREA_09/18 (msr_UART_EXCLUSIVE_AREA_09) @06bc6168
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: SchM_Enter_Uart_UART_EXCLUSIVE_AREA_09/43 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_09/44 (read) 
+  Availability: not-ready
+  Varpool flags:
+reentry_guard_UART_EXCLUSIVE_AREA_08/17 (reentry_guard_UART_EXCLUSIVE_AREA_08) @06bc60d8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: SchM_Enter_Uart_UART_EXCLUSIVE_AREA_08/41 (read) SchM_Enter_Uart_UART_EXCLUSIVE_AREA_08/41 (read) SchM_Enter_Uart_UART_EXCLUSIVE_AREA_08/41 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_08/42 (read) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_08/42 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_08/42 (read) 
+  Availability: not-ready
+  Varpool flags:
+msr_UART_EXCLUSIVE_AREA_08/16 (msr_UART_EXCLUSIVE_AREA_08) @06bc6048
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: SchM_Enter_Uart_UART_EXCLUSIVE_AREA_08/41 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_08/42 (read) 
+  Availability: not-ready
+  Varpool flags:
+reentry_guard_UART_EXCLUSIVE_AREA_07/15 (reentry_guard_UART_EXCLUSIVE_AREA_07) @06bc0f78
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: SchM_Enter_Uart_UART_EXCLUSIVE_AREA_07/39 (read) SchM_Enter_Uart_UART_EXCLUSIVE_AREA_07/39 (read) SchM_Enter_Uart_UART_EXCLUSIVE_AREA_07/39 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_07/40 (read) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_07/40 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_07/40 (read) 
+  Availability: not-ready
+  Varpool flags:
+msr_UART_EXCLUSIVE_AREA_07/14 (msr_UART_EXCLUSIVE_AREA_07) @06bc0ee8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: SchM_Enter_Uart_UART_EXCLUSIVE_AREA_07/39 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_07/40 (read) 
+  Availability: not-ready
+  Varpool flags:
+reentry_guard_UART_EXCLUSIVE_AREA_06/13 (reentry_guard_UART_EXCLUSIVE_AREA_06) @06bc0e58
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: SchM_Enter_Uart_UART_EXCLUSIVE_AREA_06/37 (read) SchM_Enter_Uart_UART_EXCLUSIVE_AREA_06/37 (read) SchM_Enter_Uart_UART_EXCLUSIVE_AREA_06/37 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_06/38 (read) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_06/38 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_06/38 (read) 
+  Availability: not-ready
+  Varpool flags:
+msr_UART_EXCLUSIVE_AREA_06/12 (msr_UART_EXCLUSIVE_AREA_06) @06bc0dc8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: SchM_Enter_Uart_UART_EXCLUSIVE_AREA_06/37 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_06/38 (read) 
+  Availability: not-ready
+  Varpool flags:
+reentry_guard_UART_EXCLUSIVE_AREA_05/11 (reentry_guard_UART_EXCLUSIVE_AREA_05) @06bc0d38
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: SchM_Enter_Uart_UART_EXCLUSIVE_AREA_05/35 (read) SchM_Enter_Uart_UART_EXCLUSIVE_AREA_05/35 (read) SchM_Enter_Uart_UART_EXCLUSIVE_AREA_05/35 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_05/36 (read) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_05/36 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_05/36 (read) 
+  Availability: not-ready
+  Varpool flags:
+msr_UART_EXCLUSIVE_AREA_05/10 (msr_UART_EXCLUSIVE_AREA_05) @06bc0ca8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: SchM_Enter_Uart_UART_EXCLUSIVE_AREA_05/35 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_05/36 (read) 
+  Availability: not-ready
+  Varpool flags:
+reentry_guard_UART_EXCLUSIVE_AREA_04/9 (reentry_guard_UART_EXCLUSIVE_AREA_04) @06bc0c18
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: SchM_Enter_Uart_UART_EXCLUSIVE_AREA_04/33 (read) SchM_Enter_Uart_UART_EXCLUSIVE_AREA_04/33 (read) SchM_Enter_Uart_UART_EXCLUSIVE_AREA_04/33 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_04/34 (read) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_04/34 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_04/34 (read) 
+  Availability: not-ready
+  Varpool flags:
+msr_UART_EXCLUSIVE_AREA_04/8 (msr_UART_EXCLUSIVE_AREA_04) @06bc0b88
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: SchM_Enter_Uart_UART_EXCLUSIVE_AREA_04/33 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_04/34 (read) 
+  Availability: not-ready
+  Varpool flags:
+reentry_guard_UART_EXCLUSIVE_AREA_03/7 (reentry_guard_UART_EXCLUSIVE_AREA_03) @06bc0af8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: SchM_Enter_Uart_UART_EXCLUSIVE_AREA_03/31 (read) SchM_Enter_Uart_UART_EXCLUSIVE_AREA_03/31 (read) SchM_Enter_Uart_UART_EXCLUSIVE_AREA_03/31 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_03/32 (read) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_03/32 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_03/32 (read) 
+  Availability: not-ready
+  Varpool flags:
+msr_UART_EXCLUSIVE_AREA_03/6 (msr_UART_EXCLUSIVE_AREA_03) @06bc0a68
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: SchM_Enter_Uart_UART_EXCLUSIVE_AREA_03/31 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_03/32 (read) 
+  Availability: not-ready
+  Varpool flags:
+reentry_guard_UART_EXCLUSIVE_AREA_02/5 (reentry_guard_UART_EXCLUSIVE_AREA_02) @06bc09d8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: SchM_Enter_Uart_UART_EXCLUSIVE_AREA_02/29 (read) SchM_Enter_Uart_UART_EXCLUSIVE_AREA_02/29 (read) SchM_Enter_Uart_UART_EXCLUSIVE_AREA_02/29 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_02/30 (read) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_02/30 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_02/30 (read) 
+  Availability: not-ready
+  Varpool flags:
+msr_UART_EXCLUSIVE_AREA_02/4 (msr_UART_EXCLUSIVE_AREA_02) @06bc0948
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: SchM_Enter_Uart_UART_EXCLUSIVE_AREA_02/29 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_02/30 (read) 
+  Availability: not-ready
+  Varpool flags:
+reentry_guard_UART_EXCLUSIVE_AREA_01/3 (reentry_guard_UART_EXCLUSIVE_AREA_01) @06bc08b8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: SchM_Enter_Uart_UART_EXCLUSIVE_AREA_01/27 (read) SchM_Enter_Uart_UART_EXCLUSIVE_AREA_01/27 (read) SchM_Enter_Uart_UART_EXCLUSIVE_AREA_01/27 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_01/28 (read) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_01/28 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_01/28 (read) 
+  Availability: not-ready
+  Varpool flags:
+msr_UART_EXCLUSIVE_AREA_01/2 (msr_UART_EXCLUSIVE_AREA_01) @06bc0828
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: SchM_Enter_Uart_UART_EXCLUSIVE_AREA_01/27 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_01/28 (read) 
+  Availability: not-ready
+  Varpool flags:
+reentry_guard_UART_EXCLUSIVE_AREA_00/1 (reentry_guard_UART_EXCLUSIVE_AREA_00) @06bc0798
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: SchM_Enter_Uart_UART_EXCLUSIVE_AREA_00/25 (read) SchM_Enter_Uart_UART_EXCLUSIVE_AREA_00/25 (read) SchM_Enter_Uart_UART_EXCLUSIVE_AREA_00/25 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_00/26 (read) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_00/26 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_00/26 (read) 
+  Availability: not-ready
+  Varpool flags:
+msr_UART_EXCLUSIVE_AREA_00/0 (msr_UART_EXCLUSIVE_AREA_00) @06bc0708
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: SchM_Enter_Uart_UART_EXCLUSIVE_AREA_00/25 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_00/26 (read) 
+  Availability: not-ready
+  Varpool flags:
+
+
+Initial Symbol table:
+
+Sys_GetCoreID/49 (Sys_GetCoreID) @06b3db60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: SchM_Exit_Uart_UART_EXCLUSIVE_AREA_11/48 SchM_Enter_Uart_UART_EXCLUSIVE_AREA_11/47 SchM_Exit_Uart_UART_EXCLUSIVE_AREA_10/46 SchM_Enter_Uart_UART_EXCLUSIVE_AREA_10/45 SchM_Exit_Uart_UART_EXCLUSIVE_AREA_09/44 SchM_Enter_Uart_UART_EXCLUSIVE_AREA_09/43 SchM_Exit_Uart_UART_EXCLUSIVE_AREA_08/42 SchM_Enter_Uart_UART_EXCLUSIVE_AREA_08/41 SchM_Exit_Uart_UART_EXCLUSIVE_AREA_07/40 SchM_Enter_Uart_UART_EXCLUSIVE_AREA_07/39 SchM_Exit_Uart_UART_EXCLUSIVE_AREA_06/38 SchM_Enter_Uart_UART_EXCLUSIVE_AREA_06/37 SchM_Exit_Uart_UART_EXCLUSIVE_AREA_05/36 SchM_Enter_Uart_UART_EXCLUSIVE_AREA_05/35 SchM_Exit_Uart_UART_EXCLUSIVE_AREA_04/34 SchM_Enter_Uart_UART_EXCLUSIVE_AREA_04/33 SchM_Exit_Uart_UART_EXCLUSIVE_AREA_03/32 SchM_Enter_Uart_UART_EXCLUSIVE_AREA_03/31 SchM_Exit_Uart_UART_EXCLUSIVE_AREA_02/30 SchM_Enter_Uart_UART_EXCLUSIVE_AREA_02/29 SchM_Exit_Uart_UART_EXCLUSIVE_AREA_01/28 SchM_Enter_Uart_UART_EXCLUSIVE_AREA_01/27 SchM_Exit_Uart_UART_EXCLUSIVE_AREA_00/26 SchM_Enter_Uart_UART_EXCLUSIVE_AREA_00/25 
+  Calls: 
+SchM_Exit_Uart_UART_EXCLUSIVE_AREA_11/48 (SchM_Exit_Uart_UART_EXCLUSIVE_AREA_11) @06b3d620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: reentry_guard_UART_EXCLUSIVE_AREA_11/23 (read) reentry_guard_UART_EXCLUSIVE_AREA_11/23 (write) msr_UART_EXCLUSIVE_AREA_11/22 (read) reentry_guard_UART_EXCLUSIVE_AREA_11/23 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Sys_GetCoreID/49 
+SchM_Enter_Uart_UART_EXCLUSIVE_AREA_11/47 (SchM_Enter_Uart_UART_EXCLUSIVE_AREA_11) @06b3d380
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: reentry_guard_UART_EXCLUSIVE_AREA_11/23 (read) msr_UART_EXCLUSIVE_AREA_11/22 (write) reentry_guard_UART_EXCLUSIVE_AREA_11/23 (read) reentry_guard_UART_EXCLUSIVE_AREA_11/23 (write) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Uart_schm_read_msr/24 Sys_GetCoreID/49 
+SchM_Exit_Uart_UART_EXCLUSIVE_AREA_10/46 (SchM_Exit_Uart_UART_EXCLUSIVE_AREA_10) @06b3d000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: reentry_guard_UART_EXCLUSIVE_AREA_10/21 (read) reentry_guard_UART_EXCLUSIVE_AREA_10/21 (write) msr_UART_EXCLUSIVE_AREA_10/20 (read) reentry_guard_UART_EXCLUSIVE_AREA_10/21 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Sys_GetCoreID/49 
+SchM_Enter_Uart_UART_EXCLUSIVE_AREA_10/45 (SchM_Enter_Uart_UART_EXCLUSIVE_AREA_10) @06b38a80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: reentry_guard_UART_EXCLUSIVE_AREA_10/21 (read) msr_UART_EXCLUSIVE_AREA_10/20 (write) reentry_guard_UART_EXCLUSIVE_AREA_10/21 (read) reentry_guard_UART_EXCLUSIVE_AREA_10/21 (write) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Uart_schm_read_msr/24 Sys_GetCoreID/49 
+SchM_Exit_Uart_UART_EXCLUSIVE_AREA_09/44 (SchM_Exit_Uart_UART_EXCLUSIVE_AREA_09) @06b381c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: reentry_guard_UART_EXCLUSIVE_AREA_09/19 (read) reentry_guard_UART_EXCLUSIVE_AREA_09/19 (write) msr_UART_EXCLUSIVE_AREA_09/18 (read) reentry_guard_UART_EXCLUSIVE_AREA_09/19 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Sys_GetCoreID/49 
+SchM_Enter_Uart_UART_EXCLUSIVE_AREA_09/43 (SchM_Enter_Uart_UART_EXCLUSIVE_AREA_09) @06b38d20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: reentry_guard_UART_EXCLUSIVE_AREA_09/19 (read) msr_UART_EXCLUSIVE_AREA_09/18 (write) reentry_guard_UART_EXCLUSIVE_AREA_09/19 (read) reentry_guard_UART_EXCLUSIVE_AREA_09/19 (write) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Uart_schm_read_msr/24 Sys_GetCoreID/49 
+SchM_Exit_Uart_UART_EXCLUSIVE_AREA_08/42 (SchM_Exit_Uart_UART_EXCLUSIVE_AREA_08) @06b389a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: reentry_guard_UART_EXCLUSIVE_AREA_08/17 (read) reentry_guard_UART_EXCLUSIVE_AREA_08/17 (write) msr_UART_EXCLUSIVE_AREA_08/16 (read) reentry_guard_UART_EXCLUSIVE_AREA_08/17 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Sys_GetCoreID/49 
+SchM_Enter_Uart_UART_EXCLUSIVE_AREA_08/41 (SchM_Enter_Uart_UART_EXCLUSIVE_AREA_08) @06b38700
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: reentry_guard_UART_EXCLUSIVE_AREA_08/17 (read) msr_UART_EXCLUSIVE_AREA_08/16 (write) reentry_guard_UART_EXCLUSIVE_AREA_08/17 (read) reentry_guard_UART_EXCLUSIVE_AREA_08/17 (write) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Uart_schm_read_msr/24 Sys_GetCoreID/49 
+SchM_Exit_Uart_UART_EXCLUSIVE_AREA_07/40 (SchM_Exit_Uart_UART_EXCLUSIVE_AREA_07) @06b38380
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: reentry_guard_UART_EXCLUSIVE_AREA_07/15 (read) reentry_guard_UART_EXCLUSIVE_AREA_07/15 (write) msr_UART_EXCLUSIVE_AREA_07/14 (read) reentry_guard_UART_EXCLUSIVE_AREA_07/15 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Sys_GetCoreID/49 
+SchM_Enter_Uart_UART_EXCLUSIVE_AREA_07/39 (SchM_Enter_Uart_UART_EXCLUSIVE_AREA_07) @06b380e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: reentry_guard_UART_EXCLUSIVE_AREA_07/15 (read) msr_UART_EXCLUSIVE_AREA_07/14 (write) reentry_guard_UART_EXCLUSIVE_AREA_07/15 (read) reentry_guard_UART_EXCLUSIVE_AREA_07/15 (write) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Uart_schm_read_msr/24 Sys_GetCoreID/49 
+SchM_Exit_Uart_UART_EXCLUSIVE_AREA_06/38 (SchM_Exit_Uart_UART_EXCLUSIVE_AREA_06) @06b31c40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: reentry_guard_UART_EXCLUSIVE_AREA_06/13 (read) reentry_guard_UART_EXCLUSIVE_AREA_06/13 (write) msr_UART_EXCLUSIVE_AREA_06/12 (read) reentry_guard_UART_EXCLUSIVE_AREA_06/13 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Sys_GetCoreID/49 
+SchM_Enter_Uart_UART_EXCLUSIVE_AREA_06/37 (SchM_Enter_Uart_UART_EXCLUSIVE_AREA_06) @06b31620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: reentry_guard_UART_EXCLUSIVE_AREA_06/13 (read) msr_UART_EXCLUSIVE_AREA_06/12 (write) reentry_guard_UART_EXCLUSIVE_AREA_06/13 (read) reentry_guard_UART_EXCLUSIVE_AREA_06/13 (write) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Uart_schm_read_msr/24 Sys_GetCoreID/49 
+SchM_Exit_Uart_UART_EXCLUSIVE_AREA_05/36 (SchM_Exit_Uart_UART_EXCLUSIVE_AREA_05) @06b31e00
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: reentry_guard_UART_EXCLUSIVE_AREA_05/11 (read) reentry_guard_UART_EXCLUSIVE_AREA_05/11 (write) msr_UART_EXCLUSIVE_AREA_05/10 (read) reentry_guard_UART_EXCLUSIVE_AREA_05/11 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Sys_GetCoreID/49 
+SchM_Enter_Uart_UART_EXCLUSIVE_AREA_05/35 (SchM_Enter_Uart_UART_EXCLUSIVE_AREA_05) @06b31b60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: reentry_guard_UART_EXCLUSIVE_AREA_05/11 (read) msr_UART_EXCLUSIVE_AREA_05/10 (write) reentry_guard_UART_EXCLUSIVE_AREA_05/11 (read) reentry_guard_UART_EXCLUSIVE_AREA_05/11 (write) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Uart_schm_read_msr/24 Sys_GetCoreID/49 
+SchM_Exit_Uart_UART_EXCLUSIVE_AREA_04/34 (SchM_Exit_Uart_UART_EXCLUSIVE_AREA_04) @06b317e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: reentry_guard_UART_EXCLUSIVE_AREA_04/9 (read) reentry_guard_UART_EXCLUSIVE_AREA_04/9 (write) msr_UART_EXCLUSIVE_AREA_04/8 (read) reentry_guard_UART_EXCLUSIVE_AREA_04/9 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Sys_GetCoreID/49 
+SchM_Enter_Uart_UART_EXCLUSIVE_AREA_04/33 (SchM_Enter_Uart_UART_EXCLUSIVE_AREA_04) @06b31540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: reentry_guard_UART_EXCLUSIVE_AREA_04/9 (read) msr_UART_EXCLUSIVE_AREA_04/8 (write) reentry_guard_UART_EXCLUSIVE_AREA_04/9 (read) reentry_guard_UART_EXCLUSIVE_AREA_04/9 (write) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Uart_schm_read_msr/24 Sys_GetCoreID/49 
+SchM_Exit_Uart_UART_EXCLUSIVE_AREA_03/32 (SchM_Exit_Uart_UART_EXCLUSIVE_AREA_03) @06b311c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: reentry_guard_UART_EXCLUSIVE_AREA_03/7 (read) reentry_guard_UART_EXCLUSIVE_AREA_03/7 (write) msr_UART_EXCLUSIVE_AREA_03/6 (read) reentry_guard_UART_EXCLUSIVE_AREA_03/7 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Sys_GetCoreID/49 
+SchM_Enter_Uart_UART_EXCLUSIVE_AREA_03/31 (SchM_Enter_Uart_UART_EXCLUSIVE_AREA_03) @06bc9c40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: reentry_guard_UART_EXCLUSIVE_AREA_03/7 (read) msr_UART_EXCLUSIVE_AREA_03/6 (write) reentry_guard_UART_EXCLUSIVE_AREA_03/7 (read) reentry_guard_UART_EXCLUSIVE_AREA_03/7 (write) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Uart_schm_read_msr/24 Sys_GetCoreID/49 
+SchM_Exit_Uart_UART_EXCLUSIVE_AREA_02/30 (SchM_Exit_Uart_UART_EXCLUSIVE_AREA_02) @06bc9380
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: reentry_guard_UART_EXCLUSIVE_AREA_02/5 (read) reentry_guard_UART_EXCLUSIVE_AREA_02/5 (write) msr_UART_EXCLUSIVE_AREA_02/4 (read) reentry_guard_UART_EXCLUSIVE_AREA_02/5 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Sys_GetCoreID/49 
+SchM_Enter_Uart_UART_EXCLUSIVE_AREA_02/29 (SchM_Enter_Uart_UART_EXCLUSIVE_AREA_02) @06bc9ee0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: reentry_guard_UART_EXCLUSIVE_AREA_02/5 (read) msr_UART_EXCLUSIVE_AREA_02/4 (write) reentry_guard_UART_EXCLUSIVE_AREA_02/5 (read) reentry_guard_UART_EXCLUSIVE_AREA_02/5 (write) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Uart_schm_read_msr/24 Sys_GetCoreID/49 
+SchM_Exit_Uart_UART_EXCLUSIVE_AREA_01/28 (SchM_Exit_Uart_UART_EXCLUSIVE_AREA_01) @06bc9b60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: reentry_guard_UART_EXCLUSIVE_AREA_01/3 (read) reentry_guard_UART_EXCLUSIVE_AREA_01/3 (write) msr_UART_EXCLUSIVE_AREA_01/2 (read) reentry_guard_UART_EXCLUSIVE_AREA_01/3 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Sys_GetCoreID/49 
+SchM_Enter_Uart_UART_EXCLUSIVE_AREA_01/27 (SchM_Enter_Uart_UART_EXCLUSIVE_AREA_01) @06bc98c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: reentry_guard_UART_EXCLUSIVE_AREA_01/3 (read) msr_UART_EXCLUSIVE_AREA_01/2 (write) reentry_guard_UART_EXCLUSIVE_AREA_01/3 (read) reentry_guard_UART_EXCLUSIVE_AREA_01/3 (write) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Uart_schm_read_msr/24 Sys_GetCoreID/49 
+SchM_Exit_Uart_UART_EXCLUSIVE_AREA_00/26 (SchM_Exit_Uart_UART_EXCLUSIVE_AREA_00) @06bc9540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: reentry_guard_UART_EXCLUSIVE_AREA_00/1 (read) reentry_guard_UART_EXCLUSIVE_AREA_00/1 (write) msr_UART_EXCLUSIVE_AREA_00/0 (read) reentry_guard_UART_EXCLUSIVE_AREA_00/1 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Sys_GetCoreID/49 
+SchM_Enter_Uart_UART_EXCLUSIVE_AREA_00/25 (SchM_Enter_Uart_UART_EXCLUSIVE_AREA_00) @06bc92a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: reentry_guard_UART_EXCLUSIVE_AREA_00/1 (read) msr_UART_EXCLUSIVE_AREA_00/0 (write) reentry_guard_UART_EXCLUSIVE_AREA_00/1 (read) reentry_guard_UART_EXCLUSIVE_AREA_00/1 (write) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Uart_schm_read_msr/24 Sys_GetCoreID/49 
+Uart_schm_read_msr/24 (Uart_schm_read_msr) @06bc5e00
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: SchM_Enter_Uart_UART_EXCLUSIVE_AREA_11/47 SchM_Enter_Uart_UART_EXCLUSIVE_AREA_10/45 SchM_Enter_Uart_UART_EXCLUSIVE_AREA_09/43 SchM_Enter_Uart_UART_EXCLUSIVE_AREA_08/41 SchM_Enter_Uart_UART_EXCLUSIVE_AREA_07/39 SchM_Enter_Uart_UART_EXCLUSIVE_AREA_06/37 SchM_Enter_Uart_UART_EXCLUSIVE_AREA_05/35 SchM_Enter_Uart_UART_EXCLUSIVE_AREA_04/33 SchM_Enter_Uart_UART_EXCLUSIVE_AREA_03/31 SchM_Enter_Uart_UART_EXCLUSIVE_AREA_02/29 SchM_Enter_Uart_UART_EXCLUSIVE_AREA_01/27 SchM_Enter_Uart_UART_EXCLUSIVE_AREA_00/25 
+  Calls: 
+reentry_guard_UART_EXCLUSIVE_AREA_11/23 (reentry_guard_UART_EXCLUSIVE_AREA_11) @06bc6438
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: SchM_Enter_Uart_UART_EXCLUSIVE_AREA_11/47 (read) SchM_Enter_Uart_UART_EXCLUSIVE_AREA_11/47 (read) SchM_Enter_Uart_UART_EXCLUSIVE_AREA_11/47 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_11/48 (read) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_11/48 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_11/48 (read) 
+  Availability: not-ready
+  Varpool flags:
+msr_UART_EXCLUSIVE_AREA_11/22 (msr_UART_EXCLUSIVE_AREA_11) @06bc63a8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: SchM_Enter_Uart_UART_EXCLUSIVE_AREA_11/47 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_11/48 (read) 
+  Availability: not-ready
+  Varpool flags:
+reentry_guard_UART_EXCLUSIVE_AREA_10/21 (reentry_guard_UART_EXCLUSIVE_AREA_10) @06bc6318
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: SchM_Enter_Uart_UART_EXCLUSIVE_AREA_10/45 (read) SchM_Enter_Uart_UART_EXCLUSIVE_AREA_10/45 (read) SchM_Enter_Uart_UART_EXCLUSIVE_AREA_10/45 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_10/46 (read) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_10/46 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_10/46 (read) 
+  Availability: not-ready
+  Varpool flags:
+msr_UART_EXCLUSIVE_AREA_10/20 (msr_UART_EXCLUSIVE_AREA_10) @06bc6288
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: SchM_Enter_Uart_UART_EXCLUSIVE_AREA_10/45 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_10/46 (read) 
+  Availability: not-ready
+  Varpool flags:
+reentry_guard_UART_EXCLUSIVE_AREA_09/19 (reentry_guard_UART_EXCLUSIVE_AREA_09) @06bc61f8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: SchM_Enter_Uart_UART_EXCLUSIVE_AREA_09/43 (read) SchM_Enter_Uart_UART_EXCLUSIVE_AREA_09/43 (read) SchM_Enter_Uart_UART_EXCLUSIVE_AREA_09/43 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_09/44 (read) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_09/44 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_09/44 (read) 
+  Availability: not-ready
+  Varpool flags:
+msr_UART_EXCLUSIVE_AREA_09/18 (msr_UART_EXCLUSIVE_AREA_09) @06bc6168
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: SchM_Enter_Uart_UART_EXCLUSIVE_AREA_09/43 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_09/44 (read) 
+  Availability: not-ready
+  Varpool flags:
+reentry_guard_UART_EXCLUSIVE_AREA_08/17 (reentry_guard_UART_EXCLUSIVE_AREA_08) @06bc60d8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: SchM_Enter_Uart_UART_EXCLUSIVE_AREA_08/41 (read) SchM_Enter_Uart_UART_EXCLUSIVE_AREA_08/41 (read) SchM_Enter_Uart_UART_EXCLUSIVE_AREA_08/41 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_08/42 (read) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_08/42 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_08/42 (read) 
+  Availability: not-ready
+  Varpool flags:
+msr_UART_EXCLUSIVE_AREA_08/16 (msr_UART_EXCLUSIVE_AREA_08) @06bc6048
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: SchM_Enter_Uart_UART_EXCLUSIVE_AREA_08/41 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_08/42 (read) 
+  Availability: not-ready
+  Varpool flags:
+reentry_guard_UART_EXCLUSIVE_AREA_07/15 (reentry_guard_UART_EXCLUSIVE_AREA_07) @06bc0f78
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: SchM_Enter_Uart_UART_EXCLUSIVE_AREA_07/39 (read) SchM_Enter_Uart_UART_EXCLUSIVE_AREA_07/39 (read) SchM_Enter_Uart_UART_EXCLUSIVE_AREA_07/39 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_07/40 (read) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_07/40 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_07/40 (read) 
+  Availability: not-ready
+  Varpool flags:
+msr_UART_EXCLUSIVE_AREA_07/14 (msr_UART_EXCLUSIVE_AREA_07) @06bc0ee8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: SchM_Enter_Uart_UART_EXCLUSIVE_AREA_07/39 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_07/40 (read) 
+  Availability: not-ready
+  Varpool flags:
+reentry_guard_UART_EXCLUSIVE_AREA_06/13 (reentry_guard_UART_EXCLUSIVE_AREA_06) @06bc0e58
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: SchM_Enter_Uart_UART_EXCLUSIVE_AREA_06/37 (read) SchM_Enter_Uart_UART_EXCLUSIVE_AREA_06/37 (read) SchM_Enter_Uart_UART_EXCLUSIVE_AREA_06/37 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_06/38 (read) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_06/38 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_06/38 (read) 
+  Availability: not-ready
+  Varpool flags:
+msr_UART_EXCLUSIVE_AREA_06/12 (msr_UART_EXCLUSIVE_AREA_06) @06bc0dc8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: SchM_Enter_Uart_UART_EXCLUSIVE_AREA_06/37 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_06/38 (read) 
+  Availability: not-ready
+  Varpool flags:
+reentry_guard_UART_EXCLUSIVE_AREA_05/11 (reentry_guard_UART_EXCLUSIVE_AREA_05) @06bc0d38
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: SchM_Enter_Uart_UART_EXCLUSIVE_AREA_05/35 (read) SchM_Enter_Uart_UART_EXCLUSIVE_AREA_05/35 (read) SchM_Enter_Uart_UART_EXCLUSIVE_AREA_05/35 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_05/36 (read) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_05/36 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_05/36 (read) 
+  Availability: not-ready
+  Varpool flags:
+msr_UART_EXCLUSIVE_AREA_05/10 (msr_UART_EXCLUSIVE_AREA_05) @06bc0ca8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: SchM_Enter_Uart_UART_EXCLUSIVE_AREA_05/35 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_05/36 (read) 
+  Availability: not-ready
+  Varpool flags:
+reentry_guard_UART_EXCLUSIVE_AREA_04/9 (reentry_guard_UART_EXCLUSIVE_AREA_04) @06bc0c18
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: SchM_Enter_Uart_UART_EXCLUSIVE_AREA_04/33 (read) SchM_Enter_Uart_UART_EXCLUSIVE_AREA_04/33 (read) SchM_Enter_Uart_UART_EXCLUSIVE_AREA_04/33 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_04/34 (read) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_04/34 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_04/34 (read) 
+  Availability: not-ready
+  Varpool flags:
+msr_UART_EXCLUSIVE_AREA_04/8 (msr_UART_EXCLUSIVE_AREA_04) @06bc0b88
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: SchM_Enter_Uart_UART_EXCLUSIVE_AREA_04/33 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_04/34 (read) 
+  Availability: not-ready
+  Varpool flags:
+reentry_guard_UART_EXCLUSIVE_AREA_03/7 (reentry_guard_UART_EXCLUSIVE_AREA_03) @06bc0af8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: SchM_Enter_Uart_UART_EXCLUSIVE_AREA_03/31 (read) SchM_Enter_Uart_UART_EXCLUSIVE_AREA_03/31 (read) SchM_Enter_Uart_UART_EXCLUSIVE_AREA_03/31 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_03/32 (read) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_03/32 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_03/32 (read) 
+  Availability: not-ready
+  Varpool flags:
+msr_UART_EXCLUSIVE_AREA_03/6 (msr_UART_EXCLUSIVE_AREA_03) @06bc0a68
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: SchM_Enter_Uart_UART_EXCLUSIVE_AREA_03/31 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_03/32 (read) 
+  Availability: not-ready
+  Varpool flags:
+reentry_guard_UART_EXCLUSIVE_AREA_02/5 (reentry_guard_UART_EXCLUSIVE_AREA_02) @06bc09d8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: SchM_Enter_Uart_UART_EXCLUSIVE_AREA_02/29 (read) SchM_Enter_Uart_UART_EXCLUSIVE_AREA_02/29 (read) SchM_Enter_Uart_UART_EXCLUSIVE_AREA_02/29 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_02/30 (read) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_02/30 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_02/30 (read) 
+  Availability: not-ready
+  Varpool flags:
+msr_UART_EXCLUSIVE_AREA_02/4 (msr_UART_EXCLUSIVE_AREA_02) @06bc0948
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: SchM_Enter_Uart_UART_EXCLUSIVE_AREA_02/29 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_02/30 (read) 
+  Availability: not-ready
+  Varpool flags:
+reentry_guard_UART_EXCLUSIVE_AREA_01/3 (reentry_guard_UART_EXCLUSIVE_AREA_01) @06bc08b8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: SchM_Enter_Uart_UART_EXCLUSIVE_AREA_01/27 (read) SchM_Enter_Uart_UART_EXCLUSIVE_AREA_01/27 (read) SchM_Enter_Uart_UART_EXCLUSIVE_AREA_01/27 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_01/28 (read) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_01/28 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_01/28 (read) 
+  Availability: not-ready
+  Varpool flags:
+msr_UART_EXCLUSIVE_AREA_01/2 (msr_UART_EXCLUSIVE_AREA_01) @06bc0828
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: SchM_Enter_Uart_UART_EXCLUSIVE_AREA_01/27 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_01/28 (read) 
+  Availability: not-ready
+  Varpool flags:
+reentry_guard_UART_EXCLUSIVE_AREA_00/1 (reentry_guard_UART_EXCLUSIVE_AREA_00) @06bc0798
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: SchM_Enter_Uart_UART_EXCLUSIVE_AREA_00/25 (read) SchM_Enter_Uart_UART_EXCLUSIVE_AREA_00/25 (read) SchM_Enter_Uart_UART_EXCLUSIVE_AREA_00/25 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_00/26 (read) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_00/26 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_00/26 (read) 
+  Availability: not-ready
+  Varpool flags:
+msr_UART_EXCLUSIVE_AREA_00/0 (msr_UART_EXCLUSIVE_AREA_00) @06bc0708
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: SchM_Enter_Uart_UART_EXCLUSIVE_AREA_00/25 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_00/26 (read) 
+  Availability: not-ready
+  Varpool flags:
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+Sys_GetCoreID/49 (Sys_GetCoreID) @06b3db60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: SchM_Exit_Uart_UART_EXCLUSIVE_AREA_11/48 SchM_Enter_Uart_UART_EXCLUSIVE_AREA_11/47 SchM_Exit_Uart_UART_EXCLUSIVE_AREA_10/46 SchM_Enter_Uart_UART_EXCLUSIVE_AREA_10/45 SchM_Exit_Uart_UART_EXCLUSIVE_AREA_09/44 SchM_Enter_Uart_UART_EXCLUSIVE_AREA_09/43 SchM_Exit_Uart_UART_EXCLUSIVE_AREA_08/42 SchM_Enter_Uart_UART_EXCLUSIVE_AREA_08/41 SchM_Exit_Uart_UART_EXCLUSIVE_AREA_07/40 SchM_Enter_Uart_UART_EXCLUSIVE_AREA_07/39 SchM_Exit_Uart_UART_EXCLUSIVE_AREA_06/38 SchM_Enter_Uart_UART_EXCLUSIVE_AREA_06/37 SchM_Exit_Uart_UART_EXCLUSIVE_AREA_05/36 SchM_Enter_Uart_UART_EXCLUSIVE_AREA_05/35 SchM_Exit_Uart_UART_EXCLUSIVE_AREA_04/34 SchM_Enter_Uart_UART_EXCLUSIVE_AREA_04/33 SchM_Exit_Uart_UART_EXCLUSIVE_AREA_03/32 SchM_Enter_Uart_UART_EXCLUSIVE_AREA_03/31 SchM_Exit_Uart_UART_EXCLUSIVE_AREA_02/30 SchM_Enter_Uart_UART_EXCLUSIVE_AREA_02/29 SchM_Exit_Uart_UART_EXCLUSIVE_AREA_01/28 SchM_Enter_Uart_UART_EXCLUSIVE_AREA_01/27 SchM_Exit_Uart_UART_EXCLUSIVE_AREA_00/26 SchM_Enter_Uart_UART_EXCLUSIVE_AREA_00/25 
+  Calls: 
+SchM_Exit_Uart_UART_EXCLUSIVE_AREA_11/48 (SchM_Exit_Uart_UART_EXCLUSIVE_AREA_11) @06b3d620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: reentry_guard_UART_EXCLUSIVE_AREA_11/23 (read) reentry_guard_UART_EXCLUSIVE_AREA_11/23 (write) msr_UART_EXCLUSIVE_AREA_11/22 (read) reentry_guard_UART_EXCLUSIVE_AREA_11/23 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Sys_GetCoreID/49 
+SchM_Enter_Uart_UART_EXCLUSIVE_AREA_11/47 (SchM_Enter_Uart_UART_EXCLUSIVE_AREA_11) @06b3d380
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: reentry_guard_UART_EXCLUSIVE_AREA_11/23 (read) msr_UART_EXCLUSIVE_AREA_11/22 (write) reentry_guard_UART_EXCLUSIVE_AREA_11/23 (read) reentry_guard_UART_EXCLUSIVE_AREA_11/23 (write) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Uart_schm_read_msr/24 Sys_GetCoreID/49 
+SchM_Exit_Uart_UART_EXCLUSIVE_AREA_10/46 (SchM_Exit_Uart_UART_EXCLUSIVE_AREA_10) @06b3d000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: reentry_guard_UART_EXCLUSIVE_AREA_10/21 (read) reentry_guard_UART_EXCLUSIVE_AREA_10/21 (write) msr_UART_EXCLUSIVE_AREA_10/20 (read) reentry_guard_UART_EXCLUSIVE_AREA_10/21 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Sys_GetCoreID/49 
+SchM_Enter_Uart_UART_EXCLUSIVE_AREA_10/45 (SchM_Enter_Uart_UART_EXCLUSIVE_AREA_10) @06b38a80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: reentry_guard_UART_EXCLUSIVE_AREA_10/21 (read) msr_UART_EXCLUSIVE_AREA_10/20 (write) reentry_guard_UART_EXCLUSIVE_AREA_10/21 (read) reentry_guard_UART_EXCLUSIVE_AREA_10/21 (write) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Uart_schm_read_msr/24 Sys_GetCoreID/49 
+SchM_Exit_Uart_UART_EXCLUSIVE_AREA_09/44 (SchM_Exit_Uart_UART_EXCLUSIVE_AREA_09) @06b381c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: reentry_guard_UART_EXCLUSIVE_AREA_09/19 (read) reentry_guard_UART_EXCLUSIVE_AREA_09/19 (write) msr_UART_EXCLUSIVE_AREA_09/18 (read) reentry_guard_UART_EXCLUSIVE_AREA_09/19 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Sys_GetCoreID/49 
+SchM_Enter_Uart_UART_EXCLUSIVE_AREA_09/43 (SchM_Enter_Uart_UART_EXCLUSIVE_AREA_09) @06b38d20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: reentry_guard_UART_EXCLUSIVE_AREA_09/19 (read) msr_UART_EXCLUSIVE_AREA_09/18 (write) reentry_guard_UART_EXCLUSIVE_AREA_09/19 (read) reentry_guard_UART_EXCLUSIVE_AREA_09/19 (write) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Uart_schm_read_msr/24 Sys_GetCoreID/49 
+SchM_Exit_Uart_UART_EXCLUSIVE_AREA_08/42 (SchM_Exit_Uart_UART_EXCLUSIVE_AREA_08) @06b389a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: reentry_guard_UART_EXCLUSIVE_AREA_08/17 (read) reentry_guard_UART_EXCLUSIVE_AREA_08/17 (write) msr_UART_EXCLUSIVE_AREA_08/16 (read) reentry_guard_UART_EXCLUSIVE_AREA_08/17 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Sys_GetCoreID/49 
+SchM_Enter_Uart_UART_EXCLUSIVE_AREA_08/41 (SchM_Enter_Uart_UART_EXCLUSIVE_AREA_08) @06b38700
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: reentry_guard_UART_EXCLUSIVE_AREA_08/17 (read) msr_UART_EXCLUSIVE_AREA_08/16 (write) reentry_guard_UART_EXCLUSIVE_AREA_08/17 (read) reentry_guard_UART_EXCLUSIVE_AREA_08/17 (write) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Uart_schm_read_msr/24 Sys_GetCoreID/49 
+SchM_Exit_Uart_UART_EXCLUSIVE_AREA_07/40 (SchM_Exit_Uart_UART_EXCLUSIVE_AREA_07) @06b38380
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: reentry_guard_UART_EXCLUSIVE_AREA_07/15 (read) reentry_guard_UART_EXCLUSIVE_AREA_07/15 (write) msr_UART_EXCLUSIVE_AREA_07/14 (read) reentry_guard_UART_EXCLUSIVE_AREA_07/15 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Sys_GetCoreID/49 
+SchM_Enter_Uart_UART_EXCLUSIVE_AREA_07/39 (SchM_Enter_Uart_UART_EXCLUSIVE_AREA_07) @06b380e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: reentry_guard_UART_EXCLUSIVE_AREA_07/15 (read) msr_UART_EXCLUSIVE_AREA_07/14 (write) reentry_guard_UART_EXCLUSIVE_AREA_07/15 (read) reentry_guard_UART_EXCLUSIVE_AREA_07/15 (write) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Uart_schm_read_msr/24 Sys_GetCoreID/49 
+SchM_Exit_Uart_UART_EXCLUSIVE_AREA_06/38 (SchM_Exit_Uart_UART_EXCLUSIVE_AREA_06) @06b31c40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: reentry_guard_UART_EXCLUSIVE_AREA_06/13 (read) reentry_guard_UART_EXCLUSIVE_AREA_06/13 (write) msr_UART_EXCLUSIVE_AREA_06/12 (read) reentry_guard_UART_EXCLUSIVE_AREA_06/13 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Sys_GetCoreID/49 
+SchM_Enter_Uart_UART_EXCLUSIVE_AREA_06/37 (SchM_Enter_Uart_UART_EXCLUSIVE_AREA_06) @06b31620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: reentry_guard_UART_EXCLUSIVE_AREA_06/13 (read) msr_UART_EXCLUSIVE_AREA_06/12 (write) reentry_guard_UART_EXCLUSIVE_AREA_06/13 (read) reentry_guard_UART_EXCLUSIVE_AREA_06/13 (write) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Uart_schm_read_msr/24 Sys_GetCoreID/49 
+SchM_Exit_Uart_UART_EXCLUSIVE_AREA_05/36 (SchM_Exit_Uart_UART_EXCLUSIVE_AREA_05) @06b31e00
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: reentry_guard_UART_EXCLUSIVE_AREA_05/11 (read) reentry_guard_UART_EXCLUSIVE_AREA_05/11 (write) msr_UART_EXCLUSIVE_AREA_05/10 (read) reentry_guard_UART_EXCLUSIVE_AREA_05/11 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Sys_GetCoreID/49 
+SchM_Enter_Uart_UART_EXCLUSIVE_AREA_05/35 (SchM_Enter_Uart_UART_EXCLUSIVE_AREA_05) @06b31b60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: reentry_guard_UART_EXCLUSIVE_AREA_05/11 (read) msr_UART_EXCLUSIVE_AREA_05/10 (write) reentry_guard_UART_EXCLUSIVE_AREA_05/11 (read) reentry_guard_UART_EXCLUSIVE_AREA_05/11 (write) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Uart_schm_read_msr/24 Sys_GetCoreID/49 
+SchM_Exit_Uart_UART_EXCLUSIVE_AREA_04/34 (SchM_Exit_Uart_UART_EXCLUSIVE_AREA_04) @06b317e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: reentry_guard_UART_EXCLUSIVE_AREA_04/9 (read) reentry_guard_UART_EXCLUSIVE_AREA_04/9 (write) msr_UART_EXCLUSIVE_AREA_04/8 (read) reentry_guard_UART_EXCLUSIVE_AREA_04/9 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Sys_GetCoreID/49 
+SchM_Enter_Uart_UART_EXCLUSIVE_AREA_04/33 (SchM_Enter_Uart_UART_EXCLUSIVE_AREA_04) @06b31540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: reentry_guard_UART_EXCLUSIVE_AREA_04/9 (read) msr_UART_EXCLUSIVE_AREA_04/8 (write) reentry_guard_UART_EXCLUSIVE_AREA_04/9 (read) reentry_guard_UART_EXCLUSIVE_AREA_04/9 (write) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Uart_schm_read_msr/24 Sys_GetCoreID/49 
+SchM_Exit_Uart_UART_EXCLUSIVE_AREA_03/32 (SchM_Exit_Uart_UART_EXCLUSIVE_AREA_03) @06b311c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: reentry_guard_UART_EXCLUSIVE_AREA_03/7 (read) reentry_guard_UART_EXCLUSIVE_AREA_03/7 (write) msr_UART_EXCLUSIVE_AREA_03/6 (read) reentry_guard_UART_EXCLUSIVE_AREA_03/7 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Sys_GetCoreID/49 
+SchM_Enter_Uart_UART_EXCLUSIVE_AREA_03/31 (SchM_Enter_Uart_UART_EXCLUSIVE_AREA_03) @06bc9c40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: reentry_guard_UART_EXCLUSIVE_AREA_03/7 (read) msr_UART_EXCLUSIVE_AREA_03/6 (write) reentry_guard_UART_EXCLUSIVE_AREA_03/7 (read) reentry_guard_UART_EXCLUSIVE_AREA_03/7 (write) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Uart_schm_read_msr/24 Sys_GetCoreID/49 
+SchM_Exit_Uart_UART_EXCLUSIVE_AREA_02/30 (SchM_Exit_Uart_UART_EXCLUSIVE_AREA_02) @06bc9380
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: reentry_guard_UART_EXCLUSIVE_AREA_02/5 (read) reentry_guard_UART_EXCLUSIVE_AREA_02/5 (write) msr_UART_EXCLUSIVE_AREA_02/4 (read) reentry_guard_UART_EXCLUSIVE_AREA_02/5 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Sys_GetCoreID/49 
+SchM_Enter_Uart_UART_EXCLUSIVE_AREA_02/29 (SchM_Enter_Uart_UART_EXCLUSIVE_AREA_02) @06bc9ee0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: reentry_guard_UART_EXCLUSIVE_AREA_02/5 (read) msr_UART_EXCLUSIVE_AREA_02/4 (write) reentry_guard_UART_EXCLUSIVE_AREA_02/5 (read) reentry_guard_UART_EXCLUSIVE_AREA_02/5 (write) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Uart_schm_read_msr/24 Sys_GetCoreID/49 
+SchM_Exit_Uart_UART_EXCLUSIVE_AREA_01/28 (SchM_Exit_Uart_UART_EXCLUSIVE_AREA_01) @06bc9b60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: reentry_guard_UART_EXCLUSIVE_AREA_01/3 (read) reentry_guard_UART_EXCLUSIVE_AREA_01/3 (write) msr_UART_EXCLUSIVE_AREA_01/2 (read) reentry_guard_UART_EXCLUSIVE_AREA_01/3 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Sys_GetCoreID/49 
+SchM_Enter_Uart_UART_EXCLUSIVE_AREA_01/27 (SchM_Enter_Uart_UART_EXCLUSIVE_AREA_01) @06bc98c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: reentry_guard_UART_EXCLUSIVE_AREA_01/3 (read) msr_UART_EXCLUSIVE_AREA_01/2 (write) reentry_guard_UART_EXCLUSIVE_AREA_01/3 (read) reentry_guard_UART_EXCLUSIVE_AREA_01/3 (write) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Uart_schm_read_msr/24 Sys_GetCoreID/49 
+SchM_Exit_Uart_UART_EXCLUSIVE_AREA_00/26 (SchM_Exit_Uart_UART_EXCLUSIVE_AREA_00) @06bc9540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: reentry_guard_UART_EXCLUSIVE_AREA_00/1 (read) reentry_guard_UART_EXCLUSIVE_AREA_00/1 (write) msr_UART_EXCLUSIVE_AREA_00/0 (read) reentry_guard_UART_EXCLUSIVE_AREA_00/1 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Sys_GetCoreID/49 
+SchM_Enter_Uart_UART_EXCLUSIVE_AREA_00/25 (SchM_Enter_Uart_UART_EXCLUSIVE_AREA_00) @06bc92a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: reentry_guard_UART_EXCLUSIVE_AREA_00/1 (read) msr_UART_EXCLUSIVE_AREA_00/0 (write) reentry_guard_UART_EXCLUSIVE_AREA_00/1 (read) reentry_guard_UART_EXCLUSIVE_AREA_00/1 (write) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Uart_schm_read_msr/24 Sys_GetCoreID/49 
+Uart_schm_read_msr/24 (Uart_schm_read_msr) @06bc5e00
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: SchM_Enter_Uart_UART_EXCLUSIVE_AREA_11/47 SchM_Enter_Uart_UART_EXCLUSIVE_AREA_10/45 SchM_Enter_Uart_UART_EXCLUSIVE_AREA_09/43 SchM_Enter_Uart_UART_EXCLUSIVE_AREA_08/41 SchM_Enter_Uart_UART_EXCLUSIVE_AREA_07/39 SchM_Enter_Uart_UART_EXCLUSIVE_AREA_06/37 SchM_Enter_Uart_UART_EXCLUSIVE_AREA_05/35 SchM_Enter_Uart_UART_EXCLUSIVE_AREA_04/33 SchM_Enter_Uart_UART_EXCLUSIVE_AREA_03/31 SchM_Enter_Uart_UART_EXCLUSIVE_AREA_02/29 SchM_Enter_Uart_UART_EXCLUSIVE_AREA_01/27 SchM_Enter_Uart_UART_EXCLUSIVE_AREA_00/25 
+  Calls: 
+reentry_guard_UART_EXCLUSIVE_AREA_11/23 (reentry_guard_UART_EXCLUSIVE_AREA_11) @06bc6438
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: SchM_Enter_Uart_UART_EXCLUSIVE_AREA_11/47 (read) SchM_Enter_Uart_UART_EXCLUSIVE_AREA_11/47 (read) SchM_Enter_Uart_UART_EXCLUSIVE_AREA_11/47 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_11/48 (read) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_11/48 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_11/48 (read) 
+  Availability: not-ready
+  Varpool flags:
+msr_UART_EXCLUSIVE_AREA_11/22 (msr_UART_EXCLUSIVE_AREA_11) @06bc63a8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: SchM_Enter_Uart_UART_EXCLUSIVE_AREA_11/47 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_11/48 (read) 
+  Availability: not-ready
+  Varpool flags:
+reentry_guard_UART_EXCLUSIVE_AREA_10/21 (reentry_guard_UART_EXCLUSIVE_AREA_10) @06bc6318
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: SchM_Enter_Uart_UART_EXCLUSIVE_AREA_10/45 (read) SchM_Enter_Uart_UART_EXCLUSIVE_AREA_10/45 (read) SchM_Enter_Uart_UART_EXCLUSIVE_AREA_10/45 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_10/46 (read) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_10/46 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_10/46 (read) 
+  Availability: not-ready
+  Varpool flags:
+msr_UART_EXCLUSIVE_AREA_10/20 (msr_UART_EXCLUSIVE_AREA_10) @06bc6288
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: SchM_Enter_Uart_UART_EXCLUSIVE_AREA_10/45 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_10/46 (read) 
+  Availability: not-ready
+  Varpool flags:
+reentry_guard_UART_EXCLUSIVE_AREA_09/19 (reentry_guard_UART_EXCLUSIVE_AREA_09) @06bc61f8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: SchM_Enter_Uart_UART_EXCLUSIVE_AREA_09/43 (read) SchM_Enter_Uart_UART_EXCLUSIVE_AREA_09/43 (read) SchM_Enter_Uart_UART_EXCLUSIVE_AREA_09/43 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_09/44 (read) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_09/44 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_09/44 (read) 
+  Availability: not-ready
+  Varpool flags:
+msr_UART_EXCLUSIVE_AREA_09/18 (msr_UART_EXCLUSIVE_AREA_09) @06bc6168
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: SchM_Enter_Uart_UART_EXCLUSIVE_AREA_09/43 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_09/44 (read) 
+  Availability: not-ready
+  Varpool flags:
+reentry_guard_UART_EXCLUSIVE_AREA_08/17 (reentry_guard_UART_EXCLUSIVE_AREA_08) @06bc60d8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: SchM_Enter_Uart_UART_EXCLUSIVE_AREA_08/41 (read) SchM_Enter_Uart_UART_EXCLUSIVE_AREA_08/41 (read) SchM_Enter_Uart_UART_EXCLUSIVE_AREA_08/41 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_08/42 (read) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_08/42 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_08/42 (read) 
+  Availability: not-ready
+  Varpool flags:
+msr_UART_EXCLUSIVE_AREA_08/16 (msr_UART_EXCLUSIVE_AREA_08) @06bc6048
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: SchM_Enter_Uart_UART_EXCLUSIVE_AREA_08/41 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_08/42 (read) 
+  Availability: not-ready
+  Varpool flags:
+reentry_guard_UART_EXCLUSIVE_AREA_07/15 (reentry_guard_UART_EXCLUSIVE_AREA_07) @06bc0f78
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: SchM_Enter_Uart_UART_EXCLUSIVE_AREA_07/39 (read) SchM_Enter_Uart_UART_EXCLUSIVE_AREA_07/39 (read) SchM_Enter_Uart_UART_EXCLUSIVE_AREA_07/39 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_07/40 (read) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_07/40 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_07/40 (read) 
+  Availability: not-ready
+  Varpool flags:
+msr_UART_EXCLUSIVE_AREA_07/14 (msr_UART_EXCLUSIVE_AREA_07) @06bc0ee8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: SchM_Enter_Uart_UART_EXCLUSIVE_AREA_07/39 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_07/40 (read) 
+  Availability: not-ready
+  Varpool flags:
+reentry_guard_UART_EXCLUSIVE_AREA_06/13 (reentry_guard_UART_EXCLUSIVE_AREA_06) @06bc0e58
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: SchM_Enter_Uart_UART_EXCLUSIVE_AREA_06/37 (read) SchM_Enter_Uart_UART_EXCLUSIVE_AREA_06/37 (read) SchM_Enter_Uart_UART_EXCLUSIVE_AREA_06/37 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_06/38 (read) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_06/38 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_06/38 (read) 
+  Availability: not-ready
+  Varpool flags:
+msr_UART_EXCLUSIVE_AREA_06/12 (msr_UART_EXCLUSIVE_AREA_06) @06bc0dc8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: SchM_Enter_Uart_UART_EXCLUSIVE_AREA_06/37 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_06/38 (read) 
+  Availability: not-ready
+  Varpool flags:
+reentry_guard_UART_EXCLUSIVE_AREA_05/11 (reentry_guard_UART_EXCLUSIVE_AREA_05) @06bc0d38
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: SchM_Enter_Uart_UART_EXCLUSIVE_AREA_05/35 (read) SchM_Enter_Uart_UART_EXCLUSIVE_AREA_05/35 (read) SchM_Enter_Uart_UART_EXCLUSIVE_AREA_05/35 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_05/36 (read) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_05/36 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_05/36 (read) 
+  Availability: not-ready
+  Varpool flags:
+msr_UART_EXCLUSIVE_AREA_05/10 (msr_UART_EXCLUSIVE_AREA_05) @06bc0ca8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: SchM_Enter_Uart_UART_EXCLUSIVE_AREA_05/35 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_05/36 (read) 
+  Availability: not-ready
+  Varpool flags:
+reentry_guard_UART_EXCLUSIVE_AREA_04/9 (reentry_guard_UART_EXCLUSIVE_AREA_04) @06bc0c18
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: SchM_Enter_Uart_UART_EXCLUSIVE_AREA_04/33 (read) SchM_Enter_Uart_UART_EXCLUSIVE_AREA_04/33 (read) SchM_Enter_Uart_UART_EXCLUSIVE_AREA_04/33 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_04/34 (read) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_04/34 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_04/34 (read) 
+  Availability: not-ready
+  Varpool flags:
+msr_UART_EXCLUSIVE_AREA_04/8 (msr_UART_EXCLUSIVE_AREA_04) @06bc0b88
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: SchM_Enter_Uart_UART_EXCLUSIVE_AREA_04/33 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_04/34 (read) 
+  Availability: not-ready
+  Varpool flags:
+reentry_guard_UART_EXCLUSIVE_AREA_03/7 (reentry_guard_UART_EXCLUSIVE_AREA_03) @06bc0af8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: SchM_Enter_Uart_UART_EXCLUSIVE_AREA_03/31 (read) SchM_Enter_Uart_UART_EXCLUSIVE_AREA_03/31 (read) SchM_Enter_Uart_UART_EXCLUSIVE_AREA_03/31 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_03/32 (read) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_03/32 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_03/32 (read) 
+  Availability: not-ready
+  Varpool flags:
+msr_UART_EXCLUSIVE_AREA_03/6 (msr_UART_EXCLUSIVE_AREA_03) @06bc0a68
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: SchM_Enter_Uart_UART_EXCLUSIVE_AREA_03/31 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_03/32 (read) 
+  Availability: not-ready
+  Varpool flags:
+reentry_guard_UART_EXCLUSIVE_AREA_02/5 (reentry_guard_UART_EXCLUSIVE_AREA_02) @06bc09d8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: SchM_Enter_Uart_UART_EXCLUSIVE_AREA_02/29 (read) SchM_Enter_Uart_UART_EXCLUSIVE_AREA_02/29 (read) SchM_Enter_Uart_UART_EXCLUSIVE_AREA_02/29 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_02/30 (read) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_02/30 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_02/30 (read) 
+  Availability: not-ready
+  Varpool flags:
+msr_UART_EXCLUSIVE_AREA_02/4 (msr_UART_EXCLUSIVE_AREA_02) @06bc0948
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: SchM_Enter_Uart_UART_EXCLUSIVE_AREA_02/29 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_02/30 (read) 
+  Availability: not-ready
+  Varpool flags:
+reentry_guard_UART_EXCLUSIVE_AREA_01/3 (reentry_guard_UART_EXCLUSIVE_AREA_01) @06bc08b8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: SchM_Enter_Uart_UART_EXCLUSIVE_AREA_01/27 (read) SchM_Enter_Uart_UART_EXCLUSIVE_AREA_01/27 (read) SchM_Enter_Uart_UART_EXCLUSIVE_AREA_01/27 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_01/28 (read) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_01/28 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_01/28 (read) 
+  Availability: not-ready
+  Varpool flags:
+msr_UART_EXCLUSIVE_AREA_01/2 (msr_UART_EXCLUSIVE_AREA_01) @06bc0828
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: SchM_Enter_Uart_UART_EXCLUSIVE_AREA_01/27 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_01/28 (read) 
+  Availability: not-ready
+  Varpool flags:
+reentry_guard_UART_EXCLUSIVE_AREA_00/1 (reentry_guard_UART_EXCLUSIVE_AREA_00) @06bc0798
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: SchM_Enter_Uart_UART_EXCLUSIVE_AREA_00/25 (read) SchM_Enter_Uart_UART_EXCLUSIVE_AREA_00/25 (read) SchM_Enter_Uart_UART_EXCLUSIVE_AREA_00/25 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_00/26 (read) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_00/26 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_00/26 (read) 
+  Availability: not-ready
+  Varpool flags:
+msr_UART_EXCLUSIVE_AREA_00/0 (msr_UART_EXCLUSIVE_AREA_00) @06bc0708
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: SchM_Enter_Uart_UART_EXCLUSIVE_AREA_00/25 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_00/26 (read) 
+  Availability: not-ready
+  Varpool flags:
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Optimized Symbol table:
+
+Sys_GetCoreID/49 (Sys_GetCoreID) @06b3db60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: SchM_Exit_Uart_UART_EXCLUSIVE_AREA_11/48 SchM_Enter_Uart_UART_EXCLUSIVE_AREA_11/47 SchM_Exit_Uart_UART_EXCLUSIVE_AREA_10/46 SchM_Enter_Uart_UART_EXCLUSIVE_AREA_10/45 SchM_Exit_Uart_UART_EXCLUSIVE_AREA_09/44 SchM_Enter_Uart_UART_EXCLUSIVE_AREA_09/43 SchM_Exit_Uart_UART_EXCLUSIVE_AREA_08/42 SchM_Enter_Uart_UART_EXCLUSIVE_AREA_08/41 SchM_Exit_Uart_UART_EXCLUSIVE_AREA_07/40 SchM_Enter_Uart_UART_EXCLUSIVE_AREA_07/39 SchM_Exit_Uart_UART_EXCLUSIVE_AREA_06/38 SchM_Enter_Uart_UART_EXCLUSIVE_AREA_06/37 SchM_Exit_Uart_UART_EXCLUSIVE_AREA_05/36 SchM_Enter_Uart_UART_EXCLUSIVE_AREA_05/35 SchM_Exit_Uart_UART_EXCLUSIVE_AREA_04/34 SchM_Enter_Uart_UART_EXCLUSIVE_AREA_04/33 SchM_Exit_Uart_UART_EXCLUSIVE_AREA_03/32 SchM_Enter_Uart_UART_EXCLUSIVE_AREA_03/31 SchM_Exit_Uart_UART_EXCLUSIVE_AREA_02/30 SchM_Enter_Uart_UART_EXCLUSIVE_AREA_02/29 SchM_Exit_Uart_UART_EXCLUSIVE_AREA_01/28 SchM_Enter_Uart_UART_EXCLUSIVE_AREA_01/27 SchM_Exit_Uart_UART_EXCLUSIVE_AREA_00/26 SchM_Enter_Uart_UART_EXCLUSIVE_AREA_00/25 
+  Calls: 
+SchM_Exit_Uart_UART_EXCLUSIVE_AREA_11/48 (SchM_Exit_Uart_UART_EXCLUSIVE_AREA_11) @06b3d620
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: reentry_guard_UART_EXCLUSIVE_AREA_11/23 (read) reentry_guard_UART_EXCLUSIVE_AREA_11/23 (write) msr_UART_EXCLUSIVE_AREA_11/22 (read) reentry_guard_UART_EXCLUSIVE_AREA_11/23 (read) 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Sys_GetCoreID/49 
+SchM_Enter_Uart_UART_EXCLUSIVE_AREA_11/47 (SchM_Enter_Uart_UART_EXCLUSIVE_AREA_11) @06b3d380
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: reentry_guard_UART_EXCLUSIVE_AREA_11/23 (read) msr_UART_EXCLUSIVE_AREA_11/22 (write) reentry_guard_UART_EXCLUSIVE_AREA_11/23 (read) reentry_guard_UART_EXCLUSIVE_AREA_11/23 (write) 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Uart_schm_read_msr/24 Sys_GetCoreID/49 
+SchM_Exit_Uart_UART_EXCLUSIVE_AREA_10/46 (SchM_Exit_Uart_UART_EXCLUSIVE_AREA_10) @06b3d000
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: reentry_guard_UART_EXCLUSIVE_AREA_10/21 (read) reentry_guard_UART_EXCLUSIVE_AREA_10/21 (write) msr_UART_EXCLUSIVE_AREA_10/20 (read) reentry_guard_UART_EXCLUSIVE_AREA_10/21 (read) 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Sys_GetCoreID/49 
+SchM_Enter_Uart_UART_EXCLUSIVE_AREA_10/45 (SchM_Enter_Uart_UART_EXCLUSIVE_AREA_10) @06b38a80
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: reentry_guard_UART_EXCLUSIVE_AREA_10/21 (read) msr_UART_EXCLUSIVE_AREA_10/20 (write) reentry_guard_UART_EXCLUSIVE_AREA_10/21 (read) reentry_guard_UART_EXCLUSIVE_AREA_10/21 (write) 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Uart_schm_read_msr/24 Sys_GetCoreID/49 
+SchM_Exit_Uart_UART_EXCLUSIVE_AREA_09/44 (SchM_Exit_Uart_UART_EXCLUSIVE_AREA_09) @06b381c0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: reentry_guard_UART_EXCLUSIVE_AREA_09/19 (read) reentry_guard_UART_EXCLUSIVE_AREA_09/19 (write) msr_UART_EXCLUSIVE_AREA_09/18 (read) reentry_guard_UART_EXCLUSIVE_AREA_09/19 (read) 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Sys_GetCoreID/49 
+SchM_Enter_Uart_UART_EXCLUSIVE_AREA_09/43 (SchM_Enter_Uart_UART_EXCLUSIVE_AREA_09) @06b38d20
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: reentry_guard_UART_EXCLUSIVE_AREA_09/19 (read) msr_UART_EXCLUSIVE_AREA_09/18 (write) reentry_guard_UART_EXCLUSIVE_AREA_09/19 (read) reentry_guard_UART_EXCLUSIVE_AREA_09/19 (write) 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Uart_schm_read_msr/24 Sys_GetCoreID/49 
+SchM_Exit_Uart_UART_EXCLUSIVE_AREA_08/42 (SchM_Exit_Uart_UART_EXCLUSIVE_AREA_08) @06b389a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: reentry_guard_UART_EXCLUSIVE_AREA_08/17 (read) reentry_guard_UART_EXCLUSIVE_AREA_08/17 (write) msr_UART_EXCLUSIVE_AREA_08/16 (read) reentry_guard_UART_EXCLUSIVE_AREA_08/17 (read) 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Sys_GetCoreID/49 
+SchM_Enter_Uart_UART_EXCLUSIVE_AREA_08/41 (SchM_Enter_Uart_UART_EXCLUSIVE_AREA_08) @06b38700
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: reentry_guard_UART_EXCLUSIVE_AREA_08/17 (read) msr_UART_EXCLUSIVE_AREA_08/16 (write) reentry_guard_UART_EXCLUSIVE_AREA_08/17 (read) reentry_guard_UART_EXCLUSIVE_AREA_08/17 (write) 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Uart_schm_read_msr/24 Sys_GetCoreID/49 
+SchM_Exit_Uart_UART_EXCLUSIVE_AREA_07/40 (SchM_Exit_Uart_UART_EXCLUSIVE_AREA_07) @06b38380
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: reentry_guard_UART_EXCLUSIVE_AREA_07/15 (read) reentry_guard_UART_EXCLUSIVE_AREA_07/15 (write) msr_UART_EXCLUSIVE_AREA_07/14 (read) reentry_guard_UART_EXCLUSIVE_AREA_07/15 (read) 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Sys_GetCoreID/49 
+SchM_Enter_Uart_UART_EXCLUSIVE_AREA_07/39 (SchM_Enter_Uart_UART_EXCLUSIVE_AREA_07) @06b380e0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: reentry_guard_UART_EXCLUSIVE_AREA_07/15 (read) msr_UART_EXCLUSIVE_AREA_07/14 (write) reentry_guard_UART_EXCLUSIVE_AREA_07/15 (read) reentry_guard_UART_EXCLUSIVE_AREA_07/15 (write) 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Uart_schm_read_msr/24 Sys_GetCoreID/49 
+SchM_Exit_Uart_UART_EXCLUSIVE_AREA_06/38 (SchM_Exit_Uart_UART_EXCLUSIVE_AREA_06) @06b31c40
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: reentry_guard_UART_EXCLUSIVE_AREA_06/13 (read) reentry_guard_UART_EXCLUSIVE_AREA_06/13 (write) msr_UART_EXCLUSIVE_AREA_06/12 (read) reentry_guard_UART_EXCLUSIVE_AREA_06/13 (read) 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Sys_GetCoreID/49 
+SchM_Enter_Uart_UART_EXCLUSIVE_AREA_06/37 (SchM_Enter_Uart_UART_EXCLUSIVE_AREA_06) @06b31620
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: reentry_guard_UART_EXCLUSIVE_AREA_06/13 (read) msr_UART_EXCLUSIVE_AREA_06/12 (write) reentry_guard_UART_EXCLUSIVE_AREA_06/13 (read) reentry_guard_UART_EXCLUSIVE_AREA_06/13 (write) 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Uart_schm_read_msr/24 Sys_GetCoreID/49 
+SchM_Exit_Uart_UART_EXCLUSIVE_AREA_05/36 (SchM_Exit_Uart_UART_EXCLUSIVE_AREA_05) @06b31e00
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: reentry_guard_UART_EXCLUSIVE_AREA_05/11 (read) reentry_guard_UART_EXCLUSIVE_AREA_05/11 (write) msr_UART_EXCLUSIVE_AREA_05/10 (read) reentry_guard_UART_EXCLUSIVE_AREA_05/11 (read) 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Sys_GetCoreID/49 
+SchM_Enter_Uart_UART_EXCLUSIVE_AREA_05/35 (SchM_Enter_Uart_UART_EXCLUSIVE_AREA_05) @06b31b60
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: reentry_guard_UART_EXCLUSIVE_AREA_05/11 (read) msr_UART_EXCLUSIVE_AREA_05/10 (write) reentry_guard_UART_EXCLUSIVE_AREA_05/11 (read) reentry_guard_UART_EXCLUSIVE_AREA_05/11 (write) 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Uart_schm_read_msr/24 Sys_GetCoreID/49 
+SchM_Exit_Uart_UART_EXCLUSIVE_AREA_04/34 (SchM_Exit_Uart_UART_EXCLUSIVE_AREA_04) @06b317e0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: reentry_guard_UART_EXCLUSIVE_AREA_04/9 (read) reentry_guard_UART_EXCLUSIVE_AREA_04/9 (write) msr_UART_EXCLUSIVE_AREA_04/8 (read) reentry_guard_UART_EXCLUSIVE_AREA_04/9 (read) 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Sys_GetCoreID/49 
+SchM_Enter_Uart_UART_EXCLUSIVE_AREA_04/33 (SchM_Enter_Uart_UART_EXCLUSIVE_AREA_04) @06b31540
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: reentry_guard_UART_EXCLUSIVE_AREA_04/9 (read) msr_UART_EXCLUSIVE_AREA_04/8 (write) reentry_guard_UART_EXCLUSIVE_AREA_04/9 (read) reentry_guard_UART_EXCLUSIVE_AREA_04/9 (write) 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Uart_schm_read_msr/24 Sys_GetCoreID/49 
+SchM_Exit_Uart_UART_EXCLUSIVE_AREA_03/32 (SchM_Exit_Uart_UART_EXCLUSIVE_AREA_03) @06b311c0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: reentry_guard_UART_EXCLUSIVE_AREA_03/7 (read) reentry_guard_UART_EXCLUSIVE_AREA_03/7 (write) msr_UART_EXCLUSIVE_AREA_03/6 (read) reentry_guard_UART_EXCLUSIVE_AREA_03/7 (read) 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Sys_GetCoreID/49 
+SchM_Enter_Uart_UART_EXCLUSIVE_AREA_03/31 (SchM_Enter_Uart_UART_EXCLUSIVE_AREA_03) @06bc9c40
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: reentry_guard_UART_EXCLUSIVE_AREA_03/7 (read) msr_UART_EXCLUSIVE_AREA_03/6 (write) reentry_guard_UART_EXCLUSIVE_AREA_03/7 (read) reentry_guard_UART_EXCLUSIVE_AREA_03/7 (write) 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Uart_schm_read_msr/24 Sys_GetCoreID/49 
+SchM_Exit_Uart_UART_EXCLUSIVE_AREA_02/30 (SchM_Exit_Uart_UART_EXCLUSIVE_AREA_02) @06bc9380
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: reentry_guard_UART_EXCLUSIVE_AREA_02/5 (read) reentry_guard_UART_EXCLUSIVE_AREA_02/5 (write) msr_UART_EXCLUSIVE_AREA_02/4 (read) reentry_guard_UART_EXCLUSIVE_AREA_02/5 (read) 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Sys_GetCoreID/49 
+SchM_Enter_Uart_UART_EXCLUSIVE_AREA_02/29 (SchM_Enter_Uart_UART_EXCLUSIVE_AREA_02) @06bc9ee0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: reentry_guard_UART_EXCLUSIVE_AREA_02/5 (read) msr_UART_EXCLUSIVE_AREA_02/4 (write) reentry_guard_UART_EXCLUSIVE_AREA_02/5 (read) reentry_guard_UART_EXCLUSIVE_AREA_02/5 (write) 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Uart_schm_read_msr/24 Sys_GetCoreID/49 
+SchM_Exit_Uart_UART_EXCLUSIVE_AREA_01/28 (SchM_Exit_Uart_UART_EXCLUSIVE_AREA_01) @06bc9b60
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: reentry_guard_UART_EXCLUSIVE_AREA_01/3 (read) reentry_guard_UART_EXCLUSIVE_AREA_01/3 (write) msr_UART_EXCLUSIVE_AREA_01/2 (read) reentry_guard_UART_EXCLUSIVE_AREA_01/3 (read) 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Sys_GetCoreID/49 
+SchM_Enter_Uart_UART_EXCLUSIVE_AREA_01/27 (SchM_Enter_Uart_UART_EXCLUSIVE_AREA_01) @06bc98c0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: reentry_guard_UART_EXCLUSIVE_AREA_01/3 (read) msr_UART_EXCLUSIVE_AREA_01/2 (write) reentry_guard_UART_EXCLUSIVE_AREA_01/3 (read) reentry_guard_UART_EXCLUSIVE_AREA_01/3 (write) 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Uart_schm_read_msr/24 Sys_GetCoreID/49 
+SchM_Exit_Uart_UART_EXCLUSIVE_AREA_00/26 (SchM_Exit_Uart_UART_EXCLUSIVE_AREA_00) @06bc9540
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: reentry_guard_UART_EXCLUSIVE_AREA_00/1 (read) reentry_guard_UART_EXCLUSIVE_AREA_00/1 (write) msr_UART_EXCLUSIVE_AREA_00/0 (read) reentry_guard_UART_EXCLUSIVE_AREA_00/1 (read) 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Sys_GetCoreID/49 
+SchM_Enter_Uart_UART_EXCLUSIVE_AREA_00/25 (SchM_Enter_Uart_UART_EXCLUSIVE_AREA_00) @06bc92a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: reentry_guard_UART_EXCLUSIVE_AREA_00/1 (read) msr_UART_EXCLUSIVE_AREA_00/0 (write) reentry_guard_UART_EXCLUSIVE_AREA_00/1 (read) reentry_guard_UART_EXCLUSIVE_AREA_00/1 (write) 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Uart_schm_read_msr/24 Sys_GetCoreID/49 
+Uart_schm_read_msr/24 (Uart_schm_read_msr) @06bc5e00
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: SchM_Enter_Uart_UART_EXCLUSIVE_AREA_11/47 SchM_Enter_Uart_UART_EXCLUSIVE_AREA_10/45 SchM_Enter_Uart_UART_EXCLUSIVE_AREA_09/43 SchM_Enter_Uart_UART_EXCLUSIVE_AREA_08/41 SchM_Enter_Uart_UART_EXCLUSIVE_AREA_07/39 SchM_Enter_Uart_UART_EXCLUSIVE_AREA_06/37 SchM_Enter_Uart_UART_EXCLUSIVE_AREA_05/35 SchM_Enter_Uart_UART_EXCLUSIVE_AREA_04/33 SchM_Enter_Uart_UART_EXCLUSIVE_AREA_03/31 SchM_Enter_Uart_UART_EXCLUSIVE_AREA_02/29 SchM_Enter_Uart_UART_EXCLUSIVE_AREA_01/27 SchM_Enter_Uart_UART_EXCLUSIVE_AREA_00/25 
+  Calls: 
+reentry_guard_UART_EXCLUSIVE_AREA_11/23 (reentry_guard_UART_EXCLUSIVE_AREA_11) @06bc6438
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: SchM_Enter_Uart_UART_EXCLUSIVE_AREA_11/47 (read) SchM_Enter_Uart_UART_EXCLUSIVE_AREA_11/47 (read) SchM_Enter_Uart_UART_EXCLUSIVE_AREA_11/47 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_11/48 (read) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_11/48 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_11/48 (read) 
+  Availability: available
+  Varpool flags:
+msr_UART_EXCLUSIVE_AREA_11/22 (msr_UART_EXCLUSIVE_AREA_11) @06bc63a8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: SchM_Enter_Uart_UART_EXCLUSIVE_AREA_11/47 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_11/48 (read) 
+  Availability: available
+  Varpool flags:
+reentry_guard_UART_EXCLUSIVE_AREA_10/21 (reentry_guard_UART_EXCLUSIVE_AREA_10) @06bc6318
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: SchM_Enter_Uart_UART_EXCLUSIVE_AREA_10/45 (read) SchM_Enter_Uart_UART_EXCLUSIVE_AREA_10/45 (read) SchM_Enter_Uart_UART_EXCLUSIVE_AREA_10/45 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_10/46 (read) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_10/46 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_10/46 (read) 
+  Availability: available
+  Varpool flags:
+msr_UART_EXCLUSIVE_AREA_10/20 (msr_UART_EXCLUSIVE_AREA_10) @06bc6288
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: SchM_Enter_Uart_UART_EXCLUSIVE_AREA_10/45 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_10/46 (read) 
+  Availability: available
+  Varpool flags:
+reentry_guard_UART_EXCLUSIVE_AREA_09/19 (reentry_guard_UART_EXCLUSIVE_AREA_09) @06bc61f8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: SchM_Enter_Uart_UART_EXCLUSIVE_AREA_09/43 (read) SchM_Enter_Uart_UART_EXCLUSIVE_AREA_09/43 (read) SchM_Enter_Uart_UART_EXCLUSIVE_AREA_09/43 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_09/44 (read) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_09/44 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_09/44 (read) 
+  Availability: available
+  Varpool flags:
+msr_UART_EXCLUSIVE_AREA_09/18 (msr_UART_EXCLUSIVE_AREA_09) @06bc6168
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: SchM_Enter_Uart_UART_EXCLUSIVE_AREA_09/43 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_09/44 (read) 
+  Availability: available
+  Varpool flags:
+reentry_guard_UART_EXCLUSIVE_AREA_08/17 (reentry_guard_UART_EXCLUSIVE_AREA_08) @06bc60d8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: SchM_Enter_Uart_UART_EXCLUSIVE_AREA_08/41 (read) SchM_Enter_Uart_UART_EXCLUSIVE_AREA_08/41 (read) SchM_Enter_Uart_UART_EXCLUSIVE_AREA_08/41 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_08/42 (read) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_08/42 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_08/42 (read) 
+  Availability: available
+  Varpool flags:
+msr_UART_EXCLUSIVE_AREA_08/16 (msr_UART_EXCLUSIVE_AREA_08) @06bc6048
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: SchM_Enter_Uart_UART_EXCLUSIVE_AREA_08/41 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_08/42 (read) 
+  Availability: available
+  Varpool flags:
+reentry_guard_UART_EXCLUSIVE_AREA_07/15 (reentry_guard_UART_EXCLUSIVE_AREA_07) @06bc0f78
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: SchM_Enter_Uart_UART_EXCLUSIVE_AREA_07/39 (read) SchM_Enter_Uart_UART_EXCLUSIVE_AREA_07/39 (read) SchM_Enter_Uart_UART_EXCLUSIVE_AREA_07/39 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_07/40 (read) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_07/40 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_07/40 (read) 
+  Availability: available
+  Varpool flags:
+msr_UART_EXCLUSIVE_AREA_07/14 (msr_UART_EXCLUSIVE_AREA_07) @06bc0ee8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: SchM_Enter_Uart_UART_EXCLUSIVE_AREA_07/39 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_07/40 (read) 
+  Availability: available
+  Varpool flags:
+reentry_guard_UART_EXCLUSIVE_AREA_06/13 (reentry_guard_UART_EXCLUSIVE_AREA_06) @06bc0e58
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: SchM_Enter_Uart_UART_EXCLUSIVE_AREA_06/37 (read) SchM_Enter_Uart_UART_EXCLUSIVE_AREA_06/37 (read) SchM_Enter_Uart_UART_EXCLUSIVE_AREA_06/37 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_06/38 (read) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_06/38 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_06/38 (read) 
+  Availability: available
+  Varpool flags:
+msr_UART_EXCLUSIVE_AREA_06/12 (msr_UART_EXCLUSIVE_AREA_06) @06bc0dc8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: SchM_Enter_Uart_UART_EXCLUSIVE_AREA_06/37 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_06/38 (read) 
+  Availability: available
+  Varpool flags:
+reentry_guard_UART_EXCLUSIVE_AREA_05/11 (reentry_guard_UART_EXCLUSIVE_AREA_05) @06bc0d38
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: SchM_Enter_Uart_UART_EXCLUSIVE_AREA_05/35 (read) SchM_Enter_Uart_UART_EXCLUSIVE_AREA_05/35 (read) SchM_Enter_Uart_UART_EXCLUSIVE_AREA_05/35 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_05/36 (read) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_05/36 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_05/36 (read) 
+  Availability: available
+  Varpool flags:
+msr_UART_EXCLUSIVE_AREA_05/10 (msr_UART_EXCLUSIVE_AREA_05) @06bc0ca8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: SchM_Enter_Uart_UART_EXCLUSIVE_AREA_05/35 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_05/36 (read) 
+  Availability: available
+  Varpool flags:
+reentry_guard_UART_EXCLUSIVE_AREA_04/9 (reentry_guard_UART_EXCLUSIVE_AREA_04) @06bc0c18
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: SchM_Enter_Uart_UART_EXCLUSIVE_AREA_04/33 (read) SchM_Enter_Uart_UART_EXCLUSIVE_AREA_04/33 (read) SchM_Enter_Uart_UART_EXCLUSIVE_AREA_04/33 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_04/34 (read) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_04/34 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_04/34 (read) 
+  Availability: available
+  Varpool flags:
+msr_UART_EXCLUSIVE_AREA_04/8 (msr_UART_EXCLUSIVE_AREA_04) @06bc0b88
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: SchM_Enter_Uart_UART_EXCLUSIVE_AREA_04/33 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_04/34 (read) 
+  Availability: available
+  Varpool flags:
+reentry_guard_UART_EXCLUSIVE_AREA_03/7 (reentry_guard_UART_EXCLUSIVE_AREA_03) @06bc0af8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: SchM_Enter_Uart_UART_EXCLUSIVE_AREA_03/31 (read) SchM_Enter_Uart_UART_EXCLUSIVE_AREA_03/31 (read) SchM_Enter_Uart_UART_EXCLUSIVE_AREA_03/31 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_03/32 (read) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_03/32 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_03/32 (read) 
+  Availability: available
+  Varpool flags:
+msr_UART_EXCLUSIVE_AREA_03/6 (msr_UART_EXCLUSIVE_AREA_03) @06bc0a68
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: SchM_Enter_Uart_UART_EXCLUSIVE_AREA_03/31 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_03/32 (read) 
+  Availability: available
+  Varpool flags:
+reentry_guard_UART_EXCLUSIVE_AREA_02/5 (reentry_guard_UART_EXCLUSIVE_AREA_02) @06bc09d8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: SchM_Enter_Uart_UART_EXCLUSIVE_AREA_02/29 (read) SchM_Enter_Uart_UART_EXCLUSIVE_AREA_02/29 (read) SchM_Enter_Uart_UART_EXCLUSIVE_AREA_02/29 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_02/30 (read) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_02/30 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_02/30 (read) 
+  Availability: available
+  Varpool flags:
+msr_UART_EXCLUSIVE_AREA_02/4 (msr_UART_EXCLUSIVE_AREA_02) @06bc0948
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: SchM_Enter_Uart_UART_EXCLUSIVE_AREA_02/29 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_02/30 (read) 
+  Availability: available
+  Varpool flags:
+reentry_guard_UART_EXCLUSIVE_AREA_01/3 (reentry_guard_UART_EXCLUSIVE_AREA_01) @06bc08b8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: SchM_Enter_Uart_UART_EXCLUSIVE_AREA_01/27 (read) SchM_Enter_Uart_UART_EXCLUSIVE_AREA_01/27 (read) SchM_Enter_Uart_UART_EXCLUSIVE_AREA_01/27 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_01/28 (read) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_01/28 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_01/28 (read) 
+  Availability: available
+  Varpool flags:
+msr_UART_EXCLUSIVE_AREA_01/2 (msr_UART_EXCLUSIVE_AREA_01) @06bc0828
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: SchM_Enter_Uart_UART_EXCLUSIVE_AREA_01/27 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_01/28 (read) 
+  Availability: available
+  Varpool flags:
+reentry_guard_UART_EXCLUSIVE_AREA_00/1 (reentry_guard_UART_EXCLUSIVE_AREA_00) @06bc0798
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: SchM_Enter_Uart_UART_EXCLUSIVE_AREA_00/25 (read) SchM_Enter_Uart_UART_EXCLUSIVE_AREA_00/25 (read) SchM_Enter_Uart_UART_EXCLUSIVE_AREA_00/25 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_00/26 (read) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_00/26 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_00/26 (read) 
+  Availability: available
+  Varpool flags:
+msr_UART_EXCLUSIVE_AREA_00/0 (msr_UART_EXCLUSIVE_AREA_00) @06bc0708
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: SchM_Enter_Uart_UART_EXCLUSIVE_AREA_00/25 (write) SchM_Exit_Uart_UART_EXCLUSIVE_AREA_00/26 (read) 
+  Availability: available
+  Varpool flags:
+Materializing clones
+Materialization Call site updates done.
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Trivially needed variables: reentry_guard_UART_EXCLUSIVE_AREA_11/23 msr_UART_EXCLUSIVE_AREA_11/22 reentry_guard_UART_EXCLUSIVE_AREA_10/21 msr_UART_EXCLUSIVE_AREA_10/20 reentry_guard_UART_EXCLUSIVE_AREA_09/19 msr_UART_EXCLUSIVE_AREA_09/18 reentry_guard_UART_EXCLUSIVE_AREA_08/17 msr_UART_EXCLUSIVE_AREA_08/16 reentry_guard_UART_EXCLUSIVE_AREA_07/15 msr_UART_EXCLUSIVE_AREA_07/14 reentry_guard_UART_EXCLUSIVE_AREA_06/13 msr_UART_EXCLUSIVE_AREA_06/12 reentry_guard_UART_EXCLUSIVE_AREA_05/11 msr_UART_EXCLUSIVE_AREA_05/10 reentry_guard_UART_EXCLUSIVE_AREA_04/9 msr_UART_EXCLUSIVE_AREA_04/8 reentry_guard_UART_EXCLUSIVE_AREA_03/7 msr_UART_EXCLUSIVE_AREA_03/6 reentry_guard_UART_EXCLUSIVE_AREA_02/5 msr_UART_EXCLUSIVE_AREA_02/4 reentry_guard_UART_EXCLUSIVE_AREA_01/3 msr_UART_EXCLUSIVE_AREA_01/2 reentry_guard_UART_EXCLUSIVE_AREA_00/1 msr_UART_EXCLUSIVE_AREA_00/0
+Removing variables:
+
+Final Symbol table:
+
+Sys_GetCoreID/49 (Sys_GetCoreID) @06b3db60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+SchM_Exit_Uart_UART_EXCLUSIVE_AREA_11/48 (SchM_Exit_Uart_UART_EXCLUSIVE_AREA_11) @06b3d620
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public section:.text.SchM_Exit_Uart_UART_EXCLUSIVE_AREA_11 (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+SchM_Enter_Uart_UART_EXCLUSIVE_AREA_11/47 (SchM_Enter_Uart_UART_EXCLUSIVE_AREA_11) @06b3d380
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public section:.text.SchM_Enter_Uart_UART_EXCLUSIVE_AREA_11 (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+SchM_Exit_Uart_UART_EXCLUSIVE_AREA_10/46 (SchM_Exit_Uart_UART_EXCLUSIVE_AREA_10) @06b3d000
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public section:.text.SchM_Exit_Uart_UART_EXCLUSIVE_AREA_10 (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+SchM_Enter_Uart_UART_EXCLUSIVE_AREA_10/45 (SchM_Enter_Uart_UART_EXCLUSIVE_AREA_10) @06b38a80
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public section:.text.SchM_Enter_Uart_UART_EXCLUSIVE_AREA_10 (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+SchM_Exit_Uart_UART_EXCLUSIVE_AREA_09/44 (SchM_Exit_Uart_UART_EXCLUSIVE_AREA_09) @06b381c0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public section:.text.SchM_Exit_Uart_UART_EXCLUSIVE_AREA_09 (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+SchM_Enter_Uart_UART_EXCLUSIVE_AREA_09/43 (SchM_Enter_Uart_UART_EXCLUSIVE_AREA_09) @06b38d20
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public section:.text.SchM_Enter_Uart_UART_EXCLUSIVE_AREA_09 (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+SchM_Exit_Uart_UART_EXCLUSIVE_AREA_08/42 (SchM_Exit_Uart_UART_EXCLUSIVE_AREA_08) @06b389a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public section:.text.SchM_Exit_Uart_UART_EXCLUSIVE_AREA_08 (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+SchM_Enter_Uart_UART_EXCLUSIVE_AREA_08/41 (SchM_Enter_Uart_UART_EXCLUSIVE_AREA_08) @06b38700
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public section:.text.SchM_Enter_Uart_UART_EXCLUSIVE_AREA_08 (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+SchM_Exit_Uart_UART_EXCLUSIVE_AREA_07/40 (SchM_Exit_Uart_UART_EXCLUSIVE_AREA_07) @06b38380
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public section:.text.SchM_Exit_Uart_UART_EXCLUSIVE_AREA_07 (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+SchM_Enter_Uart_UART_EXCLUSIVE_AREA_07/39 (SchM_Enter_Uart_UART_EXCLUSIVE_AREA_07) @06b380e0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public section:.text.SchM_Enter_Uart_UART_EXCLUSIVE_AREA_07 (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+SchM_Exit_Uart_UART_EXCLUSIVE_AREA_06/38 (SchM_Exit_Uart_UART_EXCLUSIVE_AREA_06) @06b31c40
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public section:.text.SchM_Exit_Uart_UART_EXCLUSIVE_AREA_06 (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+SchM_Enter_Uart_UART_EXCLUSIVE_AREA_06/37 (SchM_Enter_Uart_UART_EXCLUSIVE_AREA_06) @06b31620
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public section:.text.SchM_Enter_Uart_UART_EXCLUSIVE_AREA_06 (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+SchM_Exit_Uart_UART_EXCLUSIVE_AREA_05/36 (SchM_Exit_Uart_UART_EXCLUSIVE_AREA_05) @06b31e00
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public section:.text.SchM_Exit_Uart_UART_EXCLUSIVE_AREA_05 (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+SchM_Enter_Uart_UART_EXCLUSIVE_AREA_05/35 (SchM_Enter_Uart_UART_EXCLUSIVE_AREA_05) @06b31b60
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public section:.text.SchM_Enter_Uart_UART_EXCLUSIVE_AREA_05 (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+SchM_Exit_Uart_UART_EXCLUSIVE_AREA_04/34 (SchM_Exit_Uart_UART_EXCLUSIVE_AREA_04) @06b317e0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public section:.text.SchM_Exit_Uart_UART_EXCLUSIVE_AREA_04 (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+SchM_Enter_Uart_UART_EXCLUSIVE_AREA_04/33 (SchM_Enter_Uart_UART_EXCLUSIVE_AREA_04) @06b31540
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public section:.text.SchM_Enter_Uart_UART_EXCLUSIVE_AREA_04 (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+SchM_Exit_Uart_UART_EXCLUSIVE_AREA_03/32 (SchM_Exit_Uart_UART_EXCLUSIVE_AREA_03) @06b311c0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public section:.text.SchM_Exit_Uart_UART_EXCLUSIVE_AREA_03 (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+SchM_Enter_Uart_UART_EXCLUSIVE_AREA_03/31 (SchM_Enter_Uart_UART_EXCLUSIVE_AREA_03) @06bc9c40
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public section:.text.SchM_Enter_Uart_UART_EXCLUSIVE_AREA_03 (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+SchM_Exit_Uart_UART_EXCLUSIVE_AREA_02/30 (SchM_Exit_Uart_UART_EXCLUSIVE_AREA_02) @06bc9380
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public section:.text.SchM_Exit_Uart_UART_EXCLUSIVE_AREA_02 (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+SchM_Enter_Uart_UART_EXCLUSIVE_AREA_02/29 (SchM_Enter_Uart_UART_EXCLUSIVE_AREA_02) @06bc9ee0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public section:.text.SchM_Enter_Uart_UART_EXCLUSIVE_AREA_02 (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+SchM_Exit_Uart_UART_EXCLUSIVE_AREA_01/28 (SchM_Exit_Uart_UART_EXCLUSIVE_AREA_01) @06bc9b60
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public section:.text.SchM_Exit_Uart_UART_EXCLUSIVE_AREA_01 (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+SchM_Enter_Uart_UART_EXCLUSIVE_AREA_01/27 (SchM_Enter_Uart_UART_EXCLUSIVE_AREA_01) @06bc98c0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public section:.text.SchM_Enter_Uart_UART_EXCLUSIVE_AREA_01 (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+SchM_Exit_Uart_UART_EXCLUSIVE_AREA_00/26 (SchM_Exit_Uart_UART_EXCLUSIVE_AREA_00) @06bc9540
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public section:.text.SchM_Exit_Uart_UART_EXCLUSIVE_AREA_00 (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+SchM_Enter_Uart_UART_EXCLUSIVE_AREA_00/25 (SchM_Enter_Uart_UART_EXCLUSIVE_AREA_00) @06bc92a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public section:.text.SchM_Enter_Uart_UART_EXCLUSIVE_AREA_00 (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Uart_schm_read_msr/24 (Uart_schm_read_msr) @06bc5e00
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public section:.text.Uart_schm_read_msr (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+reentry_guard_UART_EXCLUSIVE_AREA_11/23 (reentry_guard_UART_EXCLUSIVE_AREA_11) @06bc6438
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written section:.bss.reentry_guard_UART_EXCLUSIVE_AREA_11 (implicit_section)
+  Aux: @00000001
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+msr_UART_EXCLUSIVE_AREA_11/22 (msr_UART_EXCLUSIVE_AREA_11) @06bc63a8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written section:.bss.msr_UART_EXCLUSIVE_AREA_11 (implicit_section)
+  Aux: @06bc6438
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+reentry_guard_UART_EXCLUSIVE_AREA_10/21 (reentry_guard_UART_EXCLUSIVE_AREA_10) @06bc6318
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written section:.bss.reentry_guard_UART_EXCLUSIVE_AREA_10 (implicit_section)
+  Aux: @06bc63a8
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+msr_UART_EXCLUSIVE_AREA_10/20 (msr_UART_EXCLUSIVE_AREA_10) @06bc6288
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written section:.bss.msr_UART_EXCLUSIVE_AREA_10 (implicit_section)
+  Aux: @06bc6318
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+reentry_guard_UART_EXCLUSIVE_AREA_09/19 (reentry_guard_UART_EXCLUSIVE_AREA_09) @06bc61f8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written section:.bss.reentry_guard_UART_EXCLUSIVE_AREA_09 (implicit_section)
+  Aux: @06bc6288
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+msr_UART_EXCLUSIVE_AREA_09/18 (msr_UART_EXCLUSIVE_AREA_09) @06bc6168
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written section:.bss.msr_UART_EXCLUSIVE_AREA_09 (implicit_section)
+  Aux: @06bc61f8
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+reentry_guard_UART_EXCLUSIVE_AREA_08/17 (reentry_guard_UART_EXCLUSIVE_AREA_08) @06bc60d8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written section:.bss.reentry_guard_UART_EXCLUSIVE_AREA_08 (implicit_section)
+  Aux: @06bc6168
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+msr_UART_EXCLUSIVE_AREA_08/16 (msr_UART_EXCLUSIVE_AREA_08) @06bc6048
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written section:.bss.msr_UART_EXCLUSIVE_AREA_08 (implicit_section)
+  Aux: @06bc60d8
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+reentry_guard_UART_EXCLUSIVE_AREA_07/15 (reentry_guard_UART_EXCLUSIVE_AREA_07) @06bc0f78
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written section:.bss.reentry_guard_UART_EXCLUSIVE_AREA_07 (implicit_section)
+  Aux: @06bc6048
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+msr_UART_EXCLUSIVE_AREA_07/14 (msr_UART_EXCLUSIVE_AREA_07) @06bc0ee8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written section:.bss.msr_UART_EXCLUSIVE_AREA_07 (implicit_section)
+  Aux: @06bc0f78
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+reentry_guard_UART_EXCLUSIVE_AREA_06/13 (reentry_guard_UART_EXCLUSIVE_AREA_06) @06bc0e58
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written section:.bss.reentry_guard_UART_EXCLUSIVE_AREA_06 (implicit_section)
+  Aux: @06bc0ee8
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+msr_UART_EXCLUSIVE_AREA_06/12 (msr_UART_EXCLUSIVE_AREA_06) @06bc0dc8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written section:.bss.msr_UART_EXCLUSIVE_AREA_06 (implicit_section)
+  Aux: @06bc0e58
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+reentry_guard_UART_EXCLUSIVE_AREA_05/11 (reentry_guard_UART_EXCLUSIVE_AREA_05) @06bc0d38
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written section:.bss.reentry_guard_UART_EXCLUSIVE_AREA_05 (implicit_section)
+  Aux: @06bc0dc8
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+msr_UART_EXCLUSIVE_AREA_05/10 (msr_UART_EXCLUSIVE_AREA_05) @06bc0ca8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written section:.bss.msr_UART_EXCLUSIVE_AREA_05 (implicit_section)
+  Aux: @06bc0d38
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+reentry_guard_UART_EXCLUSIVE_AREA_04/9 (reentry_guard_UART_EXCLUSIVE_AREA_04) @06bc0c18
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written section:.bss.reentry_guard_UART_EXCLUSIVE_AREA_04 (implicit_section)
+  Aux: @06bc0ca8
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+msr_UART_EXCLUSIVE_AREA_04/8 (msr_UART_EXCLUSIVE_AREA_04) @06bc0b88
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written section:.bss.msr_UART_EXCLUSIVE_AREA_04 (implicit_section)
+  Aux: @06bc0c18
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+reentry_guard_UART_EXCLUSIVE_AREA_03/7 (reentry_guard_UART_EXCLUSIVE_AREA_03) @06bc0af8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written section:.bss.reentry_guard_UART_EXCLUSIVE_AREA_03 (implicit_section)
+  Aux: @06bc0b88
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+msr_UART_EXCLUSIVE_AREA_03/6 (msr_UART_EXCLUSIVE_AREA_03) @06bc0a68
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written section:.bss.msr_UART_EXCLUSIVE_AREA_03 (implicit_section)
+  Aux: @06bc0af8
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+reentry_guard_UART_EXCLUSIVE_AREA_02/5 (reentry_guard_UART_EXCLUSIVE_AREA_02) @06bc09d8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written section:.bss.reentry_guard_UART_EXCLUSIVE_AREA_02 (implicit_section)
+  Aux: @06bc0a68
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+msr_UART_EXCLUSIVE_AREA_02/4 (msr_UART_EXCLUSIVE_AREA_02) @06bc0948
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written section:.bss.msr_UART_EXCLUSIVE_AREA_02 (implicit_section)
+  Aux: @06bc09d8
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+reentry_guard_UART_EXCLUSIVE_AREA_01/3 (reentry_guard_UART_EXCLUSIVE_AREA_01) @06bc08b8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written section:.bss.reentry_guard_UART_EXCLUSIVE_AREA_01 (implicit_section)
+  Aux: @06bc0948
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+msr_UART_EXCLUSIVE_AREA_01/2 (msr_UART_EXCLUSIVE_AREA_01) @06bc0828
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written section:.bss.msr_UART_EXCLUSIVE_AREA_01 (implicit_section)
+  Aux: @06bc08b8
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+reentry_guard_UART_EXCLUSIVE_AREA_00/1 (reentry_guard_UART_EXCLUSIVE_AREA_00) @06bc0798
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written section:.bss.reentry_guard_UART_EXCLUSIVE_AREA_00 (implicit_section)
+  Aux: @06bc0828
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+msr_UART_EXCLUSIVE_AREA_00/0 (msr_UART_EXCLUSIVE_AREA_00) @06bc0708
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written section:.bss.msr_UART_EXCLUSIVE_AREA_00 (implicit_section)
+  Aux: @06bc0798
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:

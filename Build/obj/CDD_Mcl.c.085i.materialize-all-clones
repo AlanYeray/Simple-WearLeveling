@@ -1,0 +1,258 @@
+Mcl_CacheCleanByAddr (Mcl_CacheType CacheType, Mcl_CacheBusType BusType, boolean EnInvalidate, uint32 Addr, uint32 Length)
+{
+  boolean CacheTypeValidation;
+
+  <bb 2> :
+  CacheTypeValidation_3 = 1;
+  if (CacheType_4(D) > 1)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 3>; [INV]
+
+  <bb 3> :
+  if (BusType_5(D) > 4)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  CacheTypeValidation_6 = 0;
+
+  <bb 5> :
+  # CacheTypeValidation_1 = PHI <CacheTypeValidation_3(3), CacheTypeValidation_6(4)>
+  if (CacheTypeValidation_1 != 0)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 6> :
+  Cache_Ip_CleanByAddr (CacheType_4(D), BusType_5(D), EnInvalidate_8(D), Addr_9(D), Length_10(D));
+
+  <bb 7> :
+  return;
+
+}
+
+
+Mcl_CacheInvalidateByAddr (Mcl_CacheType CacheType, Mcl_CacheBusType BusType, uint32 Addr, uint32 Length)
+{
+  boolean CacheTypeValidation;
+
+  <bb 2> :
+  CacheTypeValidation_3 = 1;
+  if (CacheType_4(D) > 1)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 3>; [INV]
+
+  <bb 3> :
+  if (BusType_5(D) > 4)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  CacheTypeValidation_6 = 0;
+
+  <bb 5> :
+  # CacheTypeValidation_1 = PHI <CacheTypeValidation_3(3), CacheTypeValidation_6(4)>
+  if (CacheTypeValidation_1 != 0)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 6> :
+  Cache_Ip_InvalidateByAddr (CacheType_4(D), BusType_5(D), Addr_8(D), Length_9(D));
+
+  <bb 7> :
+  return;
+
+}
+
+
+Mcl_CacheClean (Mcl_CacheType CacheType, Mcl_CacheBusType BusType, boolean EnInvalidate)
+{
+  boolean CacheTypeValidation;
+
+  <bb 2> :
+  CacheTypeValidation_3 = 1;
+  if (CacheType_4(D) > 1)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 3>; [INV]
+
+  <bb 3> :
+  if (BusType_5(D) > 4)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  CacheTypeValidation_6 = 0;
+
+  <bb 5> :
+  # CacheTypeValidation_1 = PHI <CacheTypeValidation_3(3), CacheTypeValidation_6(4)>
+  if (CacheTypeValidation_1 != 0)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 6> :
+  Cache_Ip_Clean (CacheType_4(D), BusType_5(D), EnInvalidate_8(D));
+
+  <bb 7> :
+  return;
+
+}
+
+
+Mcl_CacheInvalidate (Mcl_CacheType CacheType, Mcl_CacheBusType BusType)
+{
+  boolean CacheTypeValidation;
+
+  <bb 2> :
+  CacheTypeValidation_3 = 1;
+  if (CacheType_4(D) > 1)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 3>; [INV]
+
+  <bb 3> :
+  if (BusType_5(D) > 4)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  CacheTypeValidation_6 = 0;
+
+  <bb 5> :
+  # CacheTypeValidation_1 = PHI <CacheTypeValidation_3(3), CacheTypeValidation_6(4)>
+  if (CacheTypeValidation_1 != 0)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 6> :
+  Cache_Ip_Invalidate (CacheType_4(D), BusType_5(D));
+
+  <bb 7> :
+  return;
+
+}
+
+
+Mcl_CacheDisable (Mcl_CacheType CacheType, Mcl_CacheBusType BusType)
+{
+  boolean CacheTypeValidation;
+
+  <bb 2> :
+  CacheTypeValidation_3 = 1;
+  if (CacheType_4(D) > 1)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 3>; [INV]
+
+  <bb 3> :
+  if (BusType_5(D) > 4)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  CacheTypeValidation_6 = 0;
+
+  <bb 5> :
+  # CacheTypeValidation_1 = PHI <CacheTypeValidation_3(3), CacheTypeValidation_6(4)>
+  if (CacheTypeValidation_1 != 0)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 6> :
+  Cache_Ip_Disable (CacheType_4(D), BusType_5(D));
+
+  <bb 7> :
+  return;
+
+}
+
+
+Mcl_CacheEnable (Mcl_CacheType CacheType, Mcl_CacheBusType BusType)
+{
+  boolean CacheTypeValidation;
+
+  <bb 2> :
+  CacheTypeValidation_3 = 1;
+  if (CacheType_4(D) > 1)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 3>; [INV]
+
+  <bb 3> :
+  if (BusType_5(D) > 4)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  CacheTypeValidation_6 = 0;
+
+  <bb 5> :
+  # CacheTypeValidation_1 = PHI <CacheTypeValidation_3(3), CacheTypeValidation_6(4)>
+  if (CacheTypeValidation_1 != 0)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 6> :
+  Cache_Ip_Enable (CacheType_4(D), BusType_5(D));
+
+  <bb 7> :
+  return;
+
+}
+
+
+Mcl_DeInit ()
+{
+  const struct Mcl_ConfigType * Mcl_pxConfig.2_1;
+
+  <bb 2> :
+  Mcl_pxConfig.2_1 = Mcl_pxConfig;
+  if (Mcl_pxConfig.2_1 != 0B)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  Mcl_pxConfig = 0B;
+
+  <bb 4> :
+  return;
+
+}
+
+
+Mcl_Init (const struct Mcl_ConfigType * const ConfigPtr)
+{
+  const struct Mcl_ConfigType * Mcl_pxConfig.0_1;
+  const struct Mcl_ConfigType * Mcl_pxConfig.1_2;
+
+  <bb 2> :
+  Mcl_pxConfig.0_1 = Mcl_pxConfig;
+  if (Mcl_pxConfig.0_1 == 0B)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  Mcl_pxConfig = ConfigPtr_5(D);
+  Mcl_pxConfig.1_2 = Mcl_pxConfig;
+
+  <bb 4> :
+  return;
+
+}
+
+

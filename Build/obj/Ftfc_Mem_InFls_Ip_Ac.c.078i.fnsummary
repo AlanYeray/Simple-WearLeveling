@@ -1,0 +1,109 @@
+Symbol table:
+
+Ftfc_Mem_InFls_Ip_u32CurrentTicks/4 (Ftfc_Mem_InFls_Ip_u32CurrentTicks) @06bdcb40
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Ftfc_Mem_InFls_Ip_AccessCode/0 (read) Ftfc_Mem_InFls_Ip_AccessCode/0 (write) 
+  Availability: not_available
+  Varpool flags:
+Ftfc_Mem_InFls_Ip_u32ElapsedTicks/3 (Ftfc_Mem_InFls_Ip_u32ElapsedTicks) @06bdcaf8
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Ftfc_Mem_InFls_Ip_AccessCode/0 (read) Ftfc_Mem_InFls_Ip_AccessCode/0 (write) 
+  Availability: not_available
+  Varpool flags:
+FTFx_BaseAddress/2 (FTFx_BaseAddress) @06bdca68
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Ftfc_Mem_InFls_Ip_AccessCode/0 (read) Ftfc_Mem_InFls_Ip_AccessCode/0 (read) 
+  Availability: not_available
+  Varpool flags: read-only
+Ftfc_Mem_InFls_Ip_u32TimeoutTicks/1 (Ftfc_Mem_InFls_Ip_u32TimeoutTicks) @06bdca20
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Ftfc_Mem_InFls_Ip_AccessCode/0 (read) Ftfc_Mem_InFls_Ip_AccessCode/0 (read) 
+  Availability: not_available
+  Varpool flags:
+Ftfc_Mem_InFls_Ip_AccessCode/0 (Ftfc_Mem_InFls_Ip_AccessCode) @06bda7e0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public section:.acfls_code_rom
+  References: Ftfc_Mem_InFls_Ip_u32TimeoutTicks/1 (read) FTFx_BaseAddress/2 (read) FTFx_BaseAddress/2 (read) Ftfc_Mem_InFls_Ip_u32TimeoutTicks/1 (read) Ftfc_Mem_InFls_Ip_u32ElapsedTicks/3 (read) Ftfc_Mem_InFls_Ip_u32ElapsedTicks/3 (write) Ftfc_Mem_InFls_Ip_u32CurrentTicks/4 (read) Ftfc_Mem_InFls_Ip_u32CurrentTicks/4 (write) 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+   Indirect call Num speculative call targets: 0
+__attribute__((section (".acfls_code_rom")))
+Ftfc_Mem_InFls_Ip_AccessCode (void (*<T4cb>) (void) CallBack)
+{
+  uint32 u32WaitedTicks;
+  uint32 u32ValueTimeOut;
+  struct FTFC_Type * FTFx_BaseAddress.0_1;
+  struct FTFC_Type * FTFx_BaseAddress.1_2;
+  unsigned char _3;
+  signed char _4;
+  long unsigned int Ftfc_Mem_InFls_Ip_u32TimeoutTicks.2_5;
+  long unsigned int Ftfc_Mem_InFls_Ip_u32ElapsedTicks.3_6;
+  long unsigned int _7;
+  long unsigned int Ftfc_Mem_InFls_Ip_u32CurrentTicks.4_8;
+  long unsigned int _9;
+
+  <bb 2> :
+  u32ValueTimeOut_14 = Ftfc_Mem_InFls_Ip_u32TimeoutTicks;
+  FTFx_BaseAddress.0_1 = FTFx_BaseAddress;
+  FTFx_BaseAddress.0_1->FSTAT ={v} 128;
+  goto <bb 7>; [INV]
+
+  <bb 3> :
+  u32ValueTimeOut_16 = u32ValueTimeOut_10 + 4294967295;
+  if (u32ValueTimeOut_16 == 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  goto <bb 8>; [INV]
+
+  <bb 5> :
+  if (CallBack_17(D) != 0B)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 6> :
+  CallBack_17(D) ();
+
+  <bb 7> :
+  # u32ValueTimeOut_10 = PHI <u32ValueTimeOut_14(2), u32ValueTimeOut_16(5), u32ValueTimeOut_16(6)>
+  FTFx_BaseAddress.1_2 = FTFx_BaseAddress;
+  _3 ={v} FTFx_BaseAddress.1_2->FSTAT;
+  _4 = (signed char) _3;
+  if (_4 >= 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 8> :
+  # u32ValueTimeOut_11 = PHI <u32ValueTimeOut_16(4), u32ValueTimeOut_10(7)>
+  Ftfc_Mem_InFls_Ip_u32TimeoutTicks.2_5 = Ftfc_Mem_InFls_Ip_u32TimeoutTicks;
+  u32WaitedTicks_19 = Ftfc_Mem_InFls_Ip_u32TimeoutTicks.2_5 - u32ValueTimeOut_11;
+  Ftfc_Mem_InFls_Ip_u32ElapsedTicks.3_6 = Ftfc_Mem_InFls_Ip_u32ElapsedTicks;
+  _7 = u32WaitedTicks_19 + Ftfc_Mem_InFls_Ip_u32ElapsedTicks.3_6;
+  Ftfc_Mem_InFls_Ip_u32ElapsedTicks = _7;
+  Ftfc_Mem_InFls_Ip_u32CurrentTicks.4_8 = Ftfc_Mem_InFls_Ip_u32CurrentTicks;
+  _9 = u32WaitedTicks_19 + Ftfc_Mem_InFls_Ip_u32CurrentTicks.4_8;
+  Ftfc_Mem_InFls_Ip_u32CurrentTicks = _9;
+  return;
+
+}
+
+

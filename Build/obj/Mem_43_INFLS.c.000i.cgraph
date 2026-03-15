@@ -1,0 +1,2850 @@
+Trivially needed symbols: Mem_43_INFLS_MainFunction/33 Mem_43_INFLS_PropagateError/32 Mem_43_INFLS_HwSpecificService/31 Mem_43_INFLS_BlankCheck/30 Mem_43_INFLS_Erase/29 Mem_43_INFLS_Write/28 Mem_43_INFLS_Read/27 Mem_43_INFLS_Resume/26 Mem_43_INFLS_Suspend/25 Mem_43_INFLS_GetJobResult/24 Mem_43_INFLS_GetVersionInfo/23 Mem_43_INFLS_DeInit/22 Mem_43_INFLS_Init/21 Mem_43_INFLS_Compare/20 Mem_43_INFLS_ProcessRequestedJobs/19 Mem_43_INFLS_DoRequestedJobs/18 Mem_43_INFLS_ProcessHwSpecificServiceJob/17 Mem_43_INFLS_ConfigureJobRequest/16 Mem_43_INFLS_InitJobRequest/15 Mem_43_INFLS_ValidateParamJobDataTransfer/14 Mem_43_INFLS_ValidateParamJobCommon/12 Mem_43_INFLS_ValidateInstanceId/10 Mem_43_INFLS_ValidateAddressAndLength/9 Mem_43_INFLS_CheckWritePageAligned/8 Mem_43_INFLS_CheckSectorAligned/7 Mem_43_INFLS_GetSectorBatch/6 Mem_43_INFLS_GetInstanceIndex/5 Mem_43_INFLS_IncreasePtr/4 Mem_43_INFLS_ValidateConfigCRC/3 Mem_43_INFLS_ReportDevError/2 Mem_43_INFLS_eJobRuntimeInfo/1 Mem_43_INFLS_pConfigPtr/0
+
+
+Initial Symbol table:
+
+Mem_43_INFLS_IPW_ReportEccValueToLayerUnder/55 (Mem_43_INFLS_IPW_ReportEccValueToLayerUnder) @06e498c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Mem_43_INFLS_PropagateError/32 
+  Calls: 
+SchM_Exit_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_04/54 (SchM_Exit_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_04) @06e49620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Mem_43_INFLS_BlankCheck/30 
+  Calls: 
+SchM_Enter_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_04/53 (SchM_Enter_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_04) @06e49540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Mem_43_INFLS_BlankCheck/30 
+  Calls: 
+SchM_Exit_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_01/52 (SchM_Exit_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_01) @06e49380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Mem_43_INFLS_Erase/29 
+  Calls: 
+SchM_Enter_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_01/51 (SchM_Enter_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_01) @06e492a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Mem_43_INFLS_Erase/29 
+  Calls: 
+SchM_Exit_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_02/50 (SchM_Exit_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_02) @06e490e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Mem_43_INFLS_Write/28 
+  Calls: 
+SchM_Enter_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_02/49 (SchM_Enter_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_02) @06e49000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Mem_43_INFLS_Write/28 
+  Calls: 
+SchM_Exit_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_03/48 (SchM_Exit_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_03) @06e3ce00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Mem_43_INFLS_Read/27 
+  Calls: 
+SchM_Enter_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_03/47 (SchM_Enter_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_03) @06e3cd20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Mem_43_INFLS_Read/27 
+  Calls: 
+Mem_43_INFLS_IPW_EraseResume/46 (Mem_43_INFLS_IPW_EraseResume) @06e3cb60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Mem_43_INFLS_Resume/26 
+  Calls: 
+Mem_43_INFLS_IPW_EraseSuspend/45 (Mem_43_INFLS_IPW_EraseSuspend) @06e3c9a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Mem_43_INFLS_Suspend/25 
+  Calls: 
+Mem_43_INFLS_IPW_Cancel/44 (Mem_43_INFLS_IPW_Cancel) @06e3c540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Mem_43_INFLS_DeInit/22 
+  Calls: 
+Mem_43_INFLS_IPW_Init/43 (Mem_43_INFLS_IPW_Init) @06e3c380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Mem_43_INFLS_Init/21 
+  Calls: 
+Mem_43_INFLS_Config/42 (Mem_43_INFLS_Config) @06e3bc60
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Mem_43_INFLS_Init/21 (addr) 
+  Availability: not-ready
+  Varpool flags: read-only
+SchM_Exit_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_05/41 (SchM_Exit_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_05) @06e3c1c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Mem_43_INFLS_Compare/20 
+  Calls: 
+SchM_Enter_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_05/40 (SchM_Enter_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_05) @06e3c0e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Mem_43_INFLS_Compare/20 
+  Calls: 
+Mem_43_INFLS_IPW_GetJobResult/39 (Mem_43_INFLS_IPW_GetJobResult) @06daaee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Mem_43_INFLS_ProcessRequestedJobs/19 
+  Calls: 
+Mem_43_INFLS_IPW_BlankCheck/38 (Mem_43_INFLS_IPW_BlankCheck) @06daad20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Mem_43_INFLS_DoRequestedJobs/18 
+  Calls: 
+Mem_43_INFLS_IPW_Read/37 (Mem_43_INFLS_IPW_Read) @06daac40
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Mem_43_INFLS_DoRequestedJobs/18 
+  Calls: 
+Mem_43_INFLS_IPW_Write/36 (Mem_43_INFLS_IPW_Write) @06daab60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Mem_43_INFLS_DoRequestedJobs/18 
+  Calls: 
+Mem_43_INFLS_IPW_Erase/35 (Mem_43_INFLS_IPW_Erase) @06daaa80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Mem_43_INFLS_DoRequestedJobs/18 
+  Calls: 
+Mem_43_INFLS_IPW_Compare/34 (Mem_43_INFLS_IPW_Compare) @06daa8c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Mem_43_INFLS_ProcessHwSpecificServiceJob/17 
+  Calls: 
+Mem_43_INFLS_MainFunction/33 (Mem_43_INFLS_MainFunction) @06da1a80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @01981040
+  References: Mem_43_INFLS_pConfigPtr/0 (read) Mem_43_INFLS_eJobRuntimeInfo/1 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Mem_43_INFLS_ProcessRequestedJobs/19 
+Mem_43_INFLS_PropagateError/32 (Mem_43_INFLS_PropagateError) @06da17e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06da1a80
+  References: Mem_43_INFLS_eJobRuntimeInfo/1 (write) Mem_43_INFLS_eJobRuntimeInfo/1 (write) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Mem_43_INFLS_IPW_ReportEccValueToLayerUnder/55 Mem_43_INFLS_GetInstanceIndex/5 
+Mem_43_INFLS_HwSpecificService/31 (Mem_43_INFLS_HwSpecificService) @06da1540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06da17e0
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Mem_43_INFLS_Compare/20 
+Mem_43_INFLS_BlankCheck/30 (Mem_43_INFLS_BlankCheck) @06da12a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06da1540
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Mem_43_INFLS_ReportDevError/2 SchM_Exit_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_04/54 Mem_43_INFLS_ConfigureJobRequest/16 SchM_Enter_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_04/53 Mem_43_INFLS_ValidateParamJobCommon/12 Mem_43_INFLS_InitJobRequest/15 
+Mem_43_INFLS_Erase/29 (Mem_43_INFLS_Erase) @06da1000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06da12a0
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Mem_43_INFLS_ReportDevError/2 SchM_Exit_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_01/52 Mem_43_INFLS_ConfigureJobRequest/16 SchM_Enter_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_01/51 Mem_43_INFLS_ValidateParamJobCommon/12 Mem_43_INFLS_InitJobRequest/15 
+Mem_43_INFLS_Write/28 (Mem_43_INFLS_Write) @06d93b60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06da1000
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Mem_43_INFLS_ReportDevError/2 SchM_Exit_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_02/50 Mem_43_INFLS_ConfigureJobRequest/16 SchM_Enter_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_02/49 Mem_43_INFLS_ValidateParamJobDataTransfer/14 Mem_43_INFLS_InitJobRequest/15 
+Mem_43_INFLS_Read/27 (Mem_43_INFLS_Read) @06d93620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06d93b60
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Mem_43_INFLS_ReportDevError/2 SchM_Exit_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_03/48 Mem_43_INFLS_ConfigureJobRequest/16 SchM_Enter_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_03/47 Mem_43_INFLS_ValidateParamJobDataTransfer/14 Mem_43_INFLS_InitJobRequest/15 
+Mem_43_INFLS_Resume/26 (Mem_43_INFLS_Resume) @06d930e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06d93620
+  References: Mem_43_INFLS_eJobRuntimeInfo/1 (addr) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Mem_43_INFLS_IPW_EraseResume/46 Mem_43_INFLS_GetInstanceIndex/5 
+Mem_43_INFLS_Suspend/25 (Mem_43_INFLS_Suspend) @06d93d20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06d930e0
+  References: Mem_43_INFLS_eJobRuntimeInfo/1 (addr) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Mem_43_INFLS_IPW_EraseSuspend/45 Mem_43_INFLS_GetInstanceIndex/5 
+Mem_43_INFLS_GetJobResult/24 (Mem_43_INFLS_GetJobResult) @06d93a80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06d93d20
+  References: Mem_43_INFLS_eJobRuntimeInfo/1 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Mem_43_INFLS_GetInstanceIndex/5 
+Mem_43_INFLS_GetVersionInfo/23 (Mem_43_INFLS_GetVersionInfo) @06d937e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06d93a80
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Mem_43_INFLS_ReportDevError/2 
+Mem_43_INFLS_DeInit/22 (Mem_43_INFLS_DeInit) @06d93540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06d937e0
+  References: Mem_43_INFLS_pConfigPtr/0 (read) Mem_43_INFLS_eJobRuntimeInfo/1 (read) Mem_43_INFLS_eJobRuntimeInfo/1 (write) Mem_43_INFLS_eJobRuntimeInfo/1 (write) Mem_43_INFLS_pConfigPtr/0 (write) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Mem_43_INFLS_IPW_Cancel/44 
+Mem_43_INFLS_Init/21 (Mem_43_INFLS_Init) @06d932a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06d93540
+  References: Mem_43_INFLS_pConfigPtr/0 (write) Mem_43_INFLS_Config/42 (addr) Mem_43_INFLS_pConfigPtr/0 (write) Mem_43_INFLS_eJobRuntimeInfo/1 (write) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Mem_43_INFLS_IPW_Init/43 Mem_43_INFLS_ValidateConfigCRC/3 Mem_43_INFLS_ReportDevError/2 
+Mem_43_INFLS_Compare/20 (Mem_43_INFLS_Compare) @06d93000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @06d932a0
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Mem_43_INFLS_HwSpecificService/31 
+  Calls: Mem_43_INFLS_ReportDevError/2 SchM_Exit_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_05/41 Mem_43_INFLS_ConfigureJobRequest/16 SchM_Enter_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_05/40 Mem_43_INFLS_ValidateParamJobDataTransfer/14 Mem_43_INFLS_InitJobRequest/15 
+Mem_43_INFLS_ProcessRequestedJobs/19 (Mem_43_INFLS_ProcessRequestedJobs) @06d06d20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @06d93000
+  References: Mem_43_INFLS_eJobRuntimeInfo/1 (addr) 
+  Referring: 
+  Function flags: body
+  Called by: Mem_43_INFLS_MainFunction/33 
+  Calls: Mem_43_INFLS_DoRequestedJobs/18 Mem_43_INFLS_IPW_GetJobResult/39 
+Mem_43_INFLS_DoRequestedJobs/18 (Mem_43_INFLS_DoRequestedJobs) @06d06a80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @06d06d20
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Mem_43_INFLS_ProcessRequestedJobs/19 
+  Calls: Mem_43_INFLS_IPW_BlankCheck/38 Mem_43_INFLS_ProcessHwSpecificServiceJob/17 Mem_43_INFLS_IPW_Read/37 Mem_43_INFLS_IPW_Write/36 Mem_43_INFLS_IPW_Erase/35 
+Mem_43_INFLS_ProcessHwSpecificServiceJob/17 (Mem_43_INFLS_ProcessHwSpecificServiceJob) @06d067e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @06d06a80
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Mem_43_INFLS_DoRequestedJobs/18 
+  Calls: Mem_43_INFLS_IPW_Compare/34 
+Mem_43_INFLS_ConfigureJobRequest/16 (Mem_43_INFLS_ConfigureJobRequest) @06d06540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @06d067e0
+  References: Mem_43_INFLS_eJobRuntimeInfo/1 (read) Mem_43_INFLS_eJobRuntimeInfo/1 (write) 
+  Referring: 
+  Function flags: body
+  Called by: Mem_43_INFLS_BlankCheck/30 Mem_43_INFLS_Erase/29 Mem_43_INFLS_Write/28 Mem_43_INFLS_Read/27 Mem_43_INFLS_Compare/20 
+  Calls: 
+Mem_43_INFLS_InitJobRequest/15 (Mem_43_INFLS_InitJobRequest) @06d062a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @06d06540
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Mem_43_INFLS_BlankCheck/30 Mem_43_INFLS_Erase/29 Mem_43_INFLS_Write/28 Mem_43_INFLS_Read/27 Mem_43_INFLS_Compare/20 
+  Calls: 
+Mem_43_INFLS_ValidateParamJobDataTransfer/14 (Mem_43_INFLS_ValidateParamJobDataTransfer) @06d06000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @06d062a0
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Mem_43_INFLS_Write/28 Mem_43_INFLS_Read/27 Mem_43_INFLS_Compare/20 
+  Calls: Mem_43_INFLS_ValidateDataPointer/13 Mem_43_INFLS_ValidateParamJobCommon/12 
+Mem_43_INFLS_ValidateDataPointer/13 (Mem_43_INFLS_ValidateDataPointer) @06d02d20
+  Type: function definition analyzed
+  Visibility: no_reorder
+  Aux: @06d062a0
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Mem_43_INFLS_ValidateParamJobDataTransfer/14 
+  Calls: 
+Mem_43_INFLS_ValidateParamJobCommon/12 (Mem_43_INFLS_ValidateParamJobCommon) @06d02a80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @06d06000
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Mem_43_INFLS_BlankCheck/30 Mem_43_INFLS_Erase/29 Mem_43_INFLS_ValidateParamJobDataTransfer/14 
+  Calls: Mem_43_INFLS_ValidateAddressAndLength/9 Mem_43_INFLS_ValidateInstanceId/10 Mem_43_INFLS_ValidateModuleInitialized/11 
+Mem_43_INFLS_ValidateModuleInitialized/11 (Mem_43_INFLS_ValidateModuleInitialized) @06d027e0
+  Type: function definition analyzed
+  Visibility: no_reorder
+  Aux: @06d06000
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Mem_43_INFLS_ValidateParamJobCommon/12 
+  Calls: 
+Mem_43_INFLS_ValidateInstanceId/10 (Mem_43_INFLS_ValidateInstanceId) @06d02540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @06d02a80
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Mem_43_INFLS_ValidateParamJobCommon/12 
+  Calls: Mem_43_INFLS_GetInstanceIndex/5 
+Mem_43_INFLS_ValidateAddressAndLength/9 (Mem_43_INFLS_ValidateAddressAndLength) @06d022a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @06d02540
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Mem_43_INFLS_ValidateParamJobCommon/12 
+  Calls: Mem_43_INFLS_CheckWritePageAligned/8 Mem_43_INFLS_CheckSectorAligned/7 Mem_43_INFLS_GetSectorBatch/6 
+Mem_43_INFLS_CheckWritePageAligned/8 (Mem_43_INFLS_CheckWritePageAligned) @06d02000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @06d022a0
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Mem_43_INFLS_ValidateAddressAndLength/9 
+  Calls: 
+Mem_43_INFLS_CheckSectorAligned/7 (Mem_43_INFLS_CheckSectorAligned) @06cfbd20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @06d02000
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Mem_43_INFLS_ValidateAddressAndLength/9 
+  Calls: 
+Mem_43_INFLS_GetSectorBatch/6 (Mem_43_INFLS_GetSectorBatch) @06cfba80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @06cfbd20
+  References: Mem_43_INFLS_pConfigPtr/0 (read) 
+  Referring: 
+  Function flags: body
+  Called by: Mem_43_INFLS_ValidateAddressAndLength/9 
+  Calls: Mem_43_INFLS_IncreasePtr/4 
+Mem_43_INFLS_GetInstanceIndex/5 (Mem_43_INFLS_GetInstanceIndex) @06cfb7e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @06cfba80
+  References: Mem_43_INFLS_pConfigPtr/0 (read) 
+  Referring: 
+  Function flags: body
+  Called by: Mem_43_INFLS_PropagateError/32 Mem_43_INFLS_Resume/26 Mem_43_INFLS_Suspend/25 Mem_43_INFLS_GetJobResult/24 Mem_43_INFLS_ValidateInstanceId/10 
+  Calls: 
+Mem_43_INFLS_IncreasePtr/4 (Mem_43_INFLS_IncreasePtr) @06cfb540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @06cfb7e0
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Mem_43_INFLS_GetSectorBatch/6 
+  Calls: 
+Mem_43_INFLS_ValidateConfigCRC/3 (Mem_43_INFLS_ValidateConfigCRC) @06cfb2a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @06cfb540
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Mem_43_INFLS_Init/21 
+  Calls: 
+Mem_43_INFLS_ReportDevError/2 (Mem_43_INFLS_ReportDevError) @06cfb000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @06cfb2a0
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Mem_43_INFLS_BlankCheck/30 Mem_43_INFLS_Erase/29 Mem_43_INFLS_Write/28 Mem_43_INFLS_Read/27 Mem_43_INFLS_GetVersionInfo/23 Mem_43_INFLS_Init/21 Mem_43_INFLS_Compare/20 
+  Calls: 
+Mem_43_INFLS_eJobRuntimeInfo/1 (Mem_43_INFLS_eJobRuntimeInfo) @06cfa090
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @06cfb000
+  References: 
+  Referring: Mem_43_INFLS_ConfigureJobRequest/16 (read) Mem_43_INFLS_ConfigureJobRequest/16 (write) Mem_43_INFLS_ProcessRequestedJobs/19 (addr) Mem_43_INFLS_Init/21 (write) Mem_43_INFLS_DeInit/22 (read) Mem_43_INFLS_DeInit/22 (write) Mem_43_INFLS_DeInit/22 (write) Mem_43_INFLS_GetJobResult/24 (read) Mem_43_INFLS_Suspend/25 (addr) Mem_43_INFLS_Resume/26 (addr) Mem_43_INFLS_PropagateError/32 (write) Mem_43_INFLS_PropagateError/32 (write) Mem_43_INFLS_MainFunction/33 (read) 
+  Availability: not-ready
+  Varpool flags:
+Mem_43_INFLS_pConfigPtr/0 (Mem_43_INFLS_pConfigPtr) @06cfa000
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06cfa090
+  References: 
+  Referring: Mem_43_INFLS_GetInstanceIndex/5 (read) Mem_43_INFLS_GetSectorBatch/6 (read) Mem_43_INFLS_Init/21 (write) Mem_43_INFLS_Init/21 (write) Mem_43_INFLS_DeInit/22 (read) Mem_43_INFLS_DeInit/22 (write) Mem_43_INFLS_MainFunction/33 (read) 
+  Availability: not-ready
+  Varpool flags:
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+Mem_43_INFLS_IPW_ReportEccValueToLayerUnder/55 (Mem_43_INFLS_IPW_ReportEccValueToLayerUnder) @06e498c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Mem_43_INFLS_PropagateError/32 
+  Calls: 
+SchM_Exit_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_04/54 (SchM_Exit_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_04) @06e49620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Mem_43_INFLS_BlankCheck/30 
+  Calls: 
+SchM_Enter_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_04/53 (SchM_Enter_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_04) @06e49540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Mem_43_INFLS_BlankCheck/30 
+  Calls: 
+SchM_Exit_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_01/52 (SchM_Exit_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_01) @06e49380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Mem_43_INFLS_Erase/29 
+  Calls: 
+SchM_Enter_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_01/51 (SchM_Enter_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_01) @06e492a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Mem_43_INFLS_Erase/29 
+  Calls: 
+SchM_Exit_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_02/50 (SchM_Exit_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_02) @06e490e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Mem_43_INFLS_Write/28 
+  Calls: 
+SchM_Enter_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_02/49 (SchM_Enter_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_02) @06e49000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Mem_43_INFLS_Write/28 
+  Calls: 
+SchM_Exit_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_03/48 (SchM_Exit_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_03) @06e3ce00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Mem_43_INFLS_Read/27 
+  Calls: 
+SchM_Enter_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_03/47 (SchM_Enter_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_03) @06e3cd20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Mem_43_INFLS_Read/27 
+  Calls: 
+Mem_43_INFLS_IPW_EraseResume/46 (Mem_43_INFLS_IPW_EraseResume) @06e3cb60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Mem_43_INFLS_Resume/26 
+  Calls: 
+Mem_43_INFLS_IPW_EraseSuspend/45 (Mem_43_INFLS_IPW_EraseSuspend) @06e3c9a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Mem_43_INFLS_Suspend/25 
+  Calls: 
+Mem_43_INFLS_IPW_Cancel/44 (Mem_43_INFLS_IPW_Cancel) @06e3c540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Mem_43_INFLS_DeInit/22 
+  Calls: 
+Mem_43_INFLS_IPW_Init/43 (Mem_43_INFLS_IPW_Init) @06e3c380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Mem_43_INFLS_Init/21 
+  Calls: 
+Mem_43_INFLS_Config/42 (Mem_43_INFLS_Config) @06e3bc60
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Mem_43_INFLS_Init/21 (addr) 
+  Availability: not-ready
+  Varpool flags: read-only
+SchM_Exit_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_05/41 (SchM_Exit_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_05) @06e3c1c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Mem_43_INFLS_Compare/20 
+  Calls: 
+SchM_Enter_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_05/40 (SchM_Enter_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_05) @06e3c0e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Mem_43_INFLS_Compare/20 
+  Calls: 
+Mem_43_INFLS_IPW_GetJobResult/39 (Mem_43_INFLS_IPW_GetJobResult) @06daaee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Mem_43_INFLS_ProcessRequestedJobs/19 
+  Calls: 
+Mem_43_INFLS_IPW_BlankCheck/38 (Mem_43_INFLS_IPW_BlankCheck) @06daad20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Mem_43_INFLS_DoRequestedJobs/18 
+  Calls: 
+Mem_43_INFLS_IPW_Read/37 (Mem_43_INFLS_IPW_Read) @06daac40
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Mem_43_INFLS_DoRequestedJobs/18 
+  Calls: 
+Mem_43_INFLS_IPW_Write/36 (Mem_43_INFLS_IPW_Write) @06daab60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Mem_43_INFLS_DoRequestedJobs/18 
+  Calls: 
+Mem_43_INFLS_IPW_Erase/35 (Mem_43_INFLS_IPW_Erase) @06daaa80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Mem_43_INFLS_DoRequestedJobs/18 
+  Calls: 
+Mem_43_INFLS_IPW_Compare/34 (Mem_43_INFLS_IPW_Compare) @06daa8c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Mem_43_INFLS_ProcessHwSpecificServiceJob/17 
+  Calls: 
+Mem_43_INFLS_MainFunction/33 (Mem_43_INFLS_MainFunction) @06da1a80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Mem_43_INFLS_pConfigPtr/0 (read) Mem_43_INFLS_eJobRuntimeInfo/1 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Mem_43_INFLS_ProcessRequestedJobs/19 
+Mem_43_INFLS_PropagateError/32 (Mem_43_INFLS_PropagateError) @06da17e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Mem_43_INFLS_eJobRuntimeInfo/1 (write) Mem_43_INFLS_eJobRuntimeInfo/1 (write) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Mem_43_INFLS_IPW_ReportEccValueToLayerUnder/55 Mem_43_INFLS_GetInstanceIndex/5 
+Mem_43_INFLS_HwSpecificService/31 (Mem_43_INFLS_HwSpecificService) @06da1540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Mem_43_INFLS_Compare/20 
+Mem_43_INFLS_BlankCheck/30 (Mem_43_INFLS_BlankCheck) @06da12a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Mem_43_INFLS_ReportDevError/2 SchM_Exit_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_04/54 Mem_43_INFLS_ConfigureJobRequest/16 SchM_Enter_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_04/53 Mem_43_INFLS_ValidateParamJobCommon/12 Mem_43_INFLS_InitJobRequest/15 
+Mem_43_INFLS_Erase/29 (Mem_43_INFLS_Erase) @06da1000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Mem_43_INFLS_ReportDevError/2 SchM_Exit_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_01/52 Mem_43_INFLS_ConfigureJobRequest/16 SchM_Enter_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_01/51 Mem_43_INFLS_ValidateParamJobCommon/12 Mem_43_INFLS_InitJobRequest/15 
+Mem_43_INFLS_Write/28 (Mem_43_INFLS_Write) @06d93b60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Mem_43_INFLS_ReportDevError/2 SchM_Exit_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_02/50 Mem_43_INFLS_ConfigureJobRequest/16 SchM_Enter_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_02/49 Mem_43_INFLS_ValidateParamJobDataTransfer/14 Mem_43_INFLS_InitJobRequest/15 
+Mem_43_INFLS_Read/27 (Mem_43_INFLS_Read) @06d93620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Mem_43_INFLS_ReportDevError/2 SchM_Exit_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_03/48 Mem_43_INFLS_ConfigureJobRequest/16 SchM_Enter_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_03/47 Mem_43_INFLS_ValidateParamJobDataTransfer/14 Mem_43_INFLS_InitJobRequest/15 
+Mem_43_INFLS_Resume/26 (Mem_43_INFLS_Resume) @06d930e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Mem_43_INFLS_eJobRuntimeInfo/1 (addr) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Mem_43_INFLS_IPW_EraseResume/46 Mem_43_INFLS_GetInstanceIndex/5 
+Mem_43_INFLS_Suspend/25 (Mem_43_INFLS_Suspend) @06d93d20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Mem_43_INFLS_eJobRuntimeInfo/1 (addr) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Mem_43_INFLS_IPW_EraseSuspend/45 Mem_43_INFLS_GetInstanceIndex/5 
+Mem_43_INFLS_GetJobResult/24 (Mem_43_INFLS_GetJobResult) @06d93a80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Mem_43_INFLS_eJobRuntimeInfo/1 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Mem_43_INFLS_GetInstanceIndex/5 
+Mem_43_INFLS_GetVersionInfo/23 (Mem_43_INFLS_GetVersionInfo) @06d937e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Mem_43_INFLS_ReportDevError/2 
+Mem_43_INFLS_DeInit/22 (Mem_43_INFLS_DeInit) @06d93540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Mem_43_INFLS_pConfigPtr/0 (read) Mem_43_INFLS_eJobRuntimeInfo/1 (read) Mem_43_INFLS_eJobRuntimeInfo/1 (write) Mem_43_INFLS_eJobRuntimeInfo/1 (write) Mem_43_INFLS_pConfigPtr/0 (write) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Mem_43_INFLS_IPW_Cancel/44 
+Mem_43_INFLS_Init/21 (Mem_43_INFLS_Init) @06d932a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Mem_43_INFLS_pConfigPtr/0 (write) Mem_43_INFLS_Config/42 (addr) Mem_43_INFLS_pConfigPtr/0 (write) Mem_43_INFLS_eJobRuntimeInfo/1 (write) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Mem_43_INFLS_IPW_Init/43 Mem_43_INFLS_ValidateConfigCRC/3 Mem_43_INFLS_ReportDevError/2 
+Mem_43_INFLS_Compare/20 (Mem_43_INFLS_Compare) @06d93000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Mem_43_INFLS_HwSpecificService/31 
+  Calls: Mem_43_INFLS_ReportDevError/2 SchM_Exit_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_05/41 Mem_43_INFLS_ConfigureJobRequest/16 SchM_Enter_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_05/40 Mem_43_INFLS_ValidateParamJobDataTransfer/14 Mem_43_INFLS_InitJobRequest/15 
+Mem_43_INFLS_ProcessRequestedJobs/19 (Mem_43_INFLS_ProcessRequestedJobs) @06d06d20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: Mem_43_INFLS_eJobRuntimeInfo/1 (addr) 
+  Referring: 
+  Function flags: body
+  Called by: Mem_43_INFLS_MainFunction/33 
+  Calls: Mem_43_INFLS_DoRequestedJobs/18 Mem_43_INFLS_IPW_GetJobResult/39 
+Mem_43_INFLS_DoRequestedJobs/18 (Mem_43_INFLS_DoRequestedJobs) @06d06a80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Mem_43_INFLS_ProcessRequestedJobs/19 
+  Calls: Mem_43_INFLS_IPW_BlankCheck/38 Mem_43_INFLS_ProcessHwSpecificServiceJob/17 Mem_43_INFLS_IPW_Read/37 Mem_43_INFLS_IPW_Write/36 Mem_43_INFLS_IPW_Erase/35 
+Mem_43_INFLS_ProcessHwSpecificServiceJob/17 (Mem_43_INFLS_ProcessHwSpecificServiceJob) @06d067e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Mem_43_INFLS_DoRequestedJobs/18 
+  Calls: Mem_43_INFLS_IPW_Compare/34 
+Mem_43_INFLS_ConfigureJobRequest/16 (Mem_43_INFLS_ConfigureJobRequest) @06d06540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: Mem_43_INFLS_eJobRuntimeInfo/1 (read) Mem_43_INFLS_eJobRuntimeInfo/1 (write) 
+  Referring: 
+  Function flags: body
+  Called by: Mem_43_INFLS_BlankCheck/30 Mem_43_INFLS_Erase/29 Mem_43_INFLS_Write/28 Mem_43_INFLS_Read/27 Mem_43_INFLS_Compare/20 
+  Calls: 
+Mem_43_INFLS_InitJobRequest/15 (Mem_43_INFLS_InitJobRequest) @06d062a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Mem_43_INFLS_BlankCheck/30 Mem_43_INFLS_Erase/29 Mem_43_INFLS_Write/28 Mem_43_INFLS_Read/27 Mem_43_INFLS_Compare/20 
+  Calls: 
+Mem_43_INFLS_ValidateParamJobDataTransfer/14 (Mem_43_INFLS_ValidateParamJobDataTransfer) @06d06000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Mem_43_INFLS_Write/28 Mem_43_INFLS_Read/27 Mem_43_INFLS_Compare/20 
+  Calls: Mem_43_INFLS_ValidateDataPointer/13 Mem_43_INFLS_ValidateParamJobCommon/12 
+Mem_43_INFLS_ValidateDataPointer/13 (Mem_43_INFLS_ValidateDataPointer) @06d02d20
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Mem_43_INFLS_ValidateParamJobDataTransfer/14 
+  Calls: 
+Mem_43_INFLS_ValidateParamJobCommon/12 (Mem_43_INFLS_ValidateParamJobCommon) @06d02a80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Mem_43_INFLS_BlankCheck/30 Mem_43_INFLS_Erase/29 Mem_43_INFLS_ValidateParamJobDataTransfer/14 
+  Calls: Mem_43_INFLS_ValidateAddressAndLength/9 Mem_43_INFLS_ValidateInstanceId/10 Mem_43_INFLS_ValidateModuleInitialized/11 
+Mem_43_INFLS_ValidateModuleInitialized/11 (Mem_43_INFLS_ValidateModuleInitialized) @06d027e0
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Mem_43_INFLS_ValidateParamJobCommon/12 
+  Calls: 
+Mem_43_INFLS_ValidateInstanceId/10 (Mem_43_INFLS_ValidateInstanceId) @06d02540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Mem_43_INFLS_ValidateParamJobCommon/12 
+  Calls: Mem_43_INFLS_GetInstanceIndex/5 
+Mem_43_INFLS_ValidateAddressAndLength/9 (Mem_43_INFLS_ValidateAddressAndLength) @06d022a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Mem_43_INFLS_ValidateParamJobCommon/12 
+  Calls: Mem_43_INFLS_CheckWritePageAligned/8 Mem_43_INFLS_CheckSectorAligned/7 Mem_43_INFLS_GetSectorBatch/6 
+Mem_43_INFLS_CheckWritePageAligned/8 (Mem_43_INFLS_CheckWritePageAligned) @06d02000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Mem_43_INFLS_ValidateAddressAndLength/9 
+  Calls: 
+Mem_43_INFLS_CheckSectorAligned/7 (Mem_43_INFLS_CheckSectorAligned) @06cfbd20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Mem_43_INFLS_ValidateAddressAndLength/9 
+  Calls: 
+Mem_43_INFLS_GetSectorBatch/6 (Mem_43_INFLS_GetSectorBatch) @06cfba80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: Mem_43_INFLS_pConfigPtr/0 (read) 
+  Referring: 
+  Function flags: body
+  Called by: Mem_43_INFLS_ValidateAddressAndLength/9 
+  Calls: Mem_43_INFLS_IncreasePtr/4 
+Mem_43_INFLS_GetInstanceIndex/5 (Mem_43_INFLS_GetInstanceIndex) @06cfb7e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: Mem_43_INFLS_pConfigPtr/0 (read) 
+  Referring: 
+  Function flags: body
+  Called by: Mem_43_INFLS_PropagateError/32 Mem_43_INFLS_Resume/26 Mem_43_INFLS_Suspend/25 Mem_43_INFLS_GetJobResult/24 Mem_43_INFLS_ValidateInstanceId/10 
+  Calls: 
+Mem_43_INFLS_IncreasePtr/4 (Mem_43_INFLS_IncreasePtr) @06cfb540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Mem_43_INFLS_GetSectorBatch/6 
+  Calls: 
+Mem_43_INFLS_ValidateConfigCRC/3 (Mem_43_INFLS_ValidateConfigCRC) @06cfb2a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Mem_43_INFLS_Init/21 
+  Calls: 
+Mem_43_INFLS_ReportDevError/2 (Mem_43_INFLS_ReportDevError) @06cfb000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Mem_43_INFLS_BlankCheck/30 Mem_43_INFLS_Erase/29 Mem_43_INFLS_Write/28 Mem_43_INFLS_Read/27 Mem_43_INFLS_GetVersionInfo/23 Mem_43_INFLS_Init/21 Mem_43_INFLS_Compare/20 
+  Calls: 
+Mem_43_INFLS_eJobRuntimeInfo/1 (Mem_43_INFLS_eJobRuntimeInfo) @06cfa090
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Mem_43_INFLS_ConfigureJobRequest/16 (read) Mem_43_INFLS_ConfigureJobRequest/16 (write) Mem_43_INFLS_ProcessRequestedJobs/19 (addr) Mem_43_INFLS_Init/21 (write) Mem_43_INFLS_DeInit/22 (read) Mem_43_INFLS_DeInit/22 (write) Mem_43_INFLS_DeInit/22 (write) Mem_43_INFLS_GetJobResult/24 (read) Mem_43_INFLS_Suspend/25 (addr) Mem_43_INFLS_Resume/26 (addr) Mem_43_INFLS_PropagateError/32 (write) Mem_43_INFLS_PropagateError/32 (write) Mem_43_INFLS_MainFunction/33 (read) 
+  Availability: not-ready
+  Varpool flags:
+Mem_43_INFLS_pConfigPtr/0 (Mem_43_INFLS_pConfigPtr) @06cfa000
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: Mem_43_INFLS_GetInstanceIndex/5 (read) Mem_43_INFLS_GetSectorBatch/6 (read) Mem_43_INFLS_Init/21 (write) Mem_43_INFLS_Init/21 (write) Mem_43_INFLS_DeInit/22 (read) Mem_43_INFLS_DeInit/22 (write) Mem_43_INFLS_MainFunction/33 (read) 
+  Availability: not-ready
+  Varpool flags:
+
+
+Initial Symbol table:
+
+Mem_43_INFLS_IPW_ReportEccValueToLayerUnder/55 (Mem_43_INFLS_IPW_ReportEccValueToLayerUnder) @06e498c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Mem_43_INFLS_PropagateError/32 
+  Calls: 
+SchM_Exit_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_04/54 (SchM_Exit_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_04) @06e49620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Mem_43_INFLS_BlankCheck/30 
+  Calls: 
+SchM_Enter_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_04/53 (SchM_Enter_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_04) @06e49540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Mem_43_INFLS_BlankCheck/30 
+  Calls: 
+SchM_Exit_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_01/52 (SchM_Exit_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_01) @06e49380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Mem_43_INFLS_Erase/29 
+  Calls: 
+SchM_Enter_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_01/51 (SchM_Enter_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_01) @06e492a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Mem_43_INFLS_Erase/29 
+  Calls: 
+SchM_Exit_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_02/50 (SchM_Exit_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_02) @06e490e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Mem_43_INFLS_Write/28 
+  Calls: 
+SchM_Enter_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_02/49 (SchM_Enter_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_02) @06e49000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Mem_43_INFLS_Write/28 
+  Calls: 
+SchM_Exit_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_03/48 (SchM_Exit_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_03) @06e3ce00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Mem_43_INFLS_Read/27 
+  Calls: 
+SchM_Enter_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_03/47 (SchM_Enter_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_03) @06e3cd20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Mem_43_INFLS_Read/27 
+  Calls: 
+Mem_43_INFLS_IPW_EraseResume/46 (Mem_43_INFLS_IPW_EraseResume) @06e3cb60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Mem_43_INFLS_Resume/26 
+  Calls: 
+Mem_43_INFLS_IPW_EraseSuspend/45 (Mem_43_INFLS_IPW_EraseSuspend) @06e3c9a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Mem_43_INFLS_Suspend/25 
+  Calls: 
+Mem_43_INFLS_IPW_Cancel/44 (Mem_43_INFLS_IPW_Cancel) @06e3c540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Mem_43_INFLS_DeInit/22 
+  Calls: 
+Mem_43_INFLS_IPW_Init/43 (Mem_43_INFLS_IPW_Init) @06e3c380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Mem_43_INFLS_Init/21 
+  Calls: 
+Mem_43_INFLS_Config/42 (Mem_43_INFLS_Config) @06e3bc60
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Mem_43_INFLS_Init/21 (addr) 
+  Availability: not-ready
+  Varpool flags: read-only
+SchM_Exit_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_05/41 (SchM_Exit_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_05) @06e3c1c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Mem_43_INFLS_Compare/20 
+  Calls: 
+SchM_Enter_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_05/40 (SchM_Enter_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_05) @06e3c0e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Mem_43_INFLS_Compare/20 
+  Calls: 
+Mem_43_INFLS_IPW_GetJobResult/39 (Mem_43_INFLS_IPW_GetJobResult) @06daaee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Mem_43_INFLS_ProcessRequestedJobs/19 
+  Calls: 
+Mem_43_INFLS_IPW_BlankCheck/38 (Mem_43_INFLS_IPW_BlankCheck) @06daad20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Mem_43_INFLS_DoRequestedJobs/18 
+  Calls: 
+Mem_43_INFLS_IPW_Read/37 (Mem_43_INFLS_IPW_Read) @06daac40
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Mem_43_INFLS_DoRequestedJobs/18 
+  Calls: 
+Mem_43_INFLS_IPW_Write/36 (Mem_43_INFLS_IPW_Write) @06daab60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Mem_43_INFLS_DoRequestedJobs/18 
+  Calls: 
+Mem_43_INFLS_IPW_Erase/35 (Mem_43_INFLS_IPW_Erase) @06daaa80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Mem_43_INFLS_DoRequestedJobs/18 
+  Calls: 
+Mem_43_INFLS_IPW_Compare/34 (Mem_43_INFLS_IPW_Compare) @06daa8c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Mem_43_INFLS_ProcessHwSpecificServiceJob/17 
+  Calls: 
+Mem_43_INFLS_MainFunction/33 (Mem_43_INFLS_MainFunction) @06da1a80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Mem_43_INFLS_pConfigPtr/0 (read) Mem_43_INFLS_eJobRuntimeInfo/1 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Mem_43_INFLS_ProcessRequestedJobs/19 
+Mem_43_INFLS_PropagateError/32 (Mem_43_INFLS_PropagateError) @06da17e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Mem_43_INFLS_eJobRuntimeInfo/1 (write) Mem_43_INFLS_eJobRuntimeInfo/1 (write) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Mem_43_INFLS_IPW_ReportEccValueToLayerUnder/55 Mem_43_INFLS_GetInstanceIndex/5 
+Mem_43_INFLS_HwSpecificService/31 (Mem_43_INFLS_HwSpecificService) @06da1540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Mem_43_INFLS_Compare/20 
+Mem_43_INFLS_BlankCheck/30 (Mem_43_INFLS_BlankCheck) @06da12a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Mem_43_INFLS_ReportDevError/2 SchM_Exit_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_04/54 Mem_43_INFLS_ConfigureJobRequest/16 SchM_Enter_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_04/53 Mem_43_INFLS_ValidateParamJobCommon/12 Mem_43_INFLS_InitJobRequest/15 
+Mem_43_INFLS_Erase/29 (Mem_43_INFLS_Erase) @06da1000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Mem_43_INFLS_ReportDevError/2 SchM_Exit_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_01/52 Mem_43_INFLS_ConfigureJobRequest/16 SchM_Enter_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_01/51 Mem_43_INFLS_ValidateParamJobCommon/12 Mem_43_INFLS_InitJobRequest/15 
+Mem_43_INFLS_Write/28 (Mem_43_INFLS_Write) @06d93b60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Mem_43_INFLS_ReportDevError/2 SchM_Exit_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_02/50 Mem_43_INFLS_ConfigureJobRequest/16 SchM_Enter_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_02/49 Mem_43_INFLS_ValidateParamJobDataTransfer/14 Mem_43_INFLS_InitJobRequest/15 
+Mem_43_INFLS_Read/27 (Mem_43_INFLS_Read) @06d93620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Mem_43_INFLS_ReportDevError/2 SchM_Exit_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_03/48 Mem_43_INFLS_ConfigureJobRequest/16 SchM_Enter_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_03/47 Mem_43_INFLS_ValidateParamJobDataTransfer/14 Mem_43_INFLS_InitJobRequest/15 
+Mem_43_INFLS_Resume/26 (Mem_43_INFLS_Resume) @06d930e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Mem_43_INFLS_eJobRuntimeInfo/1 (addr) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Mem_43_INFLS_IPW_EraseResume/46 Mem_43_INFLS_GetInstanceIndex/5 
+Mem_43_INFLS_Suspend/25 (Mem_43_INFLS_Suspend) @06d93d20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Mem_43_INFLS_eJobRuntimeInfo/1 (addr) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Mem_43_INFLS_IPW_EraseSuspend/45 Mem_43_INFLS_GetInstanceIndex/5 
+Mem_43_INFLS_GetJobResult/24 (Mem_43_INFLS_GetJobResult) @06d93a80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Mem_43_INFLS_eJobRuntimeInfo/1 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Mem_43_INFLS_GetInstanceIndex/5 
+Mem_43_INFLS_GetVersionInfo/23 (Mem_43_INFLS_GetVersionInfo) @06d937e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Mem_43_INFLS_ReportDevError/2 
+Mem_43_INFLS_DeInit/22 (Mem_43_INFLS_DeInit) @06d93540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Mem_43_INFLS_pConfigPtr/0 (read) Mem_43_INFLS_eJobRuntimeInfo/1 (read) Mem_43_INFLS_eJobRuntimeInfo/1 (write) Mem_43_INFLS_eJobRuntimeInfo/1 (write) Mem_43_INFLS_pConfigPtr/0 (write) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Mem_43_INFLS_IPW_Cancel/44 
+Mem_43_INFLS_Init/21 (Mem_43_INFLS_Init) @06d932a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Mem_43_INFLS_pConfigPtr/0 (write) Mem_43_INFLS_Config/42 (addr) Mem_43_INFLS_pConfigPtr/0 (write) Mem_43_INFLS_eJobRuntimeInfo/1 (write) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Mem_43_INFLS_IPW_Init/43 Mem_43_INFLS_ValidateConfigCRC/3 Mem_43_INFLS_ReportDevError/2 
+Mem_43_INFLS_Compare/20 (Mem_43_INFLS_Compare) @06d93000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Mem_43_INFLS_HwSpecificService/31 
+  Calls: Mem_43_INFLS_ReportDevError/2 SchM_Exit_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_05/41 Mem_43_INFLS_ConfigureJobRequest/16 SchM_Enter_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_05/40 Mem_43_INFLS_ValidateParamJobDataTransfer/14 Mem_43_INFLS_InitJobRequest/15 
+Mem_43_INFLS_ProcessRequestedJobs/19 (Mem_43_INFLS_ProcessRequestedJobs) @06d06d20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: Mem_43_INFLS_eJobRuntimeInfo/1 (addr) 
+  Referring: 
+  Function flags: body
+  Called by: Mem_43_INFLS_MainFunction/33 
+  Calls: Mem_43_INFLS_DoRequestedJobs/18 Mem_43_INFLS_IPW_GetJobResult/39 
+Mem_43_INFLS_DoRequestedJobs/18 (Mem_43_INFLS_DoRequestedJobs) @06d06a80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Mem_43_INFLS_ProcessRequestedJobs/19 
+  Calls: Mem_43_INFLS_IPW_BlankCheck/38 Mem_43_INFLS_ProcessHwSpecificServiceJob/17 Mem_43_INFLS_IPW_Read/37 Mem_43_INFLS_IPW_Write/36 Mem_43_INFLS_IPW_Erase/35 
+Mem_43_INFLS_ProcessHwSpecificServiceJob/17 (Mem_43_INFLS_ProcessHwSpecificServiceJob) @06d067e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Mem_43_INFLS_DoRequestedJobs/18 
+  Calls: Mem_43_INFLS_IPW_Compare/34 
+Mem_43_INFLS_ConfigureJobRequest/16 (Mem_43_INFLS_ConfigureJobRequest) @06d06540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: Mem_43_INFLS_eJobRuntimeInfo/1 (read) Mem_43_INFLS_eJobRuntimeInfo/1 (write) 
+  Referring: 
+  Function flags: body
+  Called by: Mem_43_INFLS_BlankCheck/30 Mem_43_INFLS_Erase/29 Mem_43_INFLS_Write/28 Mem_43_INFLS_Read/27 Mem_43_INFLS_Compare/20 
+  Calls: 
+Mem_43_INFLS_InitJobRequest/15 (Mem_43_INFLS_InitJobRequest) @06d062a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Mem_43_INFLS_BlankCheck/30 Mem_43_INFLS_Erase/29 Mem_43_INFLS_Write/28 Mem_43_INFLS_Read/27 Mem_43_INFLS_Compare/20 
+  Calls: 
+Mem_43_INFLS_ValidateParamJobDataTransfer/14 (Mem_43_INFLS_ValidateParamJobDataTransfer) @06d06000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Mem_43_INFLS_Write/28 Mem_43_INFLS_Read/27 Mem_43_INFLS_Compare/20 
+  Calls: Mem_43_INFLS_ValidateDataPointer/13 Mem_43_INFLS_ValidateParamJobCommon/12 
+Mem_43_INFLS_ValidateDataPointer/13 (Mem_43_INFLS_ValidateDataPointer) @06d02d20
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Mem_43_INFLS_ValidateParamJobDataTransfer/14 
+  Calls: 
+Mem_43_INFLS_ValidateParamJobCommon/12 (Mem_43_INFLS_ValidateParamJobCommon) @06d02a80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Mem_43_INFLS_BlankCheck/30 Mem_43_INFLS_Erase/29 Mem_43_INFLS_ValidateParamJobDataTransfer/14 
+  Calls: Mem_43_INFLS_ValidateAddressAndLength/9 Mem_43_INFLS_ValidateInstanceId/10 Mem_43_INFLS_ValidateModuleInitialized/11 
+Mem_43_INFLS_ValidateModuleInitialized/11 (Mem_43_INFLS_ValidateModuleInitialized) @06d027e0
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Mem_43_INFLS_ValidateParamJobCommon/12 
+  Calls: 
+Mem_43_INFLS_ValidateInstanceId/10 (Mem_43_INFLS_ValidateInstanceId) @06d02540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Mem_43_INFLS_ValidateParamJobCommon/12 
+  Calls: Mem_43_INFLS_GetInstanceIndex/5 
+Mem_43_INFLS_ValidateAddressAndLength/9 (Mem_43_INFLS_ValidateAddressAndLength) @06d022a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Mem_43_INFLS_ValidateParamJobCommon/12 
+  Calls: Mem_43_INFLS_CheckWritePageAligned/8 Mem_43_INFLS_CheckSectorAligned/7 Mem_43_INFLS_GetSectorBatch/6 
+Mem_43_INFLS_CheckWritePageAligned/8 (Mem_43_INFLS_CheckWritePageAligned) @06d02000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Mem_43_INFLS_ValidateAddressAndLength/9 
+  Calls: 
+Mem_43_INFLS_CheckSectorAligned/7 (Mem_43_INFLS_CheckSectorAligned) @06cfbd20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Mem_43_INFLS_ValidateAddressAndLength/9 
+  Calls: 
+Mem_43_INFLS_GetSectorBatch/6 (Mem_43_INFLS_GetSectorBatch) @06cfba80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: Mem_43_INFLS_pConfigPtr/0 (read) 
+  Referring: 
+  Function flags: body
+  Called by: Mem_43_INFLS_ValidateAddressAndLength/9 
+  Calls: Mem_43_INFLS_IncreasePtr/4 
+Mem_43_INFLS_GetInstanceIndex/5 (Mem_43_INFLS_GetInstanceIndex) @06cfb7e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: Mem_43_INFLS_pConfigPtr/0 (read) 
+  Referring: 
+  Function flags: body
+  Called by: Mem_43_INFLS_PropagateError/32 Mem_43_INFLS_Resume/26 Mem_43_INFLS_Suspend/25 Mem_43_INFLS_GetJobResult/24 Mem_43_INFLS_ValidateInstanceId/10 
+  Calls: 
+Mem_43_INFLS_IncreasePtr/4 (Mem_43_INFLS_IncreasePtr) @06cfb540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Mem_43_INFLS_GetSectorBatch/6 
+  Calls: 
+Mem_43_INFLS_ValidateConfigCRC/3 (Mem_43_INFLS_ValidateConfigCRC) @06cfb2a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Mem_43_INFLS_Init/21 
+  Calls: 
+Mem_43_INFLS_ReportDevError/2 (Mem_43_INFLS_ReportDevError) @06cfb000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Mem_43_INFLS_BlankCheck/30 Mem_43_INFLS_Erase/29 Mem_43_INFLS_Write/28 Mem_43_INFLS_Read/27 Mem_43_INFLS_GetVersionInfo/23 Mem_43_INFLS_Init/21 Mem_43_INFLS_Compare/20 
+  Calls: 
+Mem_43_INFLS_eJobRuntimeInfo/1 (Mem_43_INFLS_eJobRuntimeInfo) @06cfa090
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Mem_43_INFLS_ConfigureJobRequest/16 (read) Mem_43_INFLS_ConfigureJobRequest/16 (write) Mem_43_INFLS_ProcessRequestedJobs/19 (addr) Mem_43_INFLS_Init/21 (write) Mem_43_INFLS_DeInit/22 (read) Mem_43_INFLS_DeInit/22 (write) Mem_43_INFLS_DeInit/22 (write) Mem_43_INFLS_GetJobResult/24 (read) Mem_43_INFLS_Suspend/25 (addr) Mem_43_INFLS_Resume/26 (addr) Mem_43_INFLS_PropagateError/32 (write) Mem_43_INFLS_PropagateError/32 (write) Mem_43_INFLS_MainFunction/33 (read) 
+  Availability: not-ready
+  Varpool flags:
+Mem_43_INFLS_pConfigPtr/0 (Mem_43_INFLS_pConfigPtr) @06cfa000
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: Mem_43_INFLS_GetInstanceIndex/5 (read) Mem_43_INFLS_GetSectorBatch/6 (read) Mem_43_INFLS_Init/21 (write) Mem_43_INFLS_Init/21 (write) Mem_43_INFLS_DeInit/22 (read) Mem_43_INFLS_DeInit/22 (write) Mem_43_INFLS_MainFunction/33 (read) 
+  Availability: not-ready
+  Varpool flags:
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+Mem_43_INFLS_IPW_ReportEccValueToLayerUnder/55 (Mem_43_INFLS_IPW_ReportEccValueToLayerUnder) @06e498c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Mem_43_INFLS_PropagateError/32 
+  Calls: 
+SchM_Exit_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_04/54 (SchM_Exit_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_04) @06e49620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Mem_43_INFLS_BlankCheck/30 
+  Calls: 
+SchM_Enter_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_04/53 (SchM_Enter_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_04) @06e49540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Mem_43_INFLS_BlankCheck/30 
+  Calls: 
+SchM_Exit_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_01/52 (SchM_Exit_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_01) @06e49380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Mem_43_INFLS_Erase/29 
+  Calls: 
+SchM_Enter_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_01/51 (SchM_Enter_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_01) @06e492a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Mem_43_INFLS_Erase/29 
+  Calls: 
+SchM_Exit_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_02/50 (SchM_Exit_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_02) @06e490e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Mem_43_INFLS_Write/28 
+  Calls: 
+SchM_Enter_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_02/49 (SchM_Enter_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_02) @06e49000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Mem_43_INFLS_Write/28 
+  Calls: 
+SchM_Exit_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_03/48 (SchM_Exit_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_03) @06e3ce00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Mem_43_INFLS_Read/27 
+  Calls: 
+SchM_Enter_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_03/47 (SchM_Enter_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_03) @06e3cd20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Mem_43_INFLS_Read/27 
+  Calls: 
+Mem_43_INFLS_IPW_EraseResume/46 (Mem_43_INFLS_IPW_EraseResume) @06e3cb60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Mem_43_INFLS_Resume/26 
+  Calls: 
+Mem_43_INFLS_IPW_EraseSuspend/45 (Mem_43_INFLS_IPW_EraseSuspend) @06e3c9a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Mem_43_INFLS_Suspend/25 
+  Calls: 
+Mem_43_INFLS_IPW_Cancel/44 (Mem_43_INFLS_IPW_Cancel) @06e3c540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Mem_43_INFLS_DeInit/22 
+  Calls: 
+Mem_43_INFLS_IPW_Init/43 (Mem_43_INFLS_IPW_Init) @06e3c380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Mem_43_INFLS_Init/21 
+  Calls: 
+Mem_43_INFLS_Config/42 (Mem_43_INFLS_Config) @06e3bc60
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Mem_43_INFLS_Init/21 (addr) 
+  Availability: not-ready
+  Varpool flags: read-only
+SchM_Exit_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_05/41 (SchM_Exit_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_05) @06e3c1c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Mem_43_INFLS_Compare/20 
+  Calls: 
+SchM_Enter_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_05/40 (SchM_Enter_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_05) @06e3c0e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Mem_43_INFLS_Compare/20 
+  Calls: 
+Mem_43_INFLS_IPW_GetJobResult/39 (Mem_43_INFLS_IPW_GetJobResult) @06daaee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Mem_43_INFLS_ProcessRequestedJobs/19 
+  Calls: 
+Mem_43_INFLS_IPW_BlankCheck/38 (Mem_43_INFLS_IPW_BlankCheck) @06daad20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Mem_43_INFLS_DoRequestedJobs/18 
+  Calls: 
+Mem_43_INFLS_IPW_Read/37 (Mem_43_INFLS_IPW_Read) @06daac40
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Mem_43_INFLS_DoRequestedJobs/18 
+  Calls: 
+Mem_43_INFLS_IPW_Write/36 (Mem_43_INFLS_IPW_Write) @06daab60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Mem_43_INFLS_DoRequestedJobs/18 
+  Calls: 
+Mem_43_INFLS_IPW_Erase/35 (Mem_43_INFLS_IPW_Erase) @06daaa80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Mem_43_INFLS_DoRequestedJobs/18 
+  Calls: 
+Mem_43_INFLS_IPW_Compare/34 (Mem_43_INFLS_IPW_Compare) @06daa8c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Mem_43_INFLS_ProcessHwSpecificServiceJob/17 
+  Calls: 
+Mem_43_INFLS_MainFunction/33 (Mem_43_INFLS_MainFunction) @06da1a80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Mem_43_INFLS_pConfigPtr/0 (read) Mem_43_INFLS_eJobRuntimeInfo/1 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Mem_43_INFLS_ProcessRequestedJobs/19 
+Mem_43_INFLS_PropagateError/32 (Mem_43_INFLS_PropagateError) @06da17e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Mem_43_INFLS_eJobRuntimeInfo/1 (write) Mem_43_INFLS_eJobRuntimeInfo/1 (write) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Mem_43_INFLS_IPW_ReportEccValueToLayerUnder/55 Mem_43_INFLS_GetInstanceIndex/5 
+Mem_43_INFLS_HwSpecificService/31 (Mem_43_INFLS_HwSpecificService) @06da1540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Mem_43_INFLS_Compare/20 
+Mem_43_INFLS_BlankCheck/30 (Mem_43_INFLS_BlankCheck) @06da12a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Mem_43_INFLS_ReportDevError/2 SchM_Exit_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_04/54 Mem_43_INFLS_ConfigureJobRequest/16 SchM_Enter_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_04/53 Mem_43_INFLS_ValidateParamJobCommon/12 Mem_43_INFLS_InitJobRequest/15 
+Mem_43_INFLS_Erase/29 (Mem_43_INFLS_Erase) @06da1000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Mem_43_INFLS_ReportDevError/2 SchM_Exit_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_01/52 Mem_43_INFLS_ConfigureJobRequest/16 SchM_Enter_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_01/51 Mem_43_INFLS_ValidateParamJobCommon/12 Mem_43_INFLS_InitJobRequest/15 
+Mem_43_INFLS_Write/28 (Mem_43_INFLS_Write) @06d93b60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Mem_43_INFLS_ReportDevError/2 SchM_Exit_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_02/50 Mem_43_INFLS_ConfigureJobRequest/16 SchM_Enter_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_02/49 Mem_43_INFLS_ValidateParamJobDataTransfer/14 Mem_43_INFLS_InitJobRequest/15 
+Mem_43_INFLS_Read/27 (Mem_43_INFLS_Read) @06d93620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Mem_43_INFLS_ReportDevError/2 SchM_Exit_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_03/48 Mem_43_INFLS_ConfigureJobRequest/16 SchM_Enter_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_03/47 Mem_43_INFLS_ValidateParamJobDataTransfer/14 Mem_43_INFLS_InitJobRequest/15 
+Mem_43_INFLS_Resume/26 (Mem_43_INFLS_Resume) @06d930e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Mem_43_INFLS_eJobRuntimeInfo/1 (addr) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Mem_43_INFLS_IPW_EraseResume/46 Mem_43_INFLS_GetInstanceIndex/5 
+Mem_43_INFLS_Suspend/25 (Mem_43_INFLS_Suspend) @06d93d20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Mem_43_INFLS_eJobRuntimeInfo/1 (addr) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Mem_43_INFLS_IPW_EraseSuspend/45 Mem_43_INFLS_GetInstanceIndex/5 
+Mem_43_INFLS_GetJobResult/24 (Mem_43_INFLS_GetJobResult) @06d93a80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Mem_43_INFLS_eJobRuntimeInfo/1 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Mem_43_INFLS_GetInstanceIndex/5 
+Mem_43_INFLS_GetVersionInfo/23 (Mem_43_INFLS_GetVersionInfo) @06d937e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Mem_43_INFLS_ReportDevError/2 
+Mem_43_INFLS_DeInit/22 (Mem_43_INFLS_DeInit) @06d93540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Mem_43_INFLS_pConfigPtr/0 (read) Mem_43_INFLS_eJobRuntimeInfo/1 (read) Mem_43_INFLS_eJobRuntimeInfo/1 (write) Mem_43_INFLS_eJobRuntimeInfo/1 (write) Mem_43_INFLS_pConfigPtr/0 (write) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Mem_43_INFLS_IPW_Cancel/44 
+Mem_43_INFLS_Init/21 (Mem_43_INFLS_Init) @06d932a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Mem_43_INFLS_pConfigPtr/0 (write) Mem_43_INFLS_Config/42 (addr) Mem_43_INFLS_pConfigPtr/0 (write) Mem_43_INFLS_eJobRuntimeInfo/1 (write) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Mem_43_INFLS_IPW_Init/43 Mem_43_INFLS_ValidateConfigCRC/3 Mem_43_INFLS_ReportDevError/2 
+Mem_43_INFLS_Compare/20 (Mem_43_INFLS_Compare) @06d93000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Mem_43_INFLS_HwSpecificService/31 
+  Calls: Mem_43_INFLS_ReportDevError/2 SchM_Exit_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_05/41 Mem_43_INFLS_ConfigureJobRequest/16 SchM_Enter_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_05/40 Mem_43_INFLS_ValidateParamJobDataTransfer/14 Mem_43_INFLS_InitJobRequest/15 
+Mem_43_INFLS_ProcessRequestedJobs/19 (Mem_43_INFLS_ProcessRequestedJobs) @06d06d20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: Mem_43_INFLS_eJobRuntimeInfo/1 (addr) 
+  Referring: 
+  Function flags: body
+  Called by: Mem_43_INFLS_MainFunction/33 
+  Calls: Mem_43_INFLS_DoRequestedJobs/18 Mem_43_INFLS_IPW_GetJobResult/39 
+Mem_43_INFLS_DoRequestedJobs/18 (Mem_43_INFLS_DoRequestedJobs) @06d06a80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Mem_43_INFLS_ProcessRequestedJobs/19 
+  Calls: Mem_43_INFLS_IPW_BlankCheck/38 Mem_43_INFLS_ProcessHwSpecificServiceJob/17 Mem_43_INFLS_IPW_Read/37 Mem_43_INFLS_IPW_Write/36 Mem_43_INFLS_IPW_Erase/35 
+Mem_43_INFLS_ProcessHwSpecificServiceJob/17 (Mem_43_INFLS_ProcessHwSpecificServiceJob) @06d067e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Mem_43_INFLS_DoRequestedJobs/18 
+  Calls: Mem_43_INFLS_IPW_Compare/34 
+Mem_43_INFLS_ConfigureJobRequest/16 (Mem_43_INFLS_ConfigureJobRequest) @06d06540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: Mem_43_INFLS_eJobRuntimeInfo/1 (read) Mem_43_INFLS_eJobRuntimeInfo/1 (write) 
+  Referring: 
+  Function flags: body
+  Called by: Mem_43_INFLS_BlankCheck/30 Mem_43_INFLS_Erase/29 Mem_43_INFLS_Write/28 Mem_43_INFLS_Read/27 Mem_43_INFLS_Compare/20 
+  Calls: 
+Mem_43_INFLS_InitJobRequest/15 (Mem_43_INFLS_InitJobRequest) @06d062a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Mem_43_INFLS_BlankCheck/30 Mem_43_INFLS_Erase/29 Mem_43_INFLS_Write/28 Mem_43_INFLS_Read/27 Mem_43_INFLS_Compare/20 
+  Calls: 
+Mem_43_INFLS_ValidateParamJobDataTransfer/14 (Mem_43_INFLS_ValidateParamJobDataTransfer) @06d06000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Mem_43_INFLS_Write/28 Mem_43_INFLS_Read/27 Mem_43_INFLS_Compare/20 
+  Calls: Mem_43_INFLS_ValidateDataPointer/13 Mem_43_INFLS_ValidateParamJobCommon/12 
+Mem_43_INFLS_ValidateDataPointer/13 (Mem_43_INFLS_ValidateDataPointer) @06d02d20
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Mem_43_INFLS_ValidateParamJobDataTransfer/14 
+  Calls: 
+Mem_43_INFLS_ValidateParamJobCommon/12 (Mem_43_INFLS_ValidateParamJobCommon) @06d02a80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Mem_43_INFLS_BlankCheck/30 Mem_43_INFLS_Erase/29 Mem_43_INFLS_ValidateParamJobDataTransfer/14 
+  Calls: Mem_43_INFLS_ValidateAddressAndLength/9 Mem_43_INFLS_ValidateInstanceId/10 Mem_43_INFLS_ValidateModuleInitialized/11 
+Mem_43_INFLS_ValidateModuleInitialized/11 (Mem_43_INFLS_ValidateModuleInitialized) @06d027e0
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Mem_43_INFLS_ValidateParamJobCommon/12 
+  Calls: 
+Mem_43_INFLS_ValidateInstanceId/10 (Mem_43_INFLS_ValidateInstanceId) @06d02540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Mem_43_INFLS_ValidateParamJobCommon/12 
+  Calls: Mem_43_INFLS_GetInstanceIndex/5 
+Mem_43_INFLS_ValidateAddressAndLength/9 (Mem_43_INFLS_ValidateAddressAndLength) @06d022a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Mem_43_INFLS_ValidateParamJobCommon/12 
+  Calls: Mem_43_INFLS_CheckWritePageAligned/8 Mem_43_INFLS_CheckSectorAligned/7 Mem_43_INFLS_GetSectorBatch/6 
+Mem_43_INFLS_CheckWritePageAligned/8 (Mem_43_INFLS_CheckWritePageAligned) @06d02000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Mem_43_INFLS_ValidateAddressAndLength/9 
+  Calls: 
+Mem_43_INFLS_CheckSectorAligned/7 (Mem_43_INFLS_CheckSectorAligned) @06cfbd20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Mem_43_INFLS_ValidateAddressAndLength/9 
+  Calls: 
+Mem_43_INFLS_GetSectorBatch/6 (Mem_43_INFLS_GetSectorBatch) @06cfba80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: Mem_43_INFLS_pConfigPtr/0 (read) 
+  Referring: 
+  Function flags: body
+  Called by: Mem_43_INFLS_ValidateAddressAndLength/9 
+  Calls: Mem_43_INFLS_IncreasePtr/4 
+Mem_43_INFLS_GetInstanceIndex/5 (Mem_43_INFLS_GetInstanceIndex) @06cfb7e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: Mem_43_INFLS_pConfigPtr/0 (read) 
+  Referring: 
+  Function flags: body
+  Called by: Mem_43_INFLS_PropagateError/32 Mem_43_INFLS_Resume/26 Mem_43_INFLS_Suspend/25 Mem_43_INFLS_GetJobResult/24 Mem_43_INFLS_ValidateInstanceId/10 
+  Calls: 
+Mem_43_INFLS_IncreasePtr/4 (Mem_43_INFLS_IncreasePtr) @06cfb540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Mem_43_INFLS_GetSectorBatch/6 
+  Calls: 
+Mem_43_INFLS_ValidateConfigCRC/3 (Mem_43_INFLS_ValidateConfigCRC) @06cfb2a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Mem_43_INFLS_Init/21 
+  Calls: 
+Mem_43_INFLS_ReportDevError/2 (Mem_43_INFLS_ReportDevError) @06cfb000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Mem_43_INFLS_BlankCheck/30 Mem_43_INFLS_Erase/29 Mem_43_INFLS_Write/28 Mem_43_INFLS_Read/27 Mem_43_INFLS_GetVersionInfo/23 Mem_43_INFLS_Init/21 Mem_43_INFLS_Compare/20 
+  Calls: 
+Mem_43_INFLS_eJobRuntimeInfo/1 (Mem_43_INFLS_eJobRuntimeInfo) @06cfa090
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Mem_43_INFLS_ConfigureJobRequest/16 (read) Mem_43_INFLS_ConfigureJobRequest/16 (write) Mem_43_INFLS_ProcessRequestedJobs/19 (addr) Mem_43_INFLS_Init/21 (write) Mem_43_INFLS_DeInit/22 (read) Mem_43_INFLS_DeInit/22 (write) Mem_43_INFLS_DeInit/22 (write) Mem_43_INFLS_GetJobResult/24 (read) Mem_43_INFLS_Suspend/25 (addr) Mem_43_INFLS_Resume/26 (addr) Mem_43_INFLS_PropagateError/32 (write) Mem_43_INFLS_PropagateError/32 (write) Mem_43_INFLS_MainFunction/33 (read) 
+  Availability: not-ready
+  Varpool flags:
+Mem_43_INFLS_pConfigPtr/0 (Mem_43_INFLS_pConfigPtr) @06cfa000
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: Mem_43_INFLS_GetInstanceIndex/5 (read) Mem_43_INFLS_GetSectorBatch/6 (read) Mem_43_INFLS_Init/21 (write) Mem_43_INFLS_Init/21 (write) Mem_43_INFLS_DeInit/22 (read) Mem_43_INFLS_DeInit/22 (write) Mem_43_INFLS_MainFunction/33 (read) 
+  Availability: not-ready
+  Varpool flags:
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Optimized Symbol table:
+
+Mem_43_INFLS_IPW_ReportEccValueToLayerUnder/55 (Mem_43_INFLS_IPW_ReportEccValueToLayerUnder) @06e498c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Mem_43_INFLS_PropagateError/32 
+  Calls: 
+SchM_Exit_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_04/54 (SchM_Exit_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_04) @06e49620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Mem_43_INFLS_BlankCheck/30 
+  Calls: 
+SchM_Enter_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_04/53 (SchM_Enter_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_04) @06e49540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Mem_43_INFLS_BlankCheck/30 
+  Calls: 
+SchM_Exit_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_01/52 (SchM_Exit_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_01) @06e49380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Mem_43_INFLS_Erase/29 
+  Calls: 
+SchM_Enter_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_01/51 (SchM_Enter_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_01) @06e492a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Mem_43_INFLS_Erase/29 
+  Calls: 
+SchM_Exit_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_02/50 (SchM_Exit_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_02) @06e490e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Mem_43_INFLS_Write/28 
+  Calls: 
+SchM_Enter_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_02/49 (SchM_Enter_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_02) @06e49000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Mem_43_INFLS_Write/28 
+  Calls: 
+SchM_Exit_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_03/48 (SchM_Exit_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_03) @06e3ce00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Mem_43_INFLS_Read/27 
+  Calls: 
+SchM_Enter_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_03/47 (SchM_Enter_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_03) @06e3cd20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Mem_43_INFLS_Read/27 
+  Calls: 
+Mem_43_INFLS_IPW_EraseResume/46 (Mem_43_INFLS_IPW_EraseResume) @06e3cb60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Mem_43_INFLS_Resume/26 
+  Calls: 
+Mem_43_INFLS_IPW_EraseSuspend/45 (Mem_43_INFLS_IPW_EraseSuspend) @06e3c9a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Mem_43_INFLS_Suspend/25 
+  Calls: 
+Mem_43_INFLS_IPW_Cancel/44 (Mem_43_INFLS_IPW_Cancel) @06e3c540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Mem_43_INFLS_DeInit/22 
+  Calls: 
+Mem_43_INFLS_IPW_Init/43 (Mem_43_INFLS_IPW_Init) @06e3c380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Mem_43_INFLS_Init/21 
+  Calls: 
+Mem_43_INFLS_Config/42 (Mem_43_INFLS_Config) @06e3bc60
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Mem_43_INFLS_Init/21 (addr) 
+  Availability: not_available
+  Varpool flags: read-only
+SchM_Exit_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_05/41 (SchM_Exit_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_05) @06e3c1c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Mem_43_INFLS_Compare/20 
+  Calls: 
+SchM_Enter_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_05/40 (SchM_Enter_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_05) @06e3c0e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Mem_43_INFLS_Compare/20 
+  Calls: 
+Mem_43_INFLS_IPW_GetJobResult/39 (Mem_43_INFLS_IPW_GetJobResult) @06daaee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Mem_43_INFLS_ProcessRequestedJobs/19 
+  Calls: 
+Mem_43_INFLS_IPW_BlankCheck/38 (Mem_43_INFLS_IPW_BlankCheck) @06daad20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Mem_43_INFLS_DoRequestedJobs/18 
+  Calls: 
+Mem_43_INFLS_IPW_Read/37 (Mem_43_INFLS_IPW_Read) @06daac40
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Mem_43_INFLS_DoRequestedJobs/18 
+  Calls: 
+Mem_43_INFLS_IPW_Write/36 (Mem_43_INFLS_IPW_Write) @06daab60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Mem_43_INFLS_DoRequestedJobs/18 
+  Calls: 
+Mem_43_INFLS_IPW_Erase/35 (Mem_43_INFLS_IPW_Erase) @06daaa80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Mem_43_INFLS_DoRequestedJobs/18 
+  Calls: 
+Mem_43_INFLS_IPW_Compare/34 (Mem_43_INFLS_IPW_Compare) @06daa8c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Mem_43_INFLS_ProcessHwSpecificServiceJob/17 
+  Calls: 
+Mem_43_INFLS_MainFunction/33 (Mem_43_INFLS_MainFunction) @06da1a80
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Mem_43_INFLS_pConfigPtr/0 (read) Mem_43_INFLS_eJobRuntimeInfo/1 (read) 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Mem_43_INFLS_ProcessRequestedJobs/19 
+Mem_43_INFLS_PropagateError/32 (Mem_43_INFLS_PropagateError) @06da17e0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Mem_43_INFLS_eJobRuntimeInfo/1 (write) Mem_43_INFLS_eJobRuntimeInfo/1 (write) 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Mem_43_INFLS_IPW_ReportEccValueToLayerUnder/55 Mem_43_INFLS_GetInstanceIndex/5 
+Mem_43_INFLS_HwSpecificService/31 (Mem_43_INFLS_HwSpecificService) @06da1540
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Mem_43_INFLS_Compare/20 
+Mem_43_INFLS_BlankCheck/30 (Mem_43_INFLS_BlankCheck) @06da12a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Mem_43_INFLS_ReportDevError/2 SchM_Exit_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_04/54 Mem_43_INFLS_ConfigureJobRequest/16 SchM_Enter_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_04/53 Mem_43_INFLS_ValidateParamJobCommon/12 Mem_43_INFLS_InitJobRequest/15 
+Mem_43_INFLS_Erase/29 (Mem_43_INFLS_Erase) @06da1000
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Mem_43_INFLS_ReportDevError/2 SchM_Exit_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_01/52 Mem_43_INFLS_ConfigureJobRequest/16 SchM_Enter_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_01/51 Mem_43_INFLS_ValidateParamJobCommon/12 Mem_43_INFLS_InitJobRequest/15 
+Mem_43_INFLS_Write/28 (Mem_43_INFLS_Write) @06d93b60
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Mem_43_INFLS_ReportDevError/2 SchM_Exit_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_02/50 Mem_43_INFLS_ConfigureJobRequest/16 SchM_Enter_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_02/49 Mem_43_INFLS_ValidateParamJobDataTransfer/14 Mem_43_INFLS_InitJobRequest/15 
+Mem_43_INFLS_Read/27 (Mem_43_INFLS_Read) @06d93620
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Mem_43_INFLS_ReportDevError/2 SchM_Exit_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_03/48 Mem_43_INFLS_ConfigureJobRequest/16 SchM_Enter_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_03/47 Mem_43_INFLS_ValidateParamJobDataTransfer/14 Mem_43_INFLS_InitJobRequest/15 
+Mem_43_INFLS_Resume/26 (Mem_43_INFLS_Resume) @06d930e0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Mem_43_INFLS_eJobRuntimeInfo/1 (addr) 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Mem_43_INFLS_IPW_EraseResume/46 Mem_43_INFLS_GetInstanceIndex/5 
+Mem_43_INFLS_Suspend/25 (Mem_43_INFLS_Suspend) @06d93d20
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Mem_43_INFLS_eJobRuntimeInfo/1 (addr) 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Mem_43_INFLS_IPW_EraseSuspend/45 Mem_43_INFLS_GetInstanceIndex/5 
+Mem_43_INFLS_GetJobResult/24 (Mem_43_INFLS_GetJobResult) @06d93a80
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Mem_43_INFLS_eJobRuntimeInfo/1 (read) 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Mem_43_INFLS_GetInstanceIndex/5 
+Mem_43_INFLS_GetVersionInfo/23 (Mem_43_INFLS_GetVersionInfo) @06d937e0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Mem_43_INFLS_ReportDevError/2 
+Mem_43_INFLS_DeInit/22 (Mem_43_INFLS_DeInit) @06d93540
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Mem_43_INFLS_pConfigPtr/0 (read) Mem_43_INFLS_eJobRuntimeInfo/1 (read) Mem_43_INFLS_eJobRuntimeInfo/1 (write) Mem_43_INFLS_eJobRuntimeInfo/1 (write) Mem_43_INFLS_pConfigPtr/0 (write) 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Mem_43_INFLS_IPW_Cancel/44 
+Mem_43_INFLS_Init/21 (Mem_43_INFLS_Init) @06d932a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Mem_43_INFLS_pConfigPtr/0 (write) Mem_43_INFLS_Config/42 (addr) Mem_43_INFLS_pConfigPtr/0 (write) Mem_43_INFLS_eJobRuntimeInfo/1 (write) 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Mem_43_INFLS_IPW_Init/43 Mem_43_INFLS_ValidateConfigCRC/3 Mem_43_INFLS_ReportDevError/2 
+Mem_43_INFLS_Compare/20 (Mem_43_INFLS_Compare) @06d93000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Mem_43_INFLS_HwSpecificService/31 
+  Calls: Mem_43_INFLS_ReportDevError/2 SchM_Exit_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_05/41 Mem_43_INFLS_ConfigureJobRequest/16 SchM_Enter_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_05/40 Mem_43_INFLS_ValidateParamJobDataTransfer/14 Mem_43_INFLS_InitJobRequest/15 
+Mem_43_INFLS_ProcessRequestedJobs/19 (Mem_43_INFLS_ProcessRequestedJobs) @06d06d20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: Mem_43_INFLS_eJobRuntimeInfo/1 (addr) 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Mem_43_INFLS_MainFunction/33 
+  Calls: Mem_43_INFLS_DoRequestedJobs/18 Mem_43_INFLS_IPW_GetJobResult/39 
+Mem_43_INFLS_DoRequestedJobs/18 (Mem_43_INFLS_DoRequestedJobs) @06d06a80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Mem_43_INFLS_ProcessRequestedJobs/19 
+  Calls: Mem_43_INFLS_IPW_BlankCheck/38 Mem_43_INFLS_ProcessHwSpecificServiceJob/17 Mem_43_INFLS_IPW_Read/37 Mem_43_INFLS_IPW_Write/36 Mem_43_INFLS_IPW_Erase/35 
+Mem_43_INFLS_ProcessHwSpecificServiceJob/17 (Mem_43_INFLS_ProcessHwSpecificServiceJob) @06d067e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Mem_43_INFLS_DoRequestedJobs/18 
+  Calls: Mem_43_INFLS_IPW_Compare/34 
+Mem_43_INFLS_ConfigureJobRequest/16 (Mem_43_INFLS_ConfigureJobRequest) @06d06540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: Mem_43_INFLS_eJobRuntimeInfo/1 (read) Mem_43_INFLS_eJobRuntimeInfo/1 (write) 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Mem_43_INFLS_BlankCheck/30 Mem_43_INFLS_Erase/29 Mem_43_INFLS_Write/28 Mem_43_INFLS_Read/27 Mem_43_INFLS_Compare/20 
+  Calls: 
+Mem_43_INFLS_InitJobRequest/15 (Mem_43_INFLS_InitJobRequest) @06d062a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Mem_43_INFLS_BlankCheck/30 Mem_43_INFLS_Erase/29 Mem_43_INFLS_Write/28 Mem_43_INFLS_Read/27 Mem_43_INFLS_Compare/20 
+  Calls: 
+Mem_43_INFLS_ValidateParamJobDataTransfer/14 (Mem_43_INFLS_ValidateParamJobDataTransfer) @06d06000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Mem_43_INFLS_Write/28 Mem_43_INFLS_Read/27 Mem_43_INFLS_Compare/20 
+  Calls: Mem_43_INFLS_ValidateDataPointer/13 Mem_43_INFLS_ValidateParamJobCommon/12 
+Mem_43_INFLS_ValidateDataPointer/13 (Mem_43_INFLS_ValidateDataPointer) @06d02d20
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: Mem_43_INFLS_ValidateParamJobDataTransfer/14 
+  Calls: 
+Mem_43_INFLS_ValidateParamJobCommon/12 (Mem_43_INFLS_ValidateParamJobCommon) @06d02a80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Mem_43_INFLS_BlankCheck/30 Mem_43_INFLS_Erase/29 Mem_43_INFLS_ValidateParamJobDataTransfer/14 
+  Calls: Mem_43_INFLS_ValidateAddressAndLength/9 Mem_43_INFLS_ValidateInstanceId/10 Mem_43_INFLS_ValidateModuleInitialized/11 
+Mem_43_INFLS_ValidateModuleInitialized/11 (Mem_43_INFLS_ValidateModuleInitialized) @06d027e0
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: Mem_43_INFLS_ValidateParamJobCommon/12 
+  Calls: 
+Mem_43_INFLS_ValidateInstanceId/10 (Mem_43_INFLS_ValidateInstanceId) @06d02540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Mem_43_INFLS_ValidateParamJobCommon/12 
+  Calls: Mem_43_INFLS_GetInstanceIndex/5 
+Mem_43_INFLS_ValidateAddressAndLength/9 (Mem_43_INFLS_ValidateAddressAndLength) @06d022a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Mem_43_INFLS_ValidateParamJobCommon/12 
+  Calls: Mem_43_INFLS_CheckWritePageAligned/8 Mem_43_INFLS_CheckSectorAligned/7 Mem_43_INFLS_GetSectorBatch/6 
+Mem_43_INFLS_CheckWritePageAligned/8 (Mem_43_INFLS_CheckWritePageAligned) @06d02000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Mem_43_INFLS_ValidateAddressAndLength/9 
+  Calls: 
+Mem_43_INFLS_CheckSectorAligned/7 (Mem_43_INFLS_CheckSectorAligned) @06cfbd20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Mem_43_INFLS_ValidateAddressAndLength/9 
+  Calls: 
+Mem_43_INFLS_GetSectorBatch/6 (Mem_43_INFLS_GetSectorBatch) @06cfba80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: Mem_43_INFLS_pConfigPtr/0 (read) 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Mem_43_INFLS_ValidateAddressAndLength/9 
+  Calls: Mem_43_INFLS_IncreasePtr/4 
+Mem_43_INFLS_GetInstanceIndex/5 (Mem_43_INFLS_GetInstanceIndex) @06cfb7e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: Mem_43_INFLS_pConfigPtr/0 (read) 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Mem_43_INFLS_PropagateError/32 Mem_43_INFLS_Resume/26 Mem_43_INFLS_Suspend/25 Mem_43_INFLS_GetJobResult/24 Mem_43_INFLS_ValidateInstanceId/10 
+  Calls: 
+Mem_43_INFLS_IncreasePtr/4 (Mem_43_INFLS_IncreasePtr) @06cfb540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Mem_43_INFLS_GetSectorBatch/6 
+  Calls: 
+Mem_43_INFLS_ValidateConfigCRC/3 (Mem_43_INFLS_ValidateConfigCRC) @06cfb2a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Mem_43_INFLS_Init/21 
+  Calls: 
+Mem_43_INFLS_ReportDevError/2 (Mem_43_INFLS_ReportDevError) @06cfb000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Mem_43_INFLS_BlankCheck/30 Mem_43_INFLS_Erase/29 Mem_43_INFLS_Write/28 Mem_43_INFLS_Read/27 Mem_43_INFLS_GetVersionInfo/23 Mem_43_INFLS_Init/21 Mem_43_INFLS_Compare/20 
+  Calls: 
+Mem_43_INFLS_eJobRuntimeInfo/1 (Mem_43_INFLS_eJobRuntimeInfo) @06cfa090
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: Mem_43_INFLS_Suspend/25 (addr) Mem_43_INFLS_Resume/26 (addr) Mem_43_INFLS_PropagateError/32 (write) Mem_43_INFLS_ConfigureJobRequest/16 (write) Mem_43_INFLS_ConfigureJobRequest/16 (read) Mem_43_INFLS_DeInit/22 (write) Mem_43_INFLS_ProcessRequestedJobs/19 (addr) Mem_43_INFLS_Init/21 (write) Mem_43_INFLS_DeInit/22 (write) Mem_43_INFLS_GetJobResult/24 (read) Mem_43_INFLS_DeInit/22 (read) Mem_43_INFLS_PropagateError/32 (write) Mem_43_INFLS_MainFunction/33 (read) 
+  Availability: available
+  Varpool flags:
+Mem_43_INFLS_pConfigPtr/0 (Mem_43_INFLS_pConfigPtr) @06cfa000
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: Mem_43_INFLS_Init/21 (write) Mem_43_INFLS_DeInit/22 (write) Mem_43_INFLS_GetSectorBatch/6 (read) Mem_43_INFLS_GetInstanceIndex/5 (read) Mem_43_INFLS_Init/21 (write) Mem_43_INFLS_DeInit/22 (read) Mem_43_INFLS_MainFunction/33 (read) 
+  Availability: available
+  Varpool flags:
+Materializing clones
+Materialization Call site updates done.
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Trivially needed variables: Mem_43_INFLS_eJobRuntimeInfo/1 Mem_43_INFLS_pConfigPtr/0
+Removing variables:
+
+Final Symbol table:
+
+Mem_43_INFLS_IPW_ReportEccValueToLayerUnder/55 (Mem_43_INFLS_IPW_ReportEccValueToLayerUnder) @06e498c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+SchM_Exit_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_04/54 (SchM_Exit_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_04) @06e49620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+SchM_Enter_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_04/53 (SchM_Enter_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_04) @06e49540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+SchM_Exit_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_01/52 (SchM_Exit_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_01) @06e49380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+SchM_Enter_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_01/51 (SchM_Enter_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_01) @06e492a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+SchM_Exit_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_02/50 (SchM_Exit_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_02) @06e490e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+SchM_Enter_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_02/49 (SchM_Enter_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_02) @06e49000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+SchM_Exit_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_03/48 (SchM_Exit_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_03) @06e3ce00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+SchM_Enter_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_03/47 (SchM_Enter_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_03) @06e3cd20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Mem_43_INFLS_IPW_EraseResume/46 (Mem_43_INFLS_IPW_EraseResume) @06e3cb60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Mem_43_INFLS_IPW_EraseSuspend/45 (Mem_43_INFLS_IPW_EraseSuspend) @06e3c9a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Mem_43_INFLS_IPW_Cancel/44 (Mem_43_INFLS_IPW_Cancel) @06e3c540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Mem_43_INFLS_IPW_Init/43 (Mem_43_INFLS_IPW_Init) @06e3c380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Mem_43_INFLS_Config/42 (Mem_43_INFLS_Config) @06e3bc60
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags: read-only
+SchM_Exit_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_05/41 (SchM_Exit_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_05) @06e3c1c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+SchM_Enter_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_05/40 (SchM_Enter_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_05) @06e3c0e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Mem_43_INFLS_IPW_GetJobResult/39 (Mem_43_INFLS_IPW_GetJobResult) @06daaee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Mem_43_INFLS_IPW_BlankCheck/38 (Mem_43_INFLS_IPW_BlankCheck) @06daad20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Mem_43_INFLS_IPW_Read/37 (Mem_43_INFLS_IPW_Read) @06daac40
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Mem_43_INFLS_IPW_Write/36 (Mem_43_INFLS_IPW_Write) @06daab60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Mem_43_INFLS_IPW_Erase/35 (Mem_43_INFLS_IPW_Erase) @06daaa80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Mem_43_INFLS_IPW_Compare/34 (Mem_43_INFLS_IPW_Compare) @06daa8c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Mem_43_INFLS_MainFunction/33 (Mem_43_INFLS_MainFunction) @06da1a80
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public section:.text.Mem_43_INFLS_MainFunction (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Mem_43_INFLS_PropagateError/32 (Mem_43_INFLS_PropagateError) @06da17e0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public section:.text.Mem_43_INFLS_PropagateError (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Mem_43_INFLS_HwSpecificService/31 (Mem_43_INFLS_HwSpecificService) @06da1540
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public section:.text.Mem_43_INFLS_HwSpecificService (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Mem_43_INFLS_BlankCheck/30 (Mem_43_INFLS_BlankCheck) @06da12a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public section:.text.Mem_43_INFLS_BlankCheck (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Mem_43_INFLS_Erase/29 (Mem_43_INFLS_Erase) @06da1000
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public section:.text.Mem_43_INFLS_Erase (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Mem_43_INFLS_Write/28 (Mem_43_INFLS_Write) @06d93b60
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public section:.text.Mem_43_INFLS_Write (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Mem_43_INFLS_Read/27 (Mem_43_INFLS_Read) @06d93620
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public section:.text.Mem_43_INFLS_Read (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Mem_43_INFLS_Resume/26 (Mem_43_INFLS_Resume) @06d930e0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public section:.text.Mem_43_INFLS_Resume (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Mem_43_INFLS_Suspend/25 (Mem_43_INFLS_Suspend) @06d93d20
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public section:.text.Mem_43_INFLS_Suspend (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Mem_43_INFLS_GetJobResult/24 (Mem_43_INFLS_GetJobResult) @06d93a80
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public section:.text.Mem_43_INFLS_GetJobResult (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Mem_43_INFLS_GetVersionInfo/23 (Mem_43_INFLS_GetVersionInfo) @06d937e0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public section:.text.Mem_43_INFLS_GetVersionInfo (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Mem_43_INFLS_DeInit/22 (Mem_43_INFLS_DeInit) @06d93540
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public section:.text.Mem_43_INFLS_DeInit (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Mem_43_INFLS_Init/21 (Mem_43_INFLS_Init) @06d932a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public section:.text.Mem_43_INFLS_Init (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Mem_43_INFLS_Compare/20 (Mem_43_INFLS_Compare) @06d93000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written section:.text.Mem_43_INFLS_Compare (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Mem_43_INFLS_ProcessRequestedJobs/19 (Mem_43_INFLS_ProcessRequestedJobs) @06d06d20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written section:.text.Mem_43_INFLS_ProcessRequestedJobs (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Mem_43_INFLS_DoRequestedJobs/18 (Mem_43_INFLS_DoRequestedJobs) @06d06a80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written section:.text.Mem_43_INFLS_DoRequestedJobs (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Mem_43_INFLS_ProcessHwSpecificServiceJob/17 (Mem_43_INFLS_ProcessHwSpecificServiceJob) @06d067e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written section:.text.Mem_43_INFLS_ProcessHwSpecificServiceJob (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Mem_43_INFLS_ConfigureJobRequest/16 (Mem_43_INFLS_ConfigureJobRequest) @06d06540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written section:.text.Mem_43_INFLS_ConfigureJobRequest (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Mem_43_INFLS_InitJobRequest/15 (Mem_43_INFLS_InitJobRequest) @06d062a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written section:.text.Mem_43_INFLS_InitJobRequest (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Mem_43_INFLS_ValidateParamJobDataTransfer/14 (Mem_43_INFLS_ValidateParamJobDataTransfer) @06d06000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written section:.text.Mem_43_INFLS_ValidateParamJobDataTransfer (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Mem_43_INFLS_ValidateDataPointer/13 (Mem_43_INFLS_ValidateDataPointer) @06d02d20
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly asm_written section:.text.Mem_43_INFLS_ValidateDataPointer (implicit_section)
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: local
+  Called by: 
+  Calls: 
+Mem_43_INFLS_ValidateParamJobCommon/12 (Mem_43_INFLS_ValidateParamJobCommon) @06d02a80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written section:.text.Mem_43_INFLS_ValidateParamJobCommon (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Mem_43_INFLS_ValidateModuleInitialized/11 (Mem_43_INFLS_ValidateModuleInitialized) @06d027e0
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly asm_written section:.text.Mem_43_INFLS_ValidateModuleInitialized (implicit_section)
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: local
+  Called by: 
+  Calls: 
+Mem_43_INFLS_ValidateInstanceId/10 (Mem_43_INFLS_ValidateInstanceId) @06d02540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written section:.text.Mem_43_INFLS_ValidateInstanceId (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Mem_43_INFLS_ValidateAddressAndLength/9 (Mem_43_INFLS_ValidateAddressAndLength) @06d022a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written section:.text.Mem_43_INFLS_ValidateAddressAndLength (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Mem_43_INFLS_CheckWritePageAligned/8 (Mem_43_INFLS_CheckWritePageAligned) @06d02000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written section:.text.Mem_43_INFLS_CheckWritePageAligned (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Mem_43_INFLS_CheckSectorAligned/7 (Mem_43_INFLS_CheckSectorAligned) @06cfbd20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written section:.text.Mem_43_INFLS_CheckSectorAligned (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Mem_43_INFLS_GetSectorBatch/6 (Mem_43_INFLS_GetSectorBatch) @06cfba80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written section:.text.Mem_43_INFLS_GetSectorBatch (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Mem_43_INFLS_GetInstanceIndex/5 (Mem_43_INFLS_GetInstanceIndex) @06cfb7e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written section:.text.Mem_43_INFLS_GetInstanceIndex (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Mem_43_INFLS_IncreasePtr/4 (Mem_43_INFLS_IncreasePtr) @06cfb540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written section:.text.Mem_43_INFLS_IncreasePtr (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Mem_43_INFLS_ValidateConfigCRC/3 (Mem_43_INFLS_ValidateConfigCRC) @06cfb2a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written section:.text.Mem_43_INFLS_ValidateConfigCRC (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Mem_43_INFLS_ReportDevError/2 (Mem_43_INFLS_ReportDevError) @06cfb000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written section:.text.Mem_43_INFLS_ReportDevError (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Mem_43_INFLS_eJobRuntimeInfo/1 (Mem_43_INFLS_eJobRuntimeInfo) @06cfa090
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written section:.bss.Mem_43_INFLS_eJobRuntimeInfo (implicit_section)
+  Aux: @00000001
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+Mem_43_INFLS_pConfigPtr/0 (Mem_43_INFLS_pConfigPtr) @06cfa000
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public section:.bss.Mem_43_INFLS_pConfigPtr (implicit_section)
+  Aux: @06cfa090
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:

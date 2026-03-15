@@ -1,0 +1,1259 @@
+Mem_43_INFLS_MainFunction ()
+{
+  uint32 InstanceIndex;
+
+  <bb 2> :
+  Mem_43_INFLS_pConfigPtr.6_1 = Mem_43_INFLS_pConfigPtr;
+  if (Mem_43_INFLS_pConfigPtr.6_1 != 0B)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 3> :
+  InstanceIndex = 0;
+  goto <bb 7>; [INV]
+
+  <bb 4> :
+  _2 = Mem_43_INFLS_eJobRuntimeInfo[InstanceIndex].JobResult;
+  if (_2 == 1)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  Mem_43_INFLS_ProcessRequestedJobs (InstanceIndex);
+
+  <bb 6> :
+  InstanceIndex = InstanceIndex + 1;
+
+  <bb 7> :
+  if (InstanceIndex == 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 8> :
+  return;
+
+}
+
+
+Mem_43_INFLS_PropagateError (Mem_43_INFLS_InstanceIdType InstanceId)
+{
+  uint32 Index;
+
+  <bb 2> :
+  Index = Mem_43_INFLS_GetInstanceIndex (InstanceId);
+  Mem_43_INFLS_eJobRuntimeInfo[Index].JobType = 0;
+  Mem_43_INFLS_eJobRuntimeInfo[Index].JobResult = 4;
+  Mem_43_INFLS_IPW_ReportEccValueToLayerUnder ();
+  return;
+
+}
+
+
+Mem_43_INFLS_HwSpecificService (Mem_43_INFLS_InstanceIdType instanceId, Mem_43_INFLS_HwServiceIdType hwServiceId, Mem_43_INFLS_DataType * dataPtr, Mem_43_INFLS_LengthType * lengthPtr)
+{
+  const struct Mem_43_INFLS_CompareConfigType * pCompareConfig;
+  Std_ReturnType RetVal;
+  Std_ReturnType D.5816;
+
+  <bb 2> :
+  if (hwServiceId == 17)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  pCompareConfig = dataPtr;
+  _1 = pCompareConfig->CompareAddr;
+  _2 = pCompareConfig->DataSourcePtr;
+  _3 = pCompareConfig->Length;
+  RetVal = Mem_43_INFLS_Compare (instanceId, _1, _2, _3);
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+  RetVal = 2;
+
+  <bb 5> :
+  D.5816 = RetVal;
+
+  <bb 6> :
+<L3>:
+  return D.5816;
+
+}
+
+
+Mem_43_INFLS_BlankCheck (Mem_43_INFLS_InstanceIdType InstanceId, Mem_43_INFLS_AddressType TargetAddress, Mem_43_INFLS_LengthType Length)
+{
+  struct Mem_43_INFLS_JobRuntimeInfoType JobRequest;
+  uint32 ErrorId;
+  Std_ReturnType RetVal;
+  Std_ReturnType D.5813;
+
+  <bb 2> :
+  RetVal = 0;
+  JobRequest.JobType = 4;
+  Mem_43_INFLS_InitJobRequest (&JobRequest, InstanceId, TargetAddress, 0B, Length);
+  ErrorId = Mem_43_INFLS_ValidateParamJobCommon (&JobRequest);
+  if (ErrorId == 255)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  SchM_Enter_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_04 ();
+  ErrorId = Mem_43_INFLS_ConfigureJobRequest (&JobRequest);
+  SchM_Exit_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_04 ();
+
+  <bb 4> :
+  if (ErrorId != 255)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  RetVal = 1;
+  Mem_43_INFLS_ReportDevError (InstanceId, 9, ErrorId);
+
+  <bb 6> :
+  D.5813 = RetVal;
+  JobRequest = {CLOBBER};
+
+  <bb 7> :
+<L5>:
+  return D.5813;
+
+}
+
+
+Mem_43_INFLS_Erase (Mem_43_INFLS_InstanceIdType InstanceId, Mem_43_INFLS_AddressType TargetAddress, Mem_43_INFLS_LengthType Length)
+{
+  struct Mem_43_INFLS_JobRuntimeInfoType JobRequest;
+  uint32 ErrorId;
+  Std_ReturnType RetVal;
+  Std_ReturnType D.5806;
+
+  <bb 2> :
+  RetVal = 0;
+  JobRequest.JobType = 1;
+  Mem_43_INFLS_InitJobRequest (&JobRequest, InstanceId, TargetAddress, 0B, Length);
+  ErrorId = Mem_43_INFLS_ValidateParamJobCommon (&JobRequest);
+  if (ErrorId == 255)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  SchM_Enter_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_01 ();
+  ErrorId = Mem_43_INFLS_ConfigureJobRequest (&JobRequest);
+  SchM_Exit_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_01 ();
+
+  <bb 4> :
+  if (ErrorId != 255)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  RetVal = 1;
+  Mem_43_INFLS_ReportDevError (InstanceId, 7, ErrorId);
+
+  <bb 6> :
+  D.5806 = RetVal;
+  JobRequest = {CLOBBER};
+
+  <bb 7> :
+<L5>:
+  return D.5806;
+
+}
+
+
+Mem_43_INFLS_Write (Mem_43_INFLS_InstanceIdType InstanceId, Mem_43_INFLS_AddressType TargetAddress, const Mem_43_INFLS_DataType * SourceDataPtr, Mem_43_INFLS_LengthType Length)
+{
+  const uint32 SourceDataAddr;
+  struct Mem_43_INFLS_JobRuntimeInfoType JobRequest;
+  uint32 ErrorId;
+  Std_ReturnType RetVal;
+  Std_ReturnType D.5799;
+
+  <bb 2> :
+  RetVal = 0;
+  JobRequest.JobType = 2;
+  SourceDataAddr = (const uint32) SourceDataPtr;
+  SourceDataAddr.5_1 = (Mem_43_INFLS_DataType *) SourceDataAddr;
+  Mem_43_INFLS_InitJobRequest (&JobRequest, InstanceId, TargetAddress, SourceDataAddr.5_1, Length);
+  ErrorId = Mem_43_INFLS_ValidateParamJobDataTransfer (&JobRequest);
+  if (ErrorId == 255)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  SchM_Enter_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_02 ();
+  ErrorId = Mem_43_INFLS_ConfigureJobRequest (&JobRequest);
+  SchM_Exit_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_02 ();
+
+  <bb 4> :
+  if (ErrorId != 255)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  RetVal = 1;
+  Mem_43_INFLS_ReportDevError (InstanceId, 6, ErrorId);
+
+  <bb 6> :
+  D.5799 = RetVal;
+  JobRequest = {CLOBBER};
+
+  <bb 7> :
+<L5>:
+  return D.5799;
+
+}
+
+
+Mem_43_INFLS_Read (Mem_43_INFLS_InstanceIdType InstanceId, Mem_43_INFLS_AddressType SourceAddress, Mem_43_INFLS_DataType * DestinationDataPtr, Mem_43_INFLS_LengthType Length)
+{
+  struct Mem_43_INFLS_JobRuntimeInfoType JobRequest;
+  uint32 ErrorId;
+  Std_ReturnType RetVal;
+  Std_ReturnType D.5792;
+
+  <bb 2> :
+  RetVal = 0;
+  JobRequest.JobType = 3;
+  Mem_43_INFLS_InitJobRequest (&JobRequest, InstanceId, SourceAddress, DestinationDataPtr, Length);
+  ErrorId = Mem_43_INFLS_ValidateParamJobDataTransfer (&JobRequest);
+  if (ErrorId == 255)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  SchM_Enter_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_03 ();
+  ErrorId = Mem_43_INFLS_ConfigureJobRequest (&JobRequest);
+  SchM_Exit_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_03 ();
+
+  <bb 4> :
+  if (ErrorId != 255)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  RetVal = 1;
+  Mem_43_INFLS_ReportDevError (InstanceId, 5, ErrorId);
+
+  <bb 6> :
+  D.5792 = RetVal;
+  JobRequest = {CLOBBER};
+
+  <bb 7> :
+<L5>:
+  return D.5792;
+
+}
+
+
+Mem_43_INFLS_Resume (Mem_43_INFLS_InstanceIdType InstanceId)
+{
+  struct Mem_43_INFLS_JobRuntimeInfoType * JobCurrentInfo;
+  Mem_43_INFLS_JobResultType JobCurrentResult;
+  uint32 InstanceIndex;
+  Std_ReturnType RetVal;
+  Std_ReturnType D.5786;
+
+  <bb 2> :
+  RetVal = 1;
+  InstanceIndex = 0;
+  JobCurrentResult = 2;
+  InstanceIndex = Mem_43_INFLS_GetInstanceIndex (InstanceId);
+  if (InstanceIndex != 1)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 3> :
+  JobCurrentInfo = &Mem_43_INFLS_eJobRuntimeInfo[InstanceIndex];
+  _1 = JobCurrentInfo->SuspendState;
+  if (_1 != 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 4> :
+  _2 = JobCurrentInfo->JobResult;
+  if (_2 == 1)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 5> :
+  _3 = JobCurrentInfo->JobType;
+  if (_3 == 1)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 6> :
+<L3>:
+  JobCurrentResult = Mem_43_INFLS_IPW_EraseResume (InstanceId);
+  goto <bb 8>; [INV]
+
+  <bb 7> :
+<L4>:
+  RetVal = 2;
+
+  <bb 8> :
+  if (JobCurrentResult == 0)
+    goto <bb 9>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 9> :
+  JobCurrentInfo->SuspendState = 0;
+  JobCurrentInfo->JobResult = JobCurrentResult;
+  RetVal = 0;
+
+  <bb 10> :
+  D.5786 = RetVal;
+
+  <bb 11> :
+<L12>:
+  return D.5786;
+
+}
+
+
+Mem_43_INFLS_Suspend (Mem_43_INFLS_InstanceIdType InstanceId)
+{
+  struct Mem_43_INFLS_JobRuntimeInfoType * JobCurrentInfo;
+  Mem_43_INFLS_JobResultType JobCurrentResult;
+  uint32 InstanceIndex;
+  Std_ReturnType RetVal;
+  Std_ReturnType D.5776;
+
+  <bb 2> :
+  RetVal = 1;
+  InstanceIndex = 0;
+  JobCurrentResult = 2;
+  InstanceIndex = Mem_43_INFLS_GetInstanceIndex (InstanceId);
+  if (InstanceIndex != 1)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 3> :
+  JobCurrentInfo = &Mem_43_INFLS_eJobRuntimeInfo[InstanceIndex];
+  _1 = JobCurrentInfo->SuspendState;
+  _2 = ~_1;
+  if (_2 != 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 4> :
+  _3 = JobCurrentInfo->JobResult;
+  if (_3 == 1)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 5> :
+  _4 = JobCurrentInfo->JobType;
+  if (_4 == 1)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 6> :
+<L3>:
+  JobCurrentResult = Mem_43_INFLS_IPW_EraseSuspend (InstanceId);
+  goto <bb 8>; [INV]
+
+  <bb 7> :
+<L4>:
+  RetVal = 2;
+
+  <bb 8> :
+  if (JobCurrentResult == 0)
+    goto <bb 9>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 9> :
+  JobCurrentInfo->SuspendState = 1;
+  RetVal = 0;
+
+  <bb 10> :
+  D.5776 = RetVal;
+
+  <bb 11> :
+<L12>:
+  return D.5776;
+
+}
+
+
+Mem_43_INFLS_GetJobResult (Mem_43_INFLS_InstanceIdType InstanceId)
+{
+  uint32 InstanceIndex;
+  Mem_43_INFLS_JobResultType JobResult;
+  Mem_43_INFLS_JobResultType D.5766;
+
+  <bb 2> :
+  JobResult = 2;
+  InstanceIndex = Mem_43_INFLS_GetInstanceIndex (InstanceId);
+  if (InstanceIndex != 1)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  JobResult = Mem_43_INFLS_eJobRuntimeInfo[InstanceIndex].JobResult;
+
+  <bb 4> :
+  D.5766 = JobResult;
+
+  <bb 5> :
+<L2>:
+  return D.5766;
+
+}
+
+
+Mem_43_INFLS_GetVersionInfo (struct Std_VersionInfoType * VersionInfoPtr)
+{
+  <bb 2> :
+  if (VersionInfoPtr != 0B)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  VersionInfoPtr->moduleID = 91;
+  VersionInfoPtr->vendorID = 43;
+  VersionInfoPtr->sw_major_version = 2;
+  VersionInfoPtr->sw_minor_version = 0;
+  VersionInfoPtr->sw_patch_version = 0;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  Mem_43_INFLS_ReportDevError (0, 2, 2);
+
+  <bb 5> :
+  return;
+
+}
+
+
+Mem_43_INFLS_DeInit ()
+{
+  Mem_43_INFLS_JobResultType JobResult;
+  uint32 InstanceIndex;
+
+  <bb 2> :
+  JobResult = 0;
+  Mem_43_INFLS_pConfigPtr.4_1 = Mem_43_INFLS_pConfigPtr;
+  if (Mem_43_INFLS_pConfigPtr.4_1 != 0B)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 3> :
+  InstanceIndex = 0;
+  goto <bb 7>; [INV]
+
+  <bb 4> :
+  _2 = Mem_43_INFLS_eJobRuntimeInfo[InstanceIndex].JobResult;
+  if (_2 == 1)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  JobResult = Mem_43_INFLS_IPW_Cancel (InstanceIndex);
+
+  <bb 6> :
+  Mem_43_INFLS_eJobRuntimeInfo[InstanceIndex].JobResult = JobResult;
+  Mem_43_INFLS_eJobRuntimeInfo[InstanceIndex].JobType = 0;
+  InstanceIndex = InstanceIndex + 1;
+
+  <bb 7> :
+  if (InstanceIndex == 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 8> :
+  Mem_43_INFLS_pConfigPtr = 0B;
+
+  <bb 9> :
+  return;
+
+}
+
+
+Mem_43_INFLS_Init (const struct Mem_43_INFLS_ConfigType * ConfigPtr)
+{
+  uint32 InstanceIndex;
+  Std_ReturnType Status;
+  Mem_43_INFLS_JobResultType JobResult;
+
+  <bb 2> :
+  JobResult = 0;
+  if (ConfigPtr != 0B)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  Mem_43_INFLS_ReportDevError (0, 1, 2);
+  goto <bb 11>; [INV]
+
+  <bb 4> :
+  Mem_43_INFLS_pConfigPtr = &Mem_43_INFLS_Config;
+  Status = Mem_43_INFLS_ValidateConfigCRC ();
+  if (Status == 0)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  Status = Mem_43_INFLS_IPW_Init ();
+
+  <bb 6> :
+  if (Status != 0)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 7> :
+  Mem_43_INFLS_pConfigPtr = 0B;
+  JobResult = 2;
+
+  <bb 8> :
+  InstanceIndex = 0;
+  goto <bb 10>; [INV]
+
+  <bb 9> :
+  Mem_43_INFLS_eJobRuntimeInfo[InstanceIndex].JobResult = JobResult;
+  InstanceIndex = InstanceIndex + 1;
+
+  <bb 10> :
+  if (InstanceIndex == 0)
+    goto <bb 9>; [INV]
+  else
+    goto <bb 11>; [INV]
+
+  <bb 11> :
+  return;
+
+}
+
+
+Mem_43_INFLS_Compare (Mem_43_INFLS_InstanceIdType InstanceId, Mem_43_INFLS_AddressType SourceAddress, Mem_43_INFLS_DataType * DestinationDataPtr, Mem_43_INFLS_LengthType Length)
+{
+  struct Mem_43_INFLS_JobRuntimeInfoType JobRequest;
+  uint32 ErrorId;
+  Std_ReturnType RetVal;
+  Std_ReturnType D.5747;
+
+  <bb 2> :
+  RetVal = 0;
+  Mem_43_INFLS_InitJobRequest (&JobRequest, InstanceId, SourceAddress, DestinationDataPtr, Length);
+  JobRequest.JobType = 5;
+  JobRequest.HwServiceIdJob = 17;
+  ErrorId = Mem_43_INFLS_ValidateParamJobDataTransfer (&JobRequest);
+  if (ErrorId == 255)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  SchM_Enter_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_05 ();
+  ErrorId = Mem_43_INFLS_ConfigureJobRequest (&JobRequest);
+  SchM_Exit_Mem_43_INFLS_MEM_EXCLUSIVE_AREA_05 ();
+
+  <bb 4> :
+  if (ErrorId != 255)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  RetVal = 1;
+  Mem_43_INFLS_ReportDevError (InstanceId, 5, ErrorId);
+
+  <bb 6> :
+  D.5747 = RetVal;
+  JobRequest = {CLOBBER};
+
+  <bb 7> :
+<L5>:
+  return D.5747;
+
+}
+
+
+Mem_43_INFLS_ProcessRequestedJobs (uint32 InstanceIndex)
+{
+  Mem_43_INFLS_JobResultType JobResult;
+  struct Mem_43_INFLS_JobRuntimeInfoType * JobInfo;
+
+  <bb 2> :
+  JobInfo = &Mem_43_INFLS_eJobRuntimeInfo[InstanceIndex];
+  JobResult = 0;
+  _1 = JobInfo->JobFlags;
+  _2 = (unsigned int) _1;
+  _3 = _2 & 1;
+  if (_3 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  _4 = JobInfo->JobFlags;
+  _5 = _4 & 254;
+  JobInfo->JobFlags = _5;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  _6 = JobInfo->JobType;
+  JobResult = Mem_43_INFLS_IPW_GetJobResult (InstanceIndex, _6);
+
+  <bb 5> :
+  if (JobResult == 0)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 6> :
+  JobResult = Mem_43_INFLS_DoRequestedJobs (InstanceIndex, JobInfo);
+
+  <bb 7> :
+  if (JobResult == 4)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 8> :
+  JobInfo->JobType = 0;
+
+  <bb 9> :
+  JobInfo->JobResult = JobResult;
+  return;
+
+}
+
+
+Mem_43_INFLS_DoRequestedJobs (uint32 InstanceIndex, struct Mem_43_INFLS_JobRuntimeInfoType * JobInfo)
+{
+  Mem_43_INFLS_JobResultType JobResult;
+  Mem_43_INFLS_JobResultType D.5734;
+
+  <bb 2> :
+  JobResult = 0;
+  _1 = JobInfo->Length;
+  if (_1 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 14>; [INV]
+
+  <bb 3> :
+  _2 = JobInfo->JobType;
+  switch (_2) <default: <L6> [INV], case 1: <L1> [INV], case 2: <L2> [INV], case 3: <L3> [INV], case 4: <L5> [INV], case 5: <L4> [INV]>
+
+  <bb 4> :
+<L1>:
+  JobResult = Mem_43_INFLS_IPW_Erase (InstanceIndex, JobInfo);
+  goto <bb 10>; [INV]
+
+  <bb 5> :
+<L2>:
+  JobResult = Mem_43_INFLS_IPW_Write (InstanceIndex, JobInfo);
+  goto <bb 10>; [INV]
+
+  <bb 6> :
+<L3>:
+  JobResult = Mem_43_INFLS_IPW_Read (InstanceIndex, JobInfo);
+  goto <bb 10>; [INV]
+
+  <bb 7> :
+<L4>:
+  JobResult = Mem_43_INFLS_ProcessHwSpecificServiceJob (InstanceIndex, JobInfo);
+  goto <bb 10>; [INV]
+
+  <bb 8> :
+<L5>:
+  JobResult = Mem_43_INFLS_IPW_BlankCheck (InstanceIndex, JobInfo);
+  goto <bb 10>; [INV]
+
+  <bb 9> :
+<L6>:
+  JobResult = 2;
+
+  <bb 10> :
+  if (JobResult == 0)
+    goto <bb 12>; [INV]
+  else
+    goto <bb 11>; [INV]
+
+  <bb 11> :
+  if (JobResult == 5)
+    goto <bb 12>; [INV]
+  else
+    goto <bb 14>; [INV]
+
+  <bb 12> :
+  _3 = JobInfo->Length;
+  if (_3 != 0)
+    goto <bb 13>; [INV]
+  else
+    goto <bb 14>; [INV]
+
+  <bb 13> :
+  JobResult = 1;
+
+  <bb 14> :
+  D.5734 = JobResult;
+
+  <bb 15> :
+<L14>:
+  return D.5734;
+
+}
+
+
+Mem_43_INFLS_ProcessHwSpecificServiceJob (uint32 InstanceIndex, struct Mem_43_INFLS_JobRuntimeInfoType * JobInfo)
+{
+  Mem_43_INFLS_JobResultType JobResult;
+  Mem_43_INFLS_JobResultType D.5725;
+
+  <bb 2> :
+  JobResult = 2;
+  _1 = JobInfo->HwServiceIdJob;
+  if (_1 == 17)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  JobResult = Mem_43_INFLS_IPW_Compare (InstanceIndex, JobInfo);
+
+  <bb 4> :
+  D.5725 = JobResult;
+
+  <bb 5> :
+<L2>:
+  return D.5725;
+
+}
+
+
+Mem_43_INFLS_ConfigureJobRequest (const struct Mem_43_INFLS_JobRuntimeInfoType * JobRequest)
+{
+  uint32 ErrorId;
+  uint32 D.5721;
+
+  <bb 2> :
+  _1 = JobRequest->InstanceIndex;
+  _2 = Mem_43_INFLS_eJobRuntimeInfo[_1].JobResult;
+  if (_2 == 1)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  ErrorId = 6;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  ErrorId = 255;
+  _3 = JobRequest->InstanceIndex;
+  Mem_43_INFLS_eJobRuntimeInfo[_3] = *JobRequest;
+
+  <bb 5> :
+  D.5721 = ErrorId;
+
+  <bb 6> :
+<L3>:
+  return D.5721;
+
+}
+
+
+Mem_43_INFLS_InitJobRequest (struct Mem_43_INFLS_JobRuntimeInfoType * JobRequest, Mem_43_INFLS_InstanceIdType InstanceId, Mem_43_INFLS_AddressType Address, Mem_43_INFLS_DataType * DataPtr, Mem_43_INFLS_LengthType Length)
+{
+  <bb 2> :
+  JobRequest->InstanceId = InstanceId;
+  JobRequest->HwServiceIdJob = 255;
+  JobRequest->Address = Address;
+  JobRequest->DataPtr = DataPtr;
+  JobRequest->Length = Length;
+  JobRequest->InstanceIndex = 1;
+  JobRequest->SectorBatch = 0B;
+  JobRequest->JobFlags = 1;
+  JobRequest->JobResult = 1;
+  JobRequest->SuspendState = 0;
+  return;
+
+}
+
+
+Mem_43_INFLS_ValidateParamJobDataTransfer (struct Mem_43_INFLS_JobRuntimeInfoType * JobRequest)
+{
+  uint32 ErrorId;
+  uint32 D.5712;
+
+  <bb 2> :
+  ErrorId = Mem_43_INFLS_ValidateParamJobCommon (JobRequest);
+  if (ErrorId == 255)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  _1 = JobRequest->DataPtr;
+  ErrorId = Mem_43_INFLS_ValidateDataPointer (_1);
+
+  <bb 4> :
+  D.5712 = ErrorId;
+
+  <bb 5> :
+<L2>:
+  return D.5712;
+
+}
+
+
+Mem_43_INFLS_ValidateDataPointer (const Mem_43_INFLS_DataType * DataPtr)
+{
+  uint32 ErrorId;
+  uint32 D.5716;
+
+  <bb 2> :
+  ErrorId = 255;
+  if (DataPtr == 0B)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  ErrorId = 2;
+
+  <bb 4> :
+  D.5716 = ErrorId;
+
+  <bb 5> :
+<L2>:
+  return D.5716;
+
+}
+
+
+Mem_43_INFLS_ValidateParamJobCommon (struct Mem_43_INFLS_JobRuntimeInfoType * JobRequest)
+{
+  uint32 ErrorId;
+  uint32 D.5706;
+
+  <bb 2> :
+  ErrorId = Mem_43_INFLS_ValidateModuleInitialized ();
+  if (ErrorId == 255)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  ErrorId = Mem_43_INFLS_ValidateInstanceId (JobRequest);
+
+  <bb 4> :
+  if (ErrorId == 255)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  ErrorId = Mem_43_INFLS_ValidateAddressAndLength (JobRequest);
+
+  <bb 6> :
+  D.5706 = ErrorId;
+
+  <bb 7> :
+<L4>:
+  return D.5706;
+
+}
+
+
+Mem_43_INFLS_ValidateModuleInitialized ()
+{
+  uint32 ErrorId;
+  uint32 D.5708;
+
+  <bb 2> :
+  ErrorId = 255;
+  D.5708 = ErrorId;
+
+  <bb 3> :
+<L0>:
+  return D.5708;
+
+}
+
+
+Mem_43_INFLS_ValidateInstanceId (struct Mem_43_INFLS_JobRuntimeInfoType * JobRequest)
+{
+  uint32 ErrorId;
+  uint32 D.5700;
+
+  <bb 2> :
+  ErrorId = 255;
+  _1 = JobRequest->InstanceId;
+  _2 = Mem_43_INFLS_GetInstanceIndex (_1);
+  JobRequest->InstanceIndex = _2;
+  D.5700 = ErrorId;
+
+  <bb 3> :
+<L0>:
+  return D.5700;
+
+}
+
+
+Mem_43_INFLS_ValidateAddressAndLength (struct Mem_43_INFLS_JobRuntimeInfoType * JobRequest)
+{
+  uint32 ErrorId;
+  uint32 D.5698;
+
+  <bb 2> :
+  _1 = JobRequest->InstanceIndex;
+  _2 = JobRequest->Address;
+  _3 = Mem_43_INFLS_GetSectorBatch (_1, _2);
+  JobRequest->SectorBatch = _3;
+  _4 = JobRequest->SectorBatch;
+  if (_4 == 0B)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  ErrorId = 3;
+  goto <bb 11>; [INV]
+
+  <bb 4> :
+  _5 = JobRequest->Length;
+  if (_5 == 0)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 5> :
+  _6 = JobRequest->Address;
+  _7 = JobRequest->Length;
+  _8 = _6 + _7;
+  _9 = _8 + 4294967295;
+  _10 = JobRequest->SectorBatch;
+  _11 = _10->EndAddress;
+  if (_9 > _11)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 6> :
+  ErrorId = 4;
+  goto <bb 11>; [INV]
+
+  <bb 7> :
+  _12 = JobRequest->JobType;
+  switch (_12) <default: <L7> [INV], case 1: <L5> [INV], case 2: <L6> [INV]>
+
+  <bb 8> :
+<L5>:
+  ErrorId = Mem_43_INFLS_CheckSectorAligned (JobRequest);
+  goto <bb 11>; [INV]
+
+  <bb 9> :
+<L6>:
+  ErrorId = Mem_43_INFLS_CheckWritePageAligned (JobRequest);
+  goto <bb 11>; [INV]
+
+  <bb 10> :
+<L7>:
+  ErrorId = 255;
+
+  <bb 11> :
+  D.5698 = ErrorId;
+
+  <bb 12> :
+<L11>:
+  return D.5698;
+
+}
+
+
+Mem_43_INFLS_CheckWritePageAligned (const struct Mem_43_INFLS_JobRuntimeInfoType * JobRequest)
+{
+  Mem_43_INFLS_LengthType SectorOffset;
+  Mem_43_INFLS_LengthType Length;
+  Mem_43_INFLS_AddressType TargetAddress;
+  Mem_43_INFLS_AddressType StartAddress;
+  uint32 WritePageSize;
+  uint32 ErrorId;
+  uint32 D.5689;
+
+  <bb 2> :
+  _1 = JobRequest->SectorBatch;
+  WritePageSize = _1->WritePageSize;
+  _2 = JobRequest->SectorBatch;
+  StartAddress = _2->StartAddress;
+  TargetAddress = JobRequest->Address;
+  Length = JobRequest->Length;
+  SectorOffset = 0;
+  _3 = TargetAddress + Length;
+  SectorOffset = _3 - StartAddress;
+  _4 = TargetAddress % WritePageSize;
+  if (_4 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  ErrorId = 3;
+  goto <bb 7>; [INV]
+
+  <bb 4> :
+  _5 = SectorOffset % WritePageSize;
+  if (_5 != 0)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  ErrorId = 4;
+  goto <bb 7>; [INV]
+
+  <bb 6> :
+  ErrorId = 255;
+
+  <bb 7> :
+  D.5689 = ErrorId;
+
+  <bb 8> :
+<L6>:
+  return D.5689;
+
+}
+
+
+Mem_43_INFLS_CheckSectorAligned (const struct Mem_43_INFLS_JobRuntimeInfoType * JobRequest)
+{
+  Mem_43_INFLS_LengthType Length;
+  Mem_43_INFLS_AddressType TargetAddress;
+  Mem_43_INFLS_AddressType EndAddress;
+  Mem_43_INFLS_AddressType StartAddress;
+  uint32 SectorSize;
+  uint32 ErrorId;
+  uint32 D.5681;
+
+  <bb 2> :
+  _1 = JobRequest->SectorBatch;
+  SectorSize = _1->SectorSize;
+  _2 = JobRequest->SectorBatch;
+  StartAddress = _2->StartAddress;
+  _3 = JobRequest->SectorBatch;
+  EndAddress = _3->EndAddress;
+  TargetAddress = JobRequest->Address;
+  Length = JobRequest->Length;
+  _4 = TargetAddress - StartAddress;
+  _5 = _4 % SectorSize;
+  if (_5 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  ErrorId = 3;
+  goto <bb 7>; [INV]
+
+  <bb 4> :
+  _6 = TargetAddress + Length;
+  _7 = EndAddress - _6;
+  _8 = _7 + 1;
+  _9 = _8 % SectorSize;
+  if (_9 != 0)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  ErrorId = 4;
+  goto <bb 7>; [INV]
+
+  <bb 6> :
+  ErrorId = 255;
+
+  <bb 7> :
+  D.5681 = ErrorId;
+
+  <bb 8> :
+<L6>:
+  return D.5681;
+
+}
+
+
+Mem_43_INFLS_GetSectorBatch (uint32 InstanceIndex, Mem_43_INFLS_AddressType Address)
+{
+  uint32 Index;
+  Mem_43_INFLS_AddressType EndAddressOfSector;
+  Mem_43_INFLS_AddressType StartAddressOfSector;
+  const struct Mem_43_INFLS_SectorBatchType * SectorBatch;
+  const struct Mem_43_INFLS_MemInstanceType * MemInstance;
+  const struct Mem_43_INFLS_SectorBatchType * D.5672;
+
+  <bb 2> :
+  Mem_43_INFLS_pConfigPtr.1_1 = Mem_43_INFLS_pConfigPtr;
+  _2 = Mem_43_INFLS_pConfigPtr.1_1->MemInstances;
+  _3 = InstanceIndex * 16;
+  MemInstance = _2 + _3;
+  _4 = MemInstance->SectorBatches;
+  SectorBatch = _4;
+  StartAddressOfSector = 0;
+  EndAddressOfSector = 0;
+  Index = 0;
+
+  <bb 3> :
+  SectorBatch.2_5 = SectorBatch;
+  StartAddressOfSector = SectorBatch.2_5->StartAddress;
+  SectorBatch.3_6 = SectorBatch;
+  EndAddressOfSector = SectorBatch.3_6->EndAddress;
+  if (StartAddressOfSector <= Address)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 4> :
+  if (Address <= EndAddressOfSector)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  goto <bb 7>; [INV]
+
+  <bb 6> :
+  Mem_43_INFLS_IncreasePtr (&SectorBatch);
+  Index = Index + 1;
+  _7 = MemInstance->SectorBatchCount;
+  if (Index < _7)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 7> :
+  _8 = MemInstance->SectorBatchCount;
+  if (Index >= _8)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 8> :
+  SectorBatch = 0B;
+
+  <bb 9> :
+  D.5672 = SectorBatch;
+  SectorBatch = {CLOBBER};
+
+  <bb 10> :
+<L9>:
+  return D.5672;
+
+}
+
+
+Mem_43_INFLS_GetInstanceIndex (const Mem_43_INFLS_InstanceIdType InstanceId)
+{
+  uint32 InstanceIndex;
+  uint32 D.5664;
+
+  <bb 2> :
+  InstanceIndex = 0;
+  InstanceIndex = 0;
+  goto <bb 6>; [INV]
+
+  <bb 3> :
+  Mem_43_INFLS_pConfigPtr.0_1 = Mem_43_INFLS_pConfigPtr;
+  _2 = Mem_43_INFLS_pConfigPtr.0_1->MemInstances;
+  _3 = InstanceIndex * 16;
+  _4 = _2 + _3;
+  _5 = _4->InstanceId;
+  if (InstanceId == _5)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  goto <bb 7>; [INV]
+
+  <bb 5> :
+  InstanceIndex = InstanceIndex + 1;
+
+  <bb 6> :
+  if (InstanceIndex == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 7> :
+  D.5664 = InstanceIndex;
+
+  <bb 8> :
+<L5>:
+  return D.5664;
+
+}
+
+
+Mem_43_INFLS_IncreasePtr (const struct Mem_43_INFLS_SectorBatchType * * sectorPtr)
+{
+  <bb 2> :
+  _1 = *sectorPtr;
+  _2 = _1 + 32;
+  *sectorPtr = _2;
+  return;
+
+}
+
+
+Mem_43_INFLS_ValidateConfigCRC ()
+{
+  Std_ReturnType RetVal;
+  Std_ReturnType D.5660;
+
+  <bb 2> :
+  RetVal = 0;
+  D.5660 = RetVal;
+
+  <bb 3> :
+<L0>:
+  return D.5660;
+
+}
+
+
+Mem_43_INFLS_ReportDevError (Mem_43_INFLS_InstanceIdType InstanceId, uint32 ApiId, uint32 ErrorId)
+{
+  <bb 2> :
+  return;
+
+}
+
+

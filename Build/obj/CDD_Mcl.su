@@ -1,0 +1,8 @@
+Autosar/Mcal/Mcl/src/CDD_Mcl.c:295:6:Mcl_Init	8	static
+Autosar/Mcal/Mcl/src/CDD_Mcl.c:371:6:Mcl_DeInit	0	static
+Autosar/Mcal/Mcl/src/CDD_Mcl.c:815:6:Mcl_CacheEnable	24	static
+Autosar/Mcal/Mcl/src/CDD_Mcl.c:849:6:Mcl_CacheDisable	24	static
+Autosar/Mcal/Mcl/src/CDD_Mcl.c:883:6:Mcl_CacheInvalidate	24	static
+Autosar/Mcal/Mcl/src/CDD_Mcl.c:917:6:Mcl_CacheClean	32	static
+Autosar/Mcal/Mcl/src/CDD_Mcl.c:951:6:Mcl_CacheInvalidateByAddr	32	static
+Autosar/Mcal/Mcl/src/CDD_Mcl.c:985:6:Mcl_CacheCleanByAddr	40	static

@@ -1,0 +1,919 @@
+IPA summary for Erase_Sector/13 is missing.
+IPA summary for Mem_43_INFLS_ProcessJobs/12 is missing.
+IPA summary for Example_CheckAssert/11 is missing.
+IPA summary for WL_Maintenece/10 is missing.
+IPA summary for WL_ReadData/9 is missing.
+IPA summary for WL_WriteData/8 is missing.
+IPA summary for EcuM_Init/7 is missing.
+IPA summary for WL_FindBestSector/6 is missing.
+IPA summary for WL_Init/5 is missing.
+IPA summary for main/4 is missing.
+
+Flattening functions:
+Overall time estimate: 0.000000 weighted by profile: 0.000000
+
+Deciding on inlining of small functions.  Starting with size 0.
+node context cache: 0 hits, 0 misses, 0 initializations
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+
+Deciding on functions to be inlined into all callers and removing useless speculations:
+Overall time estimate: 0.000000 weighted by profile: 0.000000
+
+Why inlining failed?
+function not considered for inlining              :       18 calls, 18.000000 freq, 0 count
+function body not available                       :       18 calls, 18.000000 freq, 0 count
+IPA summary for Erase_Sector/13 is missing.
+IPA summary for Mem_43_INFLS_ProcessJobs/12 is missing.
+IPA summary for Example_CheckAssert/11 is missing.
+IPA summary for WL_Maintenece/10 is missing.
+IPA summary for WL_ReadData/9 is missing.
+IPA summary for WL_WriteData/8 is missing.
+IPA summary for EcuM_Init/7 is missing.
+IPA summary for WL_FindBestSector/6 is missing.
+IPA summary for WL_Init/5 is missing.
+IPA summary for main/4 is missing.
+Symbol table:
+
+Mem_43_INFLS_MainFunction/25 (Mem_43_INFLS_MainFunction) @06e688c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Mem_43_INFLS_ProcessJobs/12 
+  Calls: 
+Mem_43_INFLS_GetJobResult/24 (Mem_43_INFLS_GetJobResult) @06fd2ee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Mem_43_INFLS_ProcessJobs/12 Mem_43_INFLS_ProcessJobs/12 
+  Calls: 
+Mem_43_INFLS_Write/23 (Mem_43_INFLS_Write) @06fd28c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: WL_WriteData/8 
+  Calls: 
+Mem_43_INFLS_Erase/22 (Mem_43_INFLS_Erase) @06fd27e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Erase_Sector/13 WL_WriteData/8 
+  Calls: 
+Mem_43_INFLS_BlankCheck/21 (Mem_43_INFLS_BlankCheck) @06fd2700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Erase_Sector/13 WL_WriteData/8 
+  Calls: 
+Mem_43_INFLS_Init/20 (Mem_43_INFLS_Init) @06fd2540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: EcuM_Init/7 
+  Calls: 
+Mcu_SetMode/19 (Mcu_SetMode) @06fd2460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: EcuM_Init/7 
+  Calls: 
+Mcu_InitClock/18 (Mcu_InitClock) @06fd2380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: EcuM_Init/7 
+  Calls: 
+Mcu_Config/17 (Mcu_Config) @06fd40d8
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: EcuM_Init/7 (addr) 
+  Availability: not_available
+  Varpool flags: read-only
+Mcu_Init/16 (Mcu_Init) @06fd22a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: EcuM_Init/7 
+  Calls: 
+MemCopy_optimized/15 (MemCopy_optimized) @06fd2000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: WL_ReadData/9 WL_WriteData/8 WL_Init/5 
+  Calls: 
+Mem_43_INFLS_Read/14 (Mem_43_INFLS_Read) @06e68b60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: WL_ReadData/9 WL_ReadData/9 WL_Init/5 
+  Calls: 
+Erase_Sector/13 (Erase_Sector) @06e68d20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Mem_43_INFLS_ProcessJobs/12 Mem_43_INFLS_BlankCheck/21 Mem_43_INFLS_ProcessJobs/12 Mem_43_INFLS_Erase/22 
+Mem_43_INFLS_ProcessJobs/12 (Mem_43_INFLS_ProcessJobs) @06e68a80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Erase_Sector/13 Erase_Sector/13 WL_ReadData/9 WL_ReadData/9 WL_WriteData/8 WL_WriteData/8 WL_WriteData/8 WL_Init/5 
+  Calls: Mem_43_INFLS_GetJobResult/24 Mem_43_INFLS_MainFunction/25 Example_CheckAssert/11 Mem_43_INFLS_GetJobResult/24 
+Example_CheckAssert/11 (Example_CheckAssert) @06e687e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Mem_43_INFLS_ProcessJobs/12 
+  Calls: 
+WL_Maintenece/10 (WL_Maintenece) @06e68540
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: sectorMap/2 (read) sectorMap/2 (read) sectorMap/2 (read) sectorMap/2 (read) 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: main/4 main/4 
+  Calls: 
+WL_ReadData/9 (WL_ReadData) @06e682a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: sectorMap/2 (read) sectorMap/2 (read) sectorMap/2 (read) globalLastAddrs/3 (read) sectorMap/2 (read) 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: main/4 main/4 
+  Calls: MemCopy_optimized/15 Mem_43_INFLS_ProcessJobs/12 Mem_43_INFLS_Read/14 Mem_43_INFLS_ProcessJobs/12 Mem_43_INFLS_Read/14 
+WL_WriteData/8 (WL_WriteData) @06e68000
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: sectorMap/2 (read) sectorMap/2 (read) sectorMap/2 (write) sectorMap/2 (write) globalLastAddrs/3 (write) 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: main/4 main/4 
+  Calls: Mem_43_INFLS_ProcessJobs/12 Mem_43_INFLS_Write/23 Mem_43_INFLS_ProcessJobs/12 Mem_43_INFLS_Erase/22 Mem_43_INFLS_ProcessJobs/12 Mem_43_INFLS_BlankCheck/21 MemCopy_optimized/15 WL_FindBestSector/6 
+EcuM_Init/7 (EcuM_Init) @06d858c0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Mcu_Config/17 (addr) 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: main/4 
+  Calls: Mem_43_INFLS_Init/20 Mcu_SetMode/19 Mcu_InitClock/18 Mcu_Init/16 
+WL_FindBestSector/6 (WL_FindBestSector) @06d85d20
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: sectorMap/2 (read) sectorMap/2 (read) sectorMap/2 (read) 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: WL_WriteData/8 
+  Calls: 
+WL_Init/5 (WL_Init) @06d85a80
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: SectorTresos/1 (read) sectorMap/2 (write) sectorMap/2 (write) sectorMap/2 (write) sectorMap/2 (read) sectorMap/2 (write) sectorMap/2 (write) sectorMap/2 (write) sectorMap/2 (write) 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: main/4 
+  Calls: MemCopy_optimized/15 Mem_43_INFLS_ProcessJobs/12 Mem_43_INFLS_Read/14 
+main/4 (main) @06d857e0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: WL_Maintenece/10 WL_ReadData/9 WL_WriteData/8 WL_ReadData/9 WL_WriteData/8 WL_Maintenece/10 WL_Init/5 EcuM_Init/7 
+globalLastAddrs/3 (globalLastAddrs) @06d80dc8
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: WL_WriteData/8 (write) WL_ReadData/9 (read) 
+  Availability: available
+  Varpool flags: initialized
+sectorMap/2 (sectorMap) @06d80d38
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: WL_Init/5 (write) WL_Init/5 (write) WL_Init/5 (write) WL_Init/5 (write) WL_WriteData/8 (read) WL_FindBestSector/6 (read) WL_FindBestSector/6 (read) WL_FindBestSector/6 (read) WL_WriteData/8 (read) WL_WriteData/8 (write) WL_WriteData/8 (write) WL_Maintenece/10 (read) WL_Maintenece/10 (read) WL_Maintenece/10 (read) WL_Maintenece/10 (read) WL_Init/5 (write) WL_Init/5 (write) WL_Init/5 (write) WL_Init/5 (read) WL_ReadData/9 (read) WL_ReadData/9 (read) WL_ReadData/9 (read) WL_ReadData/9 (read) 
+  Availability: available
+  Varpool flags:
+SectorTresos/1 (SectorTresos) @06d80a68
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: WL_Init/5 (read) 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+MemInstanceId_0/0 (MemInstanceId_0) @06d80678
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: read-only const-value-known
+
+;; Function main (main, funcdef_no=0, decl_uid=6198, cgraph_uid=1, symbol_order=4)
+
+main ()
+{
+  uint8 i;
+  uint8 readData[8];
+  uint8 sensorData[8];
+  int D.6293;
+  long unsigned int MemInstanceId_0.0_1;
+  _Bool _2;
+  _Bool _3;
+  long unsigned int MemInstanceId_0.1_4;
+  _Bool _5;
+  _Bool _6;
+  unsigned char i.2_7;
+  long unsigned int MemInstanceId_0.3_8;
+  _Bool _9;
+  _Bool _10;
+  long unsigned int MemInstanceId_0.4_11;
+  _Bool _12;
+  _Bool _13;
+
+  <bb 2> :
+  EcuM_Init ();
+  WL_Init ();
+  WL_Maintenece ();
+  sensorData = "\xa1\xb2\xc3\xd4\xe5\xf6\x07\x18";
+  i_23 = 0;
+  goto <bb 7>; [INV]
+
+  <bb 3> :
+  MemInstanceId_0.0_1 = 0;
+  _2 = WL_WriteData (MemInstanceId_0.0_1, &sensorData, 8);
+  _3 = ~_2;
+  if (_3 != 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 4> :
+  MemInstanceId_0.1_4 = 0;
+  _5 = WL_ReadData (MemInstanceId_0.1_4, &readData, 8);
+  _6 = ~_5;
+  if (_6 != 0)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  sensorData[7] = 23;
+
+  <bb 6> :
+  i.2_7 = i_14;
+  i_33 = i.2_7 + 1;
+
+  <bb 7> :
+  # i_14 = PHI <i_23(2), i_33(6)>
+  if (i_14 <= 7)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 8> :
+  sensorData[0] = 17;
+  sensorData[1] = 34;
+  sensorData[7] = 153;
+  MemInstanceId_0.3_8 = 0;
+  _9 = WL_WriteData (MemInstanceId_0.3_8, &sensorData, 8);
+  _10 = ~_9;
+  if (_10 != 0)
+    goto <bb 9>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 9> :
+  MemInstanceId_0.4_11 = 0;
+  _12 = WL_ReadData (MemInstanceId_0.4_11, &readData, 8);
+  _13 = ~_12;
+
+  <bb 10> :
+  WL_Maintenece ();
+
+  <bb 11> :
+  goto <bb 11>; [INV]
+
+}
+
+
+
+;; Function WL_Init (WL_Init, funcdef_no=1, decl_uid=6193, cgraph_uid=2, symbol_order=5)
+
+WL_Init ()
+{
+  uint32 writeCount;
+  Std_ReturnType RetVal;
+  uint8 i;
+  const uint8 offset;
+  uint8 Buffer[2048];
+  int _1;
+  int _2;
+  long unsigned int _3;
+  int _4;
+  int _5;
+  long unsigned int MemInstanceId_0.5_6;
+  int _7;
+  long unsigned int _8;
+  sizetype _9;
+  const void * _10;
+  unsigned int _11;
+  long unsigned int writeCount.6_12;
+  int _13;
+  long unsigned int writeCount.7_14;
+  int _15;
+  int _16;
+  int _17;
+  unsigned char i.8_18;
+
+  <bb 2> :
+  offset_22 = 4;
+  i_23 = 0;
+  goto <bb 8>; [INV]
+
+  <bb 3> :
+  _1 = (int) i_19;
+  _2 = (int) i_19;
+  _3 = SectorTresos[_1];
+  sectorMap[_2].address = _3;
+  _4 = (int) i_19;
+  sectorMap[_4].isActive = 0;
+  _5 = (int) i_19;
+  sectorMap[_5].writeCount = 0;
+  MemInstanceId_0.5_6 = 0;
+  _7 = (int) i_19;
+  _8 = sectorMap[_7].address;
+  RetVal_30 = Mem_43_INFLS_Read (MemInstanceId_0.5_6, _8, &Buffer, 16);
+  Mem_43_INFLS_ProcessJobs ();
+  _9 = (sizetype) offset_22;
+  _10 = &Buffer + _9;
+  _11 = (unsigned int) offset_22;
+  MemCopy_optimized (&writeCount, _10, _11);
+  if (RetVal_30 == 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 4> :
+  writeCount.6_12 = writeCount;
+  if (writeCount.6_12 != 4294967295)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  _13 = (int) i_19;
+  writeCount.7_14 = writeCount;
+  sectorMap[_13].writeCount = writeCount.7_14;
+  _15 = (int) i_19;
+  sectorMap[_15].isActive = 1;
+  goto <bb 7>; [INV]
+
+  <bb 6> :
+  _16 = (int) i_19;
+  sectorMap[_16].writeCount = 0;
+  _17 = (int) i_19;
+  sectorMap[_17].isActive = 0;
+
+  <bb 7> :
+  writeCount ={v} {CLOBBER};
+  i.8_18 = i_19;
+  i_38 = i.8_18 + 1;
+
+  <bb 8> :
+  # i_19 = PHI <i_23(2), i_38(7)>
+  if (i_19 <= 7)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 9> :
+  Buffer ={v} {CLOBBER};
+  return;
+
+}
+
+
+
+;; Function WL_FindBestSector (WL_FindBestSector, funcdef_no=2, decl_uid=6219, cgraph_uid=3, symbol_order=6)
+
+WL_FindBestSector ()
+{
+  uint8 i;
+  uint32 bestSector;
+  uint32 minWrite;
+  uint32 D.6303;
+  int _1;
+  _Bool _2;
+  _Bool _3;
+  int _4;
+  long unsigned int _5;
+  int _6;
+  unsigned char i.9_7;
+  uint32 _13;
+  uint32 _17;
+  uint32 _22;
+
+  <bb 2> :
+  minWrite_14 = 4294967295;
+  bestSector_15 = 0;
+  i_16 = 0;
+  goto <bb 8>; [INV]
+
+  <bb 3> :
+  _1 = (int) i_12;
+  _2 = sectorMap[_1].isActive;
+  _3 = ~_2;
+  if (_3 != 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  _22 = (uint32) i_12;
+  // predicted unlikely by early return (on trees) predictor.
+  goto <bb 10>; [INV]
+
+  <bb 5> :
+  _4 = (int) i_12;
+  _5 = sectorMap[_4].writeCount;
+  if (minWrite_9 > _5)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 6> :
+  _6 = (int) i_12;
+  minWrite_19 = sectorMap[_6].writeCount;
+  bestSector_20 = (uint32) i_12;
+
+  <bb 7> :
+  # minWrite_8 = PHI <minWrite_9(5), minWrite_19(6)>
+  # bestSector_10 = PHI <bestSector_11(5), bestSector_20(6)>
+  i.9_7 = i_12;
+  i_21 = i.9_7 + 1;
+
+  <bb 8> :
+  # minWrite_9 = PHI <minWrite_14(2), minWrite_8(7)>
+  # bestSector_11 = PHI <bestSector_15(2), bestSector_10(7)>
+  # i_12 = PHI <i_16(2), i_21(7)>
+  if (i_12 <= 7)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 9> :
+  _17 = bestSector_11;
+
+  <bb 10> :
+  # _13 = PHI <_22(4), _17(9)>
+<L7>:
+  return _13;
+
+}
+
+
+
+;; Function EcuM_Init (EcuM_Init, funcdef_no=3, decl_uid=6177, cgraph_uid=4, symbol_order=7)
+
+EcuM_Init ()
+{
+  <bb 2> :
+  Mcu_Init (&Mcu_Config);
+  Mcu_InitClock (0);
+  Mcu_SetMode (0);
+  Mem_43_INFLS_Init (0B);
+  return;
+
+}
+
+
+
+;; Function WL_WriteData (WL_WriteData, funcdef_no=4, decl_uid=6185, cgraph_uid=5, symbol_order=8)
+
+WL_WriteData (uint32_t dataId, const uint8_t * data, uint32_t size)
+{
+  Std_ReturnType RetVal;
+  uint8 AllsizeStruct;
+  struct FlashSector sec;
+  uint32 sectorAddr;
+  uint32 sectorId;
+  _Bool D.6309;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  _Bool _5;
+  _Bool _31;
+  _Bool _32;
+
+  <bb 2> :
+  if (size_9(D) > 2032)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  _32 = 1;
+  // predicted unlikely by early return (on trees) predictor.
+  goto <bb 9>; [INV]
+
+  <bb 4> :
+  sectorId_12 = WL_FindBestSector ();
+  sectorAddr_13 = sectorMap[sectorId_12].address;
+  sec.dataId = dataId_14(D);
+  _1 = sectorMap[sectorId_12].writeCount;
+  _2 = _1 + 1;
+  sec.writeCount = _2;
+  MemCopy_optimized (&sec.data, data_17(D), size_9(D));
+  AllsizeStruct_19 = 16;
+  RetVal_21 = Mem_43_INFLS_BlankCheck (dataId_14(D), sectorAddr_13, 2048);
+  Mem_43_INFLS_ProcessJobs ();
+  if (RetVal_21 == 0)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  Mem_43_INFLS_Erase (dataId_14(D), sectorAddr_13, 2048);
+  Mem_43_INFLS_ProcessJobs ();
+
+  <bb 6> :
+  _3 = (long unsigned int) AllsizeStruct_19;
+  RetVal_26 = Mem_43_INFLS_Write (dataId_14(D), sectorAddr_13, &sec, _3);
+  Mem_43_INFLS_ProcessJobs ();
+  if (RetVal_26 == 0)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 7> :
+  _4 = sec.writeCount;
+  sectorMap[sectorId_12].writeCount = _4;
+  sectorMap[sectorId_12].isActive = 1;
+  globalLastAddrs = sectorAddr_13;
+
+  <bb 8> :
+  _31 = 0;
+
+  <bb 9> :
+  # _5 = PHI <_32(3), _31(8)>
+  sec ={v} {CLOBBER};
+
+  <bb 10> :
+<L7>:
+  return _5;
+
+}
+
+
+
+;; Function WL_ReadData (WL_ReadData, funcdef_no=5, decl_uid=6189, cgraph_uid=6, symbol_order=9)
+
+WL_ReadData (uint32_t dataId, uint8_t * data, uint32_t size)
+{
+  uint8 i;
+  const uint8 offset;
+  struct FlashSector block;
+  uint32 sectorAddr;
+  uint32 latestVersion;
+  _Bool D.6326;
+  int _1;
+  _Bool _2;
+  int _3;
+  long unsigned int _4;
+  long unsigned int _5;
+  long unsigned int _6;
+  long unsigned int _7;
+  long unsigned int _8;
+  int _9;
+  long unsigned int _10;
+  long unsigned int globalLastAddrs.10_11;
+  int _12;
+  unsigned char i.11_13;
+  long unsigned int MemInstanceId_0.12_14;
+  long unsigned int _15;
+  long unsigned int _16;
+  _Bool _22;
+  _Bool _36;
+  _Bool _37;
+
+  <bb 2> :
+  latestVersion_26 = 0;
+  sectorAddr_27 = 0;
+  offset_28 = 8;
+  i_29 = 0;
+  goto <bb 9>; [INV]
+
+  <bb 3> :
+  _1 = (int) i_21;
+  _2 = sectorMap[_1].isActive;
+  if (_2 != 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 4> :
+  _3 = (int) i_21;
+  _4 = sectorMap[_3].address;
+  _5 = (long unsigned int) offset_28;
+  _6 = _4 + _5;
+  Mem_43_INFLS_Read (dataId_39(D), _6, &block.data, size_31(D));
+  Mem_43_INFLS_ProcessJobs ();
+  _7 = block.dataId;
+  if (dataId_39(D) == _7)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 5> :
+  _8 = block.writeCount;
+  if (latestVersion_18 < _8)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 6> :
+  _9 = (int) i_21;
+  _10 = sectorMap[_9].address;
+  globalLastAddrs.10_11 = globalLastAddrs;
+  if (_10 == globalLastAddrs.10_11)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 7> :
+  latestVersion_42 = block.writeCount;
+  _12 = (int) i_21;
+  sectorAddr_43 = sectorMap[_12].address;
+
+  <bb 8> :
+  # latestVersion_17 = PHI <latestVersion_18(3), latestVersion_18(4), latestVersion_18(5), latestVersion_18(6), latestVersion_42(7)>
+  # sectorAddr_19 = PHI <sectorAddr_20(3), sectorAddr_20(4), sectorAddr_20(5), sectorAddr_20(6), sectorAddr_43(7)>
+  i.11_13 = i_21;
+  i_44 = i.11_13 + 1;
+
+  <bb 9> :
+  # latestVersion_18 = PHI <latestVersion_26(2), latestVersion_17(8)>
+  # sectorAddr_20 = PHI <sectorAddr_27(2), sectorAddr_19(8)>
+  # i_21 = PHI <i_29(2), i_44(8)>
+  if (i_21 <= 7)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 10> :
+  if (sectorAddr_20 == 0)
+    goto <bb 11>; [INV]
+  else
+    goto <bb 12>; [INV]
+
+  <bb 11> :
+  _37 = 0;
+  // predicted unlikely by early return (on trees) predictor.
+  goto <bb 13>; [INV]
+
+  <bb 12> :
+  MemInstanceId_0.12_14 = 0;
+  _15 = (long unsigned int) offset_28;
+  _16 = sectorAddr_20 + _15;
+  Mem_43_INFLS_Read (MemInstanceId_0.12_14, _16, &block.data, size_31(D));
+  Mem_43_INFLS_ProcessJobs ();
+  MemCopy_optimized (data_34(D), &block.data, size_31(D));
+  _36 = 0;
+
+  <bb 13> :
+  # _22 = PHI <_37(11), _36(12)>
+  block ={v} {CLOBBER};
+
+  <bb 14> :
+<L14>:
+  return _22;
+
+}
+
+
+
+;; Function WL_Maintenece (WL_Maintenece, funcdef_no=6, decl_uid=6191, cgraph_uid=7, symbol_order=10)
+
+WL_Maintenece ()
+{
+  uint8 i;
+  uint32_t maxWrites;
+  uint32_t totalWrites;
+  int _1;
+  _Bool _2;
+  int _3;
+  long unsigned int _4;
+  int _5;
+  long unsigned int _6;
+  int _7;
+  unsigned char i.13_8;
+
+  <bb 2> :
+  totalWrites_14 = 0;
+  maxWrites_15 = 0;
+  i_16 = 0;
+  goto <bb 7>; [INV]
+
+  <bb 3> :
+  _1 = (int) i_13;
+  _2 = sectorMap[_1].isActive;
+  if (_2 != 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 4> :
+  _3 = (int) i_13;
+  _4 = sectorMap[_3].writeCount;
+  totalWrites_18 = totalWrites_10 + _4;
+  _5 = (int) i_13;
+  _6 = sectorMap[_5].writeCount;
+  if (maxWrites_12 < _6)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  _7 = (int) i_13;
+  maxWrites_19 = sectorMap[_7].writeCount;
+
+  <bb 6> :
+  # totalWrites_9 = PHI <totalWrites_10(3), totalWrites_18(4), totalWrites_18(5)>
+  # maxWrites_11 = PHI <maxWrites_12(3), maxWrites_12(4), maxWrites_19(5)>
+  i.13_8 = i_13;
+  i_20 = i.13_8 + 1;
+
+  <bb 7> :
+  # totalWrites_10 = PHI <totalWrites_14(2), totalWrites_9(6)>
+  # maxWrites_12 = PHI <maxWrites_15(2), maxWrites_11(6)>
+  # i_13 = PHI <i_16(2), i_20(6)>
+  if (i_13 <= 7)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 8> :
+  return;
+
+}
+
+
+
+;; Function Example_CheckAssert (Example_CheckAssert, funcdef_no=7, decl_uid=6181, cgraph_uid=8, symbol_order=11)
+
+Example_CheckAssert (boolean Condition)
+{
+  _Bool _1;
+
+  <bb 2> :
+
+  <bb 3> :
+  _1 = ~Condition_2(D);
+  if (_1 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 4> :
+  return;
+
+}
+
+
+
+;; Function Mem_43_INFLS_ProcessJobs (Mem_43_INFLS_ProcessJobs, funcdef_no=8, decl_uid=6179, cgraph_uid=9, symbol_order=12)
+
+Mem_43_INFLS_ProcessJobs ()
+{
+  long unsigned int MemInstanceId_0.14_1;
+  <unnamed type> _2;
+  _Bool _3;
+  long unsigned int MemInstanceId_0.15_4;
+  <unnamed type> _5;
+
+  <bb 2> :
+  MemInstanceId_0.14_1 = 0;
+  _2 = Mem_43_INFLS_GetJobResult (MemInstanceId_0.14_1);
+  _3 = _2 == 1;
+  Example_CheckAssert (_3);
+
+  <bb 3> :
+  Mem_43_INFLS_MainFunction ();
+  MemInstanceId_0.15_4 = 0;
+  _5 = Mem_43_INFLS_GetJobResult (MemInstanceId_0.15_4);
+  if (_5 == 1)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 4> :
+  return;
+
+}
+
+
+
+;; Function Erase_Sector (Erase_Sector, funcdef_no=9, decl_uid=6196, cgraph_uid=10, symbol_order=13)
+
+Erase_Sector (Mem_43_INFLS_InstanceIdType MemInstanceId, uint32 * array)
+{
+  uint8 i;
+  unsigned int _1;
+  unsigned int _2;
+  uint32 * _3;
+  long unsigned int _4;
+  unsigned int _5;
+  unsigned int _6;
+  uint32 * _7;
+  long unsigned int _8;
+  unsigned char i.16_9;
+
+  <bb 2> :
+  i_12 = 0;
+  goto <bb 4>; [INV]
+
+  <bb 3> :
+  _1 = (unsigned int) i_10;
+  _2 = _1 * 4;
+  _3 = array_14(D) + _2;
+  _4 = *_3;
+  Mem_43_INFLS_Erase (MemInstanceId_15(D), _4, 2048);
+  Mem_43_INFLS_ProcessJobs ();
+  _5 = (unsigned int) i_10;
+  _6 = _5 * 4;
+  _7 = array_14(D) + _6;
+  _8 = *_7;
+  Mem_43_INFLS_BlankCheck (MemInstanceId_15(D), _8, 2048);
+  Mem_43_INFLS_ProcessJobs ();
+  i.16_9 = i_10;
+  i_20 = i.16_9 + 1;
+
+  <bb 4> :
+  # i_10 = PHI <i_12(2), i_20(3)>
+  if (i_10 <= 7)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 5> :
+  return;
+
+}
+
+

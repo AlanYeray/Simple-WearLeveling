@@ -1,0 +1,512 @@
+Erase_Sector (Mem_43_INFLS_InstanceIdType MemInstanceId, uint32 * array)
+{
+  uint8 i;
+
+  <bb 2> :
+  i = 0;
+  goto <bb 4>; [INV]
+
+  <bb 3> :
+  _1 = (unsigned int) i;
+  _2 = _1 * 4;
+  _3 = array + _2;
+  _4 = *_3;
+  Mem_43_INFLS_Erase (MemInstanceId, _4, 2048);
+  Mem_43_INFLS_ProcessJobs ();
+  _5 = (unsigned int) i;
+  _6 = _5 * 4;
+  _7 = array + _6;
+  _8 = *_7;
+  Mem_43_INFLS_BlankCheck (MemInstanceId, _8, 2048);
+  Mem_43_INFLS_ProcessJobs ();
+  i.16_9 = i;
+  i = i.16_9 + 1;
+
+  <bb 4> :
+  if (i <= 7)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 5> :
+  return;
+
+}
+
+
+Mem_43_INFLS_ProcessJobs ()
+{
+  <bb 2> :
+  MemInstanceId_0.14_1 = 0;
+  _2 = Mem_43_INFLS_GetJobResult (MemInstanceId_0.14_1);
+  _3 = _2 == 1;
+  Example_CheckAssert (_3);
+
+  <bb 3> :
+  Mem_43_INFLS_MainFunction ();
+  MemInstanceId_0.15_4 = 0;
+  _5 = Mem_43_INFLS_GetJobResult (MemInstanceId_0.15_4);
+  if (_5 == 1)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 4> :
+  return;
+
+}
+
+
+Example_CheckAssert (boolean Condition)
+{
+  <bb 2> :
+
+  <bb 3> :
+  _1 = ~Condition;
+  if (_1 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 4> :
+  return;
+
+}
+
+
+WL_Maintenece ()
+{
+  uint8 i;
+  uint32_t maxWrites;
+  uint32_t totalWrites;
+
+  <bb 2> :
+  totalWrites = 0;
+  maxWrites = 0;
+  i = 0;
+  goto <bb 7>; [INV]
+
+  <bb 3> :
+  _1 = (int) i;
+  _2 = sectorMap[_1].isActive;
+  if (_2 != 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 4> :
+  _3 = (int) i;
+  _4 = sectorMap[_3].writeCount;
+  totalWrites = totalWrites + _4;
+  _5 = (int) i;
+  _6 = sectorMap[_5].writeCount;
+  if (maxWrites < _6)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  _7 = (int) i;
+  maxWrites = sectorMap[_7].writeCount;
+
+  <bb 6> :
+  i.13_8 = i;
+  i = i.13_8 + 1;
+
+  <bb 7> :
+  if (i <= 7)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 8> :
+  return;
+
+}
+
+
+WL_ReadData (uint32_t dataId, uint8_t * data, uint32_t size)
+{
+  uint8 i;
+  const uint8 offset;
+  struct FlashSector block;
+  uint32 sectorAddr;
+  uint32 latestVersion;
+  _Bool D.6326;
+
+  <bb 2> :
+  latestVersion = 0;
+  sectorAddr = 0;
+  offset = 8;
+  i = 0;
+  goto <bb 9>; [INV]
+
+  <bb 3> :
+  _1 = (int) i;
+  _2 = sectorMap[_1].isActive;
+  if (_2 != 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 4> :
+  _3 = (int) i;
+  _4 = sectorMap[_3].address;
+  _5 = (long unsigned int) offset;
+  _6 = _4 + _5;
+  Mem_43_INFLS_Read (dataId, _6, &block.data, size);
+  Mem_43_INFLS_ProcessJobs ();
+  _7 = block.dataId;
+  if (dataId == _7)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 5> :
+  _8 = block.writeCount;
+  if (latestVersion < _8)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 6> :
+  _9 = (int) i;
+  _10 = sectorMap[_9].address;
+  globalLastAddrs.10_11 = globalLastAddrs;
+  if (_10 == globalLastAddrs.10_11)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 7> :
+  latestVersion = block.writeCount;
+  _12 = (int) i;
+  sectorAddr = sectorMap[_12].address;
+
+  <bb 8> :
+  i.11_13 = i;
+  i = i.11_13 + 1;
+
+  <bb 9> :
+  if (i <= 7)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 10> :
+  if (sectorAddr == 0)
+    goto <bb 11>; [INV]
+  else
+    goto <bb 12>; [INV]
+
+  <bb 11> :
+  D.6326 = 0;
+  // predicted unlikely by early return (on trees) predictor.
+  goto <bb 13>; [INV]
+
+  <bb 12> :
+  MemInstanceId_0.12_14 = 0;
+  _15 = (long unsigned int) offset;
+  _16 = sectorAddr + _15;
+  Mem_43_INFLS_Read (MemInstanceId_0.12_14, _16, &block.data, size);
+  Mem_43_INFLS_ProcessJobs ();
+  MemCopy_optimized (data, &block.data, size);
+  D.6326 = 0;
+
+  <bb 13> :
+  block = {CLOBBER};
+
+  <bb 14> :
+<L14>:
+  return D.6326;
+
+}
+
+
+WL_WriteData (uint32_t dataId, const uint8_t * data, uint32_t size)
+{
+  Std_ReturnType RetVal;
+  uint8 AllsizeStruct;
+  struct FlashSector sec;
+  uint32 sectorAddr;
+  uint32 sectorId;
+  _Bool D.6309;
+
+  <bb 2> :
+  if (size > 2032)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  D.6309 = 1;
+  // predicted unlikely by early return (on trees) predictor.
+  goto <bb 9>; [INV]
+
+  <bb 4> :
+  sectorId = WL_FindBestSector ();
+  sectorAddr = sectorMap[sectorId].address;
+  sec.dataId = dataId;
+  _1 = sectorMap[sectorId].writeCount;
+  _2 = _1 + 1;
+  sec.writeCount = _2;
+  MemCopy_optimized (&sec.data, data, size);
+  AllsizeStruct = 16;
+  RetVal = Mem_43_INFLS_BlankCheck (dataId, sectorAddr, 2048);
+  Mem_43_INFLS_ProcessJobs ();
+  if (RetVal == 0)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  Mem_43_INFLS_Erase (dataId, sectorAddr, 2048);
+  Mem_43_INFLS_ProcessJobs ();
+
+  <bb 6> :
+  _3 = (long unsigned int) AllsizeStruct;
+  RetVal = Mem_43_INFLS_Write (dataId, sectorAddr, &sec, _3);
+  Mem_43_INFLS_ProcessJobs ();
+  if (RetVal == 0)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 7> :
+  _4 = sec.writeCount;
+  sectorMap[sectorId].writeCount = _4;
+  sectorMap[sectorId].isActive = 1;
+  globalLastAddrs = sectorAddr;
+
+  <bb 8> :
+  D.6309 = 0;
+
+  <bb 9> :
+  sec = {CLOBBER};
+
+  <bb 10> :
+<L7>:
+  return D.6309;
+
+}
+
+
+EcuM_Init ()
+{
+  <bb 2> :
+  Mcu_Init (&Mcu_Config);
+  Mcu_InitClock (0);
+  Mcu_SetMode (0);
+  Mem_43_INFLS_Init (0B);
+  return;
+
+}
+
+
+WL_FindBestSector ()
+{
+  uint8 i;
+  uint32 bestSector;
+  uint32 minWrite;
+  uint32 D.6303;
+
+  <bb 2> :
+  minWrite = 4294967295;
+  bestSector = 0;
+  i = 0;
+  goto <bb 8>; [INV]
+
+  <bb 3> :
+  _1 = (int) i;
+  _2 = sectorMap[_1].isActive;
+  _3 = ~_2;
+  if (_3 != 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  D.6303 = (uint32) i;
+  // predicted unlikely by early return (on trees) predictor.
+  goto <bb 10>; [INV]
+
+  <bb 5> :
+  _4 = (int) i;
+  _5 = sectorMap[_4].writeCount;
+  if (minWrite > _5)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 6> :
+  _6 = (int) i;
+  minWrite = sectorMap[_6].writeCount;
+  bestSector = (uint32) i;
+
+  <bb 7> :
+  i.9_7 = i;
+  i = i.9_7 + 1;
+
+  <bb 8> :
+  if (i <= 7)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 9> :
+  D.6303 = bestSector;
+
+  <bb 10> :
+<L7>:
+  return D.6303;
+
+}
+
+
+WL_Init ()
+{
+  uint32 writeCount;
+  Std_ReturnType RetVal;
+  uint8 i;
+  const uint8 offset;
+  uint8 Buffer[2048];
+
+  <bb 2> :
+  offset = 4;
+  i = 0;
+  goto <bb 8>; [INV]
+
+  <bb 3> :
+  _1 = (int) i;
+  _2 = (int) i;
+  _3 = SectorTresos[_1];
+  sectorMap[_2].address = _3;
+  _4 = (int) i;
+  sectorMap[_4].isActive = 0;
+  _5 = (int) i;
+  sectorMap[_5].writeCount = 0;
+  MemInstanceId_0.5_6 = 0;
+  _7 = (int) i;
+  _8 = sectorMap[_7].address;
+  RetVal = Mem_43_INFLS_Read (MemInstanceId_0.5_6, _8, &Buffer, 16);
+  Mem_43_INFLS_ProcessJobs ();
+  _9 = (sizetype) offset;
+  _10 = &Buffer + _9;
+  _11 = (unsigned int) offset;
+  MemCopy_optimized (&writeCount, _10, _11);
+  if (RetVal == 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 4> :
+  writeCount.6_12 = writeCount;
+  if (writeCount.6_12 != 4294967295)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  _13 = (int) i;
+  writeCount.7_14 = writeCount;
+  sectorMap[_13].writeCount = writeCount.7_14;
+  _15 = (int) i;
+  sectorMap[_15].isActive = 1;
+  goto <bb 7>; [INV]
+
+  <bb 6> :
+  _16 = (int) i;
+  sectorMap[_16].writeCount = 0;
+  _17 = (int) i;
+  sectorMap[_17].isActive = 0;
+
+  <bb 7> :
+  writeCount = {CLOBBER};
+  i.8_18 = i;
+  i = i.8_18 + 1;
+
+  <bb 8> :
+  if (i <= 7)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 9> :
+  Buffer = {CLOBBER};
+  return;
+
+}
+
+
+main ()
+{
+  uint8 i;
+  uint8 readData[8];
+  uint8 sensorData[8];
+  int D.6293;
+
+  <bb 2> :
+  EcuM_Init ();
+  WL_Init ();
+  WL_Maintenece ();
+  sensorData = "\xa1\xb2\xc3\xd4\xe5\xf6\x07\x18";
+  i = 0;
+  goto <bb 7>; [INV]
+
+  <bb 3> :
+  MemInstanceId_0.0_1 = 0;
+  _2 = WL_WriteData (MemInstanceId_0.0_1, &sensorData, 8);
+  _3 = ~_2;
+  if (_3 != 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 4> :
+  MemInstanceId_0.1_4 = 0;
+  _5 = WL_ReadData (MemInstanceId_0.1_4, &readData, 8);
+  _6 = ~_5;
+  if (_6 != 0)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  sensorData[7] = 23;
+
+  <bb 6> :
+  i.2_7 = i;
+  i = i.2_7 + 1;
+
+  <bb 7> :
+  if (i <= 7)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 8> :
+  sensorData[0] = 17;
+  sensorData[1] = 34;
+  sensorData[7] = 153;
+  MemInstanceId_0.3_8 = 0;
+  _9 = WL_WriteData (MemInstanceId_0.3_8, &sensorData, 8);
+  _10 = ~_9;
+  if (_10 != 0)
+    goto <bb 9>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 9> :
+  MemInstanceId_0.4_11 = 0;
+  _12 = WL_ReadData (MemInstanceId_0.4_11, &readData, 8);
+  _13 = ~_12;
+
+  <bb 10> :
+  WL_Maintenece ();
+
+  <bb 11> :
+  goto <bb 11>; [INV]
+
+}
+
+

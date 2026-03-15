@@ -1,0 +1,216 @@
+Cache_Ip_CleanByAddr (const Cache_Ip_Type CacheType, const Cache_Ip_BusType BusType, const boolean EnInvalidate, const uint32 Addr, const uint32 Length)
+{
+  Std_ReturnType Status;
+  Std_ReturnType D.5696;
+  unsigned char _1;
+  Std_ReturnType _15;
+
+  <bb 2> :
+  Status_4 = 0;
+  SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_18 ();
+  if (CacheType_7(D) == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  _1 = (unsigned char) BusType_8(D);
+  Status_13 = hwAcc_Lmem_CleanByAddr (_1, EnInvalidate_9(D), Addr_10(D), Length_11(D));
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+
+  <bb 5> :
+  # Status_2 = PHI <Status_13(3), Status_4(4)>
+  SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_18 ();
+  _15 = Status_2;
+
+  <bb 6> :
+<L3>:
+  return _15;
+
+}
+
+
+Cache_Ip_InvalidateByAddr (const Cache_Ip_Type CacheType, const Cache_Ip_BusType BusType, const uint32 Addr, const uint32 Length)
+{
+  Std_ReturnType Status;
+  Std_ReturnType D.5694;
+  unsigned char _1;
+  Std_ReturnType _14;
+
+  <bb 2> :
+  Status_4 = 0;
+  SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_17 ();
+  if (CacheType_7(D) == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  _1 = (unsigned char) BusType_8(D);
+  Status_12 = hwAcc_Lmem_InvalidateByAddr (_1, Addr_9(D), Length_10(D));
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+
+  <bb 5> :
+  # Status_2 = PHI <Status_12(3), Status_4(4)>
+  SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_17 ();
+  _14 = Status_2;
+
+  <bb 6> :
+<L3>:
+  return _14;
+
+}
+
+
+Cache_Ip_Clean (const Cache_Ip_Type CacheType, const Cache_Ip_BusType BusType, const boolean EnInvalidate)
+{
+  Std_ReturnType Status;
+  Std_ReturnType D.5692;
+  unsigned char _1;
+  Std_ReturnType _13;
+
+  <bb 2> :
+  Status_4 = 0;
+  SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_16 ();
+  if (CacheType_7(D) == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  _1 = (unsigned char) BusType_8(D);
+  Status_11 = hwAcc_Lmem_Clean (_1, EnInvalidate_9(D));
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+
+  <bb 5> :
+  # Status_2 = PHI <Status_11(3), Status_4(4)>
+  SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_16 ();
+  _13 = Status_2;
+
+  <bb 6> :
+<L3>:
+  return _13;
+
+}
+
+
+Cache_Ip_Invalidate (const Cache_Ip_Type CacheType, const Cache_Ip_BusType BusType)
+{
+  Std_ReturnType Status;
+  Std_ReturnType D.5690;
+  unsigned char _1;
+  Std_ReturnType _12;
+
+  <bb 2> :
+  Status_4 = 0;
+  SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_15 ();
+  if (CacheType_7(D) == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  _1 = (unsigned char) BusType_8(D);
+  Status_10 = hwAcc_Lmem_Invalidate (_1);
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+
+  <bb 5> :
+  # Status_2 = PHI <Status_10(3), Status_4(4)>
+  SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_15 ();
+  _12 = Status_2;
+
+  <bb 6> :
+<L3>:
+  return _12;
+
+}
+
+
+Cache_Ip_Disable (const Cache_Ip_Type CacheType, const Cache_Ip_BusType BusType)
+{
+  Std_ReturnType Status;
+  Std_ReturnType D.5688;
+  unsigned char _1;
+  Std_ReturnType _12;
+
+  <bb 2> :
+  Status_4 = 0;
+  SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_14 ();
+  if (CacheType_7(D) == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  _1 = (unsigned char) BusType_8(D);
+  Status_10 = hwAcc_Lmem_Disable (_1);
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+
+  <bb 5> :
+  # Status_2 = PHI <Status_10(3), Status_4(4)>
+  SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_14 ();
+  _12 = Status_2;
+
+  <bb 6> :
+<L3>:
+  return _12;
+
+}
+
+
+Cache_Ip_Enable (const Cache_Ip_Type CacheType, const Cache_Ip_BusType BusType)
+{
+  Std_ReturnType Status;
+  Std_ReturnType D.5686;
+  unsigned char _1;
+  Std_ReturnType _12;
+
+  <bb 2> :
+  Status_4 = 0;
+  SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_13 ();
+  if (CacheType_7(D) == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  _1 = (unsigned char) BusType_8(D);
+  Status_10 = hwAcc_Lmem_Enable (_1);
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+
+  <bb 5> :
+  # Status_2 = PHI <Status_10(3), Status_4(4)>
+  SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_13 ();
+  _12 = Status_2;
+
+  <bb 6> :
+<L3>:
+  return _12;
+
+}
+
+

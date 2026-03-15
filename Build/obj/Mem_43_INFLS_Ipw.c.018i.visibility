@@ -1,0 +1,1309 @@
+
+Marking local functions: Mem_43_INFLS_IPW_CheckUnLoadAc/12 Mem_43_INFLS_IPW_CheckLoadAc/11
+
+
+Marking externally visible functions: Mem_43_INFLS_IPW_ReportEccValueToLayerUnder/23 Mem_43_INFLS_IPW_Cancel/22 Mem_43_INFLS_IPW_GetJobResult/21 Mem_43_INFLS_IPW_Write/20 Mem_43_INFLS_IPW_EraseResume/19 Mem_43_INFLS_IPW_EraseSuspend/18 Mem_43_INFLS_IPW_Erase/17 Mem_43_INFLS_IPW_BlankCheck/16 Mem_43_INFLS_IPW_Compare/15 Mem_43_INFLS_IPW_Read/14 Mem_43_INFLS_IPW_Init/13
+
+
+Marking externally visible variables: Mem_AcLoaded/3
+
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Symbol table:
+
+Ftfc_Mem_InFls_Ip_ReportEccUnCorrectedError/43 (Ftfc_Mem_InFls_Ip_ReportEccUnCorrectedError) @06d86620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Mem_43_INFLS_IPW_ReportEccValueToLayerUnder/23 
+  Calls: 
+Ftfc_Mem_InFls_Ip_Abort/42 (Ftfc_Mem_InFls_Ip_Abort) @06d86460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Mem_43_INFLS_IPW_Cancel/22 
+  Calls: 
+Ftfc_Mem_InFls_Ip_CtrlStatus/41 (Ftfc_Mem_InFls_Ip_CtrlStatus) @06d86380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Mem_43_INFLS_IPW_Cancel/22 
+  Calls: 
+Ftfc_Mem_InFls_Ip_WriteStatus/40 (Ftfc_Mem_InFls_Ip_WriteStatus) @06d861c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Mem_43_INFLS_IPW_GetJobResult/21 
+  Calls: 
+Ftfc_Mem_InFls_Ip_SectorEraseStatus/39 (Ftfc_Mem_InFls_Ip_SectorEraseStatus) @06d860e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Mem_43_INFLS_IPW_GetJobResult/21 
+  Calls: 
+Ftfc_Mem_InFls_Ip_Write/38 (Ftfc_Mem_InFls_Ip_Write) @06d48e00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Mem_43_INFLS_IPW_Write/20 
+  Calls: 
+Ftfc_Mem_InFls_Ip_EraseResume/37 (Ftfc_Mem_InFls_Ip_EraseResume) @06d48c40
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Mem_43_INFLS_IPW_EraseResume/19 
+  Calls: 
+Ftfc_Mem_InFls_Ip_EraseSuspend/36 (Ftfc_Mem_InFls_Ip_EraseSuspend) @06d48a80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Mem_43_INFLS_IPW_EraseSuspend/18 
+  Calls: 
+Cache_Ip_CleanByAddr/35 (Cache_Ip_CleanByAddr) @06d48700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Mem_43_INFLS_IPW_CheckLoadAc/11 Mem_43_INFLS_IPW_CheckLoadAc/11 
+  Calls: 
+Ftfc_Mem_InFls_Ip_SectorErase/34 (Ftfc_Mem_InFls_Ip_SectorErase) @06d48460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Mem_43_INFLS_IPW_Erase/17 
+  Calls: 
+Ftfc_Mem_InFls_Ip_SetLoadAcStatus/33 (Ftfc_Mem_InFls_Ip_SetLoadAcStatus) @06d48380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Mem_43_INFLS_IPW_Write/20 Mem_43_INFLS_IPW_Write/20 Mem_43_INFLS_IPW_Erase/17 Mem_43_INFLS_IPW_Erase/17 
+  Calls: 
+Ftfc_Mem_InFls_Ip_Compare/32 (Ftfc_Mem_InFls_Ip_Compare) @06d480e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Mem_43_INFLS_IPW_BlankCheck/16 Mem_43_INFLS_IPW_Compare/15 
+  Calls: 
+Ftfc_Mem_InFls_Ip_Read/31 (Ftfc_Mem_InFls_Ip_Read) @06cd7ee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Mem_43_INFLS_IPW_Read/14 
+  Calls: 
+Ftfc_Mem_InFls_Ip_GetBlockNumberFromAddress/30 (Ftfc_Mem_InFls_Ip_GetBlockNumberFromAddress) @06cd7c40
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Mem_43_INFLS_IPW_CheckLoadAc/11 Mem_43_INFLS_IPW_Init/13 Mem_43_INFLS_IPW_Init/13 
+  Calls: 
+Ftfc_Mem_InFls_Ip_Init/29 (Ftfc_Mem_InFls_Ip_Init) @06cd7b60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Mem_43_INFLS_IPW_Init/13 
+  Calls: 
+Fls_ACWriteSize/28 (Fls_ACWriteSize) @06d3e3a8
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Mem_43_INFLS_IPW_LoadAc/9 (addr) Mem_43_INFLS_IPW_UnloadAc/10 (addr) Mem_43_INFLS_IPW_CheckLoadAc/11 (addr) 
+  Availability: not_available
+  Varpool flags: read-only
+Fls_ACWriteRomStart/27 (Fls_ACWriteRomStart) @06d3e360
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Mem_43_INFLS_IPW_LoadAc/9 (addr) Mem_43_INFLS_IPW_Init/13 (addr) 
+  Availability: not_available
+  Varpool flags: read-only
+Fls_ACEraseSize/26 (Fls_ACEraseSize) @06d3e318
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Mem_43_INFLS_IPW_LoadAc/9 (addr) Mem_43_INFLS_IPW_UnloadAc/10 (addr) Mem_43_INFLS_IPW_CheckLoadAc/11 (addr) 
+  Availability: not_available
+  Varpool flags: read-only
+Mem_43_INFLS_pConfigPtr/25 (Mem_43_INFLS_pConfigPtr) @06d3e2d0
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Mem_43_INFLS_IPW_LoadAc/9 (read) Mem_43_INFLS_IPW_LoadAc/9 (read) Mem_43_INFLS_IPW_UnloadAc/10 (read) Mem_43_INFLS_IPW_UnloadAc/10 (read) Mem_43_INFLS_IPW_Init/13 (read) Mem_43_INFLS_IPW_Erase/17 (read) Mem_43_INFLS_IPW_Erase/17 (read) Mem_43_INFLS_IPW_Erase/17 (read) Mem_43_INFLS_IPW_CheckLoadAc/11 (read) Mem_43_INFLS_IPW_CheckLoadAc/11 (read) Mem_43_INFLS_IPW_Write/20 (read) Mem_43_INFLS_IPW_Write/20 (read) Mem_43_INFLS_IPW_Write/20 (read) 
+  Availability: not_available
+  Varpool flags:
+Fls_ACEraseRomStart/24 (Fls_ACEraseRomStart) @06d3e288
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Mem_43_INFLS_IPW_LoadAc/9 (addr) Mem_43_INFLS_IPW_Init/13 (addr) 
+  Availability: not_available
+  Varpool flags: read-only
+Mem_43_INFLS_IPW_ReportEccValueToLayerUnder/23 (Mem_43_INFLS_IPW_ReportEccValueToLayerUnder) @06cd7000
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Ftfc_Mem_InFls_Ip_ReportEccUnCorrectedError/43 
+Mem_43_INFLS_IPW_Cancel/22 (Mem_43_INFLS_IPW_Cancel) @06ccd9a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Mem_43_INFLS_IPW_TranslateReturnCode/8 Ftfc_Mem_InFls_Ip_Abort/42 Ftfc_Mem_InFls_Ip_CtrlStatus/41 
+Mem_43_INFLS_IPW_GetJobResult/21 (Mem_43_INFLS_IPW_GetJobResult) @06ccd380
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Mem_43_INFLS_IPW_TranslateReturnCode/8 Ftfc_Mem_InFls_Ip_WriteStatus/40 Ftfc_Mem_InFls_Ip_SectorEraseStatus/39 
+Mem_43_INFLS_IPW_Write/20 (Mem_43_INFLS_IPW_Write) @06ccdee0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: MemBlockAcWrite/2 (read) Mem_AcLoaded/3 (read) Mem_43_INFLS_pConfigPtr/25 (read) Mem_43_INFLS_pConfigPtr/25 (read) Mem_43_INFLS_pConfigPtr/25 (read) 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Ftfc_Mem_InFls_Ip_SetLoadAcStatus/33 Mem_43_INFLS_IPW_CheckUnLoadAc/12 Mem_43_INFLS_IPW_UpdateJobProcessedLength/4 Ftfc_Mem_InFls_Ip_AccessCode/0 Ftfc_Mem_InFls_Ip_Write/38 Ftfc_Mem_InFls_Ip_SetLoadAcStatus/33 Mem_43_INFLS_IPW_CheckLoadAc/11 Mem_43_INFLS_IPW_ComputeWriteLength/7 
+   Indirect call Num speculative call targets: 0
+Mem_43_INFLS_IPW_EraseResume/19 (Mem_43_INFLS_IPW_EraseResume) @06ccdb60
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Mem_43_INFLS_IPW_TranslateReturnCode/8 Ftfc_Mem_InFls_Ip_EraseResume/37 
+Mem_43_INFLS_IPW_EraseSuspend/18 (Mem_43_INFLS_IPW_EraseSuspend) @06ccd8c0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Mem_43_INFLS_IPW_TranslateReturnCode/8 Ftfc_Mem_InFls_Ip_EraseSuspend/36 
+Mem_43_INFLS_IPW_Erase/17 (Mem_43_INFLS_IPW_Erase) @06ccd620
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: MemBlockAcErase/1 (read) Mem_AcLoaded/3 (read) Mem_43_INFLS_pConfigPtr/25 (read) Mem_43_INFLS_pConfigPtr/25 (read) Mem_43_INFLS_pConfigPtr/25 (read) 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Ftfc_Mem_InFls_Ip_SetLoadAcStatus/33 Mem_43_INFLS_IPW_CheckUnLoadAc/12 Mem_43_INFLS_IPW_UpdateJobProcessedLength/4 Ftfc_Mem_InFls_Ip_AccessCode/0 Ftfc_Mem_InFls_Ip_SectorErase/34 Ftfc_Mem_InFls_Ip_SetLoadAcStatus/33 Mem_43_INFLS_IPW_CheckLoadAc/11 Mem_43_INFLS_IPW_ComputeEraseLength/6 
+   Indirect call Num speculative call targets: 0
+Mem_43_INFLS_IPW_BlankCheck/16 (Mem_43_INFLS_IPW_BlankCheck) @06ccd2a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Mem_43_INFLS_IPW_UpdateJobProcessedLength/4 Mem_43_INFLS_IPW_UpdateJobProcessedLength/4 Ftfc_Mem_InFls_Ip_Compare/32 Mem_43_INFLS_IPW_ComputeReadLength/5 
+Mem_43_INFLS_IPW_Compare/15 (Mem_43_INFLS_IPW_Compare) @06ccd000
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Mem_43_INFLS_IPW_UpdateJobProcessedLength/4 Mem_43_INFLS_IPW_UpdateJobProcessedLength/4 Ftfc_Mem_InFls_Ip_Compare/32 Mem_43_INFLS_IPW_ComputeReadLength/5 
+Mem_43_INFLS_IPW_Read/14 (Mem_43_INFLS_IPW_Read) @06c6ec40
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Mem_43_INFLS_IPW_UpdateJobProcessedLength/4 Mem_43_INFLS_IPW_UpdateJobProcessedLength/4 Ftfc_Mem_InFls_Ip_Read/31 Mem_43_INFLS_IPW_ComputeReadLength/5 
+Mem_43_INFLS_IPW_Init/13 (Mem_43_INFLS_IPW_Init) @06c6e700
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Mem_43_INFLS_pConfigPtr/25 (read) Fls_ACWriteRomStart/27 (addr) MemBlockAcErase/1 (write) Fls_ACEraseRomStart/24 (addr) MemBlockAcWrite/2 (write) 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Ftfc_Mem_InFls_Ip_GetBlockNumberFromAddress/30 Ftfc_Mem_InFls_Ip_GetBlockNumberFromAddress/30 Ftfc_Mem_InFls_Ip_Init/29 
+Mem_43_INFLS_IPW_CheckUnLoadAc/12 (Mem_43_INFLS_IPW_CheckUnLoadAc) @06c6ee00
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: Mem_AcLoaded/3 (read) Mem_AcLoaded/3 (write) 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: Mem_43_INFLS_IPW_Write/20 Mem_43_INFLS_IPW_Erase/17 
+  Calls: Mem_43_INFLS_IPW_UnloadAc/10 
+Mem_43_INFLS_IPW_CheckLoadAc/11 (Mem_43_INFLS_IPW_CheckLoadAc) @06c6eb60
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: Mem_AcLoaded/3 (write) Mem_43_INFLS_pConfigPtr/25 (read) Fls_ACEraseSize/26 (addr) Mem_43_INFLS_pConfigPtr/25 (read) Fls_ACWriteSize/28 (addr) 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: Mem_43_INFLS_IPW_Write/20 Mem_43_INFLS_IPW_Erase/17 
+  Calls: Cache_Ip_CleanByAddr/35 Cache_Ip_CleanByAddr/35 Mem_43_INFLS_IPW_LoadAc/9 Ftfc_Mem_InFls_Ip_GetBlockNumberFromAddress/30 
+Mem_43_INFLS_IPW_UnloadAc/10 (Mem_43_INFLS_IPW_UnloadAc) @06c6e8c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: Mem_43_INFLS_pConfigPtr/25 (read) Fls_ACEraseSize/26 (addr) Mem_43_INFLS_pConfigPtr/25 (read) Fls_ACWriteSize/28 (addr) 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Mem_43_INFLS_IPW_CheckUnLoadAc/12 
+  Calls: 
+Mem_43_INFLS_IPW_LoadAc/9 (Mem_43_INFLS_IPW_LoadAc) @06c6e620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: Fls_ACEraseRomStart/24 (addr) Mem_43_INFLS_pConfigPtr/25 (read) Fls_ACEraseSize/26 (addr) Fls_ACWriteRomStart/27 (addr) Mem_43_INFLS_pConfigPtr/25 (read) Fls_ACWriteSize/28 (addr) 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Mem_43_INFLS_IPW_CheckLoadAc/11 
+  Calls: 
+Mem_43_INFLS_IPW_TranslateReturnCode/8 (Mem_43_INFLS_IPW_TranslateReturnCode) @06c6e380
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Mem_43_INFLS_IPW_Cancel/22 Mem_43_INFLS_IPW_GetJobResult/21 Mem_43_INFLS_IPW_EraseResume/19 Mem_43_INFLS_IPW_EraseSuspend/18 
+  Calls: 
+Mem_43_INFLS_IPW_ComputeWriteLength/7 (Mem_43_INFLS_IPW_ComputeWriteLength) @06c6e0e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Mem_43_INFLS_IPW_Write/20 
+  Calls: 
+Mem_43_INFLS_IPW_ComputeEraseLength/6 (Mem_43_INFLS_IPW_ComputeEraseLength) @06c68540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Mem_43_INFLS_IPW_Erase/17 
+  Calls: 
+Mem_43_INFLS_IPW_ComputeReadLength/5 (Mem_43_INFLS_IPW_ComputeReadLength) @06c68ee0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Mem_43_INFLS_IPW_BlankCheck/16 Mem_43_INFLS_IPW_Compare/15 Mem_43_INFLS_IPW_Read/14 
+  Calls: 
+Mem_43_INFLS_IPW_UpdateJobProcessedLength/4 (Mem_43_INFLS_IPW_UpdateJobProcessedLength) @06c68c40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Mem_43_INFLS_IPW_Write/20 Mem_43_INFLS_IPW_Erase/17 Mem_43_INFLS_IPW_BlankCheck/16 Mem_43_INFLS_IPW_BlankCheck/16 Mem_43_INFLS_IPW_Compare/15 Mem_43_INFLS_IPW_Compare/15 Mem_43_INFLS_IPW_Read/14 Mem_43_INFLS_IPW_Read/14 
+  Calls: 
+Mem_AcLoaded/3 (Mem_AcLoaded) @06c675e8
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: Mem_43_INFLS_IPW_Erase/17 (read) Mem_43_INFLS_IPW_CheckLoadAc/11 (write) Mem_43_INFLS_IPW_CheckUnLoadAc/12 (read) Mem_43_INFLS_IPW_CheckUnLoadAc/12 (write) Mem_43_INFLS_IPW_Write/20 (read) 
+  Availability: available
+  Varpool flags:
+MemBlockAcWrite/2 (MemBlockAcWrite) @06c67558
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: Mem_43_INFLS_IPW_Init/13 (write) Mem_43_INFLS_IPW_Write/20 (read) 
+  Availability: available
+  Varpool flags:
+MemBlockAcErase/1 (MemBlockAcErase) @06c674c8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: Mem_43_INFLS_IPW_Init/13 (write) Mem_43_INFLS_IPW_Erase/17 (read) 
+  Availability: available
+  Varpool flags:
+Ftfc_Mem_InFls_Ip_AccessCode/0 (Ftfc_Mem_InFls_Ip_AccessCode) @06c081c0
+  Type: function
+  Visibility: external public section:.acfls_code_rom
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Mem_43_INFLS_IPW_Write/20 Mem_43_INFLS_IPW_Erase/17 
+  Calls: 
+Mem_43_INFLS_IPW_ReportEccValueToLayerUnder ()
+{
+  <bb 2> :
+  Ftfc_Mem_InFls_Ip_ReportEccUnCorrectedError ();
+  return;
+
+}
+
+
+Mem_43_INFLS_IPW_Cancel (uint32 InstanceIndex)
+{
+  Mem_43_INFLS_JobResultType JobResult;
+  Ftfc_Mem_InFls_Ip_StatusType Status;
+  Mem_43_INFLS_JobResultType D.5964;
+
+  <bb 2> :
+  Status = 0;
+  _1 = Ftfc_Mem_InFls_Ip_CtrlStatus ();
+  if (_1 == 1)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  Status = Ftfc_Mem_InFls_Ip_Abort ();
+
+  <bb 4> :
+  JobResult = Mem_43_INFLS_IPW_TranslateReturnCode (Status);
+  D.5964 = JobResult;
+
+  <bb 5> :
+<L2>:
+  return D.5964;
+
+}
+
+
+Mem_43_INFLS_IPW_GetJobResult (uint32 InstanceIndex, Mem_43_INFLS_JobType JobType)
+{
+  Mem_43_INFLS_JobResultType JobResult;
+  Ftfc_Mem_InFls_Ip_StatusType Status;
+  Mem_43_INFLS_JobResultType D.5960;
+
+  <bb 2> :
+  switch (JobType) <default: <L2> [INV], case 1: <L0> [INV], case 2: <L1> [INV]>
+
+  <bb 3> :
+<L0>:
+  Status = Ftfc_Mem_InFls_Ip_SectorEraseStatus ();
+  goto <bb 6>; [INV]
+
+  <bb 4> :
+<L1>:
+  Status = Ftfc_Mem_InFls_Ip_WriteStatus ();
+  goto <bb 6>; [INV]
+
+  <bb 5> :
+<L2>:
+  Status = 0;
+
+  <bb 6> :
+  JobResult = Mem_43_INFLS_IPW_TranslateReturnCode (Status);
+  D.5960 = JobResult;
+
+  <bb 7> :
+<L4>:
+  return D.5960;
+
+}
+
+
+Mem_43_INFLS_IPW_Write (uint32 InstanceIndex, struct Mem_43_INFLS_JobRuntimeInfoType * JobInfo)
+{
+  Ftfc_Mem_InFls_Ip_StatusType Status;
+  Mem_43_INFLS_LengthType TransferLength;
+  Mem_43_INFLS_JobResultType JobResult;
+  Mem_43_INFLS_JobResultType D.5958;
+
+  <bb 2> :
+  JobResult = 2;
+  _1 = JobInfo->Length;
+  if (_1 == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  JobResult = 0;
+  goto <bb 14>; [INV]
+
+  <bb 4> :
+  TransferLength = Mem_43_INFLS_IPW_ComputeWriteLength (JobInfo);
+  MemBlockAcWrite.17_2 = MemBlockAcWrite;
+  Mem_43_INFLS_IPW_CheckLoadAc (MemBlockAcWrite.17_2, JobInfo);
+  Ftfc_Mem_InFls_Ip_SetLoadAcStatus (1);
+  _3 = JobInfo->Address;
+  _4 = JobInfo->DataPtr;
+  Status = Ftfc_Mem_InFls_Ip_Write (_3, _4, TransferLength);
+  Mem_AcLoaded.18_5 = Mem_AcLoaded;
+  if (Mem_AcLoaded.18_5 != 0)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  Mem_43_INFLS_pConfigPtr.19_6 = Mem_43_INFLS_pConfigPtr;
+  _7 = Mem_43_INFLS_pConfigPtr.19_6->MemAcWritePtr;
+  _8 = (long unsigned int) _7;
+  _9 = _8 | 1;
+  _10 = (void (*<T4da>) (void (*<T4cb>) (void))) _9;
+  Mem_43_INFLS_pConfigPtr.20_11 = Mem_43_INFLS_pConfigPtr;
+  _12 = Mem_43_INFLS_pConfigPtr.20_11->MemAcCallBackPtr;
+  _10 (_12);
+  goto <bb 7>; [INV]
+
+  <bb 6> :
+  Mem_43_INFLS_pConfigPtr.21_13 = Mem_43_INFLS_pConfigPtr;
+  _14 = Mem_43_INFLS_pConfigPtr.21_13->MemAcCallBackPtr;
+  Ftfc_Mem_InFls_Ip_AccessCode (_14);
+
+  <bb 7> :
+  if (Status == 0)
+    goto <bb 9>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 8> :
+  if (Status == 12)
+    goto <bb 9>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 9> :
+  JobResult = 1;
+  Mem_43_INFLS_IPW_UpdateJobProcessedLength (JobInfo, TransferLength);
+  goto <bb 13>; [INV]
+
+  <bb 10> :
+  if (Status == 11)
+    goto <bb 11>; [INV]
+  else
+    goto <bb 12>; [INV]
+
+  <bb 11> :
+  JobResult = 4;
+  goto <bb 13>; [INV]
+
+  <bb 12> :
+  JobResult = 2;
+
+  <bb 13> :
+  _15 = JobInfo->JobType;
+  Mem_43_INFLS_IPW_CheckUnLoadAc (_15);
+  Ftfc_Mem_InFls_Ip_SetLoadAcStatus (0);
+
+  <bb 14> :
+  D.5958 = JobResult;
+
+  <bb 15> :
+<L13>:
+  return D.5958;
+
+}
+
+
+Mem_43_INFLS_IPW_EraseResume (uint32 InstanceIndex)
+{
+  Mem_43_INFLS_JobResultType JobResult;
+  Ftfc_Mem_InFls_Ip_StatusType Status;
+  Mem_43_INFLS_JobResultType D.5943;
+
+  <bb 2> :
+  Status = 0;
+  Status = Ftfc_Mem_InFls_Ip_EraseResume ();
+  JobResult = Mem_43_INFLS_IPW_TranslateReturnCode (Status);
+  D.5943 = JobResult;
+
+  <bb 3> :
+<L0>:
+  return D.5943;
+
+}
+
+
+Mem_43_INFLS_IPW_EraseSuspend (uint32 InstanceIndex)
+{
+  Mem_43_INFLS_JobResultType JobResult;
+  Ftfc_Mem_InFls_Ip_StatusType Status;
+  Mem_43_INFLS_JobResultType D.5941;
+
+  <bb 2> :
+  Status = 0;
+  Status = Ftfc_Mem_InFls_Ip_EraseSuspend ();
+  JobResult = Mem_43_INFLS_IPW_TranslateReturnCode (Status);
+  D.5941 = JobResult;
+
+  <bb 3> :
+<L0>:
+  return D.5941;
+
+}
+
+
+Mem_43_INFLS_IPW_Erase (uint32 InstanceIndex, struct Mem_43_INFLS_JobRuntimeInfoType * JobInfo)
+{
+  Ftfc_Mem_InFls_Ip_StatusType Status;
+  Mem_43_INFLS_LengthType TransferLength;
+  Mem_43_INFLS_JobResultType JobResult;
+  Mem_43_INFLS_JobResultType D.5932;
+
+  <bb 2> :
+  JobResult = 2;
+  _1 = JobInfo->Length;
+  if (_1 == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  JobResult = 0;
+  goto <bb 14>; [INV]
+
+  <bb 4> :
+  TransferLength = Mem_43_INFLS_IPW_ComputeEraseLength (JobInfo);
+  MemBlockAcErase.7_2 = MemBlockAcErase;
+  Mem_43_INFLS_IPW_CheckLoadAc (MemBlockAcErase.7_2, JobInfo);
+  Ftfc_Mem_InFls_Ip_SetLoadAcStatus (1);
+  _3 = JobInfo->Address;
+  Status = Ftfc_Mem_InFls_Ip_SectorErase (_3);
+  Mem_AcLoaded.8_4 = Mem_AcLoaded;
+  if (Mem_AcLoaded.8_4 != 0)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  Mem_43_INFLS_pConfigPtr.9_5 = Mem_43_INFLS_pConfigPtr;
+  _6 = Mem_43_INFLS_pConfigPtr.9_5->MemAcErasePtr;
+  _7 = (long unsigned int) _6;
+  _8 = _7 | 1;
+  _9 = (void (*<T4da>) (void (*<T4cb>) (void))) _8;
+  Mem_43_INFLS_pConfigPtr.10_10 = Mem_43_INFLS_pConfigPtr;
+  _11 = Mem_43_INFLS_pConfigPtr.10_10->MemAcCallBackPtr;
+  _9 (_11);
+  goto <bb 7>; [INV]
+
+  <bb 6> :
+  Mem_43_INFLS_pConfigPtr.11_12 = Mem_43_INFLS_pConfigPtr;
+  _13 = Mem_43_INFLS_pConfigPtr.11_12->MemAcCallBackPtr;
+  Ftfc_Mem_InFls_Ip_AccessCode (_13);
+
+  <bb 7> :
+  if (Status == 0)
+    goto <bb 9>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 8> :
+  if (Status == 12)
+    goto <bb 9>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 9> :
+  JobResult = 1;
+  Mem_43_INFLS_IPW_UpdateJobProcessedLength (JobInfo, TransferLength);
+  goto <bb 13>; [INV]
+
+  <bb 10> :
+  if (Status == 11)
+    goto <bb 11>; [INV]
+  else
+    goto <bb 12>; [INV]
+
+  <bb 11> :
+  JobResult = 4;
+  goto <bb 13>; [INV]
+
+  <bb 12> :
+  JobResult = 2;
+
+  <bb 13> :
+  _14 = JobInfo->JobType;
+  Mem_43_INFLS_IPW_CheckUnLoadAc (_14);
+  Ftfc_Mem_InFls_Ip_SetLoadAcStatus (0);
+
+  <bb 14> :
+  D.5932 = JobResult;
+
+  <bb 15> :
+<L13>:
+  return D.5932;
+
+}
+
+
+Mem_43_INFLS_IPW_BlankCheck (uint32 InstanceIndex, struct Mem_43_INFLS_JobRuntimeInfoType * JobInfo)
+{
+  Ftfc_Mem_InFls_Ip_StatusType Status;
+  Mem_43_INFLS_LengthType TransferLength;
+  Mem_43_INFLS_JobResultType JobResult;
+  Mem_43_INFLS_JobResultType D.5917;
+
+  <bb 2> :
+  _1 = JobInfo->Length;
+  if (_1 == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  JobResult = 0;
+  goto <bb 13>; [INV]
+
+  <bb 4> :
+  TransferLength = Mem_43_INFLS_IPW_ComputeReadLength (JobInfo);
+  _2 = JobInfo->Address;
+  Status = Ftfc_Mem_InFls_Ip_Compare (_2, 0B, TransferLength);
+  if (Status == 0)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  JobResult = 1;
+  Mem_43_INFLS_IPW_UpdateJobProcessedLength (JobInfo, TransferLength);
+  goto <bb 13>; [INV]
+
+  <bb 6> :
+  if (Status == 12)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 7> :
+  Mem_43_INFLS_IPW_UpdateJobProcessedLength (JobInfo, TransferLength);
+  _3 = JobInfo->Length;
+  if (_3 == 0)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 8> :
+  JobResult = 5;
+  goto <bb 13>; [INV]
+
+  <bb 9> :
+  JobResult = 1;
+  goto <bb 13>; [INV]
+
+  <bb 10> :
+  if (Status == 11)
+    goto <bb 11>; [INV]
+  else
+    goto <bb 12>; [INV]
+
+  <bb 11> :
+  JobResult = 4;
+  goto <bb 13>; [INV]
+
+  <bb 12> :
+  JobResult = 3;
+
+  <bb 13> :
+  D.5917 = JobResult;
+
+  <bb 14> :
+<L15>:
+  return D.5917;
+
+}
+
+
+Mem_43_INFLS_IPW_Compare (uint32 InstanceIndex, struct Mem_43_INFLS_JobRuntimeInfoType * JobInfo)
+{
+  Ftfc_Mem_InFls_Ip_StatusType Status;
+  Mem_43_INFLS_LengthType TransferLength;
+  Mem_43_INFLS_JobResultType JobResult;
+  Mem_43_INFLS_JobResultType D.5900;
+
+  <bb 2> :
+  _1 = JobInfo->Length;
+  if (_1 == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  JobResult = 0;
+  goto <bb 13>; [INV]
+
+  <bb 4> :
+  TransferLength = Mem_43_INFLS_IPW_ComputeReadLength (JobInfo);
+  _2 = JobInfo->Address;
+  _3 = JobInfo->DataPtr;
+  Status = Ftfc_Mem_InFls_Ip_Compare (_2, _3, TransferLength);
+  if (Status == 0)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  JobResult = 1;
+  Mem_43_INFLS_IPW_UpdateJobProcessedLength (JobInfo, TransferLength);
+  goto <bb 13>; [INV]
+
+  <bb 6> :
+  if (Status == 12)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 7> :
+  Mem_43_INFLS_IPW_UpdateJobProcessedLength (JobInfo, TransferLength);
+  _4 = JobInfo->Length;
+  if (_4 == 0)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 8> :
+  JobResult = 5;
+  goto <bb 13>; [INV]
+
+  <bb 9> :
+  JobResult = 1;
+  goto <bb 13>; [INV]
+
+  <bb 10> :
+  if (Status == 11)
+    goto <bb 11>; [INV]
+  else
+    goto <bb 12>; [INV]
+
+  <bb 11> :
+  JobResult = 4;
+  goto <bb 13>; [INV]
+
+  <bb 12> :
+  JobResult = 3;
+
+  <bb 13> :
+  D.5900 = JobResult;
+
+  <bb 14> :
+<L15>:
+  return D.5900;
+
+}
+
+
+Mem_43_INFLS_IPW_Read (uint32 InstanceIndex, struct Mem_43_INFLS_JobRuntimeInfoType * JobInfo)
+{
+  Ftfc_Mem_InFls_Ip_StatusType Status;
+  Mem_43_INFLS_LengthType TransferLength;
+  Mem_43_INFLS_JobResultType JobResult;
+  Mem_43_INFLS_JobResultType D.5883;
+
+  <bb 2> :
+  JobResult = 2;
+  _1 = JobInfo->Length;
+  if (_1 == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  JobResult = 0;
+  goto <bb 12>; [INV]
+
+  <bb 4> :
+  TransferLength = Mem_43_INFLS_IPW_ComputeReadLength (JobInfo);
+  _2 = JobInfo->Address;
+  _3 = JobInfo->DataPtr;
+  Status = Ftfc_Mem_InFls_Ip_Read (_2, _3, TransferLength);
+  if (Status == 0)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  Mem_43_INFLS_IPW_UpdateJobProcessedLength (JobInfo, TransferLength);
+  JobResult = 1;
+  goto <bb 12>; [INV]
+
+  <bb 6> :
+  if (Status == 12)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 7> :
+  Mem_43_INFLS_IPW_UpdateJobProcessedLength (JobInfo, TransferLength);
+  _4 = JobInfo->Length;
+  if (_4 == 0)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 8> :
+  JobResult = 5;
+  goto <bb 12>; [INV]
+
+  <bb 9> :
+  JobResult = 1;
+  goto <bb 12>; [INV]
+
+  <bb 10> :
+  if (Status == 11)
+    goto <bb 11>; [INV]
+  else
+    goto <bb 12>; [INV]
+
+  <bb 11> :
+  JobResult = 4;
+
+  <bb 12> :
+  D.5883 = JobResult;
+
+  <bb 13> :
+<L15>:
+  return D.5883;
+
+}
+
+
+Mem_43_INFLS_IPW_Init ()
+{
+  uint32 Unit;
+  Ftfc_Mem_InFls_Ip_StatusType Status;
+  Std_ReturnType RetVal;
+  const struct Mem_43_INFLS_InternalUnitType * InternalUnits;
+  Std_ReturnType D.5866;
+
+  <bb 2> :
+  Mem_43_INFLS_pConfigPtr.4_1 = Mem_43_INFLS_pConfigPtr;
+  _2 = Mem_43_INFLS_pConfigPtr.4_1->MemDevices;
+  InternalUnits = _2->InternalUnits;
+  RetVal = 0;
+  Unit = 0;
+  goto <bb 7>; [INV]
+
+  <bb 3> :
+  _3 = Unit * 4;
+  _4 = InternalUnits + _3;
+  _5 = _4->InternalConfig;
+  if (_5 != 0B)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 4> :
+  _6 = Unit * 4;
+  _7 = InternalUnits + _6;
+  _8 = _7->InternalConfig;
+  Status = Ftfc_Mem_InFls_Ip_Init (_8);
+  if (Status != 0)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  RetVal = 1;
+  goto <bb 8>; [INV]
+
+  <bb 6> :
+  Unit = Unit + 1;
+
+  <bb 7> :
+  if (Unit == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 8> :
+  Fls_ACWriteRomStart.5_9 = (long unsigned int) &Fls_ACWriteRomStart;
+  _10 = Ftfc_Mem_InFls_Ip_GetBlockNumberFromAddress (Fls_ACWriteRomStart.5_9);
+  _11 = (unsigned char) _10;
+  MemBlockAcErase = _11;
+  Fls_ACEraseRomStart.6_12 = (long unsigned int) &Fls_ACEraseRomStart;
+  _13 = Ftfc_Mem_InFls_Ip_GetBlockNumberFromAddress (Fls_ACEraseRomStart.6_12);
+  _14 = (unsigned char) _13;
+  MemBlockAcWrite = _14;
+  D.5866 = RetVal;
+
+  <bb 9> :
+<L7>:
+  return D.5866;
+
+}
+
+
+Mem_43_INFLS_IPW_CheckUnLoadAc (const Mem_43_INFLS_JobType JobType)
+{
+  <bb 2> :
+  Mem_AcLoaded.16_1 = Mem_AcLoaded;
+  if (Mem_AcLoaded.16_1 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  Mem_43_INFLS_IPW_UnloadAc (JobType);
+  Mem_AcLoaded = 0;
+
+  <bb 4> :
+  return;
+
+}
+
+
+Mem_43_INFLS_IPW_CheckLoadAc (Mem_43_INFLS_BlockType BlockAc, struct Mem_43_INFLS_JobRuntimeInfoType * JobInfo)
+{
+  Mem_43_INFLS_BlockType JobBlockSector;
+  Mem_43_INFLS_AddressType JobAddrStart;
+
+  <bb 2> :
+  JobAddrStart = JobInfo->Address;
+  _1 = JobInfo->Length;
+  JobAddrStart = JobAddrStart + _1;
+  _2 = Ftfc_Mem_InFls_Ip_GetBlockNumberFromAddress (JobAddrStart);
+  JobBlockSector = (Mem_43_INFLS_BlockType) _2;
+  if (JobBlockSector == BlockAc)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 3> :
+  _3 = JobInfo->JobType;
+  Mem_43_INFLS_IPW_LoadAc (_3);
+  Mem_AcLoaded = 1;
+  _4 = JobInfo->JobType;
+  if (_4 == 1)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  Mem_43_INFLS_pConfigPtr.12_5 = Mem_43_INFLS_pConfigPtr;
+  _6 = Mem_43_INFLS_pConfigPtr.12_5->MemAcErasePtr;
+  _7 = (long unsigned int) _6;
+  Fls_ACEraseSize.13_8 = (long unsigned int) &Fls_ACEraseSize;
+  _9 = Fls_ACEraseSize.13_8 * 4;
+  Cache_Ip_CleanByAddr (1, 4, 1, _7, _9);
+  goto <bb 6>; [INV]
+
+  <bb 5> :
+  Mem_43_INFLS_pConfigPtr.14_10 = Mem_43_INFLS_pConfigPtr;
+  _11 = Mem_43_INFLS_pConfigPtr.14_10->MemAcWritePtr;
+  _12 = (long unsigned int) _11;
+  Fls_ACWriteSize.15_13 = (long unsigned int) &Fls_ACWriteSize;
+  _14 = Fls_ACWriteSize.15_13 * 4;
+  Cache_Ip_CleanByAddr (1, 4, 1, _12, _14);
+
+  <bb 6> :
+  return;
+
+}
+
+
+Mem_43_INFLS_IPW_UnloadAc (const Mem_43_INFLS_JobType JobType)
+{
+  uint32 * RamPtr;
+  uint32 AcSize;
+  uint32 Count;
+
+  <bb 2> :
+  if (JobType == 1)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  Mem_43_INFLS_pConfigPtr.2_1 = Mem_43_INFLS_pConfigPtr;
+  RamPtr = Mem_43_INFLS_pConfigPtr.2_1->MemAcErasePtr;
+  AcSize = (uint32) &Fls_ACEraseSize;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  Mem_43_INFLS_pConfigPtr.3_2 = Mem_43_INFLS_pConfigPtr;
+  RamPtr = Mem_43_INFLS_pConfigPtr.3_2->MemAcWritePtr;
+  AcSize = (uint32) &Fls_ACWriteSize;
+
+  <bb 5> :
+  Count = 0;
+  goto <bb 7>; [INV]
+
+  <bb 6> :
+  _3 = Count * 4;
+  _4 = RamPtr + _3;
+  *_4 = 4294967295;
+  Count = Count + 1;
+
+  <bb 7> :
+  if (Count < AcSize)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 8> :
+  return;
+
+}
+
+
+Mem_43_INFLS_IPW_LoadAc (const Mem_43_INFLS_JobType JobType)
+{
+  const uint32 * RomPtr;
+  uint32 * RamPtr;
+  uint32 AcSize;
+  uint32 Count;
+
+  <bb 2> :
+  if (JobType == 1)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  RomPtr = &Fls_ACEraseRomStart;
+  Mem_43_INFLS_pConfigPtr.0_1 = Mem_43_INFLS_pConfigPtr;
+  RamPtr = Mem_43_INFLS_pConfigPtr.0_1->MemAcErasePtr;
+  AcSize = (uint32) &Fls_ACEraseSize;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  RomPtr = &Fls_ACWriteRomStart;
+  Mem_43_INFLS_pConfigPtr.1_2 = Mem_43_INFLS_pConfigPtr;
+  RamPtr = Mem_43_INFLS_pConfigPtr.1_2->MemAcWritePtr;
+  AcSize = (uint32) &Fls_ACWriteSize;
+
+  <bb 5> :
+  Count = 0;
+  goto <bb 7>; [INV]
+
+  <bb 6> :
+  _3 = Count * 4;
+  _4 = RomPtr + _3;
+  _5 = Count * 4;
+  _6 = RamPtr + _5;
+  _7 = *_4;
+  *_6 = _7;
+  Count = Count + 1;
+
+  <bb 7> :
+  if (Count < AcSize)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 8> :
+  return;
+
+}
+
+
+Mem_43_INFLS_IPW_TranslateReturnCode (Ftfc_Mem_InFls_Ip_StatusType IpReturnValue)
+{
+  Mem_43_INFLS_JobResultType JobResult;
+  Mem_43_INFLS_JobResultType D.5854;
+
+  <bb 2> :
+  switch (IpReturnValue) <default: <L4> [INV], case 0: <L1> [INV], case 1: <L0> [INV], case 11: <L2> [INV], case 12: <L3> [INV]>
+
+  <bb 3> :
+<L0>:
+  JobResult = 1;
+  goto <bb 8>; [INV]
+
+  <bb 4> :
+<L1>:
+  JobResult = 0;
+  goto <bb 8>; [INV]
+
+  <bb 5> :
+<L2>:
+  JobResult = 4;
+  goto <bb 8>; [INV]
+
+  <bb 6> :
+<L3>:
+  JobResult = 5;
+  goto <bb 8>; [INV]
+
+  <bb 7> :
+<L4>:
+  JobResult = 2;
+
+  <bb 8> :
+  D.5854 = JobResult;
+
+  <bb 9> :
+<L6>:
+  return D.5854;
+
+}
+
+
+Mem_43_INFLS_IPW_ComputeWriteLength (const struct Mem_43_INFLS_JobRuntimeInfoType * JobInfo)
+{
+  uint32 WriteLength;
+  Mem_43_INFLS_LengthType D.5852;
+
+  <bb 2> :
+  WriteLength = JobInfo->Length;
+  _1 = JobInfo->SectorBatch;
+  _2 = _1->WritePageSize;
+  if (WriteLength > _2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  _3 = JobInfo->SectorBatch;
+  WriteLength = _3->WritePageSize;
+
+  <bb 4> :
+  D.5852 = WriteLength;
+
+  <bb 5> :
+<L2>:
+  return D.5852;
+
+}
+
+
+Mem_43_INFLS_IPW_ComputeEraseLength (const struct Mem_43_INFLS_JobRuntimeInfoType * JobInfo)
+{
+  const uint32 BurstSize;
+  Mem_43_INFLS_LengthType EraseLength;
+  Mem_43_INFLS_LengthType D.5848;
+
+  <bb 2> :
+  _1 = JobInfo->SectorBatch;
+  EraseLength = _1->SectorSize;
+  _2 = JobInfo->SectorBatch;
+  BurstSize = _2->EraseBurstSize;
+  _3 = JobInfo->Address;
+  _4 = _3 % BurstSize;
+  if (_4 == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 3> :
+  _5 = JobInfo->Length;
+  _6 = _5 % BurstSize;
+  if (_6 == 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  EraseLength = BurstSize;
+
+  <bb 5> :
+  D.5848 = EraseLength;
+
+  <bb 6> :
+<L4>:
+  return D.5848;
+
+}
+
+
+Mem_43_INFLS_IPW_ComputeReadLength (const struct Mem_43_INFLS_JobRuntimeInfoType * JobInfo)
+{
+  Mem_43_INFLS_LengthType ReadLength;
+  Mem_43_INFLS_LengthType D.5842;
+
+  <bb 2> :
+  ReadLength = JobInfo->Length;
+  D.5842 = ReadLength;
+
+  <bb 3> :
+<L0>:
+  return D.5842;
+
+}
+
+
+Mem_43_INFLS_IPW_UpdateJobProcessedLength (struct Mem_43_INFLS_JobRuntimeInfoType * JobInfo, Mem_43_INFLS_LengthType TransferLength)
+{
+  <bb 2> :
+  _1 = JobInfo->Address;
+  _2 = TransferLength + _1;
+  JobInfo->Address = _2;
+  _3 = JobInfo->Length;
+  _4 = _3 - TransferLength;
+  JobInfo->Length = _4;
+  _5 = JobInfo->DataPtr;
+  if (_5 != 0B)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  _6 = JobInfo->DataPtr;
+  _7 = _6 + TransferLength;
+  JobInfo->DataPtr = _7;
+
+  <bb 4> :
+  return;
+
+}
+
+

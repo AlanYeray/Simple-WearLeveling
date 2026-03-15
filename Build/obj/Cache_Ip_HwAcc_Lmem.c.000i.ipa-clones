@@ -1,0 +1,11 @@
+Callgraph clone;hwAcc_Lmem_ProcessorCodeControlReg;1;Autosar/Mcal/Mcl/src/Cache_Ip_HwAcc_Lmem.c;129;29;hwAcc_Lmem_ProcessorCodeInvalidate;6;Autosar/Mcal/Mcl/src/Cache_Ip_HwAcc_Lmem.c;372;16;inlining to
+Callgraph clone;hwAcc_Lmem_ProcessorCodeControlReg;1;Autosar/Mcal/Mcl/src/Cache_Ip_HwAcc_Lmem.c;129;29;hwAcc_Lmem_ProcessorCodeClean;7;Autosar/Mcal/Mcl/src/Cache_Ip_HwAcc_Lmem.c;384;16;inlining to
+Callgraph clone;hwAcc_Lmem_ProcessorCodeControlReg;1;Autosar/Mcal/Mcl/src/Cache_Ip_HwAcc_Lmem.c;129;29;hwAcc_Lmem_ProcessorCodeClean;7;Autosar/Mcal/Mcl/src/Cache_Ip_HwAcc_Lmem.c;384;16;inlining to
+Callgraph removal;hwAcc_Lmem_ProcessorCodeControlReg;1;Autosar/Mcal/Mcl/src/Cache_Ip_HwAcc_Lmem.c;129;29
+Callgraph clone;hwAcc_Lmem_ProcessorCodeAddressReg;3;Autosar/Mcal/Mcl/src/Cache_Ip_HwAcc_Lmem.c;187;29;hwAcc_Lmem_ProcessorCodeInvalidateByAddr;8;Autosar/Mcal/Mcl/src/Cache_Ip_HwAcc_Lmem.c;405;16;inlining to
+Callgraph clone;hwAcc_Lmem_ProcessorCodeLineControlReg;2;Autosar/Mcal/Mcl/src/Cache_Ip_HwAcc_Lmem.c;158;29;hwAcc_Lmem_ProcessorCodeInvalidateByAddr;8;Autosar/Mcal/Mcl/src/Cache_Ip_HwAcc_Lmem.c;405;16;inlining to
+Callgraph clone;hwAcc_Lmem_ProcessorCodeAddressReg;3;Autosar/Mcal/Mcl/src/Cache_Ip_HwAcc_Lmem.c;187;29;hwAcc_Lmem_ProcessorCodeCleanByAddr;9;Autosar/Mcal/Mcl/src/Cache_Ip_HwAcc_Lmem.c;428;16;inlining to
+Callgraph clone;hwAcc_Lmem_ProcessorCodeLineControlReg;2;Autosar/Mcal/Mcl/src/Cache_Ip_HwAcc_Lmem.c;158;29;hwAcc_Lmem_ProcessorCodeCleanByAddr;9;Autosar/Mcal/Mcl/src/Cache_Ip_HwAcc_Lmem.c;428;16;inlining to
+Callgraph clone;hwAcc_Lmem_ProcessorCodeLineControlReg;2;Autosar/Mcal/Mcl/src/Cache_Ip_HwAcc_Lmem.c;158;29;hwAcc_Lmem_ProcessorCodeCleanByAddr;9;Autosar/Mcal/Mcl/src/Cache_Ip_HwAcc_Lmem.c;428;16;inlining to
+Callgraph removal;hwAcc_Lmem_ProcessorCodeLineControlReg;2;Autosar/Mcal/Mcl/src/Cache_Ip_HwAcc_Lmem.c;158;29
+Callgraph removal;hwAcc_Lmem_ProcessorCodeAddressReg;3;Autosar/Mcal/Mcl/src/Cache_Ip_HwAcc_Lmem.c;187;29
