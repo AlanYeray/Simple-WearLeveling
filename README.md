@@ -1,6 +1,14 @@
-# Simple Wear Leveling for NXP S32K144 — AUTOSAR MCAL
+Wear Leveling Driver – NXP S32K144 (AUTOSAR)
+Problema
+Las memorias flash tienen un número limitado de ciclos de escritura por sector. Sin una estrategia de distribución, las escrituras repetidas en los mismos sectores degradan la memoria prematuramente, reduciendo la vida útil del producto.
 
-Implementación bare-metal de un algoritmo de wear leveling para la memoria Flash interna del microcontrolador NXP S32K144, utilizando drivers AUTOSAR MCAL (Mem_43_INFLS).
+Solución
+Driver de wear leveling desarrollado desde cero en C, integrado al stack AUTOSAR, que distribuye las operaciones de escritura uniformemente entre 8 sectores de memoria flash interna del NXP S32K144.
+
+Resultado
+El sistema extiende la vida útil de la memoria flash distribuyendo el desgaste de forma equitativa, mejorando la confiabilidad en aplicaciones embebidas de largo plazo.
+
+
 
 El algoritmo distribuye las escrituras de forma uniforme entre 8 sectores de 2 KB en la región Data Flash, seleccionando siempre el sector con menor número de escrituras. Esto extiende la vida útil de la memoria Flash, que típicamente soporta ~100,000 ciclos de borrado por sector.
 
