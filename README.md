@@ -1,4 +1,5 @@
 Wear Leveling Driver – NXP S32K144 (AUTOSAR)
+
 Problema
 Las memorias flash tienen un número limitado de ciclos de escritura por sector. Sin una estrategia de distribución, las escrituras repetidas en los mismos sectores degradan la memoria prematuramente, reduciendo la vida útil del producto.
 
