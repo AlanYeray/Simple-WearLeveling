@@ -9,7 +9,7 @@ Driver de wear leveling desarrollado desde cero en C, integrado al stack AUTOSAR
 ### Resultado:
 El sistema extiende la vida útil de la memoria flash distribuyendo el desgaste de forma equitativa, mejorando la confiabilidad en aplicaciones embebidas de largo plazo.
 
-
+----------------------------------------------------------------------------------------------------------------
 
 El algoritmo distribuye las escrituras de forma uniforme entre 8 sectores de 2 KB en la región Data Flash, seleccionando siempre el sector con menor número de escrituras. Esto extiende la vida útil de la memoria Flash, que típicamente soporta ~100,000 ciclos de borrado por sector.
 
